@@ -1,5 +1,7 @@
+'use client';
 import React from 'react'
 import { Mail, Lock } from "lucide-react";
+import ImageInput from '../components/image-input';
 
 const InputField = () => {
   return (
@@ -92,6 +94,9 @@ const InputField = () => {
           />
         </div>
       </div>
+
+
+      <ImageInput />
     </div>
   )
 }
