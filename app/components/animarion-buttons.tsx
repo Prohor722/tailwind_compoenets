@@ -71,12 +71,6 @@ export const AnimarionButtons = () => {
             Loading...
           </button>
 
-          {/* Bounce Icon Button */}
-          <button className="bg-pink-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-pink-700 transition">
-            <Sparkles className="w-5 h-5 animate-bounce" />
-            Magic
-          </button>
-
           {/* Shield Pop-in Button */}
           <button className="bg-yellow-500 text-black px-6 py-3 rounded-lg flex items-center gap-2 font-medium hover:scale-105 transition-transform duration-200">
             <ShieldCheck className="animate-pulse" />
@@ -124,12 +118,6 @@ export const AnimarionButtons = () => {
           <button className="flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg text-white transition duration-300">
             <Lock className="animate-pulse" />
             Lock
-          </button>
-
-          {/* Loading Icon Button */}
-          <button className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white">
-            <Loader2 className="animate-spin" />
-            Loading
           </button>
 
           {/* Sparkling Glassmorphism */}
