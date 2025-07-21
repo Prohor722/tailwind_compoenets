@@ -1,5 +1,6 @@
 //use client
 import React from 'react'
+import { AnimarionButtons } from '../components/animarion-buttons'
 
 const page = () => {
   return (
@@ -46,6 +47,8 @@ const page = () => {
           Disabled
         </button>
       </div>
+
+      <AnimarionButtons />
     </div>
   )
 }
