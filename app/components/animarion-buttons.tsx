@@ -1,5 +1,12 @@
 import React from "react";
-import { ArrowRight, Loader2, Sparkles, ShieldCheck } from "lucide-react";
+import {
+  ArrowRight,
+  Loader2,
+  Sparkles,
+  ShieldCheck,
+  CheckCircle2,
+  Lock,
+} from "lucide-react";
 
 export const AnimarionButtons = () => {
   return (
@@ -79,6 +86,56 @@ export const AnimarionButtons = () => {
           {/* Neon Border Button */}
           <button className="relative px-6 py-3 text-white border border-cyan-400 rounded-md transition hover:bg-cyan-400 hover:text-black hover:shadow-[0_0_20px_#22d3ee] duration-300">
             Neon Border
+          </button>
+        </div>
+
+        <div className="flex flex-wrap gap-6 justify-center">
+          {/* Neon Pulse Button */}
+          <button className="relative px-6 py-3 font-semibold text-cyan-300 border border-cyan-400 rounded-lg bg-black shadow-md hover:shadow-[0_0_25px_#22d3ee] transition-all duration-300">
+            <span className="absolute -inset-px rounded-lg opacity-20 blur-md bg-cyan-400 animate-pulse"></span>
+            Neon Pulse
+          </button>
+
+          {/* Fill Slide Button */}
+          <button className="group relative px-6 py-3 overflow-hidden border border-lime-400 text-lime-400 rounded-md hover:text-black transition duration-300">
+            <span className="absolute inset-0 bg-lime-400 w-0 group-hover:w-full transition-all duration-300"></span>
+            <span className="relative z-10">Slide Fill</span>
+          </button>
+
+          {/* Icon Reveal Button */}
+          <button className="group flex items-center gap-2 px-6 py-3 bg-indigo-700 rounded-lg hover:bg-indigo-800 transition-all duration-300">
+            <span>Reveal Icon</span>
+            <ArrowRight className="transform group-hover:translate-x-1 transition-transform duration-300" />
+          </button>
+
+          {/* Bouncy Confirm Button */}
+          <button className="flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg text-white transition transform hover:scale-105 duration-300">
+            <CheckCircle2 className="animate-bounce" />
+            Confirm
+          </button>
+
+          {/* Glow On Hover Button */}
+          <button className="relative px-6 py-3 text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-md transition duration-300 overflow-hidden">
+            <span className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 blur-lg"></span>
+            Glow Hover
+          </button>
+
+          {/* Lock with Pulse Icon */}
+          <button className="flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg text-white transition duration-300">
+            <Lock className="animate-pulse" />
+            Lock
+          </button>
+
+          {/* Loading Icon Button */}
+          <button className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-white">
+            <Loader2 className="animate-spin" />
+            Loading
+          </button>
+
+          {/* Sparkling Glassmorphism */}
+          <button className="relative px-6 py-3 rounded-xl border border-white/30 backdrop-blur-md bg-white/10 hover:bg-white/20 transition text-white flex items-center gap-2">
+            <Sparkles className="text-yellow-400 animate-ping" />
+            Magic Glass
           </button>
         </div>
       </div>
