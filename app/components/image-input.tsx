@@ -44,7 +44,7 @@ export default function ImageInput() {
           <input
             type="file"
             accept="image/*"
-            className="opacity-0 absolute inset-0 cursor-pointer"
+            className=" cursor-pointer"
           />
         </div>
 

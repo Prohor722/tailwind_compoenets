@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/card', label: 'Cards' },
   { href: '/input-field', label: 'Inputs' },
   { href: '/image', label: 'Images', disabled: true },
+  
 ];
 
 export const NavHome = () => {
