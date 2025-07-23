@@ -7,11 +7,12 @@ import { Menu, X } from 'lucide-react';
 const navLinks = [
   { href: '/button', label: 'Buttons' },
   { href: '/navbar', label: 'Navbar' },
-  { href: '/form', label: 'Forms', disabled: true },
+  { href: '/form', label: 'Forms' },
   { href: '/table', label: 'Tables' },
   { href: '/card', label: 'Cards' },
   { href: '/input-field', label: 'Inputs' },
   { href: '/image', label: 'Images' },
+  { href: '/', label: 'Disable', disabled: true },
   
 ];
 
