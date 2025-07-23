@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import clsx from "clsx";
 
 export default function ModernForm() {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ export default function ModernForm() {
     message: "",
   });
   const [error, setError] = useState("");
+  const [isFlipped, setIsFlipped] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
