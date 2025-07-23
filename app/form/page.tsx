@@ -24,7 +24,7 @@ export default function ModernForm() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-tr from-sky-100 to-blue-200 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gradient-to-tr from-sky-100 to-blue-200 flex items-center justify-center p-6 gap-6">
       <form className="bg-white/30 backdrop-blur-md border border-white/40 rounded-2xl p-8 w-full max-w-md shadow-xl space-y-6">
         <h2 className="text-2xl font-semibold text-center text-gray-800">
           Contact Us
