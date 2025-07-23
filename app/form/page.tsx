@@ -121,7 +121,7 @@ export default function ModernForm() {
               className="text-sm mt-4 text-center text-blue-600 cursor-pointer"
               onClick={() => setIsFlipped(true)}
             >
-              Don't have an account? Register
+              Don&apos;t have an account? Register
             </p>
           </div>
 
