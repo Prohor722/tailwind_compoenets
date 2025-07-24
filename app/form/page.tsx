@@ -11,6 +11,7 @@ export default function ModernForm() {
   });
   const [error, setError] = useState("");
   const [isFlipped, setIsFlipped] = useState(false);
+  const [name, setName] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -102,7 +103,7 @@ export default function ModernForm() {
           )}
         >
           {/* Front (Login) */}
-          <div className="absolute w-full h-full backface-hidden bg-white rounded-xl shadow-xl p-8">
+          <form className="absolute w-full h-full backface-hidden bg-white rounded-xl shadow-xl p-8">
             <h2 className="text-xl font-semibold text-center mb-6">Login</h2>
             <input
               type="email"
@@ -123,7 +124,7 @@ export default function ModernForm() {
             >
               Don&apos;t have an account? Register
             </p>
-          </div>
+          </form>
 
           {/* Back (Register) */}
           <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white rounded-xl shadow-xl p-8">
@@ -155,6 +156,35 @@ export default function ModernForm() {
           </div>
         </div>
       </div>
+
+      <form className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md space-y-6 transition duration-500 ease-in-out transform hover:scale-105">
+        <h2 className="text-xl font-semibold text-center text-blue-600">
+          Contact Us
+        </h2>
+
+        <div className="relative z-0 w-full group">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-blue-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+          />
+          <label
+            htmlFor="name"
+            className="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:scale-100 
+                       peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >
+            Your Name
+          </label>
+        </div>
+
+        <button className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
+          Send Message
+        </button>
+      </form>
     </div>
   );
 }
