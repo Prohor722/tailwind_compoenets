@@ -56,7 +56,7 @@ export default function RadioBtn() {
           </div>
         </label>
       </div>
-      
+
       <div className="flex border-b border-gray-300 space-x-6">
         {['Home', 'About', 'Contact'].map((label, i) => (
           <label key={i} className="relative cursor-pointer">
@@ -71,6 +71,18 @@ export default function RadioBtn() {
               {label}
             </span>
             <div className="absolute left-0 -bottom-1 h-0.5 w-full scale-x-0 peer-checked:scale-x-100 bg-blue-500 transition-transform origin-left" />
+          </label>
+        ))}
+      </div>
+
+      <div className="flex flex-col gap-4">
+        {['Small', 'Medium', 'Large'].map((size, i) => (
+          <label key={i} className="flex items-center gap-4 cursor-pointer">
+            <input type="radio" name="size" value={size} className="peer hidden" defaultChecked={i === 1} />
+            <div className="w-5 h-5 rounded-full border-2 border-gray-400 peer-checked:border-green-500 relative">
+              <div className="absolute inset-0 rounded-full bg-green-300 opacity-0 scale-50 peer-checked:scale-100 peer-checked:opacity-100 transition duration-300" />
+            </div>
+            <span className="text-gray-700 peer-checked:text-green-600 font-medium">{size}</span>
           </label>
         ))}
       </div>
