@@ -104,6 +104,58 @@ export const SelectInput = () => {
           <ChevronDown className="w-5 h-5" />
         </div>
       </div>
+
+      <div className="relative w-72">
+        <select
+          value={selected}
+          onChange={(e) => setSelected(e.target.value)}
+          className="backdrop-blur-md bg-white/30 border border-white/50 rounded-lg w-full py-3 px-4 text-gray-800 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-300"
+        >
+          <option value="" disabled>
+            -- Select a design style --
+          </option>
+          <option value="glass">Glassmorphism</option>
+          <option value="neon">Neon</option>
+          <option value="minimal">Minimal</option>
+        </select>
+      </div>
+
+      <div className="relative w-72">
+        <select
+          value={selected}
+          onChange={(e) => setSelected(e.target.value)}
+          className="w-full px-4 py-3 rounded-md bg-black text-green-400 border border-green-500 shadow-lg focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition duration-300"
+        >
+          <option value="" disabled>
+            -- Choose neon color --
+          </option>
+          <option value="cyan">Cyan</option>
+          <option value="lime">Lime</option>
+          <option value="magenta">Magenta</option>
+        </select>
+      </div>
+
+      <div className="relative w-72">
+        <select
+          value={selected}
+          onChange={(e) => setSelected(e.target.value)}
+          className="peer w-full border border-gray-400 rounded-lg px-4 pt-6 pb-2 text-gray-700 bg-white appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+        >
+          <option value="" hidden></option>
+          <option value="ai">AI</option>
+          <option value="web">Web Dev</option>
+          <option value="ml">Machine Learning</option>
+        </select>
+        <label
+          className={`absolute left-4 top-3 text-sm text-gray-500 transform transition-all duration-300 ${
+            selected
+              ? "scale-75 -translate-y-4 text-blue-500"
+              : "peer-focus:scale-75 peer-focus:-translate-y-4 peer-focus:text-blue-500"
+          }`}
+        >
+          Choose your field
+        </label>
+      </div>
     </div>
   );
 };
