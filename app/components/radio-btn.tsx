@@ -56,6 +56,25 @@ export default function RadioBtn() {
           </div>
         </label>
       </div>
+      
+      <div className="flex border-b border-gray-300 space-x-6">
+        {['Home', 'About', 'Contact'].map((label, i) => (
+          <label key={i} className="relative cursor-pointer">
+            <input
+              type="radio"
+              name="nav"
+              value={label}
+              className="peer hidden"
+              defaultChecked={i === 0}
+            />
+            <span className="text-gray-600 peer-checked:text-blue-600 transition">
+              {label}
+            </span>
+            <div className="absolute left-0 -bottom-1 h-0.5 w-full scale-x-0 peer-checked:scale-x-100 bg-blue-500 transition-transform origin-left" />
+          </label>
+        ))}
+      </div>
+
     </div>
   );
 }
