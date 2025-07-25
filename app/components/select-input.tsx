@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Globe } from "lucide-react";
+import { Globe, ChevronDown } from "lucide-react";
 
 export const SelectInput = () => {
   const [selected, setSelected] = useState("");
@@ -73,19 +73,37 @@ export const SelectInput = () => {
       </div>
 
       <div className="relative w-72">
-      <select
-        value={selected}
-        onChange={(e) => setSelected(e.target.value)}
-        className="w-full border-b-2 border-gray-300 bg-transparent py-2 px-3 text-gray-700 focus:outline-none focus:border-blue-500 transition-all duration-300"
-      >
-        <option value="" disabled>
-          -- Select your skill --
-        </option>
-        <option value="react">React</option>
-        <option value="vue">Vue</option>
-        <option value="angular">Angular</option>
-      </select>
-    </div>
+        <select
+          value={selected}
+          onChange={(e) => setSelected(e.target.value)}
+          className="w-full border-b-2 border-gray-300 bg-transparent py-2 px-3 text-gray-700 focus:outline-none focus:border-blue-500 transition-all duration-300"
+        >
+          <option value="" disabled>
+            -- Select your skill --
+          </option>
+          <option value="react">React</option>
+          <option value="vue">Vue</option>
+          <option value="angular">Angular</option>
+        </select>
+      </div>
+
+      <div className="relative w-72">
+        <select
+          value={selected}
+          onChange={(e) => setSelected(e.target.value)}
+          className="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-500 px-4 py-3 pr-8 rounded shadow leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-all"
+        >
+          <option value="" disabled>
+            -- Choose a framework --
+          </option>
+          <option value="nextjs">Next.js</option>
+          <option value="svelte">Svelte</option>
+          <option value="remix">Remix</option>
+        </select>
+        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
+          <ChevronDown className="w-5 h-5" />
+        </div>
+      </div>
     </div>
   );
 };
