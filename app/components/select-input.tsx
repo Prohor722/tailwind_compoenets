@@ -1,7 +1,8 @@
-import React from "react";
-import { Globe } from 'lucide-react';
+import React, { useState } from "react";
+import { Globe } from "lucide-react";
 
 export const SelectInput = () => {
+  const [selected, setSelected] = useState("");
   return (
     <div className="flex gap-5 items-center justify-center bg-gradient-to-br from-white to-blue-50 px-4">
       <div className="relative z-0 w-full group">
@@ -22,7 +23,9 @@ export const SelectInput = () => {
       </div>
 
       <div className="relative w-80">
-        <label className="text-sm font-medium text-gray-600 mb-2 block">Language</label>
+        <label className="text-sm font-medium text-gray-600 mb-2 block">
+          Language
+        </label>
         <div className="relative group">
           <Globe className="absolute left-3 top-1/2 transform -translate-y-1/2 text-blue-500" />
           <select className="pl-10 pr-4 py-2 w-full bg-transparent border-b-2 border-blue-200 text-gray-800 focus:outline-none focus:border-blue-600 transition duration-300">
@@ -35,12 +38,33 @@ export const SelectInput = () => {
       </div>
 
       <div className="backdrop-blur-lg bg-white/30 p-6 rounded-2xl shadow-lg max-w-sm w-full">
-        <label className="block text-white text-sm font-medium mb-2">Choose Plan</label>
+        <label className="block text-white text-sm font-medium mb-2">
+          Choose Plan
+        </label>
         <select className="w-full px-4 py-2 text-white bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400 transition duration-300">
           <option>Free</option>
           <option>Pro</option>
           <option>Enterprise</option>
         </select>
+      </div>
+
+      <div className="relative w-72">
+        <select
+          value={selected}
+          onChange={(e) => setSelected(e.target.value)}
+          className="peer w-full bg-white border border-gray-300 rounded-md px-4 pt-5 pb-2 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+        >
+          <option value="" disabled>
+            -- Choose a language --
+          </option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JavaScript</option>
+        </select>
+
+        <label className="absolute left-4 top-2 text-gray-500 text-sm transition-all peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500">
+          Language
+        </label>
       </div>
     </div>
   );
