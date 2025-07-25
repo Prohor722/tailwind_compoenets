@@ -4,9 +4,9 @@ import { Sun, Moon } from "lucide-react";
 export default function RadioBtn() {
   return (
     <div>
-        <h1 className="text-xl font-semibold text-blue-500 text-center my-5">
-          Select Inputs
-        </h1>
+      <h1 className="text-xl font-semibold text-blue-500 text-center my-5">
+        Select Inputs
+      </h1>
       <div className="flex flex-wrap gap-4 items-center justify-center bg-slate-50 px-4">
         <div className="space-y-4">
           <p className="text-gray-700 font-semibold">Choose a theme:</p>
@@ -162,21 +162,62 @@ export default function RadioBtn() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {['Beginner', 'Intermediate', 'Advanced'].map((level, idx) => (
-          <label key={idx} className="cursor-pointer group">
-            <input
-              type="radio"
-              name="level"
-              className="peer hidden"
-              value={level}
-              defaultChecked={idx === 0}
-            />
-            <div className="p-4 bg-white rounded-xl border border-gray-300 shadow-sm peer-checked:border-indigo-500 peer-checked:ring-2 peer-checked:ring-indigo-200 transition-all group-hover:shadow-md">
-              <h3 className="text-center font-semibold text-gray-700 peer-checked:text-indigo-600">{level}</h3>
-            </div>
-          </label>
-        ))}
-      </div>
+          {["Beginner", "Intermediate", "Advanced"].map((level, idx) => (
+            <label key={idx} className="cursor-pointer group">
+              <input
+                type="radio"
+                name="level"
+                className="peer hidden"
+                value={level}
+                defaultChecked={idx === 0}
+              />
+              <div className="p-4 bg-white rounded-xl border border-gray-300 shadow-sm peer-checked:border-indigo-500 peer-checked:ring-2 peer-checked:ring-indigo-200 transition-all group-hover:shadow-md">
+                <h3 className="text-center font-semibold text-gray-700 peer-checked:text-indigo-600">
+                  {level}
+                </h3>
+              </div>
+            </label>
+          ))}
+        </div>
+
+        <div className="space-y-4">
+          <p className="text-gray-700 font-medium">Select Color Scheme:</p>
+          <div className="flex gap-6">
+            {["blue", "green", "pink"].map((color) => (
+              <label
+                key={color}
+                className="flex items-center gap-3 cursor-pointer"
+              >
+                <input
+                  type="radio"
+                  name="color"
+                  className="peer hidden"
+                  value={color}
+                  id={color}
+                />
+                <div
+                  className={`
+                  w-5 h-5 rounded-full border-2 border-gray-400 transition-all
+                  peer-checked:ring-2 peer-checked:ring-offset-2
+                  ${
+                    color === "blue" &&
+                    "peer-checked:ring-blue-500 peer-checked:bg-blue-500"
+                  }
+                  ${
+                    color === "green" &&
+                    "peer-checked:ring-green-500 peer-checked:bg-green-500"
+                  }
+                  ${
+                    color === "pink" &&
+                    "peer-checked:ring-pink-500 peer-checked:bg-pink-500"
+                  }
+                `}
+                />
+                <span className="text-gray-700 capitalize">{color}</span>
+              </label>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
