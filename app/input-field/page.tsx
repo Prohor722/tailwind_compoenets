@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Mail, Lock, Eye, EyeOff, User } from "lucide-react";
 import ImageInput from "../components/image-input";
 import { SelectInput } from "../components/select-input";
+import RadioBtn from "../components/radio-btn";
 
 const InputField = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -154,6 +155,7 @@ const InputField = () => {
 
       <ImageInput />
       <SelectInput />
+      <RadioBtn />
     </div>
   );
 };
