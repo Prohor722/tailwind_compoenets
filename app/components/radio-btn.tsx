@@ -87,6 +87,30 @@ export default function RadioBtn() {
         ))}
       </div>
 
+      <div className="grid gap-4">
+        {['Weekly', 'Monthly', 'Yearly'].map((plan, i) => (
+          <label
+            key={i}
+            className="relative border border-gray-300 rounded-lg p-4 bg-white peer-checked:ring-2 peer-checked:ring-indigo-300 transition-all hover:shadow-md cursor-pointer"
+          >
+            <input type="radio" name="plan" value={plan} className="peer hidden" defaultChecked={i === 0} />
+            <span className="block text-indigo-700 font-semibold text-lg">{plan}</span>
+            <span className="text-sm text-gray-500">Billing cycle</span>
+          </label>
+        ))}
+      </div>
+
+      <div className="inline-flex p-1 bg-white rounded-full shadow-lg border border-gray-300">
+        {['Left', 'Center', 'Right'].map((label, i) => (
+          <label key={i} className="cursor-pointer">
+            <input type="radio" name="align" value={label} className="peer hidden" defaultChecked={i === 1} />
+            <span className="px-4 py-2 text-sm font-medium text-gray-600 rounded-full transition-all peer-checked:bg-blue-500 peer-checked:text-white">
+              {label}
+            </span>
+          </label>
+        ))}
+      </div>
+
     </div>
   );
 }
