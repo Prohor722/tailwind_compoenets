@@ -4,7 +4,7 @@ import { Globe } from "lucide-react";
 export const SelectInput = () => {
   const [selected, setSelected] = useState("");
   return (
-    <div className="flex gap-5 items-center justify-center bg-gradient-to-br from-white to-blue-50 px-4">
+    <div className="flex gap-5 flex-wrap items-center justify-center bg-gradient-to-br from-white to-blue-50 px-4">
       <div className="relative z-0 w-full group">
         <select
           className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-blue-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -52,20 +52,40 @@ export const SelectInput = () => {
         <select
           value={selected}
           onChange={(e) => setSelected(e.target.value)}
-          className="peer w-full bg-white border border-gray-300 rounded-md px-4 pt-5 pb-2 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+          className={`peer w-full bg-white border border-gray-300 rounded-md px-4 pt-6 pb-2 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all`}
         >
           <option value="" disabled>
-            -- Choose a language --
+            -- Choose --
           </option>
           <option value="html">HTML</option>
           <option value="css">CSS</option>
           <option value="js">JavaScript</option>
         </select>
-
-        <label className="absolute left-4 top-2 text-gray-500 text-sm transition-all peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500">
-          Language
+        <label
+          className={`absolute left-4 top-2 text-gray-500 text-sm transition-all ${
+            selected
+              ? "text-sm top-2 text-blue-500"
+              : "peer-focus:top-2 peer-focus:text-sm peer-focus:text-blue-500 top-4 text-base text-gray-400"
+          }`}
+        >
+          Programming Language
         </label>
       </div>
+
+      <div className="relative w-72">
+      <select
+        value={selected}
+        onChange={(e) => setSelected(e.target.value)}
+        className="w-full border-b-2 border-gray-300 bg-transparent py-2 px-3 text-gray-700 focus:outline-none focus:border-blue-500 transition-all duration-300"
+      >
+        <option value="" disabled>
+          -- Select your skill --
+        </option>
+        <option value="react">React</option>
+        <option value="vue">Vue</option>
+        <option value="angular">Angular</option>
+      </select>
+    </div>
     </div>
   );
 };
