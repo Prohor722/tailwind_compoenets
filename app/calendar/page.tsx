@@ -2,11 +2,11 @@
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { format } from "date-fns";
+import { Calendar1 } from "lucide-react";
 
 export default function Calendar() {
   const [startDate, setStartDate] = useState<Date | null>(null);
-  const [date, setDate] = useState<Date | undefined>();
+  const [date, setDate] = useState('');
 
   return (
     <div>
@@ -28,6 +28,15 @@ export default function Calendar() {
         </label>
       </div>
 
+      <div className="relative w-72">
+      <input
+        type="date"
+        value={date}
+        onChange={(e) => setDate(e.target.value)}
+        className="w-full px-4 py-3 border border-gray-300 rounded-md pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+      />
+      <Calendar1 className="absolute left-3 top-3 w-5 h-5 text-gray-500 pointer-events-none" />
+    </div>
       
     </div>
   );
