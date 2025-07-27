@@ -6,10 +6,11 @@ import { Calendar1 } from "lucide-react";
 
 export default function Calendar() {
   const [startDate, setStartDate] = useState<Date | null>(null);
-  const [date, setDate] = useState('');
+  const [date, setDate] = useState("");
 
   return (
-    <div>
+    <div className="flex gap-5 flex-wrap items-center justify-center">
+      {/* Calendar 1  */}
       <div className="relative w-72">
         <DatePicker
           selected={startDate}
@@ -28,16 +29,35 @@ export default function Calendar() {
         </label>
       </div>
 
+      {/* Calendar 2  */}
       <div className="relative w-72">
-      <input
-        type="date"
-        value={date}
-        onChange={(e) => setDate(e.target.value)}
-        className="w-full px-4 py-3 border border-gray-300 rounded-md pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-      />
-      <Calendar1 className="absolute left-3 top-3 w-5 h-5 text-gray-500 pointer-events-none" />
-    </div>
-      
+        <input
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          className="w-full px-4 py-3 border border-gray-300 rounded-md pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+        />
+        <Calendar1 className="absolute left-3 top-3 w-5 h-5 text-gray-500 pointer-events-none" />
+      </div>
+
+      {/* Calendar 3  */}
+      <div className="relative w-72 my-6">
+        <DatePicker
+          selected={startDate}
+          onChange={(date) => setStartDate(date)}
+          placeholderText="Choose your date"
+          className="peer w-full px-4 pt-6 pb-2 border-2 border-transparent focus:border-blue-500 shadow-lg rounded-xl transition-all focus:outline-none"
+        />
+        <label
+          className={`absolute left-4 top-2 text-sm text-gray-500 transition-all duration-300 ${
+            startDate
+              ? "scale-75 -translate-y-3 text-blue-500"
+              : "peer-focus:scale-75 peer-focus:-translate-y-3 peer-focus:text-blue-500"
+          }`}
+        >
+          Event Date
+        </label>
+      </div>
     </div>
   );
 }
