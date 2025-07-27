@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/card', label: 'Cards' },
   { href: '/input-field', label: 'Inputs' },
   { href: '/image', label: 'Images' },
+  { href: '/calendar', label: 'Calendar' },
   { href: '/', label: 'Disable', disabled: true },
   
 ];
