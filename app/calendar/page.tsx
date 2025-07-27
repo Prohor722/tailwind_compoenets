@@ -2,8 +2,6 @@
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { Calendar } from "@/components/ui/calendar";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format } from "date-fns";
 
 export default function Calendar() {
@@ -30,14 +28,7 @@ export default function Calendar() {
         </label>
       </div>
 
-      <Popover>
-      <PopoverTrigger className="w-72 px-4 py-3 border border-gray-300 rounded-lg text-left bg-white shadow focus:outline-none">
-        {date ? format(date, 'PPP') : <span className="text-gray-500">Pick a date</span>}
-      </PopoverTrigger>
-      <PopoverContent className="w-auto p-0">
-        <Calendar mode="single" selected={date} onSelect={setDate} initialFocus />
-      </PopoverContent>
-    </Popover>
+      
     </div>
   );
 }
