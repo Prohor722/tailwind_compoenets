@@ -58,6 +58,29 @@ export default function Calendar() {
           Event Date
         </label>
       </div>
+
+      {/* Calendar 4  */}
+      <div className="relative w-72 my-6">
+        <input
+          type="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          placeholder=" "
+          className="peer w-full px-4 pt-6 pb-2 pl-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all"
+        />
+        <label
+          className={`absolute left-10 top-2 text-sm text-gray-500 transition-all duration-300 ${
+            date
+              ? "scale-75 -translate-y-3 text-purple-500"
+              : "peer-focus:scale-75 peer-focus:-translate-y-3 peer-focus:text-purple-500"
+          }`}
+        >
+          Select Deadline
+        </label>
+        <Calendar1 className="absolute left-3 top-3 w-5 h-5 text-purple-500 pointer-events-none" />
+      </div>
+
+      {/* Calendar 5  */}
     </div>
   );
 }
