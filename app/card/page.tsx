@@ -1,6 +1,12 @@
+import Image from "next/image";
 import React from "react";
 
 const Card = () => {
+  const imageList = [
+    "https://static.vecteezy.com/system/resources/thumbnails/052/248/075/small_2x/peacock-feather-wallpaper-hd-wallpaper-photo.jpeg",
+    "https://static.vecteezy.com/system/resources/thumbnails/052/248/075/small_2x/peacock-feather-wallpaper-hd-wallpaper-photo.jpeg",
+    "https://static.vecteezy.com/system/resources/thumbnails/052/248/075/small_2x/peacock-feather-wallpaper-hd-wallpaper-photo.jpeg",
+  ];
   return (
     <div className="min-h-screen bg-gray-100 p-8 flex flex-col items-center gap-10">
       <h1 className="text-2xl font-bold text-gray-800">
@@ -18,8 +24,10 @@ const Card = () => {
 
         {/* Image Card */}
         <div className="bg-white shadow-md rounded-lg overflow-hidden w-64">
-          <img
-            src="https://source.unsplash.com/400x200/?nature"
+          <Image
+            width={200}
+            height={200}
+            src={imageList?.[0] || "/placeholder.jpg"}
             alt="Nature"
             className="w-full h-40 object-cover"
           />
@@ -41,9 +49,11 @@ const Card = () => {
 
         {/* Profile Card */}
         <div className="bg-white shadow-md rounded-lg p-6 w-64 flex flex-col items-center text-center">
-          <img
+          <Image
+            width={200}
+            height={200}
             className="w-20 h-20 rounded-full mb-4"
-            src="https://randomuser.me/api/portraits/men/75.jpg"
+            src={imageList?.[0] || "/placeholder.jpg"}
             alt="Profile"
           />
           <h2 className="text-lg font-semibold text-gray-800">John Doe</h2>
@@ -66,6 +76,26 @@ const Card = () => {
         <p className="text-gray-600">
           A smooth frosted-glass look using Tailwind’s backdrop blur utility.
         </p>
+      </div>
+
+      <div className="w-80 bg-white rounded-xl overflow-hidden shadow-lg group cursor-pointer transition-all hover:shadow-2xl">
+        <div className="overflow-hidden">
+          <Image
+            width={200}
+            height={200}
+            src={imageList?.[0] || "/placeholder.jpg"}
+            alt="Random"
+            className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+        </div>
+        <div className="p-4">
+          <h3 className="text-lg font-bold text-gray-800 mb-1">
+            Hover Zoom Image
+          </h3>
+          <p className="text-sm text-gray-600">
+            Elegant card with animated image hover effect.
+          </p>
+        </div>
       </div>
     </div>
   );
