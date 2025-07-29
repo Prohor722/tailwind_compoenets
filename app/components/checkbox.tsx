@@ -42,19 +42,38 @@ export const CheckBox = () => {
         </label>
 
         <div className="flex gap-4">
-          {["red", "green", "blue"].map((color) => (
-            <label
-              key={color}
-              className="flex items-center gap-2 cursor-pointer"
-            >
-              <input type="checkbox" value={color} className="peer hidden" />
-              <div
-                className={`w-5 h-5 border-2 rounded-md border-gray-400 peer-checked:bg-${color}-500 peer-checked:border-${color}-500 transition-all`}
-              />
-              <span className="text-gray-700 capitalize">{color}</span>
-            </label>
-          ))}
+          {["red", "green", "blue"].map((color) => {
+            const bgClass = `peer-checked:bg-${color}-500`;
+            const borderClass = `peer-checked:border-${color}-500`;
+
+            return (
+              <label
+                key={color}
+                className="flex items-center gap-2 cursor-pointer"
+              >
+                <input type="checkbox" value={color} className="peer hidden" />
+                <div
+                  className={`w-5 h-5 border-2 rounded-md border-gray-400 transition-all 
+            ${
+              color === "red" &&
+              "peer-checked:bg-red-500 peer-checked:border-red-500"
+            }
+            ${
+              color === "green" &&
+              "peer-checked:bg-green-500 peer-checked:border-green-500"
+            }
+            ${
+              color === "blue" &&
+              "peer-checked:bg-blue-500 peer-checked:border-blue-500"
+            }
+          `}
+                />
+                <span className="text-gray-700 capitalize">{color}</span>
+              </label>
+            );
+          })}
         </div>
+        
       </div>
     </div>
   );
