@@ -31,7 +31,30 @@ export const CheckBox = () => {
           <span className="text-white">Accept Terms</span>
         </label>
 
-        
+        <label className="inline-flex items-center cursor-pointer">
+          <input type="checkbox" className="sr-only peer" />
+          <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-blue-500 relative transition-all">
+            <div className="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-transform peer-checked:translate-x-5" />
+          </div>
+          <span className="ml-3 text-sm font-medium text-gray-700">
+            Dark Mode
+          </span>
+        </label>
+
+        <div className="flex gap-4">
+          {["red", "green", "blue"].map((color) => (
+            <label
+              key={color}
+              className="flex items-center gap-2 cursor-pointer"
+            >
+              <input type="checkbox" value={color} className="peer hidden" />
+              <div
+                className={`w-5 h-5 border-2 rounded-md border-gray-400 peer-checked:bg-${color}-500 peer-checked:border-${color}-500 transition-all`}
+              />
+              <span className="text-gray-700 capitalize">{color}</span>
+            </label>
+          ))}
+        </div>
       </div>
     </div>
   );
