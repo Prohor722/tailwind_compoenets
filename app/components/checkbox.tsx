@@ -3,7 +3,7 @@ import React from "react";
 export const CheckBox = () => {
   return (
     <div>
-      <h1 className="text-blue-500 text-2xl font-semibold text-center">
+      <h1 className="text-blue-500 text-2xl font-semibold text-center my-3">
         Checkbox
       </h1>
       <div className="flex flex-wrap justify-center items-center gap-5">
@@ -73,7 +73,7 @@ export const CheckBox = () => {
             );
           })}
         </div>
-        
+
       </div>
     </div>
   );
