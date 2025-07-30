@@ -5,6 +5,8 @@ import { X } from 'lucide-react';
 
 export default function ModalPage(){
     const [isOpen, setIsOpen] = useState(false);
+    const [open, setOpen] = useState(false);
+    
   return (
     <div className="flex items-center justify-center gap-5">
       {/* Modal 1  */}
@@ -51,6 +53,30 @@ export default function ModalPage(){
         )}
       </div>
 
+      {/* Modal 2  */}
+      <div className="flex items-center justify-center bg-gradient-to-r from-sky-100 to-indigo-100 p-6">
+      <button
+        onClick={() => setOpen(true)}
+        className="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
+      >
+        Open Fade Modal
+      </button>
+
+      {open && (
+        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex justify-center items-center z-50">
+          <div className="bg-white w-full max-w-md p-6 rounded-xl shadow-xl relative animate-fade-in-up">
+            <button
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition"
+              onClick={() => setOpen(false)}
+            >
+              <X />
+            </button>
+            <h2 className="text-xl font-bold text-gray-800 mb-2">Fade Modal</h2>
+            <p className="text-gray-600">This modal uses a fade and scale animation.</p>
+          </div>
+        </div>
+      )}
+    </div>
 
     </div>
   );
