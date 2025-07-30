@@ -13,6 +13,7 @@ const navLinks = [
   { href: '/input-field', label: 'Inputs' },
   { href: '/image', label: 'Images' },
   { href: '/calendar', label: 'Calendar' },
+  { href: '/modal', label: 'Modal' },
   { href: '/', label: 'Disable', disabled: true },
   
 ];
