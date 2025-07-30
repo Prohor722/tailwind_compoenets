@@ -4,8 +4,8 @@ import { Sun, Moon } from "lucide-react";
 export default function RadioBtn() {
   return (
     <div>
-      <h1 className="text-xl font-semibold text-blue-500 text-center my-5">
-        Select Inputs
+      <h1 className="text-2xl font-semibold text-blue-500 text-center my-3">
+        Radio Buttons
       </h1>
       <div className="flex flex-wrap gap-4 items-center justify-center bg-slate-50 px-4">
         <div className="space-y-4">
