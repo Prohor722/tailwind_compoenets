@@ -14,6 +14,7 @@ const navLinks = [
   { href: '/image', label: 'Images' },
   { href: '/calendar', label: 'Calendar' },
   { href: '/modal', label: 'Modal' },
+  { href: '/pagination', label: 'Pagination' },
   { href: '/', label: 'Disable', disabled: true },
   
 ];
