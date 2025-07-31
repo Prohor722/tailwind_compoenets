@@ -1,11 +1,19 @@
-'use client'
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
 
 const PaginationPage = () => {
-    const [current, setCurrent] = useState(1);
+  const [current, setCurrent] = useState(1);
   const total = 5;
+  const [page, setPage] = useState(1);
+  const totalPages = 10;
+
+  const prev = () => page > 1 && setPage(page - 1);
+  const next = () => page < totalPages && setPage(page + 1);
+
+  
   return (
     <div>
+      {/* Simple Pagination  */}
       <div className="flex justify-center mt-10 space-x-1">
         {[...Array(total)].map((_, i) => (
           <button
@@ -20,6 +28,29 @@ const PaginationPage = () => {
             {i + 1}
           </button>
         ))}
+      </div>
+
+      {/* Pagination 2  */}
+      <div className="flex justify-center mt-10 items-center space-x-2">
+        <button
+          onClick={prev}
+          disabled={page === 1}
+          className="px-3 py-1.5 text-sm border rounded-md bg-white text-gray-600 hover:bg-gray-100 disabled:opacity-40"
+        >
+          Prev
+        </button>
+
+        <span className="text-gray-700 font-medium">
+          Page {page} of {totalPages}
+        </span>
+
+        <button
+          onClick={next}
+          disabled={page === totalPages}
+          className="px-3 py-1.5 text-sm border rounded-md bg-white text-gray-600 hover:bg-gray-100 disabled:opacity-40"
+        >
+          Next
+        </button>
       </div>
     </div>
   );
