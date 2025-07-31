@@ -1,11 +1,12 @@
 'use client';
 import React from "react";
 import { useState } from 'react';
-import { X } from 'lucide-react';
+import { CheckCircle,X } from 'lucide-react';
 
 export default function ModalPage(){
     const [isOpen, setIsOpen] = useState(false);
     const [open, setOpen] = useState(false);
+    const [open2, setOpen2] = useState(false);
     
   return (
     <div className="flex items-center justify-center gap-5">
@@ -73,6 +74,33 @@ export default function ModalPage(){
             </button>
             <h2 className="text-xl font-bold text-gray-800 mb-2">Fade Modal</h2>
             <p className="text-gray-600">This modal uses a fade and scale animation.</p>
+          </div>
+        </div>
+      )}
+    </div>
+
+
+    <div className="text-center">
+      <button
+        onClick={() => setOpen(true)}
+        className="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition"
+      >
+        Show Success Modal
+      </button>
+
+      {open2 && (
+        <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-xl text-center max-w-sm w-full shadow-2xl animate-fade-in-up relative">
+            <CheckCircle size={48} className="text-emerald-500 mx-auto mb-4" />
+            <h2 className="text-xl font-bold text-gray-800 mb-1">Success!</h2>
+            <p className="text-gray-600 mb-4">Your action was completed successfully.</p>
+            <button
+              onClick={() => setOpen2(false)}
+              className="bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition"
+            >
+              Close
+            </button>
+            <X className="absolute top-4 right-4 text-gray-400 cursor-pointer hover:text-gray-600" onClick={() => setOpen(false)} />
           </div>
         </div>
       )}
