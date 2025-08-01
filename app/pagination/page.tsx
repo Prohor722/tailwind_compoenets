@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const PaginationPage = () => {
   const [current, setCurrent] = useState(1);
+  const [active, setActive] = useState(1);
   const total = 5;
   const [page, setPage] = useState(1);
   const totalPages = 10;
@@ -62,6 +63,24 @@ const PaginationPage = () => {
               current === i
                 ? "bg-blue-600 text-white border-blue-600"
                 : "text-gray-700 border-gray-300 hover:bg-blue-50"
+            }`}
+          >
+            {i + 1}
+          </button>
+        ))}
+      </div>
+
+      {/* Pagination 4  */}
+      <div className="flex justify-center mt-10 space-x-2">
+        {Array.from({ length: total }).map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setActive(i + 1)}
+            className={`relative w-10 h-10 rounded-full border-2 flex items-center justify-center font-medium text-sm transition-all duration-300
+            ${
+              active === i + 1
+                ? "border-blue-600 text-blue-600 bg-blue-100 ring-2 ring-blue-300"
+                : "border-gray-300 text-gray-700 hover:border-blue-400 hover:text-blue-500"
             }`}
           >
             {i + 1}
