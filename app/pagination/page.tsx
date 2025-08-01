@@ -16,7 +16,7 @@ const PaginationPage = () => {
   const next = () => page < totalPages && setPage(page + 1);
 
   return (
-    <div>
+    <div className="flex flex-wrap justify-center items-center gap-10">
       {/* Simple Pagination  */}
       <div className="flex justify-center mt-10 space-x-1">
         {[...Array(total)].map((_, i) => (
