@@ -7,7 +7,7 @@ const PaginationPage = () => {
   const [selected, setSelected] = useState(1);
   const [page, setPage] = useState(1);
   const [step, setStep] = useState(1);
-  
+
   const pages = [1, 2, 3, 4, 5];
   const total = 5;
   const totalPages = 10;
@@ -155,6 +155,23 @@ const PaginationPage = () => {
             {page === n && (
               <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 rounded-full animate-[slide_0.3s_ease-in-out]"></span>
             )}
+          </button>
+        ))}
+      </div>
+
+      {/* Pagination 9  */}
+      <div className="flex justify-center gap-3 mt-10">
+        {[1, 2, 3, 4].map((n) => (
+          <button
+            key={n}
+            onClick={() => setPage(n)}
+            className={`w-10 h-10 rounded-full text-sm font-semibold transition-all duration-300 ${
+              page === n
+                ? "bg-blue-600 text-white shadow-lg shadow-blue-300 scale-105"
+                : "bg-white text-gray-700 border border-gray-300 hover:bg-blue-50"
+            }`}
+          >
+            {n}
           </button>
         ))}
       </div>
