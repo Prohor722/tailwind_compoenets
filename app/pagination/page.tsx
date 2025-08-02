@@ -8,6 +8,7 @@ const PaginationPage = () => {
   const [page, setPage] = useState(1);
   const [step, setStep] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
+  const [currentDot, setCurrentDot] = useState(1);
 
   const pages = [1, 2, 3, 4, 5];
   const total = 5;
@@ -241,6 +242,19 @@ const PaginationPage = () => {
         >
           Next
         </button>
+      </div>
+
+      {/* Pagination 13  */}
+      <div className="flex justify-center gap-4 mt-10">
+        {[1, 2, 3, 4, 5].map((dot) => (
+          <button
+            key={dot}
+            onClick={() => setCurrentDot(dot)}
+            className={`w-3 h-3 transition-all duration-300 ${
+              currentDot === dot ? "bg-blue-600 scale-125" : "bg-gray-300"
+            }`}
+          />
+        ))}
       </div>
     </div>
   );
