@@ -292,7 +292,9 @@ const PaginationPage = () => {
           ${active > pages[0] ? 
             "bg-orange-600 text-white border-gray-700 hover:bg-orange-700 hover:text-yellow-300 hover:border-white"
             :
-            "bg-white text-gray-700 border hover:bg-blue-100 cursor-not-allowed"}`}>
+            "bg-white text-gray-700 border hover:bg-blue-100 cursor-not-allowed"}`}
+            onClick={() =>active>pages[0] && setActive(active-1)}
+            >
           Prev
         </button>
         {pages.map((page) => (
@@ -313,10 +315,15 @@ const PaginationPage = () => {
             "bg-orange-600 text-white border-gray-700 hover:bg-orange-700 hover:text-yellow-300 hover:border-white"
             :
             "bg-white text-gray-700 border hover:bg-blue-100 cursor-not-allowed"}
-          `}>
+          `}
+          onClick={() =>active<pages.length && setActive(active+1)}
+          >
           Next
         </button>
       </div>
+      
+      {/* Pagination 17  */}
+
     </div>
   );
 };
