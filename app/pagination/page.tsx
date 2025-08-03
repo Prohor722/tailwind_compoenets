@@ -274,7 +274,7 @@ const PaginationPage = () => {
         {pages.map((page) => (
           <button
             key={page}
-            onClick={()=>setActive(page)}
+            onClick={() => setActive(page)}
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
               page === active
                 ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md"
@@ -284,6 +284,38 @@ const PaginationPage = () => {
             {page}
           </button>
         ))}
+      </div>
+
+      {/* Pagination 16  */}
+      <div className="flex justify-center mt-6 items-center gap-2">
+        <button className={`px-3 py-1 rounded-md 
+          ${active > pages[0] ? 
+            "bg-orange-600 text-white border-gray-700 hover:bg-orange-700 hover:text-yellow-300 hover:border-white"
+            :
+            "bg-white text-gray-700 border hover:bg-blue-100 cursor-not-allowed"}`}>
+          Prev
+        </button>
+        {pages.map((page) => (
+          <button
+            key={page}
+            onClick={() => setActive(page)}
+            className={`px-3 py-1 rounded-md transition
+              ${active === page ? 
+                "bg-orange-600 text-white border-gray-700 hover:bg-orange-700 hover:text-yellow-300 hover:border-white"
+                 : 
+                "bg-white text-gray-700 border hover:bg-blue-100"}`}
+          >
+            {page}
+          </button>
+        ))}
+        <button className={`px-3 py-1 rounded-md transition
+          ${active < pages.length ? 
+            "bg-orange-600 text-white border-gray-700 hover:bg-orange-700 hover:text-yellow-300 hover:border-white"
+            :
+            "bg-white text-gray-700 border hover:bg-blue-100 cursor-not-allowed"}
+          `}>
+          Next
+        </button>
       </div>
     </div>
   );
