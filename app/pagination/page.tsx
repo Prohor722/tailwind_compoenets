@@ -258,16 +258,33 @@ const PaginationPage = () => {
       </div>
 
       {/* Pagination 14  */}
-        <div className="flex justify-center mt-6 space-x-2">
-          {[1, 2, 3, 4, 5].map((page) => (
-            <button
-              key={page}
-              className="w-10 h-10 rounded-full bg-white border border-gray-300 text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-blue-400"
-            >
-              {page}
-            </button>
-          ))}
-        </div>
+      <div className="flex justify-center mt-6 space-x-2">
+        {[1, 2, 3, 4, 5].map((page) => (
+          <button
+            key={page}
+            className="w-10 h-10 rounded-full bg-white border border-gray-300 text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-blue-400"
+          >
+            {page}
+          </button>
+        ))}
+      </div>
+
+      {/* Pagination 15  */}
+      <div className="flex justify-center mt-6 space-x-2">
+        {pages.map((page) => (
+          <button
+            key={page}
+            onClick={()=>setActive(page)}
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+              page === active
+                ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md"
+                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+            }`}
+          >
+            {page}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
