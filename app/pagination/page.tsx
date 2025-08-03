@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const PaginationPage = () => {
   const [current, setCurrent] = useState(1);
@@ -9,6 +9,75 @@ const PaginationPage = () => {
   const [step, setStep] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
   const [currentDot, setCurrentDot] = useState(1);
+  const [shortPages, setShortPages] = useState([1, 2, 3, 4, 5]);
+  const [shortPagesActive, setShortPagesActive] = useState(1);
+
+  // useEffect(()=>{
+  //   const longPages = [1,2,3,4,5,6,7,8,9,10];
+  //   if(
+  //     (shortPagesActive===shortPages[shortPages.length-1]
+  //     ||
+  //     shortPagesActive===shortPages[0])
+  //     &&
+  //     shortPagesActive>longPages[0]
+  //     &&
+  //     shortPagesActive<longPages.length
+  //   )
+  //     {
+  //       setShortPages(
+  //         [
+  //           shortPagesActive-2,
+  //           shortPagesActive-1,
+  //           shortPagesActive,
+  //           shortPagesActive+1,
+  //           shortPagesActive+2,
+  //         ])
+  //         console.log(shortPagesActive)
+  //   }
+  // },[shortPagesActive]);
+
+  useEffect(() => {
+    const longPages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    const last = shortPages[shortPages.length - 1];
+    const first = shortPages[0];
+
+    if (
+      (shortPagesActive === first && shortPagesActive > longPages[1])
+      ||
+      (shortPagesActive === last && //active=9 last=9
+        shortPagesActive < longPages.length - 1) //len 10
+    ) {
+      setShortPages([
+        shortPagesActive - 2,
+        shortPagesActive - 1,
+        shortPagesActive,
+        shortPagesActive + 1,
+        shortPagesActive + 2,
+      ]);
+    } else if (
+      (shortPagesActive === last && //active=9 last=9
+      shortPagesActive < longPages.length) //len 9
+    ) {
+      setShortPages([
+        shortPagesActive - 3,
+        shortPagesActive - 2,
+        shortPagesActive -1,
+        shortPagesActive,
+        shortPagesActive +1,
+      ]);
+    }
+    else if(shortPagesActive === first && shortPagesActive > longPages[0])
+    {
+      setShortPages([
+        shortPagesActive - 1,
+        shortPagesActive,
+        shortPagesActive +1,
+        shortPagesActive +2,
+        shortPagesActive +3,
+      ]);
+    }
+  }, [shortPagesActive]);
 
   const pages = [1, 2, 3, 4, 5];
   const total = 5;
@@ -334,12 +403,48 @@ const PaginationPage = () => {
             key={page}
             onClick={() => setActive(page)}
             className={`relative font-medium transition-all after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0  hover:after:w-full after:transition-all 
-            ${page === active ? "after:w-full hover:text-yellow-300 text-blue-500 after:bg-blue-500 hover:after:bg-yellow-300" : "text-gray-700 hover:text-white after:w-0 after:bg-gray-200"}
+            ${
+              page === active
+                ? "after:w-full hover:text-yellow-300 text-blue-500 after:bg-blue-500 hover:after:bg-yellow-300"
+                : "text-gray-700 hover:text-white after:w-0 after:bg-gray-200"
+            }
             `}
           >
             {page}
           </button>
         ))}
+      </div>
+
+      {/* Pagination 17  */}
+      <div className="flex justify-center mt-6 items-center gap-2 text-sm font-medium">
+        {shortPages.map((page) => (
+          <button
+            onClick={() => setShortPagesActive(page)}
+            key={page}
+            className={`px-2 py-1 rounded 
+              ${
+                shortPagesActive === page
+                  ? "bg-blue-600 text-white hover:text-white hover:bg-blue-900"
+                  : "bg-gray-100 text-black hover:text-white hover:bg-gray-700"
+              }`}
+          >
+            {page}
+          </button>
+        ))}
+
+        {/* <button className="px-2 py-1 bg-gray-100 rounded hover:bg-gray-200">
+          2
+        </button>
+        <span className="text-gray-500">...</span>
+        <button className="px-2 py-1 bg-blue-500 text-white rounded shadow hover:bg-blue-600">
+          8
+        </button>
+        <button className="px-2 py-1 bg-gray-100 rounded hover:bg-gray-200">
+          9
+        </button>
+        <button className="px-2 py-1 bg-gray-100 rounded hover:bg-gray-200">
+          10
+        </button> */}
       </div>
     </div>
   );
