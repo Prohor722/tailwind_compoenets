@@ -256,6 +256,18 @@ const PaginationPage = () => {
           />
         ))}
       </div>
+
+      {/* Pagination 14  */}
+        <div className="flex justify-center mt-6 space-x-2">
+          {[1, 2, 3, 4, 5].map((page) => (
+            <button
+              key={page}
+              className="w-10 h-10 rounded-full bg-white border border-gray-300 text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition-all duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+              {page}
+            </button>
+          ))}
+        </div>
     </div>
   );
 };
