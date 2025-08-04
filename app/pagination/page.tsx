@@ -12,6 +12,7 @@ const PaginationPage = () => {
   const [currentDot, setCurrentDot] = useState(1);
   const [shortPages, setShortPages] = useState([1, 2, 3, 4, 5]);
   const [shortPagesActive, setShortPagesActive] = useState(1);
+  const [activePage, setActivePage] = useState(1);
 
   // useEffect(()=>{
   //   const longPages = [1,2,3,4,5,6,7,8,9,10];
@@ -523,6 +524,24 @@ const PaginationPage = () => {
                 : "bg-gray-300 hover:bg-blue-400"
             }`}
           />
+        ))}
+      </div>
+
+      {/* Pagination 22  */}
+      <div className="flex justify-center mt-10 gap-3 bg-[#f1f3f5] p-6 rounded-xl shadow-inner">
+        {[1, 2, 3, 4, 5].map((n) => (
+          <button
+            key={n}
+            onClick={() => setActivePage(n)}
+            className={`w-10 h-10 rounded-lg text-sm font-semibold transition-all duration-300 shadow 
+            ${
+              activePage === n
+                ? "bg-blue-600 text-white shadow-lg shadow-blue-300"
+                : "bg-[#f1f3f5] text-gray-700 hover:bg-blue-100"
+            }`}
+          >
+            {n}
+          </button>
         ))}
       </div>
     </div>
