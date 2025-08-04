@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const PaginationPage = () => {
   const [current, setCurrent] = useState(1);
@@ -43,8 +44,7 @@ const PaginationPage = () => {
     const first = shortPages[0];
 
     if (
-      (shortPagesActive === first && shortPagesActive > longPages[1])
-      ||
+      (shortPagesActive === first && shortPagesActive > longPages[1]) ||
       (shortPagesActive === last && //active=9 last=9
         shortPagesActive < longPages.length - 1) //len 10
     ) {
@@ -56,25 +56,23 @@ const PaginationPage = () => {
         shortPagesActive + 2,
       ]);
     } else if (
-      (shortPagesActive === last && //active=9 last=9
-      shortPagesActive < longPages.length) //len 9
+      shortPagesActive === last && //active=9 last=9
+      shortPagesActive < longPages.length //len 9
     ) {
       setShortPages([
         shortPagesActive - 3,
         shortPagesActive - 2,
-        shortPagesActive -1,
+        shortPagesActive - 1,
         shortPagesActive,
-        shortPagesActive +1,
+        shortPagesActive + 1,
       ]);
-    }
-    else if(shortPagesActive === first && shortPagesActive > longPages[0])
-    {
+    } else if (shortPagesActive === first && shortPagesActive > longPages[0]) {
       setShortPages([
         shortPagesActive - 1,
         shortPagesActive,
-        shortPagesActive +1,
-        shortPagesActive +2,
-        shortPagesActive +3,
+        shortPagesActive + 1,
+        shortPagesActive + 2,
+        shortPagesActive + 3,
       ]);
     }
   }, [shortPagesActive]);
@@ -455,14 +453,47 @@ const PaginationPage = () => {
             onClick={() => setPage(i + 1)}
             className={`w-10 h-10 text-sm font-semibold rounded-full transition-all duration-300 ${
               page === i + 1
-                ? 'bg-white/60 text-blue-700 shadow-inner ring-2 ring-blue-500'
-                : 'text-white hover:bg-white/20'
+                ? "bg-white/60 text-blue-700 shadow-inner ring-2 ring-blue-500"
+                : "text-white hover:bg-white/20"
             }`}
           >
             {i + 1}
           </button>
         ))}
       </div>
+
+      {/* Pagination 19  */}
+      <div className="flex items-center justify-center mt-20 gap-4">
+        <button
+          onClick={prev}
+          className="p-2 rounded-full bg-gray-100 text-gray-700 hover:bg-blue-100 transition"
+        >
+          <ChevronLeft />
+        </button>
+
+        {Array.from({ length: totalPages }).map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setPage(i + 1)}
+            className={`w-9 h-9 rounded-full flex items-center justify-center font-medium text-sm transition-all duration-300 ${
+              page === i + 1
+                ? "bg-blue-600 text-white shadow-lg"
+                : "bg-white border text-gray-600 border-gray-300 hover:bg-blue-50"
+            }`}
+          >
+            {i + 1}
+          </button>
+        ))}
+
+        <button
+          onClick={next}
+          className="p-2 rounded-full bg-gray-100 text-gray-700 hover:bg-blue-100 transition"
+        >
+          <ChevronRight />
+        </button>
+      </div>
+
+      
     </div>
   );
 };
