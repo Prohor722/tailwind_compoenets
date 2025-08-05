@@ -580,16 +580,34 @@ const PaginationPage = () => {
 
       {/* Pagination 24  */}
       <div className="flex justify-center mt-12 bg-white/20 backdrop-blur-md rounded-lg px-6 py-4 shadow-inner gap-3">
+        {[1, 2, 3, 4, 5].map((n) => (
+          <button
+            key={n}
+            onClick={() => setSelected(n)}
+            className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 
+            ${
+              selected === n
+                ? " text-blue-200 shadow-lg ring-2 ring-blue-300"
+                : "text-white hover:bg-white/20"
+            }`}
+          >
+            {n}
+          </button>
+        ))}
+      </div>
+
+      {/* Pagination 25  */}
+      <div className="flex justify-center mt-12 gap-3">
       {[1, 2, 3, 4, 5].map((n) => (
         <button
           key={n}
-          onClick={() => setSelected(n)}
-          className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 
-            ${
-              selected === n
-                ? ' text-blue-200 shadow-lg ring-2 ring-blue-300'
-                : 'text-white hover:bg-white/20'
-            }`}
+          onClick={() => setActive(n)}
+          className={`relative px-4 py-2 font-semibold text-sm transform transition-all duration-300 skew-x-6
+          ${
+            active === n
+              ? 'bg-indigo-600 text-white shadow-md -skew-x-6'
+              : 'bg-gray-200 text-gray-800 hover:bg-indigo-100 -skew-x-6'
+          }`}
         >
           {n}
         </button>
