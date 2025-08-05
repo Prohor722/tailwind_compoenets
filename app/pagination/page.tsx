@@ -668,21 +668,44 @@ const PaginationPage = () => {
 
       {/* Pagination 27  */}
       <div className="flex justify-center mt-12 gap-4 bg-white/20 backdrop-blur-lg p-4 rounded-2xl shadow-lg">
-      {[...Array(total)].map((_, i) => (
-        <button
-          key={i}
-          onClick={() => setPage(i + 1)}
-          className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 backdrop-blur-sm ${
-            page === i + 1
-              ? 'bg-white/40 text-blue-700 ring-2 ring-blue-300'
-              : 'bg-white/10 text-gray-700 hover:bg-white/20'
-          }`}
-        >
-          {i + 1}
-        </button>
-      ))}
-    </div>
+        {[...Array(total)].map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setPage(i + 1)}
+            className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 backdrop-blur-sm ${
+              page === i + 1
+                ? "bg-white/40 text-blue-700 ring-2 ring-blue-300"
+                : "bg-white/10 text-gray-700 hover:bg-white/20"
+            }`}
+          >
+            {i + 1}
+          </button>
+        ))}
+      </div>
 
+      {/* Pagination 28  */}
+      <div className="flex mt-16">
+        <div className="flex flex-col gap-4 px-4 border-r border-gray-300">
+          {pages.map((p) => (
+            <button
+              key={p}
+              onClick={() => setPage(p)}
+              className={`py-2 px-3 rounded-lg text-sm font-medium transition-all duration-300 text-left ${
+                page === p
+                  ? "bg-blue-600 text-white shadow-md"
+                  : "text-gray-700 hover:bg-gray-100"
+              }`}
+            >
+            {p}
+            </button>
+          ))}
+        </div>
+        <div className="p-6 text-lg font-semibold text-blue-800">
+          You are on Section {page}
+        </div>
+      </div>
+
+      
     </div>
   );
 };
