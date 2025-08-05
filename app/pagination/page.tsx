@@ -637,7 +637,7 @@ const PaginationPage = () => {
       </div>
 
       {/* Pagination 27  */}
-      <div className="w-full max-w-md mx-auto mt-12 relative">
+      <div className="w-full max-w-md mt-12 relative">
         {/* Background Bar */}
         <div className="w-full h-[20px] bg-gray-200 rounded-full overflow-hidden relative z-10">
           <div
@@ -649,15 +649,39 @@ const PaginationPage = () => {
         {/* Page numbers overlayed on top */}
         <div className="absolute top-0 left-0 w-full h-[20px] flex justify-evenly items-center z-20 text-xs text-white">
           {pages.map((p) => (
-            <button 
+            <button
               onClick={() => setPage(p)}
-              key={p} 
-              className={`cursor-pointer w-full h-full ${page === p ? "font-bold scale-105" : ""}`}>
+              key={p}
+              className={`cursor-pointer w-full h-full 
+                ${
+                  page === p
+                    ? "text-yellow-300 font-bold scale-105"
+                    : "font-semibold"
+                }
+                ${p > page ? "text-gray-700" : ""}`}
+            >
               {p}
             </button>
           ))}
         </div>
       </div>
+
+      {/* Pagination 27  */}
+      <div className="flex justify-center mt-12 gap-4 bg-white/20 backdrop-blur-lg p-4 rounded-2xl shadow-lg">
+      {[...Array(total)].map((_, i) => (
+        <button
+          key={i}
+          onClick={() => setPage(i + 1)}
+          className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 backdrop-blur-sm ${
+            page === i + 1
+              ? 'bg-white/40 text-blue-700 ring-2 ring-blue-300'
+              : 'bg-white/10 text-gray-700 hover:bg-white/20'
+          }`}
+        >
+          {i + 1}
+        </button>
+      ))}
+    </div>
 
     </div>
   );
