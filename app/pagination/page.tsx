@@ -617,25 +617,47 @@ const PaginationPage = () => {
 
       {/* Pagination 26  */}
       <div className="relative mt-14 flex justify-center gap-6">
-      {pages.map((n) => (
-        <div key={n} className="relative flex flex-col items-center">
-          <button
-            onClick={() => setPage(n)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 
+        {pages.map((n) => (
+          <div key={n} className="relative flex flex-col items-center">
+            <button
+              onClick={() => setPage(n)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 
               ${
                 page === n
-                  ? 'bg-blue-600 scale-125 animate-pulse'
-                  : 'bg-gray-400 hover:bg-blue-400'
+                  ? "bg-blue-600 scale-125 animate-pulse"
+                  : "bg-gray-400 hover:bg-blue-400"
               }`}
-          />
-          
-          {/* {page === n && (
+            />
+
+            {/* {page === n && (
             <span className="mt-1 w-1 h-4 bg-blue-500 animate-pulse rounded" />
           )} */}
-        </div>
-      ))}
-    </div>
+          </div>
+        ))}
+      </div>
 
+      {/* Pagination 27  */}
+      <div className="w-full max-w-md mx-auto mt-12 relative">
+        {/* Background Bar */}
+        <div className="w-full h-[20px] bg-gray-200 rounded-full overflow-hidden relative z-10">
+          <div
+            className="h-[20px] bg-indigo-500 transition-all duration-500"
+            style={{ width: `${(page / total) * 100}%` }}
+          />
+        </div>
+
+        {/* Page numbers overlayed on top */}
+        <div className="absolute top-0 left-0 w-full h-[20px] flex justify-evenly items-center z-20 text-xs text-white">
+          {pages.map((p) => (
+            <button 
+              onClick={() => setPage(p)}
+              key={p} 
+              className={`cursor-pointer w-full h-full ${page === p ? "font-bold scale-105" : ""}`}>
+              {p}
+            </button>
+          ))}
+        </div>
+      </div>
 
     </div>
   );
