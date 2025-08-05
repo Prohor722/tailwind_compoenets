@@ -13,6 +13,7 @@ const PaginationPage = () => {
   const [shortPages, setShortPages] = useState([1, 2, 3, 4, 5]);
   const [shortPagesActive, setShortPagesActive] = useState(1);
   const [activePage, setActivePage] = useState(1);
+  const [dot, setDot] = useState(2);
 
   // useEffect(()=>{
   //   const longPages = [1,2,3,4,5,6,7,8,9,10];
@@ -598,21 +599,44 @@ const PaginationPage = () => {
 
       {/* Pagination 25  */}
       <div className="flex justify-center mt-12 gap-3">
-      {[1, 2, 3, 4, 5].map((n) => (
-        <button
-          key={n}
-          onClick={() => setActive(n)}
-          className={`relative px-4 py-2 font-semibold text-sm transform transition-all duration-300 skew-x-6
+        {[1, 2, 3, 4, 5].map((n) => (
+          <button
+            key={n}
+            onClick={() => setActive(n)}
+            className={`relative px-4 py-2 font-semibold text-sm transform transition-all duration-300 skew-x-6
           ${
             active === n
-              ? 'bg-indigo-600 text-white shadow-md -skew-x-6'
-              : 'bg-gray-200 text-gray-800 hover:bg-indigo-100 -skew-x-6'
+              ? "bg-indigo-600 text-white shadow-md -skew-x-6"
+              : "bg-gray-200 text-gray-800 hover:bg-indigo-100 -skew-x-6"
           }`}
-        >
-          {n}
-        </button>
+          >
+            {n}
+          </button>
+        ))}
+      </div>
+
+      {/* Pagination 26  */}
+      <div className="relative mt-14 flex justify-center gap-6">
+      {pages.map((n) => (
+        <div key={n} className="relative flex flex-col items-center">
+          <button
+            onClick={() => setPage(n)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 
+              ${
+                page === n
+                  ? 'bg-blue-600 scale-125 animate-pulse'
+                  : 'bg-gray-400 hover:bg-blue-400'
+              }`}
+          />
+          
+          {/* {page === n && (
+            <span className="mt-1 w-1 h-4 bg-blue-500 animate-pulse rounded" />
+          )} */}
+        </div>
       ))}
     </div>
+
+
     </div>
   );
 };
