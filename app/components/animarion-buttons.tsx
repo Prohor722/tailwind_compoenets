@@ -128,8 +128,11 @@ export const AnimarionButtons = () => {
             <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform scale-0 bg-white opacity-10 group-hover:scale-100" />
             Click Me
           </button>
-        </div>
 
+          <button className="px-6 py-3 bg-white border border-gray-300 shadow-inner rounded-xl text-gray-800 font-semibold transition-all duration-200 active:scale-95 hover:shadow-md hover:border-blue-400 backdrop-blur-md">
+            Glassy Button
+          </button>
+        </div>
       </div>
     </div>
   );
