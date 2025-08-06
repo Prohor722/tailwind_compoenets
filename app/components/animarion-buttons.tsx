@@ -132,6 +132,11 @@ export const AnimarionButtons = () => {
           <button className="px-6 py-3 bg-white border border-gray-300 shadow-inner rounded-xl text-gray-800 font-semibold transition-all duration-200 active:scale-95 hover:shadow-md hover:border-blue-400 backdrop-blur-md">
             Glassy Button
           </button>
+
+          <button className="relative px-6 py-3 bg-indigo-600 text-white rounded-lg overflow-hidden group hover:scale-105 transition-all duration-300">
+            Ripple
+            <span className="absolute inset-0 bg-white opacity-10 rounded-lg group-hover:animate-ping" />
+          </button>
         </div>
       </div>
     </div>
