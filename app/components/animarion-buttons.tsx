@@ -81,9 +81,7 @@ export const AnimarionButtons = () => {
           <button className="relative px-6 py-3 text-white border border-cyan-400 rounded-md transition hover:bg-cyan-400 hover:text-black hover:shadow-[0_0_20px_#22d3ee] duration-300">
             Neon Border
           </button>
-        </div>
 
-        <div className="flex flex-wrap gap-6 justify-center">
           {/* Neon Pulse Button */}
           <button className="relative px-6 py-3 font-semibold text-cyan-300 border border-cyan-400 rounded-lg bg-black shadow-md hover:shadow-[0_0_25px_#22d3ee] transition-all duration-300">
             <span className="absolute -inset-px rounded-lg opacity-20 blur-md bg-cyan-400 animate-pulse"></span>
@@ -125,7 +123,13 @@ export const AnimarionButtons = () => {
             <Sparkles className="text-yellow-400 animate-ping" />
             Magic Glass
           </button>
+
+          <button className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg hover:from-purple-500 hover:to-blue-500 shadow-lg group">
+            <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform scale-0 bg-white opacity-10 group-hover:scale-100" />
+            Click Me
+          </button>
         </div>
+
       </div>
     </div>
   );
