@@ -188,6 +188,10 @@ export const AnimarionButtons = () => {
         <button className="group relative px-6 py-3 bg-gray-800 text-white rounded-md transition-all duration-300 hover:rotate-2 hover:scale-105">
           Rotate Me
         </button>
+
+        <button className="relative px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-yellow-500 text-white font-bold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,0,150,0.5)]">
+          Bubble Pop
+        </button>
       </div>
     </div>
   );
