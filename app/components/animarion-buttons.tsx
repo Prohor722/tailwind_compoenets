@@ -162,6 +162,13 @@ export const AnimarionButtons = () => {
           <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full duration-300"></span>
         </button>
 
+        <button className="group px-6 py-3 bg-indigo-600 text-white rounded-lg flex items-center gap-2 hover:gap-4 transition-all duration-500 ease-in-out">
+          <span className="transform -translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+            🚀
+          </span>
+          <span>Launch</span>
+        </button>
+
         
       </div>
     </div>
