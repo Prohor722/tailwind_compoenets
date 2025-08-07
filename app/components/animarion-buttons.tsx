@@ -162,13 +162,6 @@ export const AnimarionButtons = () => {
           <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full duration-300"></span>
         </button>
 
-        <button className="group px-6 py-3 bg-indigo-600 text-white rounded-lg flex items-center gap-2 hover:gap-4 transition-all duration-500 ease-in-out">
-          <span className="transform -translate-x-6 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out">
-            🚀
-          </span>
-          <span>Launch</span>
-        </button>
-
         <button className="relative px-6 py-3 bg-black text-white rounded-lg font-bold transition-all duration-500 hover:shadow-[0_0_20px_#0ff] hover:text-cyan-300">
           Neon Glow
         </button>
@@ -191,6 +184,20 @@ export const AnimarionButtons = () => {
 
         <button className="relative px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-yellow-500 text-white font-bold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,0,150,0.5)]">
           Bubble Pop
+        </button>
+
+        <button className="px-6 py-2 border-2 border-transparent bg-purple-700 text-white rounded-md relative group overflow-hidden">
+          <span className="absolute inset-0 border-2 border-white transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out rounded-md pointer-events-none"></span>
+          <span className="relative z-10">Border Trace</span>
+        </button>
+
+        <button className="group px-6 py-3 bg-black text-white rounded-lg flex items-center gap-2 overflow-hidden">
+          <span className="translate-x-[-150%] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500">
+            ✈️
+          </span>
+          <span className="transition-all duration-300 group-hover:ml-2">
+            Fly In
+          </span>
         </button>
       </div>
     </div>
