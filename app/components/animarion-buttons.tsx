@@ -215,6 +215,18 @@ export const AnimarionButtons = () => {
             Magnetic
           </span>
         </button>
+
+        <style>{`
+          .animate-spin-slow {
+            animation: spin 4s linear infinite;
+          }
+        `}</style>
+        <button className="relative px-6 py-3 rounded-lg bg-gray-900 text-white overflow-hidden group">
+          <span className="absolute inset-0 border-2 border-blue-400 rounded-lg animate-spin-slow"></span>
+          <span className="relative z-10">Spin Border</span>
+        </button>
+
+        
       </div>
     </div>
   );
