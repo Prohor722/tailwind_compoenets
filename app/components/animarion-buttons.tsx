@@ -235,21 +235,6 @@ export const AnimarionButtons = () => {
           Elastic Bounce
         </button>
 
-        <style>{`
-          .bg-size-200 {
-            background-size: 200% 200%;
-          }
-          .bg-pos-0 {
-            background-position: 0% 50%;
-          }
-          .bg-pos-100 {
-            background-position: 100% 50%;
-          }
-        `}</style>
-        <button className="px-6 py-3 rounded-lg text-white font-semibold bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-500">
-          Gradient Shift
-        </button>
-
         <button className="relative px-6 py-3 bg-blue-600 text-white rounded-lg overflow-hidden group">
           <span className="absolute inset-0 bg-white/20 scale-0 group-hover:scale-150 rounded-full transition-transform duration-500"></span>
           <span className="relative z-10">Ripple Effect</span>
