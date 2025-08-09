@@ -230,6 +230,10 @@ export const AnimarionButtons = () => {
           <span className="absolute inset-0 translate-x-[-100%] bg-yellow-300 skew-x-[-20deg] group-hover:translate-x-[100%] transition-transform duration-500"></span>
           <span className="relative z-10">Lightning</span>
         </button>
+
+        <button className="px-6 py-3 bg-purple-600 text-white rounded-lg shadow-lg transform transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-1 active:scale-95">
+          Elastic Bounce
+        </button>
       </div>
     </div>
   );
