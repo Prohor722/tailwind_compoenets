@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import {
   ArrowRight,
   Loader2,
@@ -9,6 +10,13 @@ import {
 } from "lucide-react";
 
 export const AnimarionButtons = () => {
+  const [clickedButton, setClickedButton] = useState<string | null>(null);
+
+  const handleClick = (buttonName: string) => {
+    setClickedButton(buttonName);
+    setTimeout(() => setClickedButton(null), 600);
+  };
+
   return (
     <div className="min-h-screen bg-gray-100 p-10 flex flex-col items-center gap-10">
       <h1 className="text-2xl text-blue-500 font-bold">
