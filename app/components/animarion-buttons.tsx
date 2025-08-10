@@ -331,6 +331,30 @@ export const AnimarionButtons = () => {
             <div className="absolute top-0 left-0 w-0 h-full bg-yellow-400 transition-all duration-300 group-hover:w-full"></div>
           </button>
         </div>
+
+        {/* Gradient Shift Button */}
+        <div className="flex flex-col items-center space-y-4">
+          <h3 className="text-white text-lg font-semibold">Gradient Shift</h3>
+          <button
+            onClick={() => handleClick("gradient")}
+            className="px-8 py-3 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-size-200 bg-pos-0 hover:bg-pos-100 text-white font-semibold rounded-lg transition-all duration-500 animate-gradient-x"
+          >
+            Gradient Shift
+          </button>
+        </div>
+
+        {/* Pulse Ring Button */}
+        <div className="flex flex-col items-center space-y-4">
+          <h3 className="text-white text-lg font-semibold">Pulse Ring</h3>
+          <button
+            onClick={() => handleClick("pulse")}
+            className="relative px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg transition-colors duration-200"
+          >
+            <span className="relative z-10">Pulse Ring</span>
+            <div className="absolute inset-0 border-2 border-indigo-400 rounded-lg animate-ping opacity-75"></div>
+          </button>
+        </div>
+        
       </div>
     </div>
   );
