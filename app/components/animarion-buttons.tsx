@@ -337,7 +337,18 @@ export const AnimarionButtons = () => {
           <h3 className="text-white text-lg font-semibold">Gradient Shift</h3>
           <button
             onClick={() => handleClick("gradient")}
-            className="px-8 py-3 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-size-200 bg-pos-0 hover:bg-pos-100 text-white font-semibold rounded-lg transition-all duration-500 animate-gradient-x"
+            className="p-3 text-white font-semibold rounded-lg transition-all duration-500 transform hover:scale-105"
+            style={{
+              background: "linear-gradient(45deg, #a855f7, #ec4899, #ef4444)",
+              backgroundSize: "200% 200%",
+              animation: "gradient-shift 3s ease infinite",
+            }}
+            onMouseEnter={(e) => {
+              (e.target as HTMLElement).style.animationDuration = "1s"; // Speed up on hover
+            }}
+            onMouseLeave={(e) => {
+              (e.target as HTMLElement).style.animationDuration = "3s"; // Back to normal speed
+            }}
           >
             Gradient Shift
           </button>
@@ -354,7 +365,6 @@ export const AnimarionButtons = () => {
             <div className="absolute inset-0 border-2 border-indigo-400 rounded-lg animate-ping opacity-75"></div>
           </button>
         </div>
-        
       </div>
     </div>
   );
