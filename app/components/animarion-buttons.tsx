@@ -252,8 +252,15 @@ export const AnimarionButtons = () => {
         </button>
 
         <button className="px-6 py-3 font-semibold text-white bg-blue-500 rounded-lg shadow-md hover:translate-y-1 hover:shadow-lg transition-transform duration-300">
-      children
-    </button>
+          buttonTxt
+        </button>
+
+        <button className="relative overflow-hidden px-6 py-3 text-white transition-all duration-300 ease-in-out bg-gray-800 rounded-lg group">
+          <span className="relative z-10 transition-colors duration-300 group-hover:text-black">
+            buttonTxt
+          </span>
+          <span className="absolute inset-0 z-0 w-full h-full transform scale-x-0 origin-left transition-transform duration-300 ease-out bg-white group-hover:scale-x-100"></span>
+        </button>
       </div>
     </div>
   );
