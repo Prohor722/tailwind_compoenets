@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import {
   ArrowRight,
@@ -272,21 +272,65 @@ export const AnimarionButtons = () => {
 
         {/* Loading Spinner Button */}
         <div className="flex flex-col items-center space-y-4">
-            <h3 className="text-white text-lg font-semibold">Loading Spinner</h3>
-            <button 
-              onClick={() => handleClick('spinner')}
-              className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 flex items-center space-x-2"
+          <h3 className="text-white text-lg font-semibold">Loading Spinner</h3>
+          <button
+            onClick={() => handleClick("spinner")}
+            className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 flex items-center space-x-2"
+          >
+            {clickedButton === "spinner" ? (
+              <>
+                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                <span>Loading...</span>
+              </>
+            ) : (
+              <span>Submit</span>
+            )}
+          </button>
+        </div>
+
+        {/* Ripple Effect Button */}
+        <div className="flex flex-col items-center space-y-4">
+          <h3 className="text-white text-lg font-semibold">Ripple Effect</h3>
+          <button
+            onClick={() => handleClick("ripple")}
+            className="relative px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg overflow-hidden transition-colors duration-200"
+          >
+            <span className="relative z-10">Ripple</span>
+            {clickedButton === "ripple" && (
+              <div className="absolute inset-0 bg-white opacity-25 rounded-full animate-ping"></div>
+            )}
+          </button>
+        </div>
+
+        {/* 3D Flip Button */}
+        <div className="flex flex-col items-center space-y-4">
+          <h3 className="text-white text-lg font-semibold">3D Flip</h3>
+          <div className="relative w-32 h-12 perspective-1000">
+            <button
+              onClick={() => handleClick("flip")}
+              className="w-full h-full relative transform-style-preserve-3d transition-transform duration-700 hover:rotate-y-180 group"
             >
-              {clickedButton === 'spinner' ? (
-                <>
-                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                  <span>Loading...</span>
-                </>
-              ) : (
-                <span>Submit</span>
-              )}
+              <div className="absolute inset-0 bg-orange-500 text-white font-semibold rounded-lg flex items-center justify-center backface-hidden">
+                Hover Me
+              </div>
+              <div className="absolute inset-0 bg-orange-600 text-white font-semibold rounded-lg flex items-center justify-center backface-hidden rotate-y-180">
+                Flipped!
+              </div>
             </button>
           </div>
+        </div>
+
+        {/* Slide Fill Button */}
+        <div className="flex flex-col items-center space-y-4">
+          <h3 className="text-white text-lg font-semibold">Slide Fill</h3>
+          <button
+            onClick={() => handleClick("slide")}
+            className="relative px-8 py-3 border-2 border-yellow-400 text-yellow-400 font-semibold rounded-lg overflow-hidden group transition-colors duration-300 hover:text-gray-900"
+          >
+            <span className="relative z-10">Slide Fill</span>
+            <div className="absolute top-0 left-0 w-0 h-full bg-yellow-400 transition-all duration-300 group-hover:w-full"></div>
+          </button>
+        </div>
       </div>
     </div>
   );
