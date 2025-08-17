@@ -421,7 +421,19 @@ export const AnimarionButtons = () => {
           </button>
         </div>
 
-        
+        {/* Lightning Strike Button */}
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="text-white text-lg font-semibold">Lightning Strike</h3>
+            <button 
+              onClick={() => handleClick('lightning')}
+              className="relative px-8 py-4 bg-yellow-500 text-black font-bold rounded-lg overflow-hidden group hover:bg-yellow-400 transition-colors duration-200"
+            >
+              <span className="relative z-10">⚡ THUNDER</span>
+              {activeButton === 'lightning' && (
+                <div className="absolute inset-0 bg-white animate-pulse opacity-60"></div>
+              )}
+            </button>
+          </div>
       </div>
     </div>
   );
