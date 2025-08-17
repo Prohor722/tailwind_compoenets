@@ -391,6 +391,20 @@ export const AnimarionButtons = () => {
             <div className="absolute inset-0 border-2 border-indigo-400 rounded-lg animate-ping opacity-75"></div>
           </button>
         </div>
+
+        {/* Neon Cyberpunk Button */}
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="text-white text-lg font-semibold">Cyberpunk Neon</h3>
+            <button 
+              className="relative px-8 py-4 bg-black border border-cyan-400 text-cyan-400 font-mono font-bold rounded-none hover:bg-cyan-400 hover:text-black transition-all duration-300 transform hover:skew-x-2"
+              style={{
+                boxShadow: '0 0 20px rgba(34, 211, 238, 0.5)',
+                textShadow: '0 0 10px rgba(34, 211, 238, 0.8)',
+              }}
+            >
+              &gt; EXECUTE_
+            </button>
+          </div>
       </div>
     </div>
   );
