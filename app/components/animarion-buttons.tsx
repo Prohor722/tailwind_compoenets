@@ -13,7 +13,7 @@ export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
   const [activeButton, setActiveButton] = useState<string | null>(null);
 
-  const handleThunderClick = (buttonName:string) => {
+  const anotherHandleClick = (buttonName:string) => {
     setActiveButton(buttonName);
     setTimeout(() => setActiveButton(null), 1000);
   };
@@ -431,13 +431,26 @@ export const AnimarionButtons = () => {
           <div className="flex flex-col items-center space-y-4">
             <h3 className="text-white text-lg font-semibold">Lightning Strike</h3>
             <button 
-              onClick={() => handleThunderClick('lightning')}
+              onClick={() => anotherHandleClick('lightning')}
               className="relative px-8 py-4 bg-yellow-500 text-black font-bold rounded-lg overflow-hidden group hover:bg-yellow-400 transition-colors duration-200"
             >
               <span className="relative z-10">⚡ THUNDER</span>
               {activeButton === 'lightning' && (
                 <div className="absolute inset-0 bg-white animate-pulse opacity-60"></div>
               )}
+            </button>
+          </div>
+
+        {/* Dissolve Effect Button */}
+          <div className="flex flex-col items-center space-y-4">
+            <h3 className="text-white text-lg font-semibold">Dissolve</h3>
+            <button 
+              onClick={() => anotherHandleClick('dissolve')}
+              className={`px-8 py-4 bg-red-600 text-white font-bold rounded-lg transition-all duration-500 ${
+                activeButton === 'dissolve' ? 'opacity-20 blur-sm scale-90' : 'hover:opacity-90'
+              }`}
+            >
+              Dissolve
             </button>
           </div>
       </div>
