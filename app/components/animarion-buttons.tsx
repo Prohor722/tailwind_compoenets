@@ -11,6 +11,12 @@ import {
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
+  const [activeButton, setActiveButton] = useState<string | null>(null);
+
+  const handleThunderClick = (buttonName:string) => {
+    setActiveButton(buttonName);
+    setTimeout(() => setActiveButton(null), 1000);
+  };
 
   const handleClick = (buttonName: string) => {
     setClickedButton(buttonName);
@@ -425,7 +431,7 @@ export const AnimarionButtons = () => {
           <div className="flex flex-col items-center space-y-4">
             <h3 className="text-white text-lg font-semibold">Lightning Strike</h3>
             <button 
-              onClick={() => handleClick('lightning')}
+              onClick={() => handleThunderClick('lightning')}
               className="relative px-8 py-4 bg-yellow-500 text-black font-bold rounded-lg overflow-hidden group hover:bg-yellow-400 transition-colors duration-200"
             >
               <span className="relative z-10">⚡ THUNDER</span>
