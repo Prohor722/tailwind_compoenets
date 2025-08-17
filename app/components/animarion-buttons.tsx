@@ -302,49 +302,49 @@ export const AnimarionButtons = () => {
           </button>
         </div>
 
-       {/* 3D Flip Button */}
-<div className="flex flex-col items-center space-y-4">
-  <h3 className="text-white text-lg font-semibold">3D Flip</h3>
-  <div className="relative w-32 h-12" style={{ perspective: "1000px" }}>
-    <button
-      onClick={() => handleClick("flip")}
-      className="w-full h-full relative group"
-      style={{
-        transformStyle: "preserve-3d",
-        transition: "transform 0.6s ease-in-out",
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.transform = "rotateY(180deg)";
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.transform = "rotateY(0deg)";
-      }}
-    >
-      {/* Front Face */}
-      <div
-        className="absolute inset-0 bg-orange-500 text-white font-semibold rounded-lg flex items-center justify-center"
-        style={{ 
-          backfaceVisibility: "hidden",
-          WebkitBackfaceVisibility: "hidden" // Safari support
-        }}
-      >
-        Hover Me
-      </div>
-      
-      {/* Back Face */}
-      <div
-        className="absolute inset-0 bg-orange-600 text-white font-semibold rounded-lg flex items-center justify-center"
-        style={{
-          backfaceVisibility: "hidden",
-          WebkitBackfaceVisibility: "hidden", // Safari support
-          transform: "rotateY(180deg)",
-        }}
-      >
-        Flipped!
-      </div>
-    </button>
-  </div>
-</div>
+        {/* 3D Flip Button */}
+        <div className="flex flex-col items-center space-y-4">
+          <h3 className="text-white text-lg font-semibold">3D Flip</h3>
+          <div className="relative w-32 h-12" style={{ perspective: "1000px" }}>
+            <button
+              onClick={() => handleClick("flip")}
+              className="w-full h-full relative group"
+              style={{
+                transformStyle: "preserve-3d",
+                transition: "transform 0.6s ease-in-out",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "rotateY(180deg)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "rotateY(0deg)";
+              }}
+            >
+              {/* Front Face */}
+              <div
+                className="absolute inset-0 bg-orange-500 text-white font-semibold rounded-lg flex items-center justify-center"
+                style={{
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden", // Safari support
+                }}
+              >
+                Hover Me
+              </div>
+
+              {/* Back Face */}
+              <div
+                className="absolute inset-0 bg-orange-600 text-white font-semibold rounded-lg flex items-center justify-center"
+                style={{
+                  backfaceVisibility: "hidden",
+                  WebkitBackfaceVisibility: "hidden", // Safari support
+                  transform: "rotateY(180deg)",
+                }}
+              >
+                Flipped!
+              </div>
+            </button>
+          </div>
+        </div>
 
         {/* Slide Fill Button */}
         <div className="flex flex-col items-center space-y-4">
@@ -393,18 +393,35 @@ export const AnimarionButtons = () => {
         </div>
 
         {/* Neon Cyberpunk Button */}
-          <div className="flex flex-col items-center space-y-4">
-            <h3 className="text-white text-lg font-semibold">Cyberpunk Neon</h3>
-            <button 
-              className="relative px-8 py-4 bg-black border border-cyan-400 text-cyan-400 font-mono font-bold rounded-none hover:bg-cyan-400 hover:text-black transition-all duration-300 transform hover:skew-x-2"
-              style={{
-                boxShadow: '0 0 20px rgba(34, 211, 238, 0.5)',
-                textShadow: '0 0 10px rgba(34, 211, 238, 0.8)',
-              }}
-            >
-              &gt; EXECUTE_
-            </button>
-          </div>
+        <div className="flex flex-col items-center space-y-4">
+          <h3 className="text-white text-lg font-semibold">Cyberpunk Neon</h3>
+          <button
+            className="relative px-8 py-4 bg-black border border-cyan-400 text-cyan-400 font-mono font-bold rounded-none hover:bg-cyan-400 hover:text-black transition-all duration-300 transform hover:skew-x-2"
+            style={{
+              boxShadow: "0 0 20px rgba(34, 211, 238, 0.5)",
+              textShadow: "0 0 10px rgba(34, 211, 238, 0.8)",
+            }}
+          >
+            &gt; EXECUTE_
+          </button>
+        </div>
+
+        {/* Holographic Button */}
+        <div className="flex flex-col items-center space-y-4">
+          <h3 className="text-white text-lg font-semibold">Holographic</h3>
+          <button
+            className="relative px-8 py-4 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-white font-bold rounded-lg overflow-hidden group"
+            style={{
+              backgroundSize: "400% 400%",
+              animation: "holographic 3s ease infinite",
+            }}
+          >
+            <span className="relative z-10">HOLOGRAM</span>
+            <div className="absolute inset-0 bg-white opacity-20 transform skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+          </button>
+        </div>
+
+        
       </div>
     </div>
   );
