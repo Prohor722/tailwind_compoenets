@@ -84,6 +84,7 @@ const PaginationPage = () => {
   const pages = [1, 2, 3, 4, 5];
   const total = 5;
   const totalPages = 5;
+  const progress = (currentPage / totalPages) * 100;
 
   const prev = () => page > 1 && setPage(page - 1);
   const next = () => page < totalPages && setPage(page + 1);
