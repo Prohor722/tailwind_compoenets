@@ -15,30 +15,27 @@ const PaginationPage = () => {
   const [activePage, setActivePage] = useState(1);
   const [dot, setDot] = useState(2);
 
-  // useEffect(()=>{
-  //   const longPages = [1,2,3,4,5,6,7,8,9,10];
-  //   if(
-  //     (shortPagesActive===shortPages[shortPages.length-1]
-  //     ||
-  //     shortPagesActive===shortPages[0])
-  //     &&
-  //     shortPagesActive>longPages[0]
-  //     &&
-  //     shortPagesActive<longPages.length
-  //   )
-  //     {
-  //       setShortPages(
-  //         [
-  //           shortPagesActive-2,
-  //           shortPagesActive-1,
-  //           shortPagesActive,
-  //           shortPagesActive+1,
-  //           shortPagesActive+2,
-  //         ])
-  //         console.log(shortPagesActive)
-  //   }
-  // },[shortPagesActive]);
-
+  const getPageNumbers = () => {
+    const pages = [];
+    const showEllipsis = totalPages > 7;
+    
+    if (!showEllipsis) {
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i);
+      }
+    } else {
+      if (currentPage <= 4) {
+        pages.push(1, 2, 3, 4, 5, '...', totalPages);
+      } else if (currentPage >= totalPages - 3) {
+        pages.push(1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
+      } else {
+        pages.push(1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages);
+      }
+    }
+    
+    return pages;
+  };
+  
   useEffect(() => {
     const longPages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -666,7 +663,7 @@ const PaginationPage = () => {
         </div>
       </div>
 
-      {/* Pagination 27  */}
+      {/* Pagination 27.2  */}
       <div className="flex justify-center mt-12 gap-4 bg-white/20 backdrop-blur-lg p-4 rounded-2xl shadow-lg">
         {[...Array(total)].map((_, i) => (
           <button
@@ -734,6 +731,45 @@ const PaginationPage = () => {
           max={total}
         />
       </div>
+
+      {/* Pagination 30  */}
+      <div className="flex items-center space-x-1 p-4">
+      <button
+        onClick={() => onPageChange(currentPage - 1)}
+        disabled={currentPage === 1}
+        className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 text-gray-700 hover:bg-white/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
+      >
+        <ChevronLeft size={16} />
+      </button>
+      
+      {getPageNumbers().map((page, index) => (
+        page === '...' ? (
+          <span key={index} className="flex items-center justify-center w-10 h-10 text-gray-500">
+            <MoreHorizontal size={16} />
+          </span>
+        ) : (
+          <button
+            key={page}
+            onClick={() => onPageChange(page)}
+            className={`flex items-center justify-center w-10 h-10 rounded-xl backdrop-blur-md border transition-all duration-300 font-medium ${
+              currentPage === page
+                ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white border-transparent shadow-lg scale-110'
+                : 'bg-white/20 border-white/30 text-gray-700 hover:bg-white/30 hover:scale-105'
+            }`}
+          >
+            {page}
+          </button>
+        )
+      ))}
+      
+      <button
+        onClick={() => onPageChange(currentPage + 1)}
+        disabled={currentPage === totalPages}
+        className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 text-gray-700 hover:bg-white/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
+      >
+        <ChevronRight size={16} />
+      </button>
+    </div>
       
     </div>
   );
