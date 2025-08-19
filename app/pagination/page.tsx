@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight, ArrowLeft, ArrowRight,MoreHorizontal } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowLeft, ArrowRight, MoreHorizontal } from "lucide-react";
 
 
 const PaginationPage = () => {
@@ -19,7 +19,7 @@ const PaginationPage = () => {
   const getPageNumbers = () => {
     const pages = [];
     const showEllipsis = totalPages > 7;
-    
+
     if (!showEllipsis) {
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i);
@@ -33,7 +33,7 @@ const PaginationPage = () => {
         pages.push(1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages);
       }
     }
-    
+
     return pages;
   };
 
@@ -96,11 +96,10 @@ const PaginationPage = () => {
           <button
             key={i}
             onClick={() => setCurrent(i + 1)}
-            className={`px-4 py-2 rounded-md border text-sm font-medium transition-all ${
-              current === i + 1
-                ? "bg-blue-600 text-white border-blue-600"
-                : "bg-white text-gray-700 border-gray-300 hover:bg-blue-50"
-            }`}
+            className={`px-4 py-2 rounded-md border text-sm font-medium transition-all ${current === i + 1
+              ? "bg-blue-600 text-white border-blue-600"
+              : "bg-white text-gray-700 border-gray-300 hover:bg-blue-50"
+              }`}
           >
             {i + 1}
           </button>
@@ -136,11 +135,10 @@ const PaginationPage = () => {
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`w-9 h-9 rounded-full text-sm flex items-center justify-center transition-all border ${
-              current === i
-                ? "bg-blue-600 text-white border-blue-600"
-                : "text-gray-700 border-gray-300 hover:bg-blue-50"
-            }`}
+            className={`w-9 h-9 rounded-full text-sm flex items-center justify-center transition-all border ${current === i
+              ? "bg-blue-600 text-white border-blue-600"
+              : "text-gray-700 border-gray-300 hover:bg-blue-50"
+              }`}
           >
             {i + 1}
           </button>
@@ -154,11 +152,10 @@ const PaginationPage = () => {
             key={i}
             onClick={() => setActive(i + 1)}
             className={`relative w-10 h-10 rounded-full border-2 flex items-center justify-center font-medium text-sm transition-all duration-300
-            ${
-              active === i + 1
+            ${active === i + 1
                 ? "border-blue-600 text-blue-600 bg-blue-100 ring-2 ring-blue-300"
                 : "border-gray-300 text-gray-700 hover:border-blue-400 hover:text-blue-500"
-            }`}
+              }`}
           >
             {i + 1}
           </button>
@@ -171,11 +168,10 @@ const PaginationPage = () => {
           <button
             key={n}
             onClick={() => setSelected(n)}
-            className={`w-10 h-10 rounded-md transition-all duration-300 ease-in-out transform font-semibold text-sm ${
-              selected === n
-                ? "bg-indigo-600 text-white shadow-xl shadow-indigo-300 scale-105"
-                : "bg-white text-gray-800 border border-gray-300 hover:bg-indigo-50"
-            }`}
+            className={`w-10 h-10 rounded-md transition-all duration-300 ease-in-out transform font-semibold text-sm ${selected === n
+              ? "bg-indigo-600 text-white shadow-xl shadow-indigo-300 scale-105"
+              : "bg-white text-gray-800 border border-gray-300 hover:bg-indigo-50"
+              }`}
           >
             {n}
           </button>
@@ -188,11 +184,10 @@ const PaginationPage = () => {
           <button
             key={i}
             onClick={() => setStep(i)}
-            className={`w-3.5 h-3.5 rounded-full transition-all duration-300 ${
-              step === i
-                ? "bg-blue-600 scale-125"
-                : "bg-gray-300 hover:bg-blue-400"
-            }`}
+            className={`w-3.5 h-3.5 rounded-full transition-all duration-300 ${step === i
+              ? "bg-blue-600 scale-125"
+              : "bg-gray-300 hover:bg-blue-400"
+              }`}
           />
         ))}
       </div>
@@ -203,11 +198,10 @@ const PaginationPage = () => {
           <button
             key={n}
             onClick={() => setCurrent(n)}
-            className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 ${
-              current === n
-                ? "bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-md"
-                : "bg-white border border-gray-300 text-gray-700 hover:bg-blue-50"
-            }`}
+            className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 ${current === n
+              ? "bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-md"
+              : "bg-white border border-gray-300 text-gray-700 hover:bg-blue-50"
+              }`}
           >
             {n}
           </button>
@@ -220,9 +214,8 @@ const PaginationPage = () => {
           <button
             key={n}
             onClick={() => setPage(n)}
-            className={`pb-2 text-sm font-medium transition-all duration-300 relative ${
-              page === n ? "text-blue-600" : "text-gray-500 hover:text-blue-500"
-            }`}
+            className={`pb-2 text-sm font-medium transition-all duration-300 relative ${page === n ? "text-blue-600" : "text-gray-500 hover:text-blue-500"
+              }`}
           >
             {n}
             {page === n && (
@@ -238,11 +231,10 @@ const PaginationPage = () => {
           <button
             key={n}
             onClick={() => setPage(n)}
-            className={`w-10 h-10 rounded-full text-sm font-semibold transition-all duration-300 ${
-              page === n
-                ? "bg-blue-600 text-white shadow-lg shadow-blue-300 scale-105"
-                : "bg-white text-gray-700 border border-gray-300 hover:bg-blue-50"
-            }`}
+            className={`w-10 h-10 rounded-full text-sm font-semibold transition-all duration-300 ${page === n
+              ? "bg-blue-600 text-white shadow-lg shadow-blue-300 scale-105"
+              : "bg-white text-gray-700 border border-gray-300 hover:bg-blue-50"
+              }`}
           >
             {n}
           </button>
@@ -255,11 +247,10 @@ const PaginationPage = () => {
           <button
             key={n}
             onClick={() => setActive(n)}
-            className={`px-4 py-2 rounded-lg backdrop-blur-md border transition-all duration-300 ${
-              active === n
-                ? "bg-white/30 border-blue-400 text-blue-700 shadow-inner"
-                : "bg-white/10 border-gray-300 text-gray-600 hover:border-blue-300"
-            }`}
+            className={`px-4 py-2 rounded-lg backdrop-blur-md border transition-all duration-300 ${active === n
+              ? "bg-white/30 border-blue-400 text-blue-700 shadow-inner"
+              : "bg-white/10 border-gray-300 text-gray-600 hover:border-blue-300"
+              }`}
           >
             {n}
           </button>
@@ -273,11 +264,10 @@ const PaginationPage = () => {
             key={i}
             onClick={() => setCurrentPage(i + 1)}
             className={`px-4 py-2 rounded-md text-sm font-semibold transition-all duration-300 relative group
-            ${
-              currentPage === i + 1
+            ${currentPage === i + 1
                 ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg"
                 : "bg-gray-100 text-gray-700 hover:text-blue-600"
-            }
+              }
           `}
           >
             {i + 1}
@@ -298,11 +288,10 @@ const PaginationPage = () => {
           <button
             key={i}
             onClick={() => setPage(i + 1)}
-            className={`px-3 py-2 rounded transition-all text-sm font-medium ${
-              page === i + 1
-                ? "bg-blue-600 text-white shadow"
-                : "text-gray-700 hover:bg-blue-50"
-            }`}
+            className={`px-3 py-2 rounded transition-all text-sm font-medium ${page === i + 1
+              ? "bg-blue-600 text-white shadow"
+              : "text-gray-700 hover:bg-blue-50"
+              }`}
           >
             {i + 1}
           </button>
@@ -321,9 +310,8 @@ const PaginationPage = () => {
           <button
             key={dot}
             onClick={() => setCurrentDot(dot)}
-            className={`w-3 h-3 transition-all duration-300 ${
-              currentDot === dot ? "bg-blue-600 scale-125" : "bg-gray-300"
-            }`}
+            className={`w-3 h-3 transition-all duration-300 ${currentDot === dot ? "bg-blue-600 scale-125" : "bg-gray-300"
+              }`}
           />
         ))}
       </div>
@@ -346,11 +334,10 @@ const PaginationPage = () => {
           <button
             key={page}
             onClick={() => setActive(page)}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-              page === active
-                ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-            }`}
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${page === active
+              ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md"
+              : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
           >
             {page}
           </button>
@@ -361,11 +348,10 @@ const PaginationPage = () => {
       <div className="flex justify-center mt-6 items-center gap-2">
         <button
           className={`px-3 py-1 rounded-md 
-          ${
-            active > pages[0]
+          ${active > pages[0]
               ? "bg-orange-600 text-white border-gray-700 hover:bg-orange-700 hover:text-yellow-300 hover:border-white"
               : "bg-white text-gray-700 border hover:bg-blue-100 cursor-not-allowed"
-          }`}
+            }`}
           onClick={() => active > pages[0] && setActive(active - 1)}
         >
           Prev
@@ -375,10 +361,9 @@ const PaginationPage = () => {
             key={page}
             onClick={() => setActive(page)}
             className={`px-3 py-1 rounded-md transition
-              ${
-                active === page
-                  ? "bg-orange-600 text-white border-gray-700 hover:bg-orange-700 hover:text-yellow-300 hover:border-white"
-                  : "bg-white text-gray-700 border hover:bg-blue-100"
+              ${active === page
+                ? "bg-orange-600 text-white border-gray-700 hover:bg-orange-700 hover:text-yellow-300 hover:border-white"
+                : "bg-white text-gray-700 border hover:bg-blue-100"
               }`}
           >
             {page}
@@ -386,11 +371,10 @@ const PaginationPage = () => {
         ))}
         <button
           className={`px-3 py-1 rounded-md transition
-          ${
-            active < pages.length
+          ${active < pages.length
               ? "bg-orange-600 text-white border-gray-700 hover:bg-orange-700 hover:text-yellow-300 hover:border-white"
               : "bg-white text-gray-700 border hover:bg-blue-100 cursor-not-allowed"
-          }
+            }
           `}
           onClick={() => active < pages.length && setActive(active + 1)}
         >
@@ -405,11 +389,10 @@ const PaginationPage = () => {
             key={page}
             onClick={() => setActive(page)}
             className={`relative font-medium transition-all after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0  hover:after:w-full after:transition-all 
-            ${
-              page === active
+            ${page === active
                 ? "after:w-full hover:text-yellow-300 text-blue-500 after:bg-blue-500 hover:after:bg-yellow-300"
                 : "text-gray-700 hover:text-white after:w-0 after:bg-gray-200"
-            }
+              }
             `}
           >
             {page}
@@ -424,10 +407,9 @@ const PaginationPage = () => {
             onClick={() => setShortPagesActive(page)}
             key={page}
             className={`px-2 py-1 rounded 
-              ${
-                shortPagesActive === page
-                  ? "bg-blue-600 text-white hover:text-white hover:bg-blue-900"
-                  : "bg-gray-100 text-black hover:text-white hover:bg-gray-700"
+              ${shortPagesActive === page
+                ? "bg-blue-600 text-white hover:text-white hover:bg-blue-900"
+                : "bg-gray-100 text-black hover:text-white hover:bg-gray-700"
               }`}
           >
             {page}
@@ -455,11 +437,10 @@ const PaginationPage = () => {
           <button
             key={i}
             onClick={() => setPage(i + 1)}
-            className={`w-10 h-10 text-sm font-semibold rounded-full transition-all duration-300 ${
-              page === i + 1
-                ? "bg-white/60 text-blue-700 shadow-inner ring-2 ring-blue-500"
-                : "text-white hover:bg-white/20"
-            }`}
+            className={`w-10 h-10 text-sm font-semibold rounded-full transition-all duration-300 ${page === i + 1
+              ? "bg-white/60 text-blue-700 shadow-inner ring-2 ring-blue-500"
+              : "text-white hover:bg-white/20"
+              }`}
           >
             {i + 1}
           </button>
@@ -479,11 +460,10 @@ const PaginationPage = () => {
           <button
             key={i}
             onClick={() => setPage(i + 1)}
-            className={`w-9 h-9 rounded-full flex items-center justify-center font-medium text-sm transition-all duration-300 ${
-              page === i + 1
-                ? "bg-blue-600 text-white shadow-lg"
-                : "bg-white border text-gray-600 border-gray-300 hover:bg-blue-50"
-            }`}
+            className={`w-9 h-9 rounded-full flex items-center justify-center font-medium text-sm transition-all duration-300 ${page === i + 1
+              ? "bg-blue-600 text-white shadow-lg"
+              : "bg-white border text-gray-600 border-gray-300 hover:bg-blue-50"
+              }`}
           >
             {i + 1}
           </button>
@@ -504,11 +484,10 @@ const PaginationPage = () => {
             key={n}
             onClick={() => setActive(n)}
             className={`w-10 h-10 rounded-full border text-sm font-semibold transition-all duration-300 
-            ${
-              active === n
+            ${active === n
                 ? "border-blue-600 text-blue-600 ring-2 ring-blue-300 animate-pulse"
                 : "border-gray-300 text-gray-700 hover:border-blue-400 hover:text-blue-500"
-            }`}
+              }`}
           >
             {n}
           </button>
@@ -521,11 +500,10 @@ const PaginationPage = () => {
           <button
             key={n}
             onClick={() => setCurrentDot(n)}
-            className={`w-4 h-4 rounded-full transition-all duration-300 ${
-              currentDot === n
-                ? "bg-blue-600 scale-125 shadow-md"
-                : "bg-gray-300 hover:bg-blue-400"
-            }`}
+            className={`w-4 h-4 rounded-full transition-all duration-300 ${currentDot === n
+              ? "bg-blue-600 scale-125 shadow-md"
+              : "bg-gray-300 hover:bg-blue-400"
+              }`}
           />
         ))}
       </div>
@@ -537,11 +515,10 @@ const PaginationPage = () => {
             key={n}
             onClick={() => setActivePage(n)}
             className={`w-10 h-10 rounded-lg text-sm font-semibold transition-all duration-300 shadow 
-            ${
-              activePage === n
+            ${activePage === n
                 ? "bg-blue-600 text-white shadow-lg shadow-blue-300"
                 : "bg-[#f1f3f5] text-gray-700 hover:bg-blue-100"
-            }`}
+              }`}
           >
             {n}
           </button>
@@ -562,11 +539,10 @@ const PaginationPage = () => {
           <button
             key={i}
             onClick={() => setPage(i + 1)}
-            className={`w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300 text-sm font-medium ${
-              page === i + 1
-                ? "bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg"
-                : "bg-white border border-gray-300 text-gray-700 hover:bg-blue-50"
-            }`}
+            className={`w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300 text-sm font-medium ${page === i + 1
+              ? "bg-gradient-to-r from-blue-500 to-indigo-500 text-white shadow-lg"
+              : "bg-white border border-gray-300 text-gray-700 hover:bg-blue-50"
+              }`}
           >
             {i + 1}
           </button>
@@ -588,11 +564,10 @@ const PaginationPage = () => {
             key={n}
             onClick={() => setSelected(n)}
             className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 
-            ${
-              selected === n
+            ${selected === n
                 ? " text-blue-200 shadow-lg ring-2 ring-blue-300"
                 : "text-white hover:bg-white/20"
-            }`}
+              }`}
           >
             {n}
           </button>
@@ -606,11 +581,10 @@ const PaginationPage = () => {
             key={n}
             onClick={() => setActive(n)}
             className={`relative px-4 py-2 font-semibold text-sm transform transition-all duration-300 skew-x-6
-          ${
-            active === n
-              ? "bg-indigo-600 text-white shadow-md -skew-x-6"
-              : "bg-gray-200 text-gray-800 hover:bg-indigo-100 -skew-x-6"
-          }`}
+          ${active === n
+                ? "bg-indigo-600 text-white shadow-md -skew-x-6"
+                : "bg-gray-200 text-gray-800 hover:bg-indigo-100 -skew-x-6"
+              }`}
           >
             {n}
           </button>
@@ -624,11 +598,10 @@ const PaginationPage = () => {
             <button
               onClick={() => setPage(n)}
               className={`w-3 h-3 rounded-full transition-all duration-300 
-              ${
-                page === n
+              ${page === n
                   ? "bg-blue-600 scale-125 animate-pulse"
                   : "bg-gray-400 hover:bg-blue-400"
-              }`}
+                }`}
             />
 
             {/* {page === n && (
@@ -655,10 +628,9 @@ const PaginationPage = () => {
               onClick={() => setPage(p)}
               key={p}
               className={`cursor-pointer w-full h-full 
-                ${
-                  page === p
-                    ? "text-yellow-300 font-bold scale-105"
-                    : "font-semibold"
+                ${page === p
+                  ? "text-yellow-300 font-bold scale-105"
+                  : "font-semibold"
                 }
                 ${p > page ? "text-gray-700" : ""}`}
             >
@@ -674,11 +646,10 @@ const PaginationPage = () => {
           <button
             key={i}
             onClick={() => setPage(i + 1)}
-            className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 backdrop-blur-sm ${
-              page === i + 1
-                ? "bg-white/40 text-blue-700 ring-2 ring-blue-300"
-                : "bg-white/10 text-gray-700 hover:bg-white/20"
-            }`}
+            className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 backdrop-blur-sm ${page === i + 1
+              ? "bg-white/40 text-blue-700 ring-2 ring-blue-300"
+              : "bg-white/10 text-gray-700 hover:bg-white/20"
+              }`}
           >
             {i + 1}
           </button>
@@ -692,11 +663,10 @@ const PaginationPage = () => {
             <button
               key={p}
               onClick={() => setPage(p)}
-              className={`py-2 px-3 rounded-lg text-sm font-medium transition-all duration-300 text-left ${
-                page === p
-                  ? "bg-blue-600 text-white shadow-md"
-                  : "text-gray-700 hover:bg-gray-100"
-              }`}
+              className={`py-2 px-3 rounded-lg text-sm font-medium transition-all duration-300 text-left ${page === p
+                ? "bg-blue-600 text-white shadow-md"
+                : "text-gray-700 hover:bg-gray-100"
+                }`}
             >
               {p}
             </button>
@@ -714,11 +684,10 @@ const PaginationPage = () => {
             <button
               key={i}
               onClick={() => setPage(i + 1)}
-              className={`w-8 h-8 rounded-full transition ${
-                page === i + 1
-                  ? "bg-pink-500 text-white font-bold scale-110"
-                  : "bg-gray-100 text-gray-800 hover:bg-pink-100"
-              }`}
+              className={`w-8 h-8 rounded-full transition ${page === i + 1
+                ? "bg-pink-500 text-white font-bold scale-110"
+                : "bg-gray-100 text-gray-800 hover:bg-pink-100"
+                }`}
             >
               {i + 1}
             </button>
@@ -739,43 +708,91 @@ const PaginationPage = () => {
 
       {/* Pagination 30  */}
       <div className="flex items-center space-x-1 p-4">
-      <button
-        onClick={() => onPageChange(currentPage - 1)}
-        disabled={currentPage === 1}
-        className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 text-gray-700 hover:bg-white/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
-      >
-        <ChevronLeft size={16} />
-      </button>
-      
-      {getPageNumbers().map((page, index) => (
-        page === '...' ? (
-          <span key={index} className="flex items-center justify-center w-10 h-10 text-gray-500">
-            <MoreHorizontal size={16} />
-          </span>
-        ) : (
-          <button
-            key={page}
-            onClick={() => typeof page === 'number' && onPageChange(page)}
-            className={`flex items-center justify-center w-10 h-10 rounded-xl backdrop-blur-md border transition-all duration-300 font-medium ${
-              currentPage === page
+        <button
+          onClick={() => onPageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+          className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 text-gray-700 hover:bg-white/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
+        >
+          <ChevronLeft size={16} />
+        </button>
+
+        {getPageNumbers().map((page, index) => (
+          page === '...' ? (
+            <span key={index} className="flex items-center justify-center w-10 h-10 text-gray-500">
+              <MoreHorizontal size={16} />
+            </span>
+          ) : (
+            <button
+              key={page}
+              onClick={() => typeof page === 'number' && onPageChange(page)}
+              className={`flex items-center justify-center w-10 h-10 rounded-xl backdrop-blur-md border transition-all duration-300 font-medium ${currentPage === page
                 ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white border-transparent shadow-lg scale-110'
                 : 'bg-white/20 border-white/30 text-gray-700 hover:bg-white/30 hover:scale-105'
-            }`}
-          >
-            {page}
-          </button>
-        )
-      ))}
-      
-      <button
-        onClick={() => onPageChange(currentPage + 1)}
-        disabled={currentPage === totalPages}
-        className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 text-gray-700 hover:bg-white/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
-      >
-        <ChevronRight size={16} />
-      </button>
-    </div>
-      
+                }`}
+            >
+              {page}
+            </button>
+          )
+        ))}
+
+        <button
+          onClick={() => onPageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 text-gray-700 hover:bg-white/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
+        >
+          <ChevronRight size={16} />
+        </button>
+      </div>
+
+      {/* Pagination 31  */}
+      <div className="flex items-center justify-center space-x-3 p-4">
+        <button
+          onClick={() => onPageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+          className="flex items-center space-x-2 px-4 py-2 rounded-full bg-white shadow-lg border border-gray-200 text-gray-600 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+        >
+          <ChevronLeft size={16} />
+          <span className="text-sm font-medium">Prev</span>
+        </button>
+
+        <div className="flex items-center space-x-2">
+          {Array.from({ length: Math.min(3, totalPages) }, (_, i) => {
+            let pageNum;
+            if (totalPages <= 3) {
+              pageNum = i + 1;
+            } else if (currentPage === 1) {
+              pageNum = i + 1;
+            } else if (currentPage === totalPages) {
+              pageNum = totalPages - 2 + i;
+            } else {
+              pageNum = currentPage - 1 + i;
+            }
+
+            return (
+              <button
+                key={pageNum}
+                onClick={() => onPageChange(pageNum)}
+                className={`w-12 h-12 rounded-full font-semibold transition-all duration-200 transform hover:-translate-y-0.5 ${currentPage === pageNum
+                    ? 'bg-gradient-to-r from-pink-500 to-violet-500 text-white shadow-lg shadow-pink-500/40 scale-110'
+                    : 'bg-white text-gray-700 shadow-md border border-gray-200 hover:shadow-lg'
+                  }`}
+              >
+                {pageNum}
+              </button>
+            );
+          })}
+        </div>
+
+        <button
+          onClick={() => onPageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className="flex items-center space-x-2 px-4 py-2 rounded-full bg-white shadow-lg border border-gray-200 text-gray-600 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+        >
+          <span className="text-sm font-medium">Next</span>
+          <ChevronRight size={16} />
+        </button>
+      </div>
+
     </div>
   );
 };
