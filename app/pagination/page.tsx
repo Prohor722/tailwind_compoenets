@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight, ArrowLeft, ArrowRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowLeft, ArrowRight,MoreHorizontal } from "lucide-react";
+
 
 const PaginationPage = () => {
   const [current, setCurrent] = useState(1);
@@ -35,7 +36,11 @@ const PaginationPage = () => {
     
     return pages;
   };
-  
+
+  const onPageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
   useEffect(() => {
     const longPages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -750,7 +755,7 @@ const PaginationPage = () => {
         ) : (
           <button
             key={page}
-            onClick={() => onPageChange(page)}
+            onClick={() => typeof page === 'number' && onPageChange(page)}
             className={`flex items-center justify-center w-10 h-10 rounded-xl backdrop-blur-md border transition-all duration-300 font-medium ${
               currentPage === page
                 ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white border-transparent shadow-lg scale-110'
