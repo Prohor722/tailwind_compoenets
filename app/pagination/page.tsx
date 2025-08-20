@@ -18,7 +18,32 @@ const PaginationPage = () => {
   const [shortPagesActive, setShortPagesActive] = useState(1);
   const [activePage, setActivePage] = useState(1);
   const [dot, setDot] = useState(2);
+  const [isPlaying, setIsPlaying] = useState(false);
 
+
+  const togglePlay = () => {
+    setIsPlaying(!isPlaying);
+    // Auto-advance pages when "playing"
+    if (!isPlaying && currentPage < totalPages) {
+      const interval = setInterval(() => {
+        setCurrentPage(prev => {
+          if (prev >= totalPages) {
+            setIsPlaying(false);
+            clearInterval(interval);
+            return prev;
+          }
+          return prev + 1;
+        });
+      }, 2000);
+      
+      setTimeout(() => {
+        if (isPlaying) setIsPlaying(false);
+        clearInterval(interval);
+      }, (totalPages - currentPage) * 2000);
+    }
+  };
+
+  
   const getPageNumbers = () => {
     const pages = [];
     const showEllipsis = totalPages > 7;
