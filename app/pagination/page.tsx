@@ -1259,20 +1259,20 @@ const PaginationPage = () => {
                 }}
               >
                 <div className={`absolute inset-0 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 ${isActive
-                    ? 'bg-gradient-to-br from-pink-400 to-purple-600'
-                    : 'bg-gradient-to-br from-gray-400 to-gray-600'
+                  ? 'bg-gradient-to-br from-pink-400 to-purple-600'
+                  : 'bg-gradient-to-br from-gray-400 to-gray-600'
                   }`} />
                 <div className={`absolute inset-0 rounded-lg transform translate-x-1 translate-y-1 ${isActive
-                    ? 'bg-gradient-to-br from-pink-300 to-purple-500'
-                    : 'bg-gradient-to-br from-gray-300 to-gray-500'
+                  ? 'bg-gradient-to-br from-pink-300 to-purple-500'
+                  : 'bg-gradient-to-br from-gray-300 to-gray-500'
                   }`} />
                 <div className={`absolute inset-0 rounded-lg transform translate-x-2 translate-y-2 ${isActive
-                    ? 'bg-gradient-to-br from-pink-500 to-purple-700'
-                    : 'bg-gradient-to-br from-gray-500 to-gray-700'
+                  ? 'bg-gradient-to-br from-pink-500 to-purple-700'
+                  : 'bg-gradient-to-br from-gray-500 to-gray-700'
                   }`} />
                 <div className={`relative w-full h-full rounded-lg flex items-center justify-center text-white font-bold text-lg group-hover:transform group-hover:scale-105 transition-transform duration-300 ${isActive
-                    ? 'bg-gradient-to-br from-pink-400 to-purple-600'
-                    : 'bg-gradient-to-br from-gray-400 to-gray-600'
+                  ? 'bg-gradient-to-br from-pink-400 to-purple-600'
+                  : 'bg-gradient-to-br from-gray-400 to-gray-600'
                   }`}>
                   {pageNum}
                 </div>
@@ -1294,6 +1294,128 @@ const PaginationPage = () => {
             <ChevronRight size={20} />
           </div>
         </button>
+      </div>
+
+      {/* Pagination 40  */}
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-100 p-8">
+        <div className="max-w-5xl mx-auto space-y-16">
+          <div className="text-center">
+            <h1 className="text-5xl font-bold text-gray-900 mb-6 bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent">
+              Advanced Pagination Designs
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Cutting-edge pagination components with unique visual effects, 3D transformations, and interactive animations
+            </p>
+          </div>
+
+          <div className="space-y-20">
+            {/* Neumorphism */}
+            <div className="bg-gray-200 p-8 rounded-3xl">
+              <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Neumorphism Pagination</h2>
+              <p className="text-gray-600 text-center mb-8">Soft, tactile design with subtle shadows and highlights</p>
+              <div className="flex justify-center">
+                <NeumorphismPagination
+                  currentPage={currentPages.neumorphism}
+                  totalPages={totalPages}
+                  onPageChange={(page) => handlePageChange('neumorphism', page)}
+                />
+              </div>
+            </div>
+
+            {/* 3D Card Stack */}
+            <div className="bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-8 rounded-3xl">
+              <h2 className="text-3xl font-bold text-white mb-8 text-center">3D Card Stack Pagination</h2>
+              <p className="text-gray-300 text-center mb-8">Perspective-based 3D cards with depth and rotation effects</p>
+              <div className="flex justify-center">
+                <CardStackPagination
+                  currentPage={currentPages.cardStack}
+                  totalPages={totalPages}
+                  onPageChange={(page) => handlePageChange('cardStack', page)}
+                />
+              </div>
+            </div>
+
+            {/* Liquid Morphing */}
+            <div className="bg-black p-8 rounded-3xl">
+              <h2 className="text-3xl font-bold text-white mb-8 text-center">Liquid Morphing Pagination</h2>
+              <p className="text-gray-400 text-center mb-8">Smooth liquid-like animations with morphing active states</p>
+              <div className="flex justify-center">
+                <LiquidPagination
+                  currentPage={currentPages.liquid}
+                  totalPages={totalPages}
+                  onPageChange={(page) => handlePageChange('liquid', page)}
+                />
+              </div>
+            </div>
+
+            {/* Audio Player Style */}
+            <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-3xl">
+              <h2 className="text-3xl font-bold text-white mb-8 text-center">Audio Player Pagination</h2>
+              <p className="text-gray-400 text-center mb-8">Music player interface with progress bar and auto-play feature</p>
+              <div className="flex justify-center">
+                <AudioPlayerPagination
+                  currentPage={currentPages.audioPlayer}
+                  totalPages={totalPages}
+                  onPageChange={(page) => handlePageChange('audioPlayer', page)}
+                />
+              </div>
+            </div>
+
+            {/* Holographic */}
+            <div className="bg-black p-8 rounded-3xl border border-cyan-500/30">
+              <h2 className="text-3xl font-bold text-white mb-8 text-center">Holographic Pagination</h2>
+              <p className="text-gray-400 text-center mb-8">Futuristic hologram effects with animated light patterns</p>
+              <div className="flex justify-center">
+                <HolographicPagination
+                  currentPage={currentPages.holographic}
+                  totalPages={totalPages}
+                  onPageChange={(page) => handlePageChange('holographic', page)}
+                />
+              </div>
+            </div>
+
+            {/* Isometric */}
+            <div className="bg-gradient-to-br from-purple-100 to-blue-100 p-8 rounded-3xl">
+              <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Isometric Pagination</h2>
+              <p className="text-gray-600 text-center mb-8">3D isometric blocks with layered depth and perspective</p>
+              <div className="flex justify-center">
+                <IsometricPagination
+                  currentPage={currentPages.isometric}
+                  totalPages={totalPages}
+                  onPageChange={(page) => handlePageChange('isometric', page)}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Features Summary */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-white/20 shadow-2xl">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Design Features</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="text-center p-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🎨</span>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">Advanced Animations</h3>
+                <p className="text-gray-600 text-sm">Smooth transitions, morphing effects, and 3D transformations</p>
+              </div>
+              <div className="text-center p-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">⚡</span>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">Interactive Elements</h3>
+                <p className="text-gray-600 text-sm">Hover effects, play buttons, and responsive feedback</p>
+              </div>
+              <div className="text-center p-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🚀</span>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">Modern Aesthetics</h3>
+                <p className="text-gray-600 text-sm">Glassmorphism, neumorphism, and holographic effects</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
