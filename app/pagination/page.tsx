@@ -21,6 +21,7 @@ const PaginationPage = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedButton, setSelectedButton] = useState<"left" | "right" | null>(null);
 
+  
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
     // Auto-advance pages when "playing"
@@ -113,6 +114,7 @@ const PaginationPage = () => {
   const total = 5;
   const totalPages = 5;
   const progress = (currentPage / totalPages) * 100;
+  const angle = ((currentPage - 1) / (totalPages - 1)) * 360;
 
   const prev = () => page > 1 && setPage(page - 1);
   const next = () => page < totalPages && setPage(page + 1);
