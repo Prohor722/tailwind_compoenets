@@ -23,6 +23,7 @@ const PaginationPage = () => {
   const [hoveredPlanet, setHoveredPlanet] = useState<number | null>(null);
   const [animating, setAnimating] = useState(false);
   const [steamAnimation, setSteamAnimation] = useState(false);
+  const [matrixChars, setMatrixChars] = useState<Array<{char: string, x: number, delay: number}>>([]);
 
   const handlePageChange = (page: number) => {
     setSteamAnimation(true);
@@ -122,6 +123,16 @@ const PaginationPage = () => {
         shortPagesActive + 3,
       ]);
     }
+
+
+    const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワン';
+    const newChars = Array.from({ length: 100 }, () => ({
+      char: chars[Math.floor(Math.random() * chars.length)],
+      x: Math.random() * 100,
+      delay: Math.random() * 2
+    }));
+    setMatrixChars(newChars);
+
   }, [shortPagesActive]);
 
   const pages = [1, 2, 3, 4, 5];
