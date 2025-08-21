@@ -1310,8 +1310,8 @@ const PaginationPage = () => {
                   onMouseDown={() => setSelectedButton('left')}
                   onMouseUp={() => setSelectedButton(null)}
                   className={`absolute left-0 top-1/2 -translate-y-1/2 w-6 h-6 rounded-sm flex items-center justify-center text-green-400 transition-all duration-150 ${selectedButton === 'left'
-                      ? 'bg-green-500 text-white scale-95 shadow-lg shadow-green-500/50'
-                      : 'bg-gray-700 hover:bg-gray-600'
+                    ? 'bg-green-500 text-white scale-95 shadow-lg shadow-green-500/50'
+                    : 'bg-gray-700 hover:bg-gray-600'
                     } disabled:opacity-30 disabled:cursor-not-allowed`}
                 >
                   <ChevronLeft size={16} />
@@ -1324,8 +1324,8 @@ const PaginationPage = () => {
                   onMouseDown={() => setSelectedButton('right')}
                   onMouseUp={() => setSelectedButton(null)}
                   className={`absolute right-0 top-1/2 -translate-y-1/2 w-6 h-6 rounded-sm flex items-center justify-center text-green-400 transition-all duration-150 ${selectedButton === 'right'
-                      ? 'bg-green-500 text-white scale-95 shadow-lg shadow-green-500/50'
-                      : 'bg-gray-700 hover:bg-gray-600'
+                    ? 'bg-green-500 text-white scale-95 shadow-lg shadow-green-500/50'
+                    : 'bg-gray-700 hover:bg-gray-600'
                     } disabled:opacity-30 disabled:cursor-not-allowed`}
                 >
                   <ChevronRight size={16} />
@@ -1362,8 +1362,8 @@ const PaginationPage = () => {
                     key={pageNum}
                     onClick={() => onPageChange(pageNum)}
                     className={`w-12 h-12 rounded-full font-bold text-white transition-all duration-200 transform hover:scale-110 active:scale-95 ${isActive
-                        ? `${colors[i % colors.length]} shadow-lg shadow-current/50 ring-4 ring-white/30`
-                        : `${colors[i % colors.length]}/70 hover:${colors[i % colors.length]}`
+                      ? `${colors[i % colors.length]} shadow-lg shadow-current/50 ring-4 ring-white/30`
+                      : `${colors[i % colors.length]}/70 hover:${colors[i % colors.length]}`
                       }`}
                   >
                     {pageNum}
@@ -1376,6 +1376,65 @@ const PaginationPage = () => {
               LEVEL {currentPage} / {totalPages}
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Pagination 41  */}
+      <div className="bg-gradient-to-br from-amber-900 via-orange-900 to-red-900 rounded-full p-8 relative" style={{ width: '300px', height: '300px' }}>
+        {/* Compass Background */}
+        <div className="absolute inset-4 rounded-full border-4 border-amber-400/30 bg-gradient-to-br from-amber-100/10 to-orange-100/10 backdrop-blur-sm">
+          {/* Direction Markers */}
+          {['N', 'E', 'S', 'W'].map((direction, index) => (
+            <div
+              key={direction}
+              className="absolute text-amber-300 font-bold text-lg"
+              style={{
+                top: index === 0 ? '10px' : index === 2 ? 'calc(100% - 30px)' : '50%',
+                left: index === 1 ? 'calc(100% - 20px)' : index === 3 ? '10px' : '50%',
+                transform: index % 2 === 0 ? 'translateX(-50%)' : 'translateY(-50%)'
+              }}
+            >
+              {direction}
+            </div>
+          ))}
+
+          {/* Center Circle */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white font-bold text-lg shadow-lg">
+            {currentPage}
+          </div>
+
+          {/* Compass Needle */}
+          <div
+            className="absolute top-1/2 left-1/2 w-1 h-20 bg-gradient-to-t from-red-500 to-red-300 rounded-full origin-bottom transition-transform duration-500"
+            style={{
+              transform: `translate(-50%, -100%) rotate(${angle}deg)`,
+              transformOrigin: 'bottom center'
+            }}
+          >
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-2 border-r-2 border-b-4 border-l-transparent border-r-transparent border-b-red-400" />
+          </div>
+        </div>
+
+        {/* Navigation Buttons */}
+        <button
+          onClick={() => onPageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-amber-600 hover:bg-amber-500 text-white flex items-center justify-center transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+        >
+          <ChevronLeft size={20} />
+        </button>
+
+        <button
+          onClick={() => onPageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-amber-600 hover:bg-amber-500 text-white flex items-center justify-center transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+        >
+          <ChevronRight size={20} />
+        </button>
+
+        {/* Page Indicators */}
+        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-amber-300 text-sm font-mono">
+          {currentPage} of {totalPages}
         </div>
       </div>
     </div>
