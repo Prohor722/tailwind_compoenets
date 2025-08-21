@@ -20,6 +20,7 @@ const PaginationPage = () => {
   const [dot, setDot] = useState(2);
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedButton, setSelectedButton] = useState<"left" | "right" | null>(null);
+  const [hoveredPlanet, setHoveredPlanet] = useState<number | null>(null);
 
 
   const togglePlay = () => {
