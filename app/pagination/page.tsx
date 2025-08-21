@@ -19,6 +19,8 @@ const PaginationPage = () => {
   const [activePage, setActivePage] = useState(1);
   const [dot, setDot] = useState(2);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [selectedButton, setSelectedButton] = useState<"left" | "right" | null>(null);
+
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
     // Auto-advance pages when "playing"
