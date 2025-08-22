@@ -4,7 +4,10 @@ import { useState } from 'react';
 import {
   CheckCircle, X, Heart, Star,
   Zap, Users, Bell, Settings, Camera,
-  Download, Share2
+  Download, Share2, Moon, Sun, Trash2,
+  Edit, Play, Pause, Volume2, Calendar,
+  MapPin, Clock, Award, Gift, Lock, Unlock,
+  AlertTriangle, Info, Plus, Minus
 } from 'lucide-react';
 
 export default function ModalPage() {
@@ -12,7 +15,8 @@ export default function ModalPage() {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [activeModal, setActiveModal] = useState<string | null>(null);
-
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [progress, setProgress] = useState(0);
 
 
   const closeModal = () => setActiveModal(null);
@@ -503,6 +507,78 @@ export default function ModalPage() {
             className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105 font-medium"
           >
             Preview Media Modal
+          </button>
+        </div>
+
+      </div>
+
+      {/* Modal 10  */}
+      <div>
+
+        <div className={`fixed inset-0 bg-black 
+        bg-opacity-80 p-4 z-50
+        ${activeModal === "music" ? "flex items-center justify-center" : "hidden"}
+        `}>
+          <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl p-8 max-w-sm w-full shadow-2xl border border-gray-700">
+            <button onClick={closeModal} className="float-right text-gray-400 hover:text-white transition-colors">
+              <X size={20} />
+            </button>
+
+            <div className="text-center">
+              <div className="relative mb-6 mx-auto w-48 h-48">
+                <div className={`w-full h-full bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-2xl ${isPlaying ? 'animate-spin' : ''}`} style={{ animationDuration: '10s' }}>
+                  <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center">
+                    <div className="w-4 h-4 bg-white rounded-full"></div>
+                  </div>
+                </div>
+                <div className="absolute inset-0 rounded-full border-4 border-white border-opacity-20"></div>
+              </div>
+
+              <h3 className="text-xl font-bold text-white mb-1">Midnight Dreams</h3>
+              <p className="text-gray-400 mb-6">The Synthwave Collective</p>
+
+              <div className="mb-6">
+                <div className="bg-gray-700 rounded-full h-2 mb-2">
+                  <div
+                    className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full transition-all duration-100"
+                    style={{ width: `${progress}%` }}
+                  ></div>
+                </div>
+                <div className="flex justify-between text-xs text-gray-400">
+                  <span>1:23</span>
+                  <span>3:45</span>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-center gap-4">
+                <button className="text-gray-400 hover:text-white transition-colors">
+                  <Minus size={20} />
+                </button>
+                <button
+                  onClick={() => setIsPlaying(!isPlaying)}
+                  className="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"
+                >
+                  {isPlaying ? <Pause size={24} className="text-white" /> : <Play size={24} className="text-white ml-1" />}
+                </button>
+                <button className="text-gray-400 hover:text-white transition-colors">
+                  <Plus size={20} />
+                </button>
+                <button className="text-gray-400 hover:text-white transition-colors">
+                  <Volume2 size={20} />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Button  */}
+        <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h3 className="text-lg font-semibold text-gray-800 mb-3">Music Modal</h3>
+          <button
+            onClick={() => setActiveModal('music')}
+            className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105 font-medium"
+          >
+            Music Modal
           </button>
         </div>
 
