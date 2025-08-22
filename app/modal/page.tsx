@@ -7,7 +7,8 @@ export default function ModalPage() {
   const [isOpen, setIsOpen] = useState(false);
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
-  const [activeModal, setActiveModal] = useState(null);
+  const [activeModal, setActiveModal] = useState<string | null>(null);
+
 
 
   const closeModal = () => setActiveModal(null);
@@ -111,51 +112,50 @@ export default function ModalPage() {
       </div>
 
       {/* Modal 4  */}
-      <div className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex items-center justify-center p-4 z-50">
-        <div className="bg-white bg-opacity-20 backdrop-blur-xl border border-white border-opacity-30 rounded-3xl p-8 max-w-md w-full shadow-2xl">
-          <div className="flex justify-between items-center mb-6">
-            <h3 className="text-2xl font-bold text-white">Glassmorphism</h3>
-            <button onClick={closeModal} className="text-white hover:text-gray-300 transition-colors">
-              <X size={24} />
-            </button>
-          </div>
-          <p className="text-white text-opacity-90 mb-6">
-            This modal uses glassmorphism design with backdrop blur and transparency effects for a modern, elegant look.
-          </p>
-          <div className="flex gap-3">
-            <button className="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-6 py-3 rounded-full transition-all duration-300 backdrop-blur-sm">
-              Action
-            </button>
-            <button onClick={closeModal} className="bg-transparent border border-white border-opacity-50 hover:border-opacity-100 text-white px-6 py-3 rounded-full transition-all duration-300">
-              Cancel
-            </button>
+      <div>
+        <div className={`fixed inset-0 bg-black bg-opacity-30 
+          backdrop-blur-sm flex items-center justify-center 
+          p-4 z-50 
+          ${activeModal === 'glassmorphism' ? 'flex items-center justify-center' : 'hidden'}
+          `}>
+          <div className="bg-white bg-opacity-20 backdrop-blur-xl border border-white border-opacity-30 rounded-3xl p-8 max-w-md w-full shadow-2xl">
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-2xl font-bold text-white">Glassmorphism</h3>
+              <button onClick={closeModal} className="text-white hover:text-gray-300 transition-colors">
+                <X size={24} />
+              </button>
+            </div>
+            <p className="text-white text-opacity-90 mb-6">
+              This modal uses glassmorphism design with backdrop blur and transparency effects for a modern, elegant look.
+            </p>
+            <div className="flex gap-3">
+              <button className="bg-white bg-opacity-20 hover:bg-opacity-30 text-white px-6 py-3 rounded-full transition-all duration-300 backdrop-blur-sm">
+                Action
+              </button>
+              <button onClick={closeModal} className="bg-transparent border border-white border-opacity-50 hover:border-opacity-100 text-white px-6 py-3 rounded-full transition-all duration-300">
+                Cancel
+              </button>
+            </div>
           </div>
         </div>
+
+        <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h3 className="text-lg font-semibold text-gray-800 mb-3">Glassmorphism</h3>
+          <p className="text-gray-600 text-sm mb-4 Transparent backdrop with blur effects">
+            Lorem ipsum dolor, sit amet consectetur adipisicing.
+          </p>
+          <button
+            onClick={() => setActiveModal('glassmorphism')}
+            className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105 font-medium"
+          >
+            Preview Glassmorphism
+          </button>
+        </div>
+
       </div>
 
 
-      {/* Modal 4,5,6 buttons  */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {modals.map((modal) => (
-          <div key={modal.id} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <h3 className="text-lg font-semibold text-gray-800 mb-3">{modal.name}</h3>
-            <p className="text-gray-600 text-sm mb-4">
-              {modal.id === 'glassmorphism' && 'Transparent backdrop with blur effects'}
-              {modal.id === 'neumorphism' && 'Soft UI with subtle shadow depth'}
-              {modal.id === 'cyberpunk' && 'Futuristic neon-accented design'}
-              {modal.id === 'cardstack' && 'Layered cards with rotation effect'}
-              {modal.id === 'sliding' && 'Side panel with smooth animations'}
-              {modal.id === 'media' && 'Image-focused with social features'}
-            </p>
-            <button
-              onClick={() => setActiveModal(modal.id)}
-              className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105 font-medium"
-            >
-              Preview {modal.name}
-            </button>
-          </div>
-        ))}
-      </div>
+
 
 
     </div>
