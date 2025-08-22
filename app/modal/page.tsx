@@ -18,6 +18,14 @@ export default function ModalPage() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
 
+  const commands = [
+    '$ system init...',
+    '> Loading modal interface...',
+    '> Authentication: SUCCESS',
+    '> Ready for user input'
+  ];
+
+
 
   const closeModal = () => setActiveModal(null);
 
@@ -707,6 +715,8 @@ export default function ModalPage() {
         </button>
 
       </div>
+
+      
 
 
     </div>
