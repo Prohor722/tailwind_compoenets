@@ -1,7 +1,9 @@
 'use client';
 import React from "react";
 import { useState } from 'react';
-import { CheckCircle, X } from 'lucide-react';
+import { CheckCircle, X, Heart, Star, 
+  Zap, Users, Bell, Settings, Camera, 
+  Download, Share2 } from 'lucide-react';
 
 export default function ModalPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -247,6 +249,88 @@ export default function ModalPage() {
 
 
       </div>
+
+      {/* Modal 7  */}
+      {/* Card Stack Modal */}
+      <div>
+
+        <div className={`fixed inset-0 bg-black bg-opacity-50 
+        flex items-center justify-center p-4 z-50
+        ${activeModal === "cardstack" ? 'flex items-center justify-center' : 'hidden'}
+        `}>
+          <div className="relative">
+            {/* Background cards for stack effect */}
+            <div className="absolute inset-0 bg-white rounded-2xl transform rotate-3 translate-x-2 translate-y-2 opacity-30"></div>
+            <div className="absolute inset-0 bg-white rounded-2xl transform rotate-1 translate-x-1 translate-y-1 opacity-60"></div>
+
+            {/* Main card */}
+            <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl relative z-10">
+              <div className="flex justify-between items-start mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2">Card Stack</h3>
+                  <div className="flex items-center gap-2 text-yellow-500">
+                    <Star size={16} fill="currentColor" />
+                    <Star size={16} fill="currentColor" />
+                    <Star size={16} fill="currentColor" />
+                    <Star size={16} fill="currentColor" />
+                    <Star size={16} fill="currentColor" />
+                  </div>
+                </div>
+                <button onClick={closeModal} className="text-gray-400 hover:text-gray-600 transition-colors">
+                  <X size={24} />
+                </button>
+              </div>
+
+              <div className="mb-6">
+                <div className="bg-gradient-to-r from-purple-400 to-pink-400 rounded-xl p-4 text-white mb-4">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Heart className="text-white" size={20} />
+                    <span className="font-semibold">Featured Content</span>
+                  </div>
+                  <p className="text-sm opacity-90">This modal creates depth with layered card shadows</p>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <Users size={16} className="text-blue-500" />
+                    <span className="text-sm">Stack effect with rotation</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <Zap size={16} className="text-yellow-500" />
+                    <span className="text-sm">Multiple shadow layers</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-3">
+                <button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-3 rounded-xl transition-all duration-300 flex-1 font-medium">
+                  Get Started
+                </button>
+                <button onClick={closeModal} className="border border-gray-300 hover:bg-gray-50 text-gray-700 px-6 py-3 rounded-xl transition-all duration-300">
+                  Later
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Button  */}
+        <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <h3 className="text-lg font-semibold text-gray-800 mb-3">Card Stack</h3>
+          <p className="text-gray-600 text-sm mb-4 Transparent backdrop with blur effects">
+            Lorem ipsum dolor, sit amet consectetur adipisicing.
+          </p>
+          <button
+            onClick={() => setActiveModal('cardstack')}
+            className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105 font-medium"
+          >
+            Preview Card Stack
+          </button>
+        </div>
+
+
+      </div>
+
 
 
     </div>
