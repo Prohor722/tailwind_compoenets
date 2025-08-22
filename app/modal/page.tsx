@@ -17,6 +17,7 @@ export default function ModalPage() {
   const [activeModal, setActiveModal] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [isDark, setIsDark] = useState(false);
 
 
   const notifications = [
