@@ -18,7 +18,7 @@ export default function ModalPage() {
   const closeModal = () => setActiveModal(null);
 
   return (
-    <div className="flex items-center justify-center gap-5">
+    <div className="flex flex-wrap py-8 items-center justify-center gap-5">
       {/* Modal 1  */}
       <div className="flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-100 p-8">
         {/* Open Modal Button */}
