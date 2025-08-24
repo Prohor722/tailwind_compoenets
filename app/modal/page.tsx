@@ -44,7 +44,7 @@ export default function ModalPage() {
   ]);
   const [designTool, setDesignTool] = useState('brush');
   const [currentColor, setCurrentColor] = useState('#3B82F6');
-  const canvasRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const [step, setStep] = useState(1);
   const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
@@ -69,6 +69,39 @@ export default function ModalPage() {
     '#EF4444', '#F97316', '#EAB308', '#22C55E',
     '#3B82F6', '#8B5CF6', '#EC4899', '#6B7280'
   ];
+
+  const handleCanvasMouseDown = (e: React.MouseEvent) => {
+    setIsDrawing(true);
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    ctx.beginPath();
+    ctx.arc(x, y, brushSize / 2, 0, 2 * Math.PI);
+    ctx.fillStyle = currentColor;
+    ctx.fill();
+  };
+
+  const handleCanvasMouseMove = (e: React.MouseEvent) => {
+    if (!isDrawing) return;
+    
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    ctx.beginPath();
+    ctx.arc(x, y, brushSize / 2, 0, 2 * Math.PI);
+    ctx.fillStyle = currentColor;
+    ctx.fill();
+  };
 
 
   const notifications = [
