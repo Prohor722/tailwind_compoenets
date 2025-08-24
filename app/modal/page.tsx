@@ -1,14 +1,22 @@
 'use client';
 import React from "react";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   CheckCircle, X, Heart, Star,
   Zap, Users, Bell, Settings, Camera,
   Download, Share2, Moon, Sun, Trash2,
   Edit, Play, Pause, Volume2, Calendar,
   MapPin, Clock, Award, Gift, Lock, Unlock,
-  AlertTriangle, Info, Plus, Minus
+  AlertTriangle, Info, Plus, Minus,
+  MessageCircle, ThumbsUp, Eye, Sparkles,
+  Gamepad2, Target, Trophy, Coffee, Search,
+  Filter, ShoppingCart, CreditCard, Truck,
+  Package, Palette, Brush, PaintBucket, Type,
+  Layout, Grid3x3, Maximize, Minimize,
+  RotateCcw, RefreshCw, Battery, Wifi,
+  Signal
 } from 'lucide-react';
+
 
 export default function ModalPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +27,16 @@ export default function ModalPage() {
   const [progress, setProgress] = useState(0);
   const [isDark, setIsDark] = useState(false);
   const [isLocked, setIsLocked] = useState(true);
+  const [particles, setParticles] = useState<Array<{
+    id: number;
+    x: number;
+    y: number;
+    vx: number;
+    vy: number;
+    color: string;
+    size: number;
+  }>>([]);
+  const [particleCount, setParticleCount] = useState(50);
 
 
   const notifications = [
@@ -33,6 +51,31 @@ export default function ModalPage() {
     '> Authentication: SUCCESS',
     '> Ready for user input'
   ];
+
+  useEffect(() => {
+    if (activeModal === 'particles') {
+      const newParticles = Array.from({ length: particleCount }, (_, i) => ({
+        id: i,
+        x: Math.random() * 400,
+        y: Math.random() * 300,
+        vx: (Math.random() - 0.5) * 2,
+        vy: (Math.random() - 0.5) * 2,
+        color: `hsl(${Math.random() * 360}, 70%, 60%)`,
+        size: Math.random() * 4 + 2
+      }));
+      setParticles(newParticles);
+
+      const interval = setInterval(() => {
+        setParticles(prev => prev.map(p => ({
+          ...p,
+          x: (p.x + p.vx + 400) % 400,
+          y: (p.y + p.vy + 300) % 300
+        })));
+      }, 50);
+
+      return () => clearInterval(interval);
+    }
+  }, [activeModal, particleCount]);
 
 
 
@@ -981,8 +1024,8 @@ export default function ModalPage() {
                 <button
                   onClick={() => setIsLocked(!isLocked)}
                   className={`flex-1 py-3 px-6 rounded-xl font-medium transition-all duration-300 ${isLocked
-                      ? 'bg-red-600 hover:bg-red-700 text-white'
-                      : 'bg-green-600 hover:bg-green-700 text-white'
+                    ? 'bg-red-600 hover:bg-red-700 text-white'
+                    : 'bg-green-600 hover:bg-green-700 text-white'
                     }`}
                 >
                   {isLocked ? 'Verify & Unlock' : 'Continue'}
@@ -1004,6 +1047,74 @@ export default function ModalPage() {
           className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105 font-medium"
         >
           Security Modal
+        </button>
+
+      </div>
+
+      {/* Modal 17  */}
+      <div>
+
+        <div className={`fixed inset-0 bg-black bg-opacity-90 
+        p-4 z-50
+        ${activeModal === "particle_count" ? "flex items-center justify-center" : "hidden"}
+        `}>
+          <div className="bg-gray-900 rounded-2xl p-8 max-w-2xl w-full shadow-2xl border border-purple-500/30">
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-2xl font-bold text-white">Particle System</h3>
+              <button onClick={closeModal} className="text-gray-400 hover:text-white">
+                <X size={24} />
+              </button>
+            </div>
+
+            <div className="relative bg-black rounded-xl overflow-hidden mb-6" style={{ height: '300px' }}>
+              {particles.map(particle => (
+                <div
+                  key={particle.id}
+                  className="absolute rounded-full opacity-80"
+                  style={{
+                    left: `${particle.x}px`,
+                    top: `${particle.y}px`,
+                    width: `${particle.size}px`,
+                    height: `${particle.size}px`,
+                    backgroundColor: particle.color,
+                    boxShadow: `0 0 ${particle.size * 2}px ${particle.color}`
+                  }}
+                />
+              ))}
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-4">
+                <label className="text-white font-medium">Particle Count:</label>
+                <input
+                  type="range"
+                  min="10"
+                  max="200"
+                  value={particleCount}
+                  onChange={(e) => setParticleCount(Number(e.target.value))}
+                  className="flex-1"
+                />
+                <span className="text-purple-400 font-mono">{particleCount}</span>
+              </div>
+
+              <div className="flex gap-3">
+                <button className="bg-purple-600 hover:bg-purple-500 text-white px-6 py-3 rounded-xl transition-colors flex-1">
+                  Save Animation
+                </button>
+                <button onClick={closeModal} className="border border-purple-500 hover:bg-purple-500/20 text-purple-400 px-6 py-3 rounded-xl transition-colors">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Button  */}
+        <button
+          onClick={() => setActiveModal('particle_count')}
+          className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-105 font-medium"
+        >
+          Particle Count
         </button>
 
       </div>
