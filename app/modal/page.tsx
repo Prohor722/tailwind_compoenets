@@ -46,6 +46,15 @@ export default function ModalPage() {
   const [currentColor, setCurrentColor] = useState('#3B82F6');
   const canvasRef = useRef(null);
 
+  const [step, setStep] = useState(1);
+  const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+  const updateQuantity = (id: number, newQuantity: number) => {
+    setCartItems(prev => prev.map(item =>
+      item.id === id ? { ...item, quantity: Math.max(0, newQuantity) } : item
+    ).filter(item => item.quantity > 0));
+  };
+
 
   const notifications = [
     { id: 1, type: 'success', icon: CheckCircle, title: 'Task Completed', message: 'Your file has been uploaded successfully', time: '2m ago' },
