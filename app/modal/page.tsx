@@ -83,7 +83,7 @@ export default function ModalPage() {
     }
   ]);
 
-  const toggleLike = (postId) => {
+  const toggleLike = (postId: number) => {
     setPosts(prev => prev.map(post =>
       post.id === postId
         ? { ...post, liked: !post.liked, likes: post.liked ? post.likes - 1 : post.likes + 1 }
