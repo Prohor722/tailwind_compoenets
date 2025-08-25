@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import {
   CheckCircle, X, Heart, Star,
   Zap, Users, Bell, Settings, Camera,
-  Download, Share2, Moon, Sun, Trash2,
-  Edit, Play, Pause, Volume2, Calendar,
+  Download, Share2, Moon, Sun,
+  Play, Pause, Volume2, Calendar,
   MapPin, Clock, Award, Gift, Lock, Unlock,
   AlertTriangle, Info, Plus, Minus,
   MessageCircle, ThumbsUp, Eye, Sparkles,
