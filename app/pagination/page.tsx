@@ -8,6 +8,7 @@ import Pagination1 from "./components/Pagination1";
 import Pagination2 from "./components/Pagination2";
 import Pagination3 from "./components/Pagination3";
 import Pagination4 from "./components/Pagination4";
+import Pagination5 from "./components/Pagination5";
 
 
 const PaginationPage = () => {
@@ -162,20 +163,7 @@ const PaginationPage = () => {
       <Pagination4 />
 
       {/* Pagination 5  */}
-      <div className="flex justify-center mt-10 space-x-2">
-        {[1, 2, 3, 4, 5].map((n) => (
-          <button
-            key={n}
-            onClick={() => setSelected(n)}
-            className={`w-10 h-10 rounded-md transition-all duration-300 ease-in-out transform font-semibold text-sm ${selected === n
-              ? "bg-indigo-600 text-white shadow-xl shadow-indigo-300 scale-105"
-              : "bg-white text-gray-800 border border-gray-300 hover:bg-indigo-50"
-              }`}
-          >
-            {n}
-          </button>
-        ))}
-      </div>
+      <Pagination5 />
 
       {/* Pagination 6  */}
       <div className="flex justify-center mt-10 gap-3">
