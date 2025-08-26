@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import Pagination1 from "./components/Pagination1";
 import Pagination2 from "./components/Pagination2";
+import Pagination3 from "./components/Pagination3";
 
 
 const PaginationPage = () => {
@@ -154,20 +155,7 @@ const PaginationPage = () => {
       <Pagination2 />
 
       {/* Pagination 3  */}
-      <div className="flex justify-center mt-10 gap-2">
-        {Array.from({ length: 7 }).map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`w-9 h-9 rounded-full text-sm flex items-center justify-center transition-all border ${current === i
-              ? "bg-blue-600 text-white border-blue-600"
-              : "text-gray-700 border-gray-300 hover:bg-blue-50"
-              }`}
-          >
-            {i + 1}
-          </button>
-        ))}
-      </div>
+      <Pagination3 />
 
       {/* Pagination 4  */}
       <div className="flex justify-center mt-10 space-x-2">
