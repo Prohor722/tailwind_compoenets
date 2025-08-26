@@ -4,6 +4,7 @@ import {
   ChevronLeft, ChevronRight, ArrowLeft,
   ArrowRight, MoreHorizontal, Play, Pause
 } from "lucide-react";
+import Pagination1 from "./components/Pagination1";
 
 
 const PaginationPage = () => {
@@ -17,7 +18,6 @@ const PaginationPage = () => {
   const [shortPages, setShortPages] = useState([1, 2, 3, 4, 5]);
   const [shortPagesActive, setShortPagesActive] = useState(1);
   const [activePage, setActivePage] = useState(1);
-  const [dot, setDot] = useState(2);
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedButton, setSelectedButton] = useState<"left" | "right" | null>(null);
   const [hoveredPlanet, setHoveredPlanet] = useState<number | null>(null);
@@ -147,20 +147,7 @@ const PaginationPage = () => {
   return (
     <div className="flex flex-wrap justify-center items-center gap-10">
       {/* Simple Pagination  */}
-      <div className="flex justify-center mt-10 space-x-1">
-        {[...Array(total)].map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i + 1)}
-            className={`px-4 py-2 rounded-md border text-sm font-medium transition-all ${current === i + 1
-              ? "bg-blue-600 text-white border-blue-600"
-              : "bg-white text-gray-700 border-gray-300 hover:bg-blue-50"
-              }`}
-          >
-            {i + 1}
-          </button>
-        ))}
-      </div>
+      <Pagination1 />
 
       {/* Pagination 2  */}
       <div className="flex justify-center mt-10 items-center space-x-2">

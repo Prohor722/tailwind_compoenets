@@ -7,6 +7,33 @@
 //   const openModal = (modalType) => setActiveModal(modalType);
 //   const closeModal = () => setActiveModal(null);
 
+//   // Glassmorphism Modal
+//   const GlassmorphismModal = () => (
+//     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+//       <div 
+//         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+//         onClick={closeModal}
+//       />
+//       <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 max-w-md w-full shadow-2xl">
+//         <button
+//           onClick={closeModal}
+//           className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
+//         >
+//           <X size={24} />
+//         </button>
+//         <div className="text-center">
+//           <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mx-auto mb-6 flex items-center justify-center">
+//             <Star className="text-white" size={28} />
+//           </div>
+//           <h2 className="text-2xl font-bold text-white mb-4">Glassmorphism Design</h2>
+//           <p className="text-white/80 mb-6">Experience the future with this translucent, glass-like interface that creates depth and visual interest.</p>
+//           <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-105">
+//             Get Started
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   );
 
 //   // Neumorphism Modal
 //   const NeumorphismModal = () => (
