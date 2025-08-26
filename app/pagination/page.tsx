@@ -9,6 +9,7 @@ import Pagination2 from "./components/Pagination2";
 import Pagination3 from "./components/Pagination3";
 import Pagination4 from "./components/Pagination4";
 import Pagination5 from "./components/Pagination5";
+import Pagination6 from "./components/Pagination6";
 
 
 const PaginationPage = () => {
@@ -16,7 +17,6 @@ const PaginationPage = () => {
   const [active, setActive] = useState(1);
   const [selected, setSelected] = useState(1);
   const [page, setPage] = useState(1);
-  const [step, setStep] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
   const [currentDot, setCurrentDot] = useState(1);
   const [shortPages, setShortPages] = useState([1, 2, 3, 4, 5]);
@@ -166,18 +166,7 @@ const PaginationPage = () => {
       <Pagination5 />
 
       {/* Pagination 6  */}
-      <div className="flex justify-center mt-10 gap-3">
-        {[1, 2, 3, 4].map((i) => (
-          <button
-            key={i}
-            onClick={() => setStep(i)}
-            className={`w-3.5 h-3.5 rounded-full transition-all duration-300 ${step === i
-              ? "bg-blue-600 scale-125"
-              : "bg-gray-300 hover:bg-blue-400"
-              }`}
-          />
-        ))}
-      </div>
+      <Pagination6 />
 
       {/* Pagination 7  */}
       <div className="flex justify-center mt-10 gap-2">
