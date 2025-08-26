@@ -5,6 +5,7 @@ import {
   ArrowRight, MoreHorizontal, Play, Pause
 } from "lucide-react";
 import Pagination1 from "./components/Pagination1";
+import Pagination2 from "./components/Pagination2";
 
 
 const PaginationPage = () => {
@@ -150,27 +151,7 @@ const PaginationPage = () => {
       <Pagination1 />
 
       {/* Pagination 2  */}
-      <div className="flex justify-center mt-10 items-center space-x-2">
-        <button
-          onClick={prev}
-          disabled={page === 1}
-          className="px-3 py-1.5 text-sm border rounded-md bg-white text-gray-600 hover:bg-gray-100 disabled:opacity-40"
-        >
-          Prev
-        </button>
-
-        <span className="text-gray-700 font-medium">
-          Page {page} of {totalPages}
-        </span>
-
-        <button
-          onClick={next}
-          disabled={page === totalPages}
-          className="px-3 py-1.5 text-sm border rounded-md bg-white text-gray-600 hover:bg-gray-100 disabled:opacity-40"
-        >
-          Next
-        </button>
-      </div>
+      <Pagination2 />
 
       {/* Pagination 3  */}
       <div className="flex justify-center mt-10 gap-2">
