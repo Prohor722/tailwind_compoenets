@@ -8,11 +8,11 @@ const Pagination2 = () => {
   const next = () => page < totalPages && setPage(page + 1);
 
   return (
-    <div className="flex justify-center mt-10 items-center space-x-2">
+    <div className="flex justify-center mt-10 items-center space-x-2" title='Pagination-2'>
         <button
           onClick={prev}
           disabled={page === 1}
-          className="px-3 py-1.5 text-sm border rounded-md bg-white text-gray-600 hover:bg-gray-100 disabled:opacity-40"
+          className="cursor-pointer px-3 py-1.5 text-sm border rounded-md bg-white text-gray-600 hover:bg-gray-100 disabled:opacity-40"
         >
           Prev
         </button>
@@ -24,7 +24,7 @@ const Pagination2 = () => {
         <button
           onClick={next}
           disabled={page === totalPages}
-          className="px-3 py-1.5 text-sm border rounded-md bg-white text-gray-600 hover:bg-gray-100 disabled:opacity-40"
+          className="cursor-pointer px-3 py-1.5 text-sm border rounded-md bg-white text-gray-600 hover:bg-gray-100 disabled:opacity-40"
         >
           Next
         </button>

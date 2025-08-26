@@ -6,12 +6,13 @@ const Pagination8 = () => {
   const pages = [1, 2, 3, 4, 5];
 
   return (
-    <div className="flex justify-center gap-6 mt-10 border-b border-gray-200">
+    <div className="flex justify-center gap-6 mt-10 border-b border-gray-200"
+        title='Pagination-8'>
         {pages.map((n) => (
           <button
             key={n}
             onClick={() => setPage(n)}
-            className={`pb-2 text-sm font-medium transition-all duration-300 relative ${page === n ? "text-blue-600" : "text-gray-500 hover:text-blue-500"
+            className={`cursor-pointer pb-2 text-sm font-medium transition-all duration-300 relative ${page === n ? "text-blue-600" : "text-gray-500 hover:text-blue-500"
               }`}
           >
             {n}
@@ -20,7 +21,7 @@ const Pagination8 = () => {
             )}
           </button>
         ))}
-      </div>
+    </div>
   )
 }
 
