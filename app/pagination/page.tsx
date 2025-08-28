@@ -13,7 +13,7 @@ import Pagination6 from "./components/Pagination6";
 import Pagination7 from "./components/Pagination7";
 import Pagination8 from "./components/Pagination8";
 import Pagination9 from "./components/Pagination9";
-import Pagination10 from "./Pagination10";
+import Pagination10 from "./components/Pagination10";
 
 
 const PaginationPage = () => {
