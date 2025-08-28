@@ -10,10 +10,10 @@ const Pagination11 = () => {
           <button
             key={i}
             onClick={() => setCurrentPage(i + 1)}
-            className={`cursor-pointer px-4 py-2 rounded-md text-sm font-semibold transition-all duration-300 relative group
+            className={`px-4 py-2 rounded-md text-sm font-semibold transition-all duration-300 relative group
             ${currentPage === i + 1
-                ? "bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg"
-                : "bg-gray-100 text-gray-700 hover:text-blue-600"
+                ? "cursor-none bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg"
+                : "cursor-pointer bg-gray-100 text-gray-700 hover:text-blue-600"
               }
           `}
           >
