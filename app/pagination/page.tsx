@@ -12,6 +12,7 @@ import Pagination5 from "./components/Pagination5";
 import Pagination6 from "./components/Pagination6";
 import Pagination7 from "./components/Pagination7";
 import Pagination8 from "./components/Pagination8";
+import Pagination9 from "./components/Pagination9";
 
 
 const PaginationPage = () => {
@@ -176,20 +177,7 @@ const PaginationPage = () => {
       <Pagination8 />
 
       {/* Pagination 9  */}
-      <div className="flex justify-center gap-3 mt-10">
-        {[1, 2, 3, 4].map((n) => (
-          <button
-            key={n}
-            onClick={() => setPage(n)}
-            className={`w-10 h-10 rounded-full text-sm font-semibold transition-all duration-300 ${page === n
-              ? "bg-blue-600 text-white shadow-lg shadow-blue-300 scale-105"
-              : "bg-white text-gray-700 border border-gray-300 hover:bg-blue-50"
-              }`}
-          >
-            {n}
-          </button>
-        ))}
-      </div>
+      <Pagination9 />
 
       {/* Pagination 10  */}
       <div className="flex justify-center gap-4 mt-10">
