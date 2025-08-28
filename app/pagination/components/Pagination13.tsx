@@ -4,7 +4,7 @@ const Pagination13 = () => {
   const [currentDot, setCurrentDot] = useState(1);
   
   return (
-    <div className="flex justify-center gap-4 mt-10">
+    <div className="flex justify-center gap-4 mt-10" title='Pagination-13'>
         {[1, 2, 3, 4, 5].map((dot) => (
           <button
             key={dot}
