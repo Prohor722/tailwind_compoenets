@@ -26,6 +26,7 @@ import Pagination18 from "./components/Pagination18";
 import Pagination19 from "./components/Pagination19";
 import Pagination20 from "./components/Pagination20";
 import Pagination21 from "./components/Pagination21";
+import Pagination22 from "./components/Pagination22";
 
 
 const PaginationPage = () => {
@@ -35,7 +36,6 @@ const PaginationPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [shortPages, setShortPages] = useState([1, 2, 3, 4, 5]);
   const [shortPagesActive, setShortPagesActive] = useState(1);
-  const [activePage, setActivePage] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
   const [selectedButton, setSelectedButton] = useState<"left" | "right" | null>(null);
   const [hoveredPlanet, setHoveredPlanet] = useState<number | null>(null);
@@ -229,21 +229,7 @@ const PaginationPage = () => {
       <Pagination21 />
 
       {/* Pagination 22  */}
-      <div className="flex justify-center mt-10 gap-3 bg-[#f1f3f5] p-6 rounded-xl shadow-inner">
-        {[1, 2, 3, 4, 5].map((n) => (
-          <button
-            key={n}
-            onClick={() => setActivePage(n)}
-            className={`w-10 h-10 rounded-lg text-sm font-semibold transition-all duration-300 shadow 
-            ${activePage === n
-                ? "bg-blue-600 text-white shadow-lg shadow-blue-300"
-                : "bg-[#f1f3f5] text-gray-700 hover:bg-blue-100"
-              }`}
-          >
-            {n}
-          </button>
-        ))}
-      </div>
+      <Pagination22 />
 
       {/* Pagination 23  */}
       <div className="flex justify-center items-center mt-10 gap-4">
