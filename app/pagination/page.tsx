@@ -24,6 +24,7 @@ import Pagination17 from "./components/Pagination17";
 import Pagination17a from "./components/pagination17a";
 import Pagination18 from "./components/Pagination18";
 import Pagination19 from "./components/Pagination19";
+import Pagination20 from "./components/Pagination20";
 
 
 const PaginationPage = () => {
@@ -222,21 +223,7 @@ const PaginationPage = () => {
       <Pagination19 />
 
       {/* Pagination 20  */}
-      <div className="flex justify-center mt-10 gap-2">
-        {[1, 2, 3, 4, 5].map((n) => (
-          <button
-            key={n}
-            onClick={() => setActive(n)}
-            className={`w-10 h-10 rounded-full border text-sm font-semibold transition-all duration-300 
-            ${active === n
-                ? "border-blue-600 text-blue-600 ring-2 ring-blue-300 animate-pulse"
-                : "border-gray-300 text-gray-700 hover:border-blue-400 hover:text-blue-500"
-              }`}
-          >
-            {n}
-          </button>
-        ))}
-      </div>
+      <Pagination20 />
 
       {/* Pagination 21  */}
       <div className="flex justify-center mt-12 gap-4 p-4 backdrop-blur-md bg-white/30 border border-white/50 rounded-xl shadow-lg">
