@@ -25,6 +25,7 @@ import Pagination17a from "./components/pagination17a";
 import Pagination18 from "./components/Pagination18";
 import Pagination19 from "./components/Pagination19";
 import Pagination20 from "./components/Pagination20";
+import Pagination21 from "./components/Pagination21";
 
 
 const PaginationPage = () => {
@@ -32,7 +33,6 @@ const PaginationPage = () => {
   const [selected, setSelected] = useState(1);
   const [page, setPage] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
-  const [currentDot, setCurrentDot] = useState(1);
   const [shortPages, setShortPages] = useState([1, 2, 3, 4, 5]);
   const [shortPagesActive, setShortPagesActive] = useState(1);
   const [activePage, setActivePage] = useState(1);
@@ -226,18 +226,7 @@ const PaginationPage = () => {
       <Pagination20 />
 
       {/* Pagination 21  */}
-      <div className="flex justify-center mt-12 gap-4 p-4 backdrop-blur-md bg-white/30 border border-white/50 rounded-xl shadow-lg">
-        {[1, 2, 3, 4, 5].map((n) => (
-          <button
-            key={n}
-            onClick={() => setCurrentDot(n)}
-            className={`w-4 h-4 rounded-full transition-all duration-300 ${currentDot === n
-              ? "bg-blue-600 scale-125 shadow-md"
-              : "bg-gray-300 hover:bg-blue-400"
-              }`}
-          />
-        ))}
-      </div>
+      <Pagination21 />
 
       {/* Pagination 22  */}
       <div className="flex justify-center mt-10 gap-3 bg-[#f1f3f5] p-6 rounded-xl shadow-inner">
