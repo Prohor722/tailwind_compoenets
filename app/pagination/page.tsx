@@ -23,6 +23,7 @@ import Pagination16 from "./components/Pagination16";
 import Pagination17 from "./components/Pagination17";
 import Pagination17a from "./components/pagination17a";
 import Pagination18 from "./components/Pagination18";
+import Pagination19 from "./components/Pagination19";
 
 
 const PaginationPage = () => {
@@ -157,8 +158,6 @@ const PaginationPage = () => {
   const progress = (currentPage / totalPages) * 100;
   const angle = ((currentPage - 1) / (totalPages - 1)) * 360;
 
-  const prev = () => page > 1 && setPage(page - 1);
-  const next = () => page < totalPages && setPage(page + 1);
 
   return (
     <div className="flex flex-wrap justify-center items-center gap-10">
@@ -220,34 +219,7 @@ const PaginationPage = () => {
       <Pagination18 />
 
       {/* Pagination 19  */}
-      <div className="flex items-center justify-center mt-20 gap-4">
-        <button
-          onClick={prev}
-          className="p-2 rounded-full bg-gray-100 text-gray-700 hover:bg-blue-100 transition"
-        >
-          <ChevronLeft />
-        </button>
-
-        {Array.from({ length: totalPages }).map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setPage(i + 1)}
-            className={`w-9 h-9 rounded-full flex items-center justify-center font-medium text-sm transition-all duration-300 ${page === i + 1
-              ? "bg-blue-600 text-white shadow-lg"
-              : "bg-white border text-gray-600 border-gray-300 hover:bg-blue-50"
-              }`}
-          >
-            {i + 1}
-          </button>
-        ))}
-
-        <button
-          onClick={next}
-          className="p-2 rounded-full bg-gray-100 text-gray-700 hover:bg-blue-100 transition"
-        >
-          <ChevronRight />
-        </button>
-      </div>
+      <Pagination19 />
 
       {/* Pagination 20  */}
       <div className="flex justify-center mt-10 gap-2">
