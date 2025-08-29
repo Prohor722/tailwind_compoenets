@@ -21,6 +21,7 @@ import Pagination14 from "./components/Pagination14";
 import Pagination15 from "./components/Pagination15";
 import Pagination16 from "./components/Pagination16";
 import Pagination17 from "./components/Pagination17";
+import Pagination17a from "./components/pagination17a";
 
 
 const PaginationPage = () => {
@@ -211,22 +212,8 @@ const PaginationPage = () => {
       {/* Pagination 17  */}
       <Pagination17 />
 
-      {/* Pagination 17  */}
-      <div className="flex justify-center mt-6 items-center gap-2 text-sm font-medium">
-        {shortPages.map((page) => (
-          <button
-            onClick={() => setShortPagesActive(page)}
-            key={page}
-            className={`px-2 py-1 rounded 
-              ${shortPagesActive === page
-                ? "bg-blue-600 text-white hover:text-white hover:bg-blue-900"
-                : "bg-gray-100 text-black hover:text-white hover:bg-gray-700"
-              }`}
-          >
-            {page}
-          </button>
-        ))}
-      </div>
+      {/* Pagination 17.1  */}
+      <Pagination17a />
 
       {/* Pagination 18  */}
       <div className="backdrop-blur-lg bg-white/30 border border-white/40 rounded-xl px-6 py-4 shadow-xl flex gap-3">
