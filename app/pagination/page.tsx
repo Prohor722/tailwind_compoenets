@@ -29,10 +29,10 @@ import Pagination21 from "./components/Pagination21";
 import Pagination22 from "./components/Pagination22";
 import Pagination23 from "./components/Pagination23";
 import Pagination24 from "./components/Pagination24";
+import Pagination25 from "./components/Pagination25";
 
 
 const PaginationPage = () => {
-  const [active, setActive] = useState(1);
   const [page, setPage] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
   const [shortPages, setShortPages] = useState([1, 2, 3, 4, 5]);
@@ -239,21 +239,7 @@ const PaginationPage = () => {
       <Pagination24 />
 
       {/* Pagination 25  */}
-      <div className="flex justify-center mt-12 gap-3">
-        {[1, 2, 3, 4, 5].map((n) => (
-          <button
-            key={n}
-            onClick={() => setActive(n)}
-            className={`relative px-4 py-2 font-semibold text-sm transform transition-all duration-300 skew-x-6
-          ${active === n
-                ? "bg-indigo-600 text-white shadow-md -skew-x-6"
-                : "bg-gray-200 text-gray-800 hover:bg-indigo-100 -skew-x-6"
-              }`}
-          >
-            {n}
-          </button>
-        ))}
-      </div>
+      <Pagination25 />
 
       {/* Pagination 26  */}
       <div className="relative mt-14 flex justify-center gap-6">
