@@ -31,6 +31,7 @@ import Pagination23 from "./components/Pagination23";
 import Pagination24 from "./components/Pagination24";
 import Pagination25 from "./components/Pagination25";
 import Pagination26 from "./components/Pagination26";
+import Pagination27 from "./components/Pagination27";
 
 
 const PaginationPage = () => {
@@ -246,33 +247,7 @@ const PaginationPage = () => {
       <Pagination26 />
 
       {/* Pagination 27  */}
-      <div className="w-full max-w-md mt-12 relative">
-        {/* Background Bar */}
-        <div className="w-full h-[20px] bg-gray-200 rounded-full overflow-hidden relative z-10">
-          <div
-            className="h-[20px] bg-indigo-500 transition-all duration-500"
-            style={{ width: `${(page / total) * 100}%` }}
-          />
-        </div>
-
-        {/* Page numbers overlayed on top */}
-        <div className="absolute top-0 left-0 w-full h-[20px] flex justify-evenly items-center z-20 text-xs text-white">
-          {pages.map((p) => (
-            <button
-              onClick={() => setPage(p)}
-              key={p}
-              className={`cursor-pointer w-full h-full 
-                ${page === p
-                  ? "text-yellow-300 font-bold scale-105"
-                  : "font-semibold"
-                }
-                ${p > page ? "text-gray-700" : ""}`}
-            >
-              {p}
-            </button>
-          ))}
-        </div>
-      </div>
+      <Pagination27 />
 
       {/* Pagination 27.2  */}
       <div className="flex justify-center mt-12 gap-4 bg-white/20 backdrop-blur-lg p-4 rounded-2xl shadow-lg">
