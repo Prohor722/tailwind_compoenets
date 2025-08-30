@@ -30,6 +30,7 @@ import Pagination22 from "./components/Pagination22";
 import Pagination23 from "./components/Pagination23";
 import Pagination24 from "./components/Pagination24";
 import Pagination25 from "./components/Pagination25";
+import Pagination26 from "./components/Pagination26";
 
 
 const PaginationPage = () => {
@@ -242,24 +243,7 @@ const PaginationPage = () => {
       <Pagination25 />
 
       {/* Pagination 26  */}
-      <div className="relative mt-14 flex justify-center gap-6">
-        {pages.map((n) => (
-          <div key={n} className="relative flex flex-col items-center">
-            <button
-              onClick={() => setPage(n)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 
-              ${page === n
-                  ? "bg-blue-600 scale-125 animate-pulse"
-                  : "bg-gray-400 hover:bg-blue-400"
-                }`}
-            />
-
-            {/* {page === n && (
-            <span className="mt-1 w-1 h-4 bg-blue-500 animate-pulse rounded" />
-          )} */}
-          </div>
-        ))}
-      </div>
+      <Pagination26 />
 
       {/* Pagination 27  */}
       <div className="w-full max-w-md mt-12 relative">
