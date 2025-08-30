@@ -28,11 +28,11 @@ import Pagination20 from "./components/Pagination20";
 import Pagination21 from "./components/Pagination21";
 import Pagination22 from "./components/Pagination22";
 import Pagination23 from "./components/Pagination23";
+import Pagination24 from "./components/Pagination24";
 
 
 const PaginationPage = () => {
   const [active, setActive] = useState(1);
-  const [selected, setSelected] = useState(1);
   const [page, setPage] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
   const [shortPages, setShortPages] = useState([1, 2, 3, 4, 5]);
@@ -236,21 +236,7 @@ const PaginationPage = () => {
       <Pagination23 />
 
       {/* Pagination 24  */}
-      <div className="flex justify-center mt-12 bg-white/20 backdrop-blur-md rounded-lg px-6 py-4 shadow-inner gap-3">
-        {[1, 2, 3, 4, 5].map((n) => (
-          <button
-            key={n}
-            onClick={() => setSelected(n)}
-            className={`px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 
-            ${selected === n
-                ? " text-blue-200 shadow-lg ring-2 ring-blue-300"
-                : "text-white hover:bg-white/20"
-              }`}
-          >
-            {n}
-          </button>
-        ))}
-      </div>
+      <Pagination24 />
 
       {/* Pagination 25  */}
       <div className="flex justify-center mt-12 gap-3">
