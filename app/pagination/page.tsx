@@ -33,6 +33,7 @@ import Pagination25 from "./components/Pagination25";
 import Pagination26 from "./components/Pagination26";
 import Pagination27 from "./components/Pagination27";
 import Pagination28 from "./components/Pagination28";
+import Pagination29 from "./components/Pagination29";
 
 
 const PaginationPage = () => {
@@ -253,26 +254,8 @@ const PaginationPage = () => {
       {/* Pagination 28  */}
       <Pagination28 />
 
-      {/* Pagination 28  */}
-      <div className="flex mt-16">
-        <div className="flex flex-col gap-4 px-4 border-r border-gray-300">
-          {pages.map((p) => (
-            <button
-              key={p}
-              onClick={() => setPage(p)}
-              className={`py-2 px-3 rounded-lg text-sm font-medium transition-all duration-300 text-left ${page === p
-                ? "bg-blue-600 text-white shadow-md"
-                : "text-gray-700 hover:bg-gray-100"
-                }`}
-            >
-              {p}
-            </button>
-          ))}
-        </div>
-        <div className="p-6 text-lg font-semibold text-blue-800">
-          You are on Section {page}
-        </div>
-      </div>
+      {/* Pagination 29  */}
+      <Pagination29 />
 
       {/* Pagination 29  */}
       <div className="flex flex-col gap-4 items-center mt-12">
