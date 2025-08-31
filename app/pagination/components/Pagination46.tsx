@@ -21,7 +21,9 @@ const Pagination46 = () => {
     };
 
     return (
-        <div className="relative bg-black rounded-2xl p-8 overflow-hidden border border-green-500/30">
+        <div className="relative bg-black rounded-2xl p-8 
+        overflow-hidden border border-green-500/30"
+            title="Pagination-46">
             {/* Matrix Rain Background */}
             <div className="absolute inset-0 opacity-20">
                 {matrixChars.map((item, i) => (
@@ -44,7 +46,7 @@ const Pagination46 = () => {
                 <button
                     onClick={() => onPageChange(currentPage - 1)}
                     disabled={currentPage === 1}
-                    className="w-12 h-12 rounded-lg bg-black border border-green-500 text-green-400 font-mono hover:bg-green-500/20 hover:text-green-300 transition-colors disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center"
+                    className="cursor-pointer w-12 h-12 rounded-lg bg-black border border-green-500 text-green-400 font-mono hover:bg-green-500/20 hover:text-green-300 transition-colors disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center"
                 >
                     {'<'}
                 </button>
@@ -70,7 +72,7 @@ const Pagination46 = () => {
                                 onClick={() => onPageChange(pageNum)}
                                 className={`w-12 h-12 rounded-lg font-mono font-bold transition-all duration-300 ${isActive
                                     ? 'bg-green-500 text-black shadow-lg shadow-green-500/50 scale-110'
-                                    : 'bg-black border border-green-500 text-green-400 hover:bg-green-500/20 hover:text-green-300'
+                                    : 'bg-black border cursor-pointer border-green-500 text-green-400 hover:bg-green-500/20 hover:text-green-300'
                                     }`}
                             >
                                 {String(pageNum).padStart(2, '0')}
@@ -82,7 +84,7 @@ const Pagination46 = () => {
                 <button
                     onClick={() => onPageChange(currentPage + 1)}
                     disabled={currentPage === totalPages}
-                    className="w-12 h-12 rounded-lg bg-black border border-green-500 text-green-400 font-mono hover:bg-green-500/20 hover:text-green-300 transition-colors disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center"
+                    className="w-12 cursor-pointer h-12 rounded-lg bg-black border border-green-500 text-green-400 font-mono hover:bg-green-500/20 hover:text-green-300 transition-colors disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center"
                 >
                     {'>'}
                 </button>
