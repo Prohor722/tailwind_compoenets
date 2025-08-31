@@ -35,10 +35,10 @@ import Pagination27 from "./components/Pagination27";
 import Pagination28 from "./components/Pagination28";
 import Pagination29 from "./components/Pagination29";
 import Pagination30 from "./components/Pagination30";
+import Pagination31 from "./components/Pagination31";
 
 
 const PaginationPage = () => {
-  const [page, setPage] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
   const [shortPages, setShortPages] = useState([1, 2, 3, 4, 5]);
   const [shortPagesActive, setShortPagesActive] = useState(1);
@@ -81,28 +81,6 @@ const PaginationPage = () => {
         clearInterval(interval);
       }, (totalPages - currentPage) * 2000);
     }
-  };
-
-
-  const getPageNumbers = () => {
-    const pages = [];
-    const showEllipsis = totalPages > 7;
-
-    if (!showEllipsis) {
-      for (let i = 1; i <= totalPages; i++) {
-        pages.push(i);
-      }
-    } else {
-      if (currentPage <= 4) {
-        pages.push(1, 2, 3, 4, 5, '...', totalPages);
-      } else if (currentPage >= totalPages - 3) {
-        pages.push(1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
-      } else {
-        pages.push(1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages);
-      }
-    }
-
-    return pages;
   };
 
   const onPageChange = (page: number) => {
@@ -158,9 +136,7 @@ const PaginationPage = () => {
     setMatrixChars(newChars);
 
   }, [shortPagesActive]);
-
-  const pages = [1, 2, 3, 4, 5];
-  const total = 5;
+  
   const totalPages = 5;
   const progress = (currentPage / totalPages) * 100;
   const angle = ((currentPage - 1) / (totalPages - 1)) * 360;
@@ -261,43 +237,8 @@ const PaginationPage = () => {
       {/* Pagination 30  */}
       <Pagination30 />
 
-      {/* Pagination 30  */}
-      <div className="flex items-center space-x-1 p-4">
-        <button
-          onClick={() => onPageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-          className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 text-gray-700 hover:bg-white/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
-        >
-          <ChevronLeft size={16} />
-        </button>
-
-        {getPageNumbers().map((page, index) => (
-          page === '...' ? (
-            <span key={index} className="flex items-center justify-center w-10 h-10 text-gray-500">
-              <MoreHorizontal size={16} />
-            </span>
-          ) : (
-            <button
-              key={page}
-              onClick={() => typeof page === 'number' && onPageChange(page)}
-              className={`flex items-center justify-center w-10 h-10 rounded-xl backdrop-blur-md border transition-all duration-300 font-medium ${currentPage === page
-                ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white border-transparent shadow-lg scale-110'
-                : 'bg-white/20 border-white/30 text-gray-700 hover:bg-white/30 hover:scale-105'
-                }`}
-            >
-              {page}
-            </button>
-          )
-        ))}
-
-        <button
-          onClick={() => onPageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-          className="flex items-center justify-center w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 text-gray-700 hover:bg-white/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
-        >
-          <ChevronRight size={16} />
-        </button>
-      </div>
+      {/* Pagination 31  */}
+      <Pagination31 />
 
       {/* Pagination 31  */}
       <div className="flex items-center justify-center space-x-3 p-4">
