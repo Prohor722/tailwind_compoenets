@@ -1,8 +1,23 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
+interface StyleProps{
+  left?: number;
+  animationDelay?: number;
+}
 const Pagination45 = () => {
-    const [currentPage, setCurrentPage] = React.useState(1);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [ style, setStyle] = useState<StyleProps[]>([{}]);
+
+    useEffect(() => {
+      const styleArray = Array.from({ length: 10 }, () => ({
+          left: Math.random() * 100,
+          animationDelay: Math.random() * 0.5
+      }));
+
+      setStyle(styleArray);
+    }, [currentPage]);
+
     const totalPages = 10;
     const steamAnimation = true; // Toggle steam animation
     const handlePageChange = (page: number) => {
@@ -23,9 +38,9 @@ const Pagination45 = () => {
                 key={i}
                 className="absolute w-2 h-2 bg-white/60 rounded-full animate-bounce"
                 style={{
-                  left: `${Math.random() * 100}%`,
+                  left: `${style[i]?.left}%`,
                   bottom: '20px',
-                  animationDelay: `${Math.random() * 0.5}s`,
+                  animationDelay: `${style[i]?.animationDelay}s`,
                   animationDuration: '1s'
                 }}
               />
