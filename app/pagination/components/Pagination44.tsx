@@ -1,10 +1,23 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+interface RandNumberProps {
+    number?: number;
+}
 
 const Pagination44 = () => {
-    const [currentPage, setCurrentPage] = React.useState(1);
+    const [currentPage, setCurrentPage] = useState(1);
     const totalPages = 10;
-    const [animating, setAnimating] = React.useState(false);
+    const [animating, setAnimating] = useState(false);
+    const [randNumber, setRandNumber] = useState<RandNumberProps[]>([{}]);
+
+    useEffect(() => {
+        const numbers = Array.from({ length: totalPages }, () => ({
+            number: Math.random() * 40 + 20
+        }));
+        setRandNumber(numbers);
+
+    }, [currentPage]);
 
     const triggerAnimation = (page: number) => {
         setAnimating(true);
@@ -21,7 +34,7 @@ const Pagination44 = () => {
           title="Pagination-44">
             <div className="flex items-end justify-center space-x-1 mb-6">
                 {Array.from({ length: totalPages }, (_, i) => {
-                    const height = currentPage === i + 1 ? 60 : Math.random() * 40 + 20;
+                    const height = currentPage === i + 1 ? 60 : randNumber[i]?.number ?? 10;
                     const isActive = currentPage === i + 1;
 
                     return (

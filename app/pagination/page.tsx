@@ -188,7 +188,7 @@ const PaginationPage = () => {
       <Pagination43 />
 
       {/* Pagination 44  */}
-      {/* <Pagination44 /> */}
+      <Pagination44 />
 
       {/* Pagination 45  */}
       <Pagination45 />
