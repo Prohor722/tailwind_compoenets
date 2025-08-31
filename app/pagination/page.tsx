@@ -38,6 +38,7 @@ import Pagination30 from "./components/Pagination30";
 import Pagination31 from "./components/Pagination31";
 import Pagination32 from "./components/Pagination32";
 import Pagination33 from "./components/Pagination33";
+import Pagination34 from "./components/Pagination34";
 
 
 const PaginationPage = () => {
@@ -248,41 +249,9 @@ const PaginationPage = () => {
       <Pagination33 />
       
 
-      {/* Pagination 33  */}
-      <div className="flex items-center justify-center space-x-6 p-4">
-        <button
-          onClick={() => onPageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-          className="text-gray-400 hover:text-gray-700 
-          transition-colors disabled:opacity-30 cursor-pointer 
-          disabled:cursor-not-allowed"
-        >
-          <ChevronLeft size={24} />
-        </button>
-
-        <div className="flex items-center space-x-2">
-          {Array.from({ length: totalPages }, (_, i) => (
-            <button
-              key={i + 1}
-              onClick={() => onPageChange(i + 1)}
-              className={`transition-all duration-200 rounded-full ${currentPage === i + 1
-                ? 'w-8 h-3 bg-gradient-to-r from-indigo-500 to-purple-600'
-                : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
-                }`}
-            />
-          ))}
-        </div>
-
-        <button
-          onClick={() => onPageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-          className="text-gray-400 hover:text-gray-700 
-          transition-colors disabled:opacity-30 cursor-pointer 
-          disabled:cursor-not-allowed"
-        >
-          <ChevronRight size={24} />
-        </button>
-      </div>
+      {/* Pagination 34  */}
+      <Pagination34 />
+      
 
       {/* Pagination 34  */}
       <div className="flex items-center justify-center space-x-4 p-8 bg-gray-200 rounded-3xl">
