@@ -1,8 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
-import {
-  ChevronLeft, ChevronRight,
-  } from "lucide-react";
+
 import Pagination1 from "./components/Pagination1";
 import Pagination2 from "./components/Pagination2";
 import Pagination3 from "./components/Pagination3";
@@ -49,80 +46,10 @@ import Pagination42 from "./components/Pagination42";
 import Pagination43 from "./components/Pagination43";
 import Pagination44 from "./components/Pagination44";
 import Pagination45 from "./components/Pagination45";
+import Pagination46 from "./components/Pagination46";
 
 
 const PaginationPage = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [shortPages, setShortPages] = useState([1, 2, 3, 4, 5]);
-  const [shortPagesActive, setShortPagesActive] = useState(1);
-  const [hoveredPlanet, setHoveredPlanet] = useState<number | null>(null);
-  const [animating, setAnimating] = useState(false);
-  const [steamAnimation, setSteamAnimation] = useState(false);
-  const [matrixChars, setMatrixChars] = useState<Array<{char: string, x: number, delay: number}>>([]);
-
-  const handlePageChange = (page: number) => {
-    setSteamAnimation(true);
-    setTimeout(() => setSteamAnimation(false), 1000);
-    onPageChange(page);
-  };
-
-  
-  const onPageChange = (page: number) => {
-    setCurrentPage(page);
-  };
-
-  useEffect(() => {
-    const longPages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-    const last = shortPages[shortPages.length - 1];
-    const first = shortPages[0];
-
-    if (
-      (shortPagesActive === first && shortPagesActive > longPages[1]) ||
-      (shortPagesActive === last && //active=9 last=9
-        shortPagesActive < longPages.length - 1) //len 10
-    ) {
-      setShortPages([
-        shortPagesActive - 2,
-        shortPagesActive - 1,
-        shortPagesActive,
-        shortPagesActive + 1,
-        shortPagesActive + 2,
-      ]);
-    } else if (
-      shortPagesActive === last && //active=9 last=9
-      shortPagesActive < longPages.length //len 9
-    ) {
-      setShortPages([
-        shortPagesActive - 3,
-        shortPagesActive - 2,
-        shortPagesActive - 1,
-        shortPagesActive,
-        shortPagesActive + 1,
-      ]);
-    } else if (shortPagesActive === first && shortPagesActive > longPages[0]) {
-      setShortPages([
-        shortPagesActive - 1,
-        shortPagesActive,
-        shortPagesActive + 1,
-        shortPagesActive + 2,
-        shortPagesActive + 3,
-      ]);
-    }
-
-
-    const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワン';
-    const newChars = Array.from({ length: 100 }, () => ({
-      char: chars[Math.floor(Math.random() * chars.length)],
-      x: Math.random() * 100,
-      delay: Math.random() * 2
-    }));
-    setMatrixChars(newChars);
-
-  }, [shortPagesActive]);
-
-  const totalPages = 5;
-
 
   return (
     <div className="flex flex-wrap justify-center items-center gap-10">
@@ -266,78 +193,8 @@ const PaginationPage = () => {
       {/* Pagination 45  */}
       <Pagination45 />
 
-      {/* Pagination 45  */}
-      <div className="relative bg-black rounded-2xl p-8 overflow-hidden border border-green-500/30">
-        {/* Matrix Rain Background */}
-        <div className="absolute inset-0 opacity-20">
-          {matrixChars.map((item, i) => (
-            <div
-              key={i}
-              className="absolute text-green-400 text-sm font-mono animate-bounce"
-              style={{
-                left: `${item.x}%`,
-                top: `${(i * 5) % 100}%`,
-                animationDelay: `${item.delay}s`,
-                animationDuration: '2s'
-              }}
-            >
-              {item.char}
-            </div>
-          ))}
-        </div>
-
-        <div className="relative z-10 flex items-center justify-center space-x-8">
-          <button
-            onClick={() => onPageChange(currentPage - 1)}
-            disabled={currentPage === 1}
-            className="w-12 h-12 rounded-lg bg-black border border-green-500 text-green-400 font-mono hover:bg-green-500/20 hover:text-green-300 transition-colors disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center"
-          >
-            {'<'}
-          </button>
-
-          <div className="flex items-center space-x-2">
-            {Array.from({ length: Math.min(7, totalPages) }, (_, i) => {
-              let pageNum;
-              if (totalPages <= 7) {
-                pageNum = i + 1;
-              } else if (currentPage <= 4) {
-                pageNum = i + 1;
-              } else if (currentPage >= totalPages - 3) {
-                pageNum = totalPages - 6 + i;
-              } else {
-                pageNum = currentPage - 3 + i;
-              }
-
-              const isActive = currentPage === pageNum;
-
-              return (
-                <button
-                  key={pageNum}
-                  onClick={() => onPageChange(pageNum)}
-                  className={`w-12 h-12 rounded-lg font-mono font-bold transition-all duration-300 ${isActive
-                      ? 'bg-green-500 text-black shadow-lg shadow-green-500/50 scale-110'
-                      : 'bg-black border border-green-500 text-green-400 hover:bg-green-500/20 hover:text-green-300'
-                    }`}
-                >
-                  {String(pageNum).padStart(2, '0')}
-                </button>
-              );
-            })}
-          </div>
-
-          <button
-            onClick={() => onPageChange(currentPage + 1)}
-            disabled={currentPage === totalPages}
-            className="w-12 h-12 rounded-lg bg-black border border-green-500 text-green-400 font-mono hover:bg-green-500/20 hover:text-green-300 transition-colors disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center"
-          >
-            {'>'}
-          </button>
-        </div>
-
-        <div className="relative z-10 text-center mt-4 text-green-400 font-mono text-sm">
-          SYSTEM PAGE [{String(currentPage).padStart(2, '0')}/{String(totalPages).padStart(2, '0')}]
-        </div>
-      </div>
+      {/* Pagination 46  */}
+      <Pagination46 />
 
     </div>
   );
