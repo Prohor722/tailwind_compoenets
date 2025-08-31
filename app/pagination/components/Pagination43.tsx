@@ -1,27 +1,33 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
+
+interface SingleStyleProps {
+  top?: number;
+  left?: number;
+  delay?: number;
+}
+
+interface StyleProps {
+  [key: number]: SingleStyleProps;
+}
+
+
 
 const Pagination43 = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [hoveredPlanet, setHoveredPlanet] = useState<number | null>(null);
-  const [style, setStyle] = useState<React.CSSProperties>({});
+  const [style, setStyle] = useState<StyleProps>([{}]);
 
-  useEffect(() => {
-    setStyle({
-      top: `${Math.random() * 100}%`,
-      left: `${Math.random() * 100}%`,
-      animationDelay: `${Math.random() * 2}s`,
-    });
-  }, []);
+  setInterval(() => {
+    const numbers = Array.from({ length: 50 }, () => ({
+      top: Math.random() * 100,
+      left: Math.random() * 100,
+      delay: Math.random() * 2,
+    }));
 
-  // setInterval(() => {
-  //   setStyle({
-  //     top: `${Math.random() * 100}%`,
-  //     left: `${Math.random() * 100}%`,
-  //     animationDelay: `${Math.random() * 20}s`,
-  //   });
-  // }, 100);
-  
+    setStyle(numbers);
+  }, 500);
+
   const totalPages = 7;
   const onPageChange = (page: number) => {
     if (page < 1 || page > totalPages) return;
@@ -37,17 +43,16 @@ const Pagination43 = () => {
           <div
             key={i}
             className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
-            // style={{
-            //   top: `${Math.random() * 100}%`,
-            //   left: `${Math.random() * 100}%`,
-            //   animationDelay: `${Math.random() * 2}s`
-            // }}
-            style={style}
+            style={{
+              top: `${style[i]?.top ?? 10}%`,
+              left: `${style[i]?.left ?? 10}%`,
+              animationDelay: `${style[i]?.top ?? 10}s`
+            }}
           >
-            
-            </div>
 
-          
+          </div>
+
+
         ))}
       </div>
 
