@@ -37,6 +37,7 @@ import Pagination29 from "./components/Pagination29";
 import Pagination30 from "./components/Pagination30";
 import Pagination31 from "./components/Pagination31";
 import Pagination32 from "./components/Pagination32";
+import Pagination33 from "./components/Pagination33";
 
 
 const PaginationPage = () => {
@@ -139,7 +140,6 @@ const PaginationPage = () => {
   }, [shortPagesActive]);
 
   const totalPages = 5;
-  const progress = (currentPage / totalPages) * 100;
   const angle = ((currentPage - 1) / (totalPages - 1)) * 360;
 
 
@@ -244,54 +244,18 @@ const PaginationPage = () => {
       {/* Pagination 32  */}
       <Pagination32 />
 
-      {/* Pagination 32  */}
-      <div className="w-full max-w-md mx-auto p-6 bg-white rounded-2xl shadow-lg">
-        <div className="flex items-center justify-between mb-4">
-          <button
-            onClick={() => onPageChange(currentPage - 1)}
-            disabled={currentPage === 1}
-            className="p-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <ChevronLeft size={20} />
-          </button>
-
-          <div className="text-center">
-            <div className="text-2xl font-bold text-gray-900">{currentPage}</div>
-            <div className="text-sm text-gray-500">of {totalPages}</div>
-          </div>
-
-          <button
-            onClick={() => onPageChange(currentPage + 1)}
-            disabled={currentPage === totalPages}
-            className="p-2 rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <ChevronRight size={20} />
-          </button>
-        </div>
-
-        <div className="relative w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-          <div
-            className="absolute top-0 left-0 h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full transition-all duration-300 ease-out"
-            style={{ width: `${progress}%` }}
-          />
-          <div
-            className="absolute top-0 h-full w-4 bg-white rounded-full shadow-md transition-all duration-300 ease-out transform -translate-x-2"
-            style={{ left: `${progress}%` }}
-          />
-        </div>
-
-        <div className="flex justify-between text-xs text-gray-400 mt-2">
-          <span>Start</span>
-          <span>End</span>
-        </div>
-      </div>
+      {/* Pagination 33  */}
+      <Pagination33 />
+      
 
       {/* Pagination 33  */}
       <div className="flex items-center justify-center space-x-6 p-4">
         <button
           onClick={() => onPageChange(currentPage - 1)}
           disabled={currentPage === 1}
-          className="text-gray-400 hover:text-gray-700 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          className="text-gray-400 hover:text-gray-700 
+          transition-colors disabled:opacity-30 cursor-pointer 
+          disabled:cursor-not-allowed"
         >
           <ChevronLeft size={24} />
         </button>
@@ -312,7 +276,9 @@ const PaginationPage = () => {
         <button
           onClick={() => onPageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className="text-gray-400 hover:text-gray-700 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          className="text-gray-400 hover:text-gray-700 
+          transition-colors disabled:opacity-30 cursor-pointer 
+          disabled:cursor-not-allowed"
         >
           <ChevronRight size={24} />
         </button>
@@ -323,7 +289,12 @@ const PaginationPage = () => {
         <button
           onClick={() => onPageChange(currentPage - 1)}
           disabled={currentPage === 1}
-          className="w-12 h-12 rounded-2xl bg-gray-200 shadow-[-5px_-5px_10px_rgba(255,255,255,0.8),5px_5px_10px_rgba(0,0,0,0.25)] hover:shadow-[-2px_-2px_5px_rgba(255,255,255,0.8),2px_2px_5px_rgba(0,0,0,0.25)] active:shadow-[inset_2px_2px_5px_rgba(0,0,0,0.2),inset_-2px_-2px_5px_rgba(255,255,255,0.7)] flex items-center justify-center text-gray-600 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-12 h-12 rounded-2xl bg-gray-200 
+          shadow-[-5px_-5px_10px_rgba(255,255,255,0.8),5px_5px_10px_rgba(0,0,0,0.25)] 
+          hover:shadow-[-2px_-2px_5px_rgba(255,255,255,0.8),2px_2px_5px_rgba(0,0,0,0.25)] 
+          active:shadow-[inset_2px_2px_5px_rgba(0,0,0,0.2),inset_-2px_-2px_5px_rgba(255,255,255,0.7)] 
+          flex items-center justify-center text-gray-600 transition-all 
+          duration-200 disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
         >
           <ChevronLeft size={20} />
         </button>
