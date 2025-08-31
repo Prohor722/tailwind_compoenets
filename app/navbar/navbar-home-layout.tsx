@@ -23,7 +23,7 @@ export const NavHome = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed bg-white shadow-md px-6 py-4 top-0 z-50">
+    <nav className="fixed w-full bg-white shadow-md px-6 py-4 top-0 z-50">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         
         {/* Hamburger toggle (mobile only) */}
