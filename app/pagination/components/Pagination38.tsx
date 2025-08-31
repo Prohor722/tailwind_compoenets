@@ -19,7 +19,7 @@ const Pagination38 = () => {
                 setCurrentPage(1);
             }
             console.log("1st: ", isPlaying);
-            setIsPlaying(!isPlaying);
+            !isPlaying && setIsPlaying(!isPlaying);
 
             // Auto-advance pages when "playing"
             if (!isPlaying && currentPage <= totalPages) {
