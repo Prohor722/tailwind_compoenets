@@ -2,6 +2,9 @@
 import React from 'react'
 import { AnimarionButtons } from '../components/animarion-buttons'
 import PrimaryButton from './components/PrimaryButton'
+import OutlineButton from './components/OutlineButton'
+import GradientButton from './components/GradientButton'
+import RoundedFullButton from './components/RoundedFullButton'
 
 const page = () => {
   return (
@@ -9,22 +12,16 @@ const page = () => {
       <h1 className="text-2xl font-bold text-blue-500">Tailwind Button Showcase</h1>
 
       <div className="flex flex-wrap justify-center gap-4">
+
         <PrimaryButton />
 
-        {/* Outline */}
-        <button className="px-6 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition">
-          Outline
-        </button>
+        <OutlineButton />
 
-        {/* Gradient */}
-        <button className="px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded hover:opacity-90 transition">
-          Gradient
-        </button>
+        <GradientButton />
+        
 
         {/* Rounded Full */}
-        <button className="px-6 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
-          Rounded Full
-        </button>
+        <RoundedFullButton />
 
         {/* Icon Button */}
         <button className="flex items-center gap-2 px-5 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition">
