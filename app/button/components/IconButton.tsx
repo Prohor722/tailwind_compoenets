@@ -1,6 +1,7 @@
 const IconButton = () => {
     return (
-        <button className="flex items-center gap-2 px-5 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition">
+        <button className="flex items-center gap-2 px-5 py-2 bg-gray-800 
+        text-white rounded hover:bg-gray-700 transition cursor-pointer">
             <span>Icon Button</span>
             <svg
                 className="w-5 h-5"
