@@ -6,6 +6,7 @@ import OutlineButton from './components/OutlineButton'
 import GradientButton from './components/GradientButton'
 import RoundedFullButton from './components/RoundedFullButton'
 import IconButton from './components/IconButton'
+import DisabledButton from './components/DisabledButton'
 
 const page = () => {
   return (
@@ -22,13 +23,9 @@ const page = () => {
         
         <RoundedFullButton />
 
-        {/* Icon Button */}
         <IconButton />
 
-        {/* Disabled */}
-        <button className="px-6 py-2 bg-gray-400 text-white rounded cursor-not-allowed" disabled>
-          Disabled
-        </button>
+        <DisabledButton />
       </div>
 
       <AnimarionButtons />

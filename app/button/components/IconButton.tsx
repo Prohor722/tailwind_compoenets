@@ -1,5 +1,3 @@
-import React from 'react'
-
 const IconButton = () => {
     return (
         <button className="flex items-center gap-2 px-5 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition">
