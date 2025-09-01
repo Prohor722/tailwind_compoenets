@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import BasicHoverButton from "../button/components/BasicHoverButton";
 import ScaleHoverButton from "../button/components/ScaleHoverButton";
+import LiftEffectButton from "../button/components/LiftEffectButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -38,9 +39,7 @@ export const AnimarionButtons = () => {
         <ScaleHoverButton />
 
         {/* Shadow & Translate Animation */}
-        <button className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-          Lift Effect
-        </button>
+        <LiftEffectButton />
 
         {/* Gradient Background Slide Animation */}
         <button className="relative overflow-hidden text-white px-6 py-2 rounded-lg bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-yellow-500 hover:to-pink-500 transition-all duration-500">
