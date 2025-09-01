@@ -9,6 +9,7 @@ import {
   Lock,
 } from "lucide-react";
 import BasicHoverButton from "../button/components/BasicHoverButton";
+import ScaleHoverButton from "../button/components/ScaleHoverButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -31,13 +32,10 @@ export const AnimarionButtons = () => {
       </h1>
 
       <div className="flex flex-wrap gap-6 justify-center w-full max-w-4xl">
-        {/* Basic Hover Button */}
+
         <BasicHoverButton />
 
-        {/* Scale on Hover */}
-        <button className="bg-green-500 text-white px-6 py-2 rounded-lg transform hover:scale-110 transition-transform duration-300">
-          Scale Hover
-        </button>
+        <ScaleHoverButton />
 
         {/* Shadow & Translate Animation */}
         <button className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
