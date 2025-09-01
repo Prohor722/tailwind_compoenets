@@ -8,6 +8,7 @@ import {
   CheckCircle2,
   Lock,
 } from "lucide-react";
+import BasicHoverButton from "../button/components/BasicHoverButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -31,9 +32,7 @@ export const AnimarionButtons = () => {
 
       <div className="flex flex-wrap gap-6 justify-center w-full max-w-4xl">
         {/* Basic Hover Button */}
-        <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
-          Hover Me
-        </button>
+        <BasicHoverButton />
 
         {/* Scale on Hover */}
         <button className="bg-green-500 text-white px-6 py-2 rounded-lg transform hover:scale-110 transition-transform duration-300">
