@@ -1,6 +1,7 @@
 //use client
 import React from 'react'
 import { AnimarionButtons } from '../components/animarion-buttons'
+import PrimaryButton from './components/PrimaryButton'
 
 const page = () => {
   return (
@@ -8,10 +9,7 @@ const page = () => {
       <h1 className="text-2xl font-bold text-blue-500">Tailwind Button Showcase</h1>
 
       <div className="flex flex-wrap justify-center gap-4">
-        {/* Primary */}
-        <button className="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-          Primary
-        </button>
+        <PrimaryButton />
 
         {/* Outline */}
         <button className="px-6 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition">

@@ -120,7 +120,7 @@ const PaginationPage = () => {
       <Pagination21 />
 
       {/* Pagination 22  */}
-      {/* <Pagination22 /> */}
+      <Pagination22 />
 
       {/* Pagination 23  */}
       <Pagination23 />
