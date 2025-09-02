@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { NavHome } from "./navbar/navbar-home-layout";
+import TextHighlighter from "./components/TextHighlighter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,8 +29,11 @@ export default function RootLayout({
       <body
         className={`pt-[110px] pb-16 ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <NavHome />
-        {children}
+        <NavHome />
+        <TextHighlighter>
+          {children}
+        </TextHighlighter>
+
       </body>
     </html>
   );

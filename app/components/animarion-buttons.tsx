@@ -38,7 +38,6 @@ export const AnimarionButtons = () => {
 
         <ScaleHoverButton />
 
-        {/* Shadow & Translate Animation */}
         <LiftEffectButton />
 
         {/* Gradient Background Slide Animation */}
