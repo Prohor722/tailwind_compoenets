@@ -16,6 +16,7 @@ import BorderFlipButton from "../button/components/BorderFlipButton";
 import RippleButton from "../button/components/RippleButton";
 import GlowButton from "../button/components/GlowButton";
 import SlideInArrowButton from "../button/components/SlideInArrowButton";
+import GlassmorphismButton from "../button/components/GlassmorphismButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -55,10 +56,7 @@ export const AnimarionButtons = () => {
 
         <SlideInArrowButton />
 
-        {/* Glassmorphism Button */}
-        <button className="backdrop-blur-md bg-white/10 border border-white/30 text-white px-6 py-3 rounded-xl hover:bg-white/20 transition">
-          Glass Effect
-        </button>
+        <GlassmorphismButton />
 
         {/* Loading Spinner Button */}
         <button className="bg-emerald-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-emerald-700 transition">
