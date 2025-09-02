@@ -17,6 +17,7 @@ import RippleButton from "../button/components/RippleButton";
 import GlowButton from "../button/components/GlowButton";
 import SlideInArrowButton from "../button/components/SlideInArrowButton";
 import GlassmorphismButton from "../button/components/GlassmorphismButton";
+import LoadingSpinnerButton from "../button/components/LoadingSpinnerButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -58,11 +59,7 @@ export const AnimarionButtons = () => {
 
         <GlassmorphismButton />
 
-        {/* Loading Spinner Button */}
-        <button className="bg-emerald-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-emerald-700 transition">
-          <Loader2 className="w-5 h-5 animate-spin" />
-          Loading...
-        </button>
+        <LoadingSpinnerButton />
 
         {/* Shield Pop-in Button */}
         <button className="bg-yellow-500 text-black px-6 py-3 rounded-lg flex items-center gap-2 font-medium hover:scale-105 transition-transform duration-200">
