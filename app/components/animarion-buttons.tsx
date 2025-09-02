@@ -13,6 +13,7 @@ import ScaleHoverButton from "../button/components/ScaleHoverButton";
 import LiftEffectButton from "../button/components/LiftEffectButton";
 import GradientShiftButton from "../button/components/GradientShiftButton";
 import BorderFlipButton from "../button/components/BorderFlipButton";
+import RippleButton from "../button/components/RippleButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -44,14 +45,9 @@ export const AnimarionButtons = () => {
 
         <GradientShiftButton />
 
-        {/* Border Animation */}
         <BorderFlipButton />
 
-        {/* Ripple Style Animation (Pseudo-Effect) */}
-        <button className="relative bg-indigo-600 text-white px-6 py-2 rounded-lg group overflow-hidden">
-          <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white opacity-20 rounded-full group-hover:w-32 group-hover:h-32 group-hover:top-[-16px] group-hover:left-[-16px]" />
-          <span className="relative z-10">Ripple</span>
-        </button>
+        <RippleButton />
 
         {/* Glow Button */}
         <button className="relative px-6 py-3 rounded-lg bg-indigo-600 text-white font-medium shadow-lg hover:shadow-indigo-500/50 transition duration-300">
