@@ -15,6 +15,7 @@ import GradientShiftButton from "../button/components/GradientShiftButton";
 import BorderFlipButton from "../button/components/BorderFlipButton";
 import RippleButton from "../button/components/RippleButton";
 import GlowButton from "../button/components/GlowButton";
+import SlideInArrowButton from "../button/components/SlideInArrowButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -52,11 +53,7 @@ export const AnimarionButtons = () => {
 
         <GlowButton />
 
-        {/* Slide-In Arrow Button */}
-        <button className="group px-6 py-3 bg-blue-600 rounded-full flex items-center gap-2 font-medium hover:pl-8 transition-all duration-300">
-          <span>Next</span>
-          <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
-        </button>
+        <SlideInArrowButton />
 
         {/* Glassmorphism Button */}
         <button className="backdrop-blur-md bg-white/10 border border-white/30 text-white px-6 py-3 rounded-xl hover:bg-white/20 transition">
