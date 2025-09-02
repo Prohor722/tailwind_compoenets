@@ -14,6 +14,7 @@ import LiftEffectButton from "../button/components/LiftEffectButton";
 import GradientShiftButton from "../button/components/GradientShiftButton";
 import BorderFlipButton from "../button/components/BorderFlipButton";
 import RippleButton from "../button/components/RippleButton";
+import GlowButton from "../button/components/GlowButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -49,11 +50,7 @@ export const AnimarionButtons = () => {
 
         <RippleButton />
 
-        {/* Glow Button */}
-        <button className="relative px-6 py-3 rounded-lg bg-indigo-600 text-white font-medium shadow-lg hover:shadow-indigo-500/50 transition duration-300">
-          <span className="absolute inset-0 bg-indigo-500 blur opacity-40 rounded-lg"></span>
-          Glow Effect
-        </button>
+        <GlowButton />
 
         {/* Slide-In Arrow Button */}
         <button className="group px-6 py-3 bg-blue-600 rounded-full flex items-center gap-2 font-medium hover:pl-8 transition-all duration-300">
