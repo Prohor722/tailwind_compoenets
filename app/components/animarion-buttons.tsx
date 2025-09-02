@@ -11,6 +11,7 @@ import {
 import BasicHoverButton from "../button/components/BasicHoverButton";
 import ScaleHoverButton from "../button/components/ScaleHoverButton";
 import LiftEffectButton from "../button/components/LiftEffectButton";
+import GradientShiftButton from "../button/components/GradientShiftButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -40,10 +41,7 @@ export const AnimarionButtons = () => {
 
         <LiftEffectButton />
 
-        {/* Gradient Background Slide Animation */}
-        <button className="relative overflow-hidden text-white px-6 py-2 rounded-lg bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-yellow-500 hover:to-pink-500 transition-all duration-500">
-          Gradient Shift
-        </button>
+        <GradientShiftButton />
 
         {/* Border Animation */}
         <button className="relative px-6 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors duration-300">

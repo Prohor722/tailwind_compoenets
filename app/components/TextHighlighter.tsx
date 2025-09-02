@@ -59,9 +59,9 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({ children }) => {
       
       if (rect.width > 0 && rect.height > 0) {
         setSelectedRange(range.cloneRange());
-        // Position the highlighter above the selected text (15px above)
+        // Position the highlighter above and to the right of the selected text
         setHighlighterPosition({
-          x: rect.left + rect.width - 0,
+          x: rect.right + 40,
           y: rect.top - 20
         });
         setShowHighlighter(true);
@@ -89,14 +89,114 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({ children }) => {
     };
   }, []);
 
-  const highlightText = (color: string = currentColor): void => {
+  const highlightText = (color: string = currentColor, shouldCheckForUndo: boolean = false): void => {
     if (!selectedRange) return;
 
     try {
       const selectedText = selectedRange.toString();
       if (!selectedText) return;
 
-      // Create the highlight span
+      // Only check for undo when explicitly requested (button click)
+      if (shouldCheckForUndo) {
+        // Check if the selection contains only highlighted text
+        const startContainer = selectedRange.startContainer;
+        const endContainer = selectedRange.endContainer;
+
+        // Check if we're selecting inside a highlight span
+        const isInsideHighlight = (node: Node): HTMLElement | null => {
+          let current = node.nodeType === Node.TEXT_NODE ? node.parentNode : node;
+          while (current && current !== containerRef.current) {
+            if (current instanceof HTMLElement && current.classList.contains('text-highlight')) {
+              return current;
+            }
+            current = current.parentNode;
+          }
+          return null;
+        };
+
+        const startHighlight = isInsideHighlight(startContainer);
+        const endHighlight = isInsideHighlight(endContainer);
+
+        // If selection is entirely within a single highlight span, remove the highlight
+        if (startHighlight && endHighlight && startHighlight === endHighlight) {
+          const highlightSpan = startHighlight;
+          const parent = highlightSpan.parentNode;
+          
+          if (parent) {
+            // Move all child nodes out of the highlight span
+            while (highlightSpan.firstChild) {
+              parent.insertBefore(highlightSpan.firstChild, highlightSpan);
+            }
+            // Remove the highlight span
+            parent.removeChild(highlightSpan);
+            
+            // Normalize the parent to merge adjacent text nodes
+            parent.normalize();
+          }
+          
+          window.getSelection()?.removeAllRanges();
+          setShowHighlighter(false);
+          setShowColorPicker(false);
+          return;
+        }
+
+        // If selection spans across highlight and normal text, or multiple highlights,
+        // check if it's entirely highlighted content
+        if (startHighlight || endHighlight) {
+          const range = selectedRange.cloneRange();
+          const walker = document.createTreeWalker(
+            range.commonAncestorContainer,
+            NodeFilter.SHOW_TEXT,
+            {
+              acceptNode: (node) => {
+                return range.intersectsNode(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+              }
+            }
+          );
+
+          let allHighlighted = true;
+          let highlightSpans: Set<HTMLElement> = new Set();
+          let textNode;
+          
+          while (textNode = walker.nextNode()) {
+            const highlight = isInsideHighlight(textNode);
+            if (highlight) {
+              highlightSpans.add(highlight);
+            } else {
+              // Check if this text node has any content in our selection
+              const nodeRange = document.createRange();
+              nodeRange.selectNode(textNode);
+              const intersection = range.intersectsNode(textNode);
+              
+              if (intersection && textNode.textContent?.trim()) {
+                allHighlighted = false;
+                break;
+              }
+            }
+          }
+
+          // If all selected text is highlighted, remove all highlights in selection
+          if (allHighlighted && highlightSpans.size > 0) {
+            highlightSpans.forEach(span => {
+              const parent = span.parentNode;
+              if (parent) {
+                while (span.firstChild) {
+                  parent.insertBefore(span.firstChild, span);
+                }
+                parent.removeChild(span);
+                parent.normalize();
+              }
+            });
+            
+            window.getSelection()?.removeAllRanges();
+            setShowHighlighter(false);
+            setShowColorPicker(false);
+            return;
+          }
+        }
+      }
+
+      // Regular highlighting logic (no highlight detected or mixed content)
       const highlightSpan = document.createElement('span');
       highlightSpan.style.backgroundColor = color;
       highlightSpan.style.display = 'inline';
@@ -105,7 +205,6 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({ children }) => {
       highlightSpan.setAttribute('data-highlight-color', color);
       highlightSpan.textContent = selectedText;
 
-      // Get the range boundaries
       const startContainer = selectedRange.startContainer;
       const endContainer = selectedRange.endContainer;
       const startOffset = selectedRange.startOffset;
@@ -138,7 +237,6 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({ children }) => {
         }
       } else {
         // Complex case: use a simpler, more reliable approach
-        // Just delete the selected content and insert the highlight span
         const selectedContent = selectedRange.toString();
         selectedRange.deleteContents();
         
@@ -204,7 +302,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({ children }) => {
       // Position color picker to the right of the highlighter
       setColorPickerPosition({
         x: highlighterPosition.x + 60,
-        y: highlighterPosition.y - 10
+        y: highlighterPosition.y - 5
       });
     }
     setShowColorPicker(!showColorPicker);
@@ -212,7 +310,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({ children }) => {
 
   const selectColor = (color: string): void => {
     setCurrentColor(color);
-    highlightText(color);
+    highlightText(color, true);
   };
 
   const handleColorInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
@@ -235,12 +333,12 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({ children }) => {
           style={{
             left: `${highlighterPosition.x}px`,
             top: `${highlighterPosition.y}px`,
-            transform: 'translateX(-50%)'
+            transform: 'translateX(-100%)'
           }}
         >
           <button
-            onClick={() => highlightText()}
-            className="flex cursor-pointer items-center justify-center w-5 h-5 text-black hover:text-white hover:bg-black rounded transition-colors"
+            onClick={() => highlightText(currentColor, true)}
+            className="flex items-center justify-center w-5 h-5 text-black hover:text-white hover:bg-black rounded transition-colors"
             title="Highlight text"
           >
             <Highlighter className='h-4 w-4' />
@@ -250,7 +348,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({ children }) => {
           
           <button
             onClick={toggleColorPicker}
-            className="flex items-center cursor-pointer justify-center w-5 h-5 text-black hover:text-white hover:bg-black rounded transition-colors"
+            className="flex items-center justify-center w-5 h-5 text-black hover:text-white hover:bg-black rounded transition-colors"
             title="Choose color"
           >
             <Palette className='h-4 w-4' />
