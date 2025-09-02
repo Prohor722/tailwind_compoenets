@@ -12,6 +12,7 @@ import BasicHoverButton from "../button/components/BasicHoverButton";
 import ScaleHoverButton from "../button/components/ScaleHoverButton";
 import LiftEffectButton from "../button/components/LiftEffectButton";
 import GradientShiftButton from "../button/components/GradientShiftButton";
+import BorderFlipButton from "../button/components/BorderFlipButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -44,9 +45,7 @@ export const AnimarionButtons = () => {
         <GradientShiftButton />
 
         {/* Border Animation */}
-        <button className="relative px-6 py-2 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition-colors duration-300">
-          Border Flip
-        </button>
+        <BorderFlipButton />
 
         {/* Ripple Style Animation (Pseudo-Effect) */}
         <button className="relative bg-indigo-600 text-white px-6 py-2 rounded-lg group overflow-hidden">
