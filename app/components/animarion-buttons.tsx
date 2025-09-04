@@ -19,6 +19,7 @@ import SlideInArrowButton from "../button/components/SlideInArrowButton";
 import GlassmorphismButton from "../button/components/GlassmorphismButton";
 import LoadingSpinnerButton from "../button/components/LoadingSpinnerButton";
 import ShieldPopinButton from "../button/components/ShieldPopinButton";
+import NeonBorderButton from "../button/components/NeonBorderButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -64,11 +65,7 @@ export const AnimarionButtons = () => {
 
         <ShieldPopinButton />
         
-
-        {/* Neon Border Button */}
-        <button className="relative px-6 py-3 text-white border border-cyan-400 rounded-md transition hover:bg-cyan-400 hover:text-black hover:shadow-[0_0_20px_#22d3ee] duration-300">
-          Neon Border
-        </button>
+        <NeonBorderButton />
 
         {/* Neon Pulse Button */}
         <button className="relative px-6 py-3 font-semibold text-cyan-300 border border-cyan-400 rounded-lg bg-black shadow-md hover:shadow-[0_0_25px_#22d3ee] transition-all duration-300">
