@@ -22,6 +22,7 @@ import ShieldPopinButton from "../button/components/ShieldPopinButton";
 import NeonBorderButton from "../button/components/NeonBorderButton";
 import NeonPulseButton from "../button/components/NeonPulseButton";
 import FillSlideButton from "../button/components/FillSlideButton";
+import RevealIconButton from "../button/components/RevealIconButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -73,11 +74,8 @@ export const AnimarionButtons = () => {
 
         <FillSlideButton />
 
-        {/* Icon Reveal Button */}
-        <button className="group flex items-center gap-2 px-6 py-3 bg-indigo-700 rounded-lg hover:bg-indigo-800 transition-all duration-300">
-          <span>Reveal Icon</span>
-          <ArrowRight className="transform group-hover:translate-x-1 transition-transform duration-300" />
-        </button>
+        {/* Reveal Icon Button */}
+        <RevealIconButton />
 
         {/* Bouncy Confirm Button */}
         <button className="flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg text-white transition transform hover:scale-105 duration-300">
