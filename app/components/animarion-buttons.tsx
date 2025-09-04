@@ -21,6 +21,7 @@ import LoadingSpinnerButton from "../button/components/LoadingSpinnerButton";
 import ShieldPopinButton from "../button/components/ShieldPopinButton";
 import NeonBorderButton from "../button/components/NeonBorderButton";
 import NeonPulseButton from "../button/components/NeonPulseButton";
+import FillSlideButton from "../button/components/FillSlideButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -68,14 +69,9 @@ export const AnimarionButtons = () => {
         
         <NeonBorderButton />
 
-        {/* Neon Pulse Button */}
         <NeonPulseButton />
 
-        {/* Fill Slide Button */}
-        <button className="group relative px-6 py-3 overflow-hidden border border-lime-400 text-lime-400 rounded-md hover:text-black transition duration-300">
-          <span className="absolute inset-0 bg-lime-400 w-0 group-hover:w-full transition-all duration-300"></span>
-          <span className="relative z-10">Slide Fill</span>
-        </button>
+        <FillSlideButton />
 
         {/* Icon Reveal Button */}
         <button className="group flex items-center gap-2 px-6 py-3 bg-indigo-700 rounded-lg hover:bg-indigo-800 transition-all duration-300">
