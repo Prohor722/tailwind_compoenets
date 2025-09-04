@@ -24,6 +24,7 @@ import NeonPulseButton from "../button/components/NeonPulseButton";
 import FillSlideButton from "../button/components/FillSlideButton";
 import RevealIconButton from "../button/components/RevealIconButton";
 import BouncyConfirmButton from "../button/components/BouncyConfirmButton";
+import GlowHoverButton from "../button/components/GlowHoverButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -77,14 +78,9 @@ export const AnimarionButtons = () => {
 
         <RevealIconButton />
 
-        {/* Bouncy Confirm Button */}
         <BouncyConfirmButton />
 
-        {/* Glow On Hover Button */}
-        <button className="relative px-6 py-3 text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-md transition duration-300 overflow-hidden">
-          <span className="absolute inset-0 rounded-md opacity-0 group-hover:opacity-100 transition duration-300 bg-white/10 blur-lg"></span>
-          Glow Hover
-        </button>
+        <GlowHoverButton />
 
         {/* Lock with Pulse Icon */}
         <button className="flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg text-white transition duration-300">
