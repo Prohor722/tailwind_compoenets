@@ -23,6 +23,7 @@ import NeonBorderButton from "../button/components/NeonBorderButton";
 import NeonPulseButton from "../button/components/NeonPulseButton";
 import FillSlideButton from "../button/components/FillSlideButton";
 import RevealIconButton from "../button/components/RevealIconButton";
+import BouncyConfirmButton from "../button/components/BouncyConfirmButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -74,14 +75,10 @@ export const AnimarionButtons = () => {
 
         <FillSlideButton />
 
-        {/* Reveal Icon Button */}
         <RevealIconButton />
 
         {/* Bouncy Confirm Button */}
-        <button className="flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg text-white transition transform hover:scale-105 duration-300">
-          <CheckCircle2 className="animate-bounce" />
-          Confirm
-        </button>
+        <BouncyConfirmButton />
 
         {/* Glow On Hover Button */}
         <button className="relative px-6 py-3 text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-md transition duration-300 overflow-hidden">
