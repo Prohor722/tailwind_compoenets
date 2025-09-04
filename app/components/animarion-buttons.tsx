@@ -7,6 +7,7 @@ import {
   ShieldCheck,
   CheckCircle2,
   Lock,
+  Plus,
 } from "lucide-react";
 import BasicHoverButton from "../button/components/BasicHoverButton";
 import ScaleHoverButton from "../button/components/ScaleHoverButton";
@@ -25,6 +26,7 @@ import FillSlideButton from "../button/components/FillSlideButton";
 import RevealIconButton from "../button/components/RevealIconButton";
 import BouncyConfirmButton from "../button/components/BouncyConfirmButton";
 import GlowHoverButton from "../button/components/GlowHoverButton";
+import PulseIconLockButton from "../button/components/PulseIconLockButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -82,11 +84,7 @@ export const AnimarionButtons = () => {
 
         <GlowHoverButton />
 
-        {/* Lock with Pulse Icon */}
-        <button className="flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 rounded-lg text-white transition duration-300">
-          <Lock className="animate-pulse" />
-          Lock
-        </button>
+        <PulseIconLockButton />
 
         {/* Sparkling Glassmorphism */}
         <button className="relative px-6 py-3 rounded-xl border border-white/30 backdrop-blur-md bg-white/10 hover:bg-white/20 transition text-white flex items-center gap-2">
