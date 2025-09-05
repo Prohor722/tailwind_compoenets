@@ -34,6 +34,7 @@ import RippleEffectButton from "../button/components/RippleEffectButton";
 import LaunchButton from "../button/components/LaunchButton";
 import NeonGlowButton from "../button/components/NeonGlowButton";
 import SlideUpButton from "../button/components/SlideUpButton";
+import HoverMeButton from "../button/components/HoverMeButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -107,10 +108,7 @@ export const AnimarionButtons = () => {
 
         <SlideUpButton />
 
-        <button className="relative px-5 py-2 text-blue-600 font-medium group">
-          Hover Me
-          <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full duration-300"></span>
-        </button>
+        <HoverMeButton />
 
         <button className="relative px-6 py-3 bg-black text-white rounded-lg font-bold transition-all duration-500 hover:shadow-[0_0_20px_#0ff] hover:text-cyan-300">
           Neon Glow
