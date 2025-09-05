@@ -32,6 +32,7 @@ import ClickMeButton from "../button/components/ClickMeButton";
 import GlassyButton from "../button/components/GlassyButton";
 import RippleEffectButton from "../button/components/RippleEffectButton";
 import LaunchButton from "../button/components/LaunchButton";
+import NeonGlowButton from "../button/components/NeonGlowButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -101,9 +102,7 @@ export const AnimarionButtons = () => {
 
         <LaunchButton />
 
-        <button className="px-6 py-3 text-white font-bold bg-black border border-white hover:border-gray-400 rounded-lg shadow-lg transition-all duration-300 hover:text-black hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.6)]">
-          Neon Glow
-        </button>
+        <NeonGlowButton />
 
         <button className="relative px-6 py-3 text-white bg-black group overflow-hidden rounded-lg">
           <span className="absolute inset-0 w-full h-full bg-white scale-y-0 group-hover:scale-y-100 origin-bottom transition-transform duration-500 ease-in-out z-0"></span>
