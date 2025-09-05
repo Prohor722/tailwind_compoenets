@@ -30,6 +30,7 @@ import PulseIconLockButton from "../button/components/PulseIconLockButton";
 import MagicGlassButton from "../button/components/MagicGlassButton";
 import ClickMeButton from "../button/components/ClickMeButton";
 import GlassyButton from "../button/components/GlassyButton";
+import RippleEffectButton from "../button/components/RippleEffectButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -95,10 +96,7 @@ export const AnimarionButtons = () => {
 
         <GlassyButton />
 
-        <button className="relative px-6 py-3 bg-indigo-600 text-white rounded-lg overflow-hidden group hover:scale-105 transition-all duration-300">
-          Ripple
-          <span className="absolute inset-0 bg-white opacity-10 rounded-lg group-hover:animate-ping" />
-        </button>
+        <RippleEffectButton />
 
         <button className="group relative px-6 py-3 bg-gradient-to-br from-green-400 to-blue-500 text-white rounded-lg shadow-md overflow-hidden transition-all duration-500 hover:scale-105 cursor-pointer">
           <span className="absolute left-[-2px] translate-x-[-100%] group-hover:translate-x-4 transition-all duration-500 ease-in-out">
