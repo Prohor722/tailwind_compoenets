@@ -35,6 +35,7 @@ import LaunchButton from "../button/components/LaunchButton";
 import NeonGlowButton from "../button/components/NeonGlowButton";
 import SlideUpButton from "../button/components/SlideUpButton";
 import HoverMeButton from "../button/components/HoverMeButton";
+import NeonGlowButton2 from "../button/components/NeonGlowButton2";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -110,9 +111,7 @@ export const AnimarionButtons = () => {
 
         <HoverMeButton />
 
-        <button className="relative px-6 py-3 bg-black text-white rounded-lg font-bold transition-all duration-500 hover:shadow-[0_0_20px_#0ff] hover:text-cyan-300">
-          Neon Glow
-        </button>
+        <NeonGlowButton2 />
 
         <button className="relative px-6 py-3 bg-blue-600 text-white font-semibold rounded overflow-hidden group">
           <span className="absolute inset-0 bg-white transform -skew-x-12 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"></span>
