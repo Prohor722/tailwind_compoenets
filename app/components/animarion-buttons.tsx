@@ -28,6 +28,7 @@ import BouncyConfirmButton from "../button/components/BouncyConfirmButton";
 import GlowHoverButton from "../button/components/GlowHoverButton";
 import PulseIconLockButton from "../button/components/PulseIconLockButton";
 import MagicGlassButton from "../button/components/MagicGlassButton";
+import ClickMeButton from "../button/components/ClickMeButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -87,13 +88,9 @@ export const AnimarionButtons = () => {
 
         <PulseIconLockButton />
 
-        {/* Sparkling Glassmorphism */}
         <MagicGlassButton />
 
-        <button className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-semibold text-white transition-all duration-300 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg hover:from-purple-500 hover:to-blue-500 shadow-lg group">
-          <span className="absolute inset-0 w-full h-full transition-transform duration-300 transform scale-0 bg-white opacity-10 group-hover:scale-100" />
-          Click Me
-        </button>
+        <ClickMeButton />
 
         <button className="px-6 py-3 bg-white border border-gray-300 shadow-inner rounded-xl text-gray-800 font-semibold transition-all duration-200 active:scale-95 hover:shadow-md hover:border-blue-400 backdrop-blur-md">
           Glassy Button
