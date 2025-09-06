@@ -37,6 +37,7 @@ import SlideUpButton from "../button/components/SlideUpButton";
 import HoverMeButton from "../button/components/HoverMeButton";
 import NeonGlowButton2 from "../button/components/NeonGlowButton2";
 import WipeRevealButton from "../button/components/WipeRevealButton";
+import RippleHoverButton from "../button/components/RippleHoverButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -116,10 +117,7 @@ export const AnimarionButtons = () => {
 
         <WipeRevealButton />
 
-        <button className="relative overflow-hidden px-6 py-3 bg-emerald-600 text-white rounded-lg group">
-          Ripple Hover
-          <span className="absolute top-1/2 left-1/2 w-0 h-0 bg-white/30 rounded-full transform -translate-x-1/2 -translate-y-1/2 group-hover:w-48 group-hover:h-48 transition-all duration-500 ease-out"></span>
-        </button>
+        <RippleHoverButton />
 
         <button className="group relative px-6 py-3 bg-gray-800 text-white rounded-md transition-all duration-300 hover:rotate-2 hover:scale-105">
           Rotate Me
