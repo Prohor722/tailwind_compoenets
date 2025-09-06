@@ -39,6 +39,7 @@ import NeonGlowButton2 from "../button/components/NeonGlowButton2";
 import WipeRevealButton from "../button/components/WipeRevealButton";
 import RippleHoverButton from "../button/components/RippleHoverButton";
 import RotateMeButton from "../button/components/RotateMeButton";
+import BubblePopButton from "../button/components/BubblePopButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -122,9 +123,7 @@ export const AnimarionButtons = () => {
 
         <RotateMeButton />
 
-        <button className="relative px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-yellow-500 text-white font-bold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,0,150,0.5)]">
-          Bubble Pop
-        </button>
+        <BubblePopButton />
 
         <button className="px-6 py-2 border-2 border-transparent bg-purple-700 text-white rounded-md relative group overflow-hidden">
           <span className="absolute inset-0 border-2 border-white transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out rounded-md pointer-events-none"></span>
