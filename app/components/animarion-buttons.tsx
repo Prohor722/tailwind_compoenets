@@ -40,6 +40,7 @@ import WipeRevealButton from "../button/components/WipeRevealButton";
 import RippleHoverButton from "../button/components/RippleHoverButton";
 import RotateMeButton from "../button/components/RotateMeButton";
 import BubblePopButton from "../button/components/BubblePopButton";
+import BorderTraceButton from "../button/components/BorderTraceButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -125,10 +126,7 @@ export const AnimarionButtons = () => {
 
         <BubblePopButton />
 
-        <button className="px-6 py-2 border-2 border-transparent bg-purple-700 text-white rounded-md relative group overflow-hidden">
-          <span className="absolute inset-0 border-2 border-white transform scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out rounded-md pointer-events-none"></span>
-          <span className="relative z-10">Border Trace</span>
-        </button>
+        <BorderTraceButton />
 
         <button className="group px-6 py-3 bg-black text-white rounded-lg flex items-center gap-2 overflow-hidden">
           <span className="translate-x-[-150%] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500">
