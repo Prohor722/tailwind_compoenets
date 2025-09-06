@@ -43,6 +43,7 @@ import BubblePopButton from "../button/components/BubblePopButton";
 import BorderTraceButton from "../button/components/BorderTraceButton";
 import FlyInButton from "../button/components/FlyInButton";
 import ShimmerGlowButton from "../button/components/ShimmerGlowButton";
+import WaveSweepButton from "../button/components/WaveSweepButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -134,10 +135,7 @@ export const AnimarionButtons = () => {
 
         <ShimmerGlowButton />
 
-        <button className="relative px-6 py-3 bg-sky-500 text-sky-300 hover:text-white rounded-lg overflow-hidden group">
-          <span className="absolute -bottom-full left-0 w-full h-full bg-sky-700 group-hover:bottom-0 transition-all duration-500 ease-out"></span>
-          <span className="relative z-10">Wave Sweep</span>
-        </button>
+        <WaveSweepButton />
 
         <button className="relative px-6 py-3 border-2 border-gray-800 rounded-lg bg-white text-gray-800 group hover:shadow-xl transition-all duration-300">
           <span className="relative z-10 group-hover:tracking-widest transition-all duration-300">
