@@ -49,6 +49,7 @@ import SpinBorderButton from "../button/components/SpinBorderButton";
 import LightningButton from "../button/components/LightningButton";
 import ElasticBounceButton from "../button/components/ElasticBounceButton";
 import RippleEffectButton2 from "../button/components/RippleEffectButton2";
+import RevealTextButton from "../button/components/RevealTextButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -160,12 +161,7 @@ export const AnimarionButtons = () => {
 
         <RippleEffectButton2 />
 
-        <button className="relative px-6 py-3 bg-gray-900 text-white rounded-lg overflow-hidden group">
-          <span className="absolute inset-0 bg-pink-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-          <span className="relative z-10 group-hover:text-black transition-colors duration-300">
-            Reveal Text
-          </span>
-        </button>
+        <RevealTextButton />
 
         <button className="px-6 py-3 border border-cyan-400 text-cyan-400 hover:font-bold hover:text-white rounded-lg hover:bg-cyan-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.7)]">
           Ghost Glow
