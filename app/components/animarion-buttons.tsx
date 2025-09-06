@@ -45,6 +45,7 @@ import FlyInButton from "../button/components/FlyInButton";
 import ShimmerGlowButton from "../button/components/ShimmerGlowButton";
 import WaveSweepButton from "../button/components/WaveSweepButton";
 import MagneticButton from "../button/components/MagneticButton";
+import SpinBorderButton from "../button/components/SpinBorderButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -59,6 +60,14 @@ export const AnimarionButtons = () => {
     setClickedButton(buttonName);
     setTimeout(() => setClickedButton(null), 600);
   };
+
+  <style>
+    {`
+        .animate-spin-slow {
+            animation: spin 4s linear infinite;
+        }
+    `}
+  </style>
 
   return (
     <div className="min-h-screen bg-gray-100 p-10 flex flex-col items-center gap-10">
@@ -89,7 +98,7 @@ export const AnimarionButtons = () => {
         <LoadingSpinnerButton />
 
         <ShieldPopinButton />
-        
+
         <NeonBorderButton />
 
         <NeonPulseButton />
@@ -140,15 +149,7 @@ export const AnimarionButtons = () => {
 
         <MagneticButton />
 
-        <style>{`
-          .animate-spin-slow {
-            animation: spin 4s linear infinite;
-          }
-        `}</style>
-        <button className="relative px-6 py-3 rounded-lg bg-gray-900 text-white overflow-hidden group">
-          <span className="absolute inset-0 border-2 border-blue-400 rounded-lg animate-spin-slow"></span>
-          <span className="relative z-10">Spin Border</span>
-        </button>
+        <SpinBorderButton />
 
         <button className="relative px-6 py-3 bg-yellow-500 text-black font-bold rounded-lg overflow-hidden group">
           <span className="absolute inset-0 translate-x-[-100%] bg-yellow-300 skew-x-[-20deg] group-hover:translate-x-[100%] transition-transform duration-500"></span>
@@ -356,11 +357,10 @@ export const AnimarionButtons = () => {
           <h3 className="text-white text-lg font-semibold">Dissolve</h3>
           <button
             onClick={() => anotherHandleClick("dissolve")}
-            className={`px-8 py-4 bg-red-600 text-white font-bold rounded-lg transition-all duration-500 ${
-              activeButton === "dissolve"
+            className={`px-8 py-4 bg-red-600 text-white font-bold rounded-lg transition-all duration-500 ${activeButton === "dissolve"
                 ? "opacity-20 blur-sm scale-90"
                 : "hover:opacity-90"
-            }`}
+              }`}
           >
             Dissolve
           </button>
@@ -381,17 +381,17 @@ export const AnimarionButtons = () => {
 
         {/* Retro Arcade Button */}
         <div className="flex flex-col items-center space-y-4">
-            <h3 className="text-white text-lg font-semibold">Retro Arcade</h3>
-            <button 
-              className="px-8 py-4 bg-black border-4 border-green-400 text-green-400 font-mono font-bold hover:bg-green-400 hover:text-black transition-all duration-200 transform hover:translate-y-1"
-              style={{
-                boxShadow: '0 6px 0 #16a34a, 0 8px 8px rgba(0,0,0,0.3)',
-                textShadow: '0 0 10px currentColor',
-              }}
-            >
-              [START]
-            </button>
-          </div>
+          <h3 className="text-white text-lg font-semibold">Retro Arcade</h3>
+          <button
+            className="px-8 py-4 bg-black border-4 border-green-400 text-green-400 font-mono font-bold hover:bg-green-400 hover:text-black transition-all duration-200 transform hover:translate-y-1"
+            style={{
+              boxShadow: '0 6px 0 #16a34a, 0 8px 8px rgba(0,0,0,0.3)',
+              textShadow: '0 0 10px currentColor',
+            }}
+          >
+            [START]
+          </button>
+        </div>
       </div>
     </div>
   );
