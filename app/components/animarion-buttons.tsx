@@ -41,6 +41,7 @@ import RippleHoverButton from "../button/components/RippleHoverButton";
 import RotateMeButton from "../button/components/RotateMeButton";
 import BubblePopButton from "../button/components/BubblePopButton";
 import BorderTraceButton from "../button/components/BorderTraceButton";
+import FlyInButton from "../button/components/FlyInButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -128,14 +129,7 @@ export const AnimarionButtons = () => {
 
         <BorderTraceButton />
 
-        <button className="group px-6 py-3 bg-black text-white rounded-lg flex items-center gap-2 overflow-hidden">
-          <span className="translate-x-[-150%] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500">
-            ✈️
-          </span>
-          <span className="transition-all duration-300 group-hover:ml-2">
-            Fly In
-          </span>
-        </button>
+        <FlyInButton />
 
         <button className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-indigo-500 to-pink-500 text-white font-bold overflow-hidden group">
           <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
