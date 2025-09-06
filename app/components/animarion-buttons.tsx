@@ -47,6 +47,7 @@ import WaveSweepButton from "../button/components/WaveSweepButton";
 import MagneticButton from "../button/components/MagneticButton";
 import SpinBorderButton from "../button/components/SpinBorderButton";
 import LightningButton from "../button/components/LightningButton";
+import ElasticBounceButton from "../button/components/ElasticBounceButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -154,9 +155,7 @@ export const AnimarionButtons = () => {
 
         <LightningButton />
 
-        <button className="px-6 py-3 bg-purple-600 text-white rounded-lg shadow-lg transform transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-1 active:scale-95">
-          Elastic Bounce
-        </button>
+        <ElasticBounceButton />
 
         <button className="relative px-6 py-3 bg-blue-600 text-white rounded-lg overflow-hidden group">
           <span className="absolute inset-0 bg-white/20 scale-0 group-hover:scale-150 rounded-full transition-transform duration-500"></span>
