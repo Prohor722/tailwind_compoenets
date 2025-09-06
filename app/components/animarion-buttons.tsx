@@ -42,6 +42,7 @@ import RotateMeButton from "../button/components/RotateMeButton";
 import BubblePopButton from "../button/components/BubblePopButton";
 import BorderTraceButton from "../button/components/BorderTraceButton";
 import FlyInButton from "../button/components/FlyInButton";
+import ShimmerGlowButton from "../button/components/ShimmerGlowButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -131,10 +132,7 @@ export const AnimarionButtons = () => {
 
         <FlyInButton />
 
-        <button className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-indigo-500 to-pink-500 text-white font-bold overflow-hidden group">
-          <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></span>
-          <span className="relative z-10">Shimmer Glow</span>
-        </button>
+        <ShimmerGlowButton />
 
         <button className="relative px-6 py-3 bg-sky-500 text-sky-300 hover:text-white rounded-lg overflow-hidden group">
           <span className="absolute -bottom-full left-0 w-full h-full bg-sky-700 group-hover:bottom-0 transition-all duration-500 ease-out"></span>
