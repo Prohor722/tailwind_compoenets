@@ -52,6 +52,7 @@ import RippleEffectButton2 from "../button/components/RippleEffectButton2";
 import RevealTextButton from "../button/components/RevealTextButton";
 import GhostGlowButton from "../button/components/GhostGlowButton";
 import PressEffectButton from "../button/components/PressEffectButton";
+import SlideFillBlackButton from "../button/components/SlideFillBlackButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -169,12 +170,7 @@ export const AnimarionButtons = () => {
 
         <PressEffectButton />
 
-        <button className="relative overflow-hidden px-6 py-3 text-white transition-all duration-300 ease-in-out bg-gray-800 rounded-lg group">
-          <span className="relative z-10 transition-colors duration-300 group-hover:text-black">
-            buttonTxt
-          </span>
-          <span className="absolute inset-0 z-0 w-full h-full transform scale-x-0 origin-left transition-transform duration-300 ease-out bg-white group-hover:scale-x-100"></span>
-        </button>
+        <SlideFillBlackButton />
 
         {/* Loading Spinner Button */}
         <div className="flex flex-col items-center space-y-4">
