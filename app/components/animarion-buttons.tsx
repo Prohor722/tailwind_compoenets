@@ -55,6 +55,7 @@ import PressEffectButton from "../button/components/PressEffectButton";
 import SlideFillBlackButton from "../button/components/SlideFillBlackButton";
 import LoadingSubmitButton from "../button/components/LoadingSubmitButton";
 import RippleEffectButton3 from "../button/components/RippleEffectButton3";
+import HoverMeButton2 from "../button/components/HoverMeButton2";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -178,49 +179,7 @@ export const AnimarionButtons = () => {
 
         <RippleEffectButton3 />
 
-        {/* 3D Flip Button */}
-        <div className="flex flex-col items-center space-y-4">
-          <h3 className="text-white text-lg font-semibold">3D Flip</h3>
-          <div className="relative w-32 h-12" style={{ perspective: "1000px" }}>
-            <button
-              onClick={() => handleClick("flip")}
-              className="w-full h-full relative group"
-              style={{
-                transformStyle: "preserve-3d",
-                transition: "transform 0.6s ease-in-out",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "rotateY(180deg)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "rotateY(0deg)";
-              }}
-            >
-              {/* Front Face */}
-              <div
-                className="absolute inset-0 bg-orange-500 text-white font-semibold rounded-lg flex items-center justify-center"
-                style={{
-                  backfaceVisibility: "hidden",
-                  WebkitBackfaceVisibility: "hidden", // Safari support
-                }}
-              >
-                Hover Me
-              </div>
-
-              {/* Back Face */}
-              <div
-                className="absolute inset-0 bg-orange-600 text-white font-semibold rounded-lg flex items-center justify-center"
-                style={{
-                  backfaceVisibility: "hidden",
-                  WebkitBackfaceVisibility: "hidden", // Safari support
-                  transform: "rotateY(180deg)",
-                }}
-              >
-                Flipped!
-              </div>
-            </button>
-          </div>
-        </div>
+        <HoverMeButton2 />
 
         {/* Slide Fill Button */}
         <div className="flex flex-col items-center space-y-4">
