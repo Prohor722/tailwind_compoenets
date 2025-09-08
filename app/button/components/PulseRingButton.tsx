@@ -14,7 +14,11 @@ const PulseRingButton = () => {
       ${ clickedButton === "pulse" ? "bg-gray-400 border-2 border-gray-700" : "bg-indigo-600 hover:bg-indigo-700" }`}
     >
       <span className="relative z-10">Pulse Ring Button</span>
-      <div className="absolute inset-0 border-2 border-indigo-400 rounded-lg animate-ping opacity-75"></div>
+      <div className={`absolute inset-0 rounded-lg animate-ping opacity-75
+        ${ clickedButton === "pulse" ?
+         "border-3 border-gray-300" 
+         :
+         "border-2 border-indigo-400"}`}></div>
     </button>
   );
 };
