@@ -54,6 +54,7 @@ import GhostGlowButton from "../button/components/GhostGlowButton";
 import PressEffectButton from "../button/components/PressEffectButton";
 import SlideFillBlackButton from "../button/components/SlideFillBlackButton";
 import LoadingSubmitButton from "../button/components/LoadingSubmitButton";
+import RippleEffectButton3 from "../button/components/RippleEffectButton3";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -173,22 +174,9 @@ export const AnimarionButtons = () => {
 
         <SlideFillBlackButton />
 
-        {/* Loading Spinner Button */}
         <LoadingSubmitButton />
 
-        {/* Ripple Effect Button */}
-        <div className="flex flex-col items-center space-y-4">
-          <h3 className="text-white text-lg font-semibold">Ripple Effect</h3>
-          <button
-            onClick={() => handleClick("ripple")}
-            className="relative px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg overflow-hidden transition-colors duration-200"
-          >
-            <span className="relative z-10">Ripple</span>
-            {clickedButton === "ripple" && (
-              <div className="absolute inset-0 bg-white opacity-25 rounded-full animate-ping"></div>
-            )}
-          </button>
-        </div>
+        <RippleEffectButton3 />
 
         {/* 3D Flip Button */}
         <div className="flex flex-col items-center space-y-4">
