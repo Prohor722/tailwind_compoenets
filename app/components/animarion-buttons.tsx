@@ -58,6 +58,7 @@ import RippleEffectButton3 from "../button/components/RippleEffectButton3";
 import HoverMeButton2 from "../button/components/HoverMeButton2";
 import SlideFillButton from "../button/components/SlideFillButton";
 import GradientShiftButton2 from "../button/components/GradientShiftButton2";
+import PulseRingButton from "../button/components/PulseRingButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -192,16 +193,7 @@ export const AnimarionButtons = () => {
         
 
         {/* Pulse Ring Button */}
-        <div className="flex flex-col items-center space-y-4">
-          <h3 className="text-white text-lg font-semibold">Pulse Ring</h3>
-          <button
-            onClick={() => handleClick("pulse")}
-            className="relative px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg transition-colors duration-200"
-          >
-            <span className="relative z-10">Pulse Ring</span>
-            <div className="absolute inset-0 border-2 border-indigo-400 rounded-lg animate-ping opacity-75"></div>
-          </button>
-        </div>
+        <PulseRingButton />
 
         {/* Neon Cyberpunk Button */}
         <div className="flex flex-col items-center space-y-4">
