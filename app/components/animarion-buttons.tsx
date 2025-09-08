@@ -61,6 +61,7 @@ import GradientShiftButton2 from "../button/components/GradientShiftButton2";
 import PulseRingButton from "../button/components/PulseRingButton";
 import NeonCyberpunkButton from "../button/components/NeonCyberpunkButton";
 import HolographicButton from "../button/components/HolographicButton";
+import GlassShineButton from "../button/components/GlassShineButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -197,6 +198,8 @@ export const AnimarionButtons = () => {
         <NeonCyberpunkButton />
 
         <HolographicButton />
+
+        <GlassShineButton />
         
 
         {/* Lightning Strike Button */}

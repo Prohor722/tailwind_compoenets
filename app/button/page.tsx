@@ -10,7 +10,7 @@ import DisabledButton from './components/DisabledButton'
 
 const page = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-10 space-y-8">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-white p-10 space-y-8">
       <h1 className="text-2xl font-bold text-blue-500">Tailwind Button Showcase</h1>
 
       <div className="flex flex-wrap justify-center gap-4">
