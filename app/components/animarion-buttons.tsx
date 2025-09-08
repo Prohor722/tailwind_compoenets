@@ -56,9 +56,15 @@ import SlideFillBlackButton from "../button/components/SlideFillBlackButton";
 import LoadingSubmitButton from "../button/components/LoadingSubmitButton";
 import RippleEffectButton3 from "../button/components/RippleEffectButton3";
 import HoverMeButton2 from "../button/components/HoverMeButton2";
+import SlideFillButton from "../button/components/SlideFillButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
+
+  const handleClick = (buttonName: string) => {
+    setClickedButton(buttonName);
+    setTimeout(() => setClickedButton(null), 600);
+  };
   const [activeButton, setActiveButton] = useState<string | null>(null);
 
   const anotherHandleClick = (buttonName: string) => {
@@ -66,10 +72,7 @@ export const AnimarionButtons = () => {
     setTimeout(() => setActiveButton(null), 1000);
   };
 
-  const handleClick = (buttonName: string) => {
-    setClickedButton(buttonName);
-    setTimeout(() => setClickedButton(null), 600);
-  };
+  
 
   <style>
     {`
@@ -181,17 +184,7 @@ export const AnimarionButtons = () => {
 
         <HoverMeButton2 />
 
-        {/* Slide Fill Button */}
-        <div className="flex flex-col items-center space-y-4">
-          <h3 className="text-white text-lg font-semibold">Slide Fill</h3>
-          <button
-            onClick={() => handleClick("slide")}
-            className="relative px-8 py-3 border-2 border-yellow-400 text-yellow-400 font-semibold rounded-lg overflow-hidden group transition-colors duration-300 hover:text-gray-900"
-          >
-            <span className="relative z-10">Slide Fill</span>
-            <div className="absolute top-0 left-0 w-0 h-full bg-yellow-400 transition-all duration-300 group-hover:w-full"></div>
-          </button>
-        </div>
+        <SlideFillButton />
 
         {/* Gradient Shift Button */}
         <div className="flex flex-col items-center space-y-4">
