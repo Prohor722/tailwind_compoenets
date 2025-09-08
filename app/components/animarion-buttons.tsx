@@ -57,6 +57,7 @@ import LoadingSubmitButton from "../button/components/LoadingSubmitButton";
 import RippleEffectButton3 from "../button/components/RippleEffectButton3";
 import HoverMeButton2 from "../button/components/HoverMeButton2";
 import SlideFillButton from "../button/components/SlideFillButton";
+import GradientShiftButton2 from "../button/components/GradientShiftButton2";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -186,27 +187,9 @@ export const AnimarionButtons = () => {
 
         <SlideFillButton />
 
-        {/* Gradient Shift Button */}
-        <div className="flex flex-col items-center space-y-4">
-          <h3 className="text-white text-lg font-semibold">Gradient Shift</h3>
-          <button
-            onClick={() => handleClick("gradient")}
-            className="p-3 text-white font-semibold rounded-lg transition-all duration-500 transform hover:scale-105"
-            style={{
-              background: "linear-gradient(45deg, #a855f7, #ec4899, #ef4444)",
-              backgroundSize: "200% 200%",
-              animation: "gradient-shift 3s ease infinite",
-            }}
-            onMouseEnter={(e) => {
-              (e.target as HTMLElement).style.animationDuration = "1s"; // Speed up on hover
-            }}
-            onMouseLeave={(e) => {
-              (e.target as HTMLElement).style.animationDuration = "3s"; // Back to normal speed
-            }}
-          >
-            Gradient Shift
-          </button>
-        </div>
+        {/*  */}
+        <GradientShiftButton2 />
+        
 
         {/* Pulse Ring Button */}
         <div className="flex flex-col items-center space-y-4">
