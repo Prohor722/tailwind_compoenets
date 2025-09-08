@@ -59,6 +59,7 @@ import HoverMeButton2 from "../button/components/HoverMeButton2";
 import SlideFillButton from "../button/components/SlideFillButton";
 import GradientShiftButton2 from "../button/components/GradientShiftButton2";
 import PulseRingButton from "../button/components/PulseRingButton";
+import NeonCyberpunkButton from "../button/components/NeonCyberpunkButton";
 
 export const AnimarionButtons = () => {
   const [clickedButton, setClickedButton] = useState<string | null>(null);
@@ -196,18 +197,7 @@ export const AnimarionButtons = () => {
         <PulseRingButton />
 
         {/* Neon Cyberpunk Button */}
-        <div className="flex flex-col items-center space-y-4">
-          <h3 className="text-white text-lg font-semibold">Cyberpunk Neon</h3>
-          <button
-            className="relative px-8 py-4 bg-black border border-cyan-400 text-cyan-400 font-mono font-bold rounded-none hover:bg-cyan-400 hover:text-black transition-all duration-300 transform hover:skew-x-2"
-            style={{
-              boxShadow: "0 0 20px rgba(34, 211, 238, 0.5)",
-              textShadow: "0 0 10px rgba(34, 211, 238, 0.8)",
-            }}
-          >
-            &gt; EXECUTE_
-          </button>
-        </div>
+        <NeonCyberpunkButton />
 
         {/* Holographic Button */}
         <div className="flex flex-col items-center space-y-4">
