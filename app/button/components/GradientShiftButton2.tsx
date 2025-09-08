@@ -10,7 +10,7 @@ const GradientShiftButton2 = () => {
   return (
     <button
       onClick={() => handleClick("gradient")}
-      className="p-3 text-white font-semibold rounded-lg transition-all duration-500 transform hover:scale-105"
+      className="cursor-pointer p-3 text-white font-semibold rounded-lg transition-all duration-500 transform hover:scale-105"
       style={{
         background: "linear-gradient(45deg, #a855f7, #ec4899, #ef4444)",
         backgroundSize: "200% 200%",
