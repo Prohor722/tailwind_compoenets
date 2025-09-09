@@ -62,14 +62,9 @@ import PulseRingButton from "../button/components/PulseRingButton";
 import NeonCyberpunkButton from "../button/components/NeonCyberpunkButton";
 import HolographicButton from "../button/components/HolographicButton";
 import GlassShineButton from "../button/components/GlassShineButton";
+import LightningStrikeButton from "../button/components/LightningStrikeButton";
 
 export const AnimarionButtons = () => {
-  const [clickedButton, setClickedButton] = useState<string | null>(null);
-
-  const handleClick = (buttonName: string) => {
-    setClickedButton(buttonName);
-    setTimeout(() => setClickedButton(null), 600);
-  };
   const [activeButton, setActiveButton] = useState<string | null>(null);
 
   const anotherHandleClick = (buttonName: string) => {
@@ -77,15 +72,13 @@ export const AnimarionButtons = () => {
     setTimeout(() => setActiveButton(null), 1000);
   };
 
-  
-
   <style>
     {`
         .animate-spin-slow {
             animation: spin 4s linear infinite;
         }
     `}
-  </style>
+  </style>;
 
   return (
     <div className="min-h-screen bg-gray-100 p-10 flex flex-col items-center gap-10">
@@ -94,7 +87,6 @@ export const AnimarionButtons = () => {
       </h1>
 
       <div className="flex flex-wrap gap-6 justify-center w-full max-w-4xl">
-
         <BasicHoverButton />
 
         <ScaleHoverButton />
@@ -192,7 +184,7 @@ export const AnimarionButtons = () => {
         <SlideFillButton />
 
         <GradientShiftButton2 />
-        
+
         <PulseRingButton />
 
         <NeonCyberpunkButton />
@@ -200,31 +192,19 @@ export const AnimarionButtons = () => {
         <HolographicButton />
 
         <GlassShineButton />
-        
 
-        {/* Lightning Strike Button */}
-        <div className="flex flex-col items-center space-y-4">
-          <h3 className="text-white text-lg font-semibold">Lightning Strike</h3>
-          <button
-            onClick={() => anotherHandleClick("lightning")}
-            className="relative px-8 py-4 bg-yellow-500 text-black font-bold rounded-lg overflow-hidden group hover:bg-yellow-400 transition-colors duration-200"
-          >
-            <span className="relative z-10">⚡ THUNDER</span>
-            {activeButton === "lightning" && (
-              <div className="absolute inset-0 bg-white animate-pulse opacity-60"></div>
-            )}
-          </button>
-        </div>
+        <LightningStrikeButton />
 
         {/* Dissolve Effect Button */}
         <div className="flex flex-col items-center space-y-4">
           <h3 className="text-white text-lg font-semibold">Dissolve</h3>
           <button
             onClick={() => anotherHandleClick("dissolve")}
-            className={`px-8 py-4 bg-red-600 text-white font-bold rounded-lg transition-all duration-500 ${activeButton === "dissolve"
+            className={`px-8 py-4 bg-red-600 text-white font-bold rounded-lg transition-all duration-500 ${
+              activeButton === "dissolve"
                 ? "opacity-20 blur-sm scale-90"
                 : "hover:opacity-90"
-              }`}
+            }`}
           >
             Dissolve
           </button>
@@ -249,8 +229,8 @@ export const AnimarionButtons = () => {
           <button
             className="px-8 py-4 bg-black border-4 border-green-400 text-green-400 font-mono font-bold hover:bg-green-400 hover:text-black transition-all duration-200 transform hover:translate-y-1"
             style={{
-              boxShadow: '0 6px 0 #16a34a, 0 8px 8px rgba(0,0,0,0.3)',
-              textShadow: '0 0 10px currentColor',
+              boxShadow: "0 6px 0 #16a34a, 0 8px 8px rgba(0,0,0,0.3)",
+              textShadow: "0 0 10px currentColor",
             }}
           >
             [START]
