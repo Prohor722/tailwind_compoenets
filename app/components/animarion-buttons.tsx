@@ -63,14 +63,10 @@ import NeonCyberpunkButton from "../button/components/NeonCyberpunkButton";
 import HolographicButton from "../button/components/HolographicButton";
 import GlassShineButton from "../button/components/GlassShineButton";
 import LightningStrikeButton from "../button/components/LightningStrikeButton";
+import DissolveButton from "../button/components/DissolveButton";
 
 export const AnimarionButtons = () => {
-  const [activeButton, setActiveButton] = useState<string | null>(null);
-
-  const anotherHandleClick = (buttonName: string) => {
-    setActiveButton(buttonName);
-    setTimeout(() => setActiveButton(null), 1000);
-  };
+  
 
   <style>
     {`
@@ -195,20 +191,8 @@ export const AnimarionButtons = () => {
 
         <LightningStrikeButton />
 
-        {/* Dissolve Effect Button */}
-        <div className="flex flex-col items-center space-y-4">
-          <h3 className="text-white text-lg font-semibold">Dissolve</h3>
-          <button
-            onClick={() => anotherHandleClick("dissolve")}
-            className={`px-8 py-4 bg-red-600 text-white font-bold rounded-lg transition-all duration-500 ${
-              activeButton === "dissolve"
-                ? "opacity-20 blur-sm scale-90"
-                : "hover:opacity-90"
-            }`}
-          >
-            Dissolve
-          </button>
-        </div>
+        {/* Dissolve Button */}
+        <DissolveButton />
 
         {/* Origami Fold Button */}
         <div className="flex flex-col items-center space-y-4">
