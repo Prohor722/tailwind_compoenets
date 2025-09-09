@@ -9,11 +9,9 @@ const DissolveButton = () => {
   };
 
   return (
-    <div className="flex flex-col items-center space-y-4">
-      <h3 className="text-white text-lg font-semibold">Dissolve</h3>
-      <button
+    <button
         onClick={() => anotherHandleClick("dissolve")}
-        className={`px-8 py-4 bg-red-600 text-white font-bold rounded-lg transition-all duration-500 ${
+        className={`cursor-pointer px-8 py-4 bg-red-600 text-white font-bold rounded-lg transition-all duration-500 ${
           activeButton === "dissolve"
             ? "opacity-20 blur-sm scale-90"
             : "hover:opacity-90"
@@ -21,7 +19,6 @@ const DissolveButton = () => {
       >
         Dissolve Button
       </button>
-    </div>
   );
 };
 
