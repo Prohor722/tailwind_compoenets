@@ -66,6 +66,7 @@ import LightningStrikeButton from "../button/components/LightningStrikeButton";
 import DissolveButton from "../button/components/DissolveButton";
 import OrigamiButton from "../button/components/OrigamiButton";
 import RetroArcadeButton from "../button/components/RetroArcadeButton";
+import { ToggleButtons } from "../button/components/ToggleButtons";
 
 export const AnimarionButtons = () => {
   <style>
@@ -196,6 +197,8 @@ export const AnimarionButtons = () => {
         <OrigamiButton />
 
         <RetroArcadeButton />
+
+        <ToggleButtons />
         
       </div>
     </div>
