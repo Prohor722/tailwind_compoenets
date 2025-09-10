@@ -68,6 +68,7 @@ import OrigamiButton from "../button/components/OrigamiButton";
 import RetroArcadeButton from "../button/components/RetroArcadeButton";
 import { ToggleButtons } from "../button/components/ToggleButtons";
 import ProcessButton from "../button/components/ProcessButton";
+import UploadButton from "../button/components/UploadButton";
 
 export const AnimarionButtons = () => {
   <style>
@@ -202,6 +203,8 @@ export const AnimarionButtons = () => {
         <ToggleButtons />
 
         <ProcessButton />
+
+        <UploadButton />
         
       </div>
     </div>
