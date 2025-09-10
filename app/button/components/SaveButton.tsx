@@ -15,7 +15,7 @@ const SaveButton = () => {
     <button
       onClick={() => handleClick("pulse")}
       disabled={loadingStates.pulse}
-      className={`px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-semibold rounded-lg transition-all duration-300 min-w-32 ${
+      className={`cursor-pointer px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-semibold rounded-lg transition-all duration-300 min-w-32 ${
         loadingStates.pulse ? "animate-pulse" : ""
       }`}
     >
