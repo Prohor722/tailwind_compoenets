@@ -70,6 +70,7 @@ import { ToggleButtons } from "../button/components/ToggleButtons";
 import ProcessButton from "../button/components/ProcessButton";
 import UploadButton from "../button/components/UploadButton";
 import SaveButton from "../button/components/SaveButton";
+import PremiumCtaButton from "../button/components/PremiumCtaButton";
 
 export const AnimarionButtons = () => {
   <style>
@@ -208,6 +209,8 @@ export const AnimarionButtons = () => {
         <UploadButton />
 
         <SaveButton />
+
+        <PremiumCtaButton />
         
       </div>
     </div>
