@@ -71,6 +71,7 @@ import ProcessButton from "../button/components/ProcessButton";
 import UploadButton from "../button/components/UploadButton";
 import SaveButton from "../button/components/SaveButton";
 import PremiumCtaButton from "../button/components/PremiumCtaButton";
+import FreeTrailButton from "../button/components/FreeTrailButton";
 
 export const AnimarionButtons = () => {
   <style>
@@ -211,6 +212,8 @@ export const AnimarionButtons = () => {
         <SaveButton />
 
         <PremiumCtaButton />
+
+        <FreeTrailButton />
         
       </div>
     </div>
