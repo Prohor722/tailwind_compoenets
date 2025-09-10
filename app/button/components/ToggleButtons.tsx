@@ -31,7 +31,7 @@ export const ToggleButtons = () => {
         {/* Neon Toggle */}
         <button
           onClick={() => updateToggle('switch2', !toggles.switch2)}
-          className={`relative w-20 h-10 rounded-full border-2 transition-all duration-300 ${
+          className={`cursor-pointer relative w-20 h-10 rounded-full border-2 transition-all duration-300 ${
             toggles.switch2 
               ? 'bg-purple-500 border-purple-400 shadow-[0_0_20px_rgba(168,85,247,0.5)]' 
               : 'bg-gray-800 border-gray-600'
