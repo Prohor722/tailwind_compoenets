@@ -15,7 +15,7 @@ const UploadButton = () => {
     <button
       onClick={() => handleClick("progress")}
       disabled={loadingStates.progress}
-      className="relative px-6 py-3 bg-green-500 hover:bg-green-600 disabled:bg-green-400 text-white font-semibold rounded-lg transition-all duration-300 min-w-32 overflow-hidden"
+      className="cursor-pointer relative px-6 py-3 bg-green-500 hover:bg-green-600 disabled:bg-green-400 text-white font-semibold rounded-lg transition-all duration-300 min-w-32 overflow-hidden"
     >
       {loadingStates.progress && (
         <div
