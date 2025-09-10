@@ -45,6 +45,24 @@ export const ToggleButtons = () => {
           )}
         </button>
 
+        {/* Segmented Control */}
+        <div className="flex bg-gray-200 rounded-lg p-1">
+          {['light', 'dark'].map(theme => (
+            <button
+              key={theme}
+              onClick={() => updateToggle('theme', theme)}
+              className={`px-4 py-2 rounded-md font-medium transition-all duration-300 ${
+                toggles.theme === theme
+                  ? 'bg-white text-gray-900 shadow-sm transform scale-105'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              {theme === 'light' ? '☀️' : '🌙'} {theme}
+            </button>
+          ))}
+        </div>
+
+        
       </div>
     </div>
   );
