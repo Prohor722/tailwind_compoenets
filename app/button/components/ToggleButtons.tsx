@@ -19,7 +19,7 @@ export const ToggleButtons = () => {
         {/* iOS Style Toggle */}
         <button
           onClick={() => updateToggle('switch1', !toggles.switch1)}
-          className={`relative w-16 h-8 rounded-full transition-colors duration-300 ${
+          className={`cursor-pointer relative w-16 h-8 rounded-full transition-colors duration-300 ${
             toggles.switch1 ? 'bg-green-500' : 'bg-gray-300'
           }`}
         >
