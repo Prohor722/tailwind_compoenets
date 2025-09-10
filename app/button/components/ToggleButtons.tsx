@@ -62,7 +62,17 @@ export const ToggleButtons = () => {
           ))}
         </div>
 
-        
+        {/* Checkbox Style Toggle */}
+        <button
+          onClick={() => updateToggle('switch3', !toggles.switch3)}
+          className={`w-10 h-10 border-2 rounded-lg transition-all duration-300 transform hover:scale-110 ${
+            toggles.switch3
+              ? 'bg-blue-500 border-blue-500 text-white'
+              : 'bg-white border-gray-300 hover:border-gray-400'
+          }`}
+        >
+          {toggles.switch3 ? '✓' : ''}
+        </button>
       </div>
     </div>
   );
