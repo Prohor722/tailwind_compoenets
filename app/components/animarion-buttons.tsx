@@ -84,7 +84,7 @@ export const AnimarionButtons = () => {
         Animated Button Designs
       </h1>
 
-      <div className="flex flex-wrap gap-6 justify-center w-full max-w-4xl">
+      <div className="flex flex-wrap gap-6 justify-center items-center w-full max-w-4xl">
         <BasicHoverButton />
 
         <ScaleHoverButton />

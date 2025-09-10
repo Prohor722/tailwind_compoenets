@@ -14,7 +14,7 @@ const ProcessButton = () => {
     <button
       onClick={() => handleClick("dots")}
       disabled={loadingStates.dots}
-      className="px-6 py-3 bg-purple-500 hover:bg-purple-600 disabled:bg-purple-400 text-white font-semibold rounded-lg transition-all duration-300 min-w-32"
+      className="cursor-pointer max-h-12 px-6 py-3 bg-purple-500 hover:bg-purple-600 disabled:bg-purple-400 text-white font-semibold rounded-lg transition-all duration-300 min-w-32"
     >
       {loadingStates.dots ? (
         <div className="flex items-center justify-center gap-1">
