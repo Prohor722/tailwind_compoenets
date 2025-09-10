@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ProcessButton = () => {
-    const [loadingStates, setLoadingStates] = useState<{ dots: boolean }>({ dots: false });
+  const [loadingStates, setLoadingStates] = useState<{ dots: boolean }>({ dots: false });
 
   const handleClick = (buttonId: string) => {
     setLoadingStates(prev => ({ ...prev, [buttonId]: true }));
