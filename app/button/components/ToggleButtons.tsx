@@ -51,7 +51,7 @@ export const ToggleButtons = () => {
             <button
               key={theme}
               onClick={() => updateToggle('theme', theme)}
-              className={`px-4 py-2 rounded-md font-medium transition-all duration-300 ${
+              className={`cursor-pointer px-4 py-2 rounded-md font-medium transition-all duration-300 ${
                 toggles.theme === theme
                   ? 'bg-white text-gray-900 shadow-sm transform scale-105'
                   : 'text-gray-600 hover:text-gray-900'
