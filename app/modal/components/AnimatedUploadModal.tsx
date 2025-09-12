@@ -1,13 +1,13 @@
 "use client";
 import { Upload, X } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 
-const page = () => {
-  const [activeModal, setActiveModal] = useState<string | null>(null);
-  const [isDragOver, setIsDragOver] = useState(false);
-
-  const openModal = (modalType: string) => setActiveModal(modalType);
-  const closeModal = () => setActiveModal(null);
+const AnimatedUploadModal = () => {
+    const [activeModal, setActiveModal] = useState<string | null>(null);
+      const [isDragOver, setIsDragOver] = useState(false);
+    
+      const openModal = (modalType: string) => setActiveModal(modalType);
+      const closeModal = () => setActiveModal(null);
   return (
     <div>
       <div className={`fixed inset-0 z-50 flex items-center justify-center p-4
@@ -97,7 +97,7 @@ const page = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default page;
+export default AnimatedUploadModal

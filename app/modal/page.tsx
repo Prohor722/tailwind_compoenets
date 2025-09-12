@@ -20,6 +20,7 @@ import EcommerceSocialModal from "./components/EcommerceSocialModal";
 import CreativeDesignToolModal from "./components/CreativeDesignToolModal";
 import NeumorphismModal2 from "./components/NeumorphismModal2";
 import CardStackEffectModal from "./components/CardStackEffectModal";
+import AnimatedUploadModal from "./components/AnimatedUploadModal";
 
 
 export default function ModalPage() {
@@ -69,6 +70,8 @@ export default function ModalPage() {
       <NeumorphismModal2 />
 
       <CardStackEffectModal />
+
+      <AnimatedUploadModal />
 
     </div>
   );
