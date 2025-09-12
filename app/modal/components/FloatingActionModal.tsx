@@ -72,7 +72,7 @@ const FloatingActionModal = () => {
 
       <button
         onClick={() => openModal("floating")}
-        className="cursor-pointer flex justify-center items-center gap-2 w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-2 rounded-lg font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all"
+        className="cursor-pointer flex justify-center items-center gap-2 w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white p-4 rounded-lg font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all"
       >
         <Zap className="text-white" size={20} />
         <span>Floating Action Modal</span>
