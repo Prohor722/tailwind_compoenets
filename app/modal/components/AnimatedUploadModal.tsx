@@ -3,24 +3,30 @@ import { Upload, X } from "lucide-react";
 import { useState } from "react";
 
 const AnimatedUploadModal = () => {
-    const [activeModal, setActiveModal] = useState<string | null>(null);
-      const [isDragOver, setIsDragOver] = useState(false);
-    
-      const openModal = (modalType: string) => setActiveModal(modalType);
-      const closeModal = () => setActiveModal(null);
+  const [activeModal, setActiveModal] = useState<string | null>(null);
+  const [isDragOver, setIsDragOver] = useState(false);
+
+  const openModal = (modalType: string) => setActiveModal(modalType);
+  const closeModal = () => setActiveModal(null);
   return (
     <div>
-      <div className={`fixed inset-0 z-50 flex items-center justify-center p-4
-        ${activeModal === "upload" ? "visible opacity-100 block" : "invisible opacity-0 pointer-events-none hidden"} transition-opacity duration-300
-        `}>
+      <div
+        className={`fixed inset-0 z-50 flex items-center justify-center p-4
+        ${
+          activeModal === "upload"
+            ? "visible opacity-100 block"
+            : "invisible opacity-0 pointer-events-none hidden"
+        } transition-opacity duration-300
+        `}
+      >
         <div
-          className="absolute inset-0 bg-gradient-to-br from-indigo-900/50 to-purple-900/50"
+          className="cursor-pointer absolute inset-0 bg-gradient-to-br from-indigo-900/50 to-purple-900/50"
           onClick={closeModal}
         />
         <div className="relative bg-white rounded-3xl p-8 max-w-lg w-full shadow-2xl">
           <button
             onClick={closeModal}
-            className="absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors"
+            className="cursor-pointer absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors"
           >
             <X size={24} />
           </button>
@@ -69,36 +75,25 @@ const AnimatedUploadModal = () => {
           </div>
 
           <div className="flex gap-4 mt-8">
-            <button className="flex-1 bg-gray-100 text-gray-700 py-3 rounded-xl font-semibold hover:bg-gray-200 transition-colors">
+            <button className="cursor-pointer flex-1 bg-gray-100 text-gray-700 py-3 rounded-xl font-semibold hover:bg-gray-200 transition-colors">
               Cancel
             </button>
-            <button className="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all transform hover:scale-105">
+            <button className="cursor-pointer flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all transform hover:scale-105">
               Upload
             </button>
           </div>
         </div>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-        <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl mb-4 flex items-center justify-center">
-          <Upload className="text-white" size={24} />
-        </div>
-        <h3 className="text-xl font-bold text-gray-800 mb-2">
-          Animated Upload
-        </h3>
-        <p className="text-gray-600 mb-4">
-          Interactive file upload modal with drag & drop animations and hover
-          effects.
-        </p>
-        <button
-          onClick={() => openModal("upload")}
-          className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-2 rounded-lg font-semibold hover:from-indigo-600 hover:to-purple-600 transition-all"
-        >
-          Preview
-        </button>
-      </div>
+      <button
+        onClick={() => openModal("upload")}
+        className="flex justify-center items-center gap-2 cursor-pointer w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white p-4 rounded-lg font-semibold hover:from-indigo-600 hover:to-purple-600 transition-all"
+      >
+        <Upload className="text-white" size={20} />
+        <span>Animated Upload Modal</span>
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default AnimatedUploadModal
+export default AnimatedUploadModal;
