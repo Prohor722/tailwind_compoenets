@@ -1,15 +1,16 @@
 "use client";
 import { ChevronRight, MessageCircle, X } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 
-const page = () => {
+const CardStackEffectModal = () => {
   const [activeModal, setActiveModal] = useState<string | null>(null);
 
   const openModal = (modalType: string) => setActiveModal(modalType);
   const closeModal = () => setActiveModal(null);
   return (
     <div>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div className={`fixed inset-0 z-50 flex items-center justify-center p-4
+        ${activeModal === "cardstack" ? "block" : "hidden"}`}>
         <div className="absolute inset-0 bg-black/50" onClick={closeModal} />
         <div className="relative max-w-sm w-full">
           {/* Background cards for stacking effect */}
@@ -76,4 +77,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CardStackEffectModal;
