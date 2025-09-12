@@ -11,6 +11,7 @@ const AnimatedUploadModal = () => {
   return (
     <div>
       <div className={`fixed inset-0 z-50 flex items-center justify-center p-4
+        ${activeModal === "upload" ? "visible opacity-100 block" : "invisible opacity-0 pointer-events-none hidden"} transition-opacity duration-300
         `}>
         <div
           className="absolute inset-0 bg-gradient-to-br from-indigo-900/50 to-purple-900/50"
