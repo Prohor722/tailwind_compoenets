@@ -18,6 +18,7 @@ import GameModal from "./GameModal";
 import SocialMediaFeedModal from "./components/SocialMediaFeedModal";
 import EcommerceSocialModal from "./components/EcommerceSocialModal";
 import CreativeDesignToolModal from "./components/CreativeDesignToolModal";
+import NeumorphismModal2 from "./components/NeumorphismModal2";
 
 
 export default function ModalPage() {
@@ -63,6 +64,8 @@ export default function ModalPage() {
       <EcommerceSocialModal />
 
       <CreativeDesignToolModal />
+
+      <NeumorphismModal2 />
 
     </div>
   );
