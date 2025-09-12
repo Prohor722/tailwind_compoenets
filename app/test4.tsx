@@ -7,67 +7,6 @@ export default function UniqueModalDesigns() {
   const openModal = (modalType) => setActiveModal(modalType);
   const closeModal = () => setActiveModal(null);
 
-  // Animated Upload Modal
-  const AnimatedUploadModal = () => {
-    const [isDragOver, setIsDragOver] = useState(false);
-    
-    return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-        <div 
-          className="absolute inset-0 bg-gradient-to-br from-indigo-900/50 to-purple-900/50"
-          onClick={closeModal}
-        />
-        <div className="relative bg-white rounded-3xl p-8 max-w-lg w-full shadow-2xl">
-          <button
-            onClick={closeModal}
-            className="absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors"
-          >
-            <X size={24} />
-          </button>
-          
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-2">Upload Files</h2>
-            <p className="text-gray-600">Drag and drop your files or click to browse</p>
-          </div>
-          
-          <div 
-            className={`border-2 border-dashed rounded-2xl p-8 text-center transition-all duration-300 ${
-              isDragOver 
-                ? 'border-indigo-500 bg-indigo-50 scale-105' 
-                : 'border-gray-300 hover:border-indigo-400 hover:bg-gray-50'
-            }`}
-            onDragOver={(e) => {
-              e.preventDefault();
-              setIsDragOver(true);
-            }}
-            onDragLeave={() => setIsDragOver(false)}
-            onDrop={(e) => {
-              e.preventDefault();
-              setIsDragOver(false);
-            }}
-          >
-            <div className={`transition-all duration-300 ${isDragOver ? 'scale-110' : ''}`}>
-              <Upload size={48} className={`mx-auto mb-4 ${isDragOver ? 'text-indigo-500' : 'text-gray-400'}`} />
-              <p className="text-lg font-semibold text-gray-700 mb-2">
-                {isDragOver ? 'Drop files here!' : 'Choose files to upload'}
-              </p>
-              <p className="text-sm text-gray-500">PNG, JPG, GIF up to 10MB</p>
-            </div>
-          </div>
-          
-          <div className="flex gap-4 mt-8">
-            <button className="flex-1 bg-gray-100 text-gray-700 py-3 rounded-xl font-semibold hover:bg-gray-200 transition-colors">
-              Cancel
-            </button>
-            <button className="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all transform hover:scale-105">
-              Upload
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  };
-
   // Floating Action Modal
   const FloatingActionModal = () => (
     <div className="fixed inset-0 z-50">
@@ -127,63 +66,8 @@ export default function UniqueModalDesigns() {
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Unique Modal Designs</h1>
           <p className="text-xl text-gray-600">Modern, interactive modal components built with Tailwind CSS</p>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-400 rounded-xl mb-4 flex items-center justify-center">
-              <Star className="text-white" size={24} />
-            </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Glassmorphism</h3>
-            <p className="text-gray-600 mb-4">Translucent design with backdrop blur effects for a modern, glass-like appearance.</p>
-            <button
-              onClick={() => openModal('glassmorphism')}
-              className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white py-2 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all"
-            >
-              Preview
-            </button>
-          </div>
 
-          <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-gray-200 rounded-xl mb-4 flex items-center justify-center shadow-[inset_5px_5px_10px_#bebebe,inset_-5px_-5px_10px_#ffffff]">
-              <Heart className="text-red-500" size={24} />
-            </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Neumorphism</h3>
-            <p className="text-gray-600 mb-4">Soft UI design with subtle shadows that create an extruded, tactile feeling.</p>
-            <button
-              onClick={() => openModal('neumorphism')}
-              className="w-full bg-gray-200 text-gray-700 py-2 rounded-lg font-semibold hover:bg-gray-300 transition-colors"
-            >
-              Preview
-            </button>
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl mb-4 flex items-center justify-center">
-              <MessageCircle className="text-white" size={24} />
-            </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Card Stack</h3>
-            <p className="text-gray-600 mb-4">Layered cards that create depth and visual hierarchy with stacking effects.</p>
-            <button
-              onClick={() => openModal('cardstack')}
-              className="w-full bg-gradient-to-br from-orange-500 to-red-500 text-white py-2 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all"
-            >
-              Preview
-            </button>
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl mb-4 flex items-center justify-center">
-              <Upload className="text-white" size={24} />
-            </div>
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Animated Upload</h3>
-            <p className="text-gray-600 mb-4">Interactive file upload modal with drag & drop animations and hover effects.</p>
-            <button
-              onClick={() => openModal('upload')}
-              className="w-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-2 rounded-lg font-semibold hover:from-indigo-600 hover:to-purple-600 transition-all"
-            >
-              Preview
-            </button>
-          </div>
+          
 
           <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl mb-4 flex items-center justify-center">

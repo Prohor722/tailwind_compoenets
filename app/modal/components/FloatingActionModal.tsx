@@ -1,17 +1,18 @@
 "use client";
 import { Camera, Share2, Upload, X, Zap } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 
-const page = () => {
+const FloatingActionModal = () => {
   const [activeModal, setActiveModal] = useState<string | null>(null);
-  const [isDragOver, setIsDragOver] = useState(false);
-
+  
   const openModal = (modalType: string) => setActiveModal(modalType);
   const closeModal = () => setActiveModal(null);
   return (
     <div>
-      <div className={`fixed inset-0 z-50
-        ${activeModal === "floating" ? "block" : "hidden"}`}>
+      <div
+        className={`fixed inset-0 z-50
+        ${activeModal === "floating" ? "block" : "hidden"}`}
+      >
         <div className="absolute inset-0 bg-black/40" onClick={closeModal} />
         <div className="absolute bottom-8 right-8 bg-white rounded-2xl p-6 w-80 shadow-2xl transform transition-all duration-300 animate-in slide-in-from-bottom-4">
           <button
@@ -91,4 +92,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default FloatingActionModal;

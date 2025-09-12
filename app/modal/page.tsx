@@ -21,6 +21,7 @@ import CreativeDesignToolModal from "./components/CreativeDesignToolModal";
 import NeumorphismModal2 from "./components/NeumorphismModal2";
 import CardStackEffectModal from "./components/CardStackEffectModal";
 import AnimatedUploadModal from "./components/AnimatedUploadModal";
+import FloatingActionModal from "./components/FloatingActionModal";
 
 
 export default function ModalPage() {
@@ -72,6 +73,8 @@ export default function ModalPage() {
       <CardStackEffectModal />
 
       <AnimatedUploadModal />
+
+      <FloatingActionModal />
 
     </div>
   );
