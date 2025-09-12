@@ -9,8 +9,10 @@ const CardStackEffectModal = () => {
   const closeModal = () => setActiveModal(null);
   return (
     <div>
-      <div className={`fixed inset-0 z-50 flex items-center justify-center p-4
-        ${activeModal === "cardstack" ? "block" : "hidden"}`}>
+      <div
+        className={`fixed inset-0 z-50 flex items-center justify-center p-4
+        ${activeModal === "cardstack" ? "block" : "hidden"}`}
+      >
         <div className="absolute inset-0 bg-black/50" onClick={closeModal} />
         <div className="relative max-w-sm w-full">
           {/* Background cards for stacking effect */}
@@ -21,7 +23,7 @@ const CardStackEffectModal = () => {
           <div className="relative bg-white rounded-2xl p-6 shadow-2xl transform transition-all duration-300 hover:scale-105">
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+              className="cursor-pointer absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
             >
               <X size={24} />
             </button>
@@ -55,24 +57,15 @@ const CardStackEffectModal = () => {
             </div>
           </div>
         </div>
-
-        <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-          <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl mb-4 flex items-center justify-center">
-            <MessageCircle className="text-white" size={24} />
-          </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-2">Card Stack</h3>
-          <p className="text-gray-600 mb-4">
-            Layered cards that create depth and visual hierarchy with stacking
-            effects.
-          </p>
-          <button
-            onClick={() => openModal("cardstack")}
-            className="w-full bg-gradient-to-br from-orange-500 to-red-500 text-white py-2 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all"
-          >
-            Preview
-          </button>
-        </div>
       </div>
+
+      <button
+        onClick={() => openModal("cardstack")}
+        className="cursor-pointer flex justify-center items-center gap-2 w-full bg-gradient-to-br from-orange-500 to-red-500 text-white p-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all"
+      >
+        <MessageCircle className="text-white" size={20} />
+        <span>Card Stack Effect Modal</span>
+      </button>
     </div>
   );
 };
