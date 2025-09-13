@@ -27,7 +27,7 @@ const WeatherDashboardModal = () => {
             <h3 className="text-lg font-bold text-white">Weather Dashboard</h3>
             <button
               onClick={closeModal}
-              className="text-white/70 hover:text-white"
+              className="cursor-pointer text-white/70 hover:text-white"
             >
               <X size={20} />
             </button>
@@ -86,7 +86,7 @@ const WeatherDashboardModal = () => {
 
           <button
             onClick={closeModal}
-            className="w-full bg-white/20 hover:bg-white/30 text-white py-2 rounded-xl transition-all duration-300 backdrop-blur-sm border border-white/30 text-sm"
+            className="cursor-pointer w-full bg-white/20 hover:bg-white/30 text-white py-2 rounded-xl transition-all duration-300 backdrop-blur-sm border border-white/30 text-sm"
           >
             View Full Forecast
           </button>
@@ -95,7 +95,7 @@ const WeatherDashboardModal = () => {
 
       <button
         onClick={() => setActiveModal("weatherDashboard")}
-        className="cursor-pointer bg-blue-600 hover:bg-blue-500 text-white p-4 rounded-full shadow-lg transition-colors"
+        className="border-4 border-blue-600 hover:border-blue-800 cursor-pointer bg-blue-600 hover:bg-blue-500 text-white p-3 rounded-full shadow-lg transition-colors"
       >
         Weather Dashboard Modal
       </button>
