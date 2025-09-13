@@ -18,7 +18,7 @@ const SlideUpModal = () => {
           <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-6" />
           <button
             onClick={closeModal}
-            className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+            className="cursor-pointer absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
           >
             <X size={20} />
           </button>
