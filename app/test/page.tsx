@@ -1,92 +1,75 @@
 "use client";
-import { Camera, Share2, Upload, X, Zap } from "lucide-react";
-import React, { useState } from "react";
+import { X } from "lucide-react";
+import { useState } from "react";
 
 const page = () => {
-  const [activeModal, setActiveModal] = useState<string | null>(null);
-  const [isDragOver, setIsDragOver] = useState(false);
-
-  const openModal = (modalType: string) => setActiveModal(modalType);
+  const [activeModal, setActiveModal] = useState(null);
+  
   const closeModal = () => setActiveModal(null);
+  const cryptos = [
+    { symbol: 'BTC', name: 'Bitcoin', price: 43250, change: 2.5, icon: '₿' },
+    { symbol: 'ETH', name: 'Ethereum', price: 2650, change: -1.2, icon: 'Ξ' },
+    { symbol: 'ADA', name: 'Cardano', price: 0.48, change: 5.8, icon: '₳' }
+  ];
+  
   return (
     <div>
-      <div className={`fixed inset-0 z-50
-        ${activeModal === "floating" ? "block" : "hidden"}`}>
-        <div className="absolute inset-0 bg-black/40" onClick={closeModal} />
-        <div className="absolute bottom-8 right-8 bg-white rounded-2xl p-6 w-80 shadow-2xl transform transition-all duration-300 animate-in slide-in-from-bottom-4">
-          <button
-            onClick={closeModal}
-            className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
-          >
-            <X size={20} />
-          </button>
 
-          <div className="mb-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-2">
-              Quick Actions
-            </h3>
-            <p className="text-gray-600">Choose an action to get started</p>
+      <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center p-4 z-50">
+        <div className="bg-gray-900 rounded-2xl p-8 max-w-lg w-full shadow-2xl border border-yellow-500/30">
+          <div className="flex justify-between items-center mb-6">
+            <h3 className="text-2xl font-bold text-white">Crypto Tracker</h3>
+            <button onClick={closeModal} className="text-gray-400 hover:text-white">
+              <X size={24} />
+            </button>
           </div>
-
-          <div className="grid grid-cols-2 gap-3">
-            <button className="flex flex-col items-center p-4 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors group">
-              <Camera
-                size={32}
-                className="text-blue-600 mb-2 group-hover:scale-110 transition-transform"
-              />
-              <span className="text-sm font-medium text-blue-700">
-                Take Photo
-              </span>
+          
+          <div className="space-y-4 mb-6">
+            {cryptos.map(crypto => (
+              <div key={crypto.symbol} className="bg-gray-800 rounded-xl p-4 hover:bg-gray-750 transition-colors">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-xl font-bold">
+                      {crypto.icon}
+                    </div>
+                    <div>
+                      <div className="text-white font-bold">{crypto.name}</div>
+                      <div className="text-gray-400 text-sm">{crypto.symbol}</div>
+                    </div>
+                  </div>
+                  
+                  <div className="text-right">
+                    <div className="text-white font-bold text-lg">${crypto.price.toLocaleString()}</div>
+                    <div className={`text-sm flex items-center gap-1 ${
+                      crypto.change > 0 ? 'text-green-400' : 'text-red-400'
+                    }`}>
+                      {crypto.change > 0 ? '↗' : '↘'}
+                      {Math.abs(crypto.change)}%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-xl p-4 mb-6">
+            <div className="text-white text-sm mb-1">Portfolio Value</div>
+            <div className="text-white text-2xl font-bold">$12,847.52</div>
+            <div className="text-green-200 text-sm">+$247.83 (1.96%) today</div>
+          </div>
+          
+          <div className="flex gap-3">
+            <button className="flex-1 bg-green-600 hover:bg-green-500 text-white py-3 rounded-xl transition-colors">
+              Buy Crypto
             </button>
-            <button className="flex flex-col items-center p-4 bg-green-50 hover:bg-green-100 rounded-xl transition-colors group">
-              <Upload
-                size={32}
-                className="text-green-600 mb-2 group-hover:scale-110 transition-transform"
-              />
-              <span className="text-sm font-medium text-green-700">
-                Upload File
-              </span>
-            </button>
-            <button className="flex flex-col items-center p-4 bg-purple-50 hover:bg-purple-100 rounded-xl transition-colors group">
-              <Share2
-                size={32}
-                className="text-purple-600 mb-2 group-hover:scale-110 transition-transform"
-              />
-              <span className="text-sm font-medium text-purple-700">
-                Share Link
-              </span>
-            </button>
-            <button className="flex flex-col items-center p-4 bg-yellow-50 hover:bg-yellow-100 rounded-xl transition-colors group">
-              <Zap
-                size={32}
-                className="text-yellow-600 mb-2 group-hover:scale-110 transition-transform"
-              />
-              <span className="text-sm font-medium text-yellow-700">
-                Quick Edit
-              </span>
+            <button className="flex-1 bg-red-600 hover:bg-red-500 text-white py-3 rounded-xl transition-colors">
+              Sell
             </button>
           </div>
         </div>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-        <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl mb-4 flex items-center justify-center">
-          <Zap className="text-white" size={24} />
-        </div>
-        <h3 className="text-xl font-bold text-gray-800 mb-2">
-          Floating Action
-        </h3>
-        <p className="text-gray-600 mb-4">
-          Bottom-right positioned modal with quick action buttons and smooth
-          animations.
-        </p>
-        <button
-          onClick={() => openModal("floating")}
-          className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-2 rounded-lg font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all"
-        >
-          Preview
-        </button>
-      </div>
+
     </div>
   );
 };
