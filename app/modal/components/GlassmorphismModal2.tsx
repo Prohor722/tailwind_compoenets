@@ -8,8 +8,10 @@ const GlassmorphismModal2 = () => {
   const closeModal = () => setActiveModal(null);
   return (
     <div>
-      <div className={`fixed inset-0 z-50 flex items-center justify-center p-4
-        ${activeModal === "glassmorphism2" ? "visible" : "invisible"}`}>
+      <div
+        className={`fixed inset-0 z-50 flex items-center justify-center p-4
+        ${activeModal === "glassmorphism2" ? "visible" : "invisible"}`}
+      >
         <div
           className="absolute inset-0 bg-black/20 backdrop-blur-md"
           onClick={closeModal}
@@ -17,7 +19,7 @@ const GlassmorphismModal2 = () => {
         <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 max-w-md w-full border border-white/20 shadow-2xl">
           <button
             onClick={closeModal}
-            className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors"
+            className="cursor-pointer absolute top-4 right-4 text-white/70 hover:text-white transition-colors"
           >
             <X size={24} />
           </button>
@@ -32,10 +34,10 @@ const GlassmorphismModal2 = () => {
               Beautiful translucent design with backdrop blur effects
             </p>
             <div className="flex gap-3">
-              <button className="flex-1 bg-white/20 hover:bg-white/30 text-white font-medium py-3 rounded-xl transition-all duration-200">
+              <button className="cursor-pointer flex-1 bg-white/20 hover:bg-white/30 text-white font-medium py-3 rounded-xl transition-all duration-200">
                 Cancel
               </button>
-              <button className="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-medium py-3 rounded-xl transition-all duration-200">
+              <button className="cursor-pointer flex-1 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-medium py-3 rounded-xl transition-all duration-200">
                 Confirm
               </button>
             </div>
@@ -43,11 +45,21 @@ const GlassmorphismModal2 = () => {
         </div>
       </div>
 
-      <button
+      {/* <button
         onClick={() => openModal("glassmorphism2")}
         className="border-4 border-pink-600 hover:border-pink-800 cursor-pointer bg-pink-600 hover:bg-pink-500 text-white p-3 rounded-full shadow-lg transition-colors"
       >
         Glassmorphism Modal 2
+      </button> */}
+
+      <button
+        onClick={() => openModal("glassmorphism2")}
+        className="cursor-pointer flex items-center justify-center gap-2 bg-white/30 backdrop-blur-md hover:bg-white/40 border border-white/20 rounded-2xl p-2 text-left transition-all duration-200 hover:scale-105"
+      >
+        <div className="p-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
+          <Star className="text-white" size={20} />
+        </div>
+        <h3 className="font-semibold text-gray-800">Glassmorphism 2</h3>
       </button>
     </div>
   );
