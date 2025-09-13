@@ -2,7 +2,7 @@
 import { X } from "lucide-react";
 import { useState } from "react";
 
-const page = () => {
+const CryptoTrackerModal = () => {
   const [activeModal, setActiveModal] = useState("");
 
   const closeModal = () => setActiveModal("");
@@ -11,7 +11,6 @@ const page = () => {
     { symbol: "ETH", name: "Ethereum", price: 2650, change: -1.2, icon: "Ξ" },
     { symbol: "ADA", name: "Cardano", price: 0.48, change: 5.8, icon: "₳" },
   ];
-
   return (
     <div>
       <div
@@ -85,7 +84,7 @@ const page = () => {
 
       <button
         onClick={() => setActiveModal("cryptoTracker")}
-        className="fixed bg-yellow-500 hover:bg-yellow-400 text-white p-4 rounded-full shadow-lg transition-colors"
+        className="bg-yellow-500 hover:bg-yellow-400 text-white p-4 rounded-full shadow-lg transition-colors"
       >
         Crypto Tracker Modal
       </button>
@@ -93,4 +92,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CryptoTrackerModal;

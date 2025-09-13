@@ -22,6 +22,7 @@ import NeumorphismModal2 from "./components/NeumorphismModal2";
 import CardStackEffectModal from "./components/CardStackEffectModal";
 import AnimatedUploadModal from "./components/AnimatedUploadModal";
 import FloatingActionModal from "./components/FloatingActionModal";
+import CryptoTrackerModal from "./components/CryptoTrackerModal";
 
 
 export default function ModalPage() {
@@ -75,6 +76,8 @@ export default function ModalPage() {
       <AnimatedUploadModal />
 
       <FloatingActionModal />
+
+      <CryptoTrackerModal />
 
     </div>
   );
