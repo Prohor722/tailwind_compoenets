@@ -23,6 +23,7 @@ import CardStackEffectModal from "./components/CardStackEffectModal";
 import AnimatedUploadModal from "./components/AnimatedUploadModal";
 import FloatingActionModal from "./components/FloatingActionModal";
 import CryptoTrackerModal from "./components/CryptoTrackerModal";
+import WeatherDashboardModal from "./components/WeatherDashboardModal";
 
 
 export default function ModalPage() {
@@ -78,6 +79,8 @@ export default function ModalPage() {
       <FloatingActionModal />
 
       <CryptoTrackerModal />
+
+      <WeatherDashboardModal />
 
     </div>
   );
