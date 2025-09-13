@@ -3,6 +3,7 @@ import { X } from "lucide-react";
 import { useState } from "react";
 import GlassmorphismModal2 from "../modal/components/GlassmorphismModal2";
 import SlideUpModal from "../modal/components/SlideUpModal";
+import FileManagerModal from "../modal/components/FileManagerModal";
 
 const page = () => {
   const [activeModal, setActiveModal] = useState("");
@@ -10,7 +11,7 @@ const page = () => {
 
   return (
     <div>
-      <SlideUpModal />
+      <FileManagerModal />
     </div>
   );
 };
