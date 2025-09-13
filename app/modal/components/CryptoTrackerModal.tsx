@@ -22,7 +22,7 @@ const CryptoTrackerModal = () => {
             <h3 className="text-2xl font-bold text-white">Crypto Tracker</h3>
             <button
               onClick={closeModal}
-              className="text-gray-400 hover:text-white"
+              className="cursor-pointer text-gray-400 hover:text-white"
             >
               <X size={24} />
             </button>
@@ -32,7 +32,7 @@ const CryptoTrackerModal = () => {
             {cryptos.map((crypto) => (
               <div
                 key={crypto.symbol}
-                className="bg-gray-800 rounded-xl p-4 hover:bg-gray-750 transition-colors"
+                className="bg-gray-800 rounded-xl p-4 hover:bg-gradient-to-r from-green-800 to-blue-800 transition-colors"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
@@ -72,10 +72,10 @@ const CryptoTrackerModal = () => {
           </div>
 
           <div className="flex gap-3">
-            <button className="flex-1 bg-green-600 hover:bg-green-500 text-white py-3 rounded-xl transition-colors">
+            <button className="cursor-pointer flex-1 bg-green-600 hover:bg-green-500 text-white py-3 rounded-xl transition-colors">
               Buy Crypto
             </button>
-            <button className="flex-1 bg-red-600 hover:bg-red-500 text-white py-3 rounded-xl transition-colors">
+            <button className="cursor-pointer flex-1 bg-red-600 hover:bg-red-500 text-white py-3 rounded-xl transition-colors">
               Sell
             </button>
           </div>
@@ -84,7 +84,7 @@ const CryptoTrackerModal = () => {
 
       <button
         onClick={() => setActiveModal("cryptoTracker")}
-        className="bg-yellow-500 hover:bg-yellow-400 text-white p-4 rounded-full shadow-lg transition-colors"
+        className="cursor-pointer bg-yellow-500 hover:bg-yellow-400 text-white p-4 rounded-full shadow-lg transition-colors"
       >
         Crypto Tracker Modal
       </button>
