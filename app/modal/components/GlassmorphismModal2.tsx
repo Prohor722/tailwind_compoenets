@@ -45,13 +45,6 @@ const GlassmorphismModal2 = () => {
         </div>
       </div>
 
-      {/* <button
-        onClick={() => openModal("glassmorphism2")}
-        className="border-4 border-pink-600 hover:border-pink-800 cursor-pointer bg-pink-600 hover:bg-pink-500 text-white p-3 rounded-full shadow-lg transition-colors"
-      >
-        Glassmorphism Modal 2
-      </button> */}
-
       <button
         onClick={() => openModal("glassmorphism2")}
         className="cursor-pointer flex items-center justify-center gap-2 bg-white/30 backdrop-blur-md hover:bg-white/40 border border-white/20 rounded-2xl p-2 text-left transition-all duration-200 hover:scale-105"
