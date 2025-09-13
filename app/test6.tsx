@@ -7,65 +7,6 @@ const ModernModals = () => {
   const openModal = (modalType: string) => setActiveModal(modalType);
   const closeModal = () => setActiveModal(null);
 
-  // Glassmorphism Modal
-  const GlassmorphismModal = () => (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-md" onClick={closeModal} />
-      <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 max-w-md w-full border border-white/20 shadow-2xl">
-        <button 
-          onClick={closeModal}
-          className="absolute top-4 right-4 text-white/70 hover:text-white transition-colors"
-        >
-          <X size={24} />
-        </button>
-        <div className="text-center">
-          <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
-            <Star className="text-white" size={24} />
-          </div>
-          <h3 className="text-2xl font-bold text-white mb-2">Glassmorphism Style</h3>
-          <p className="text-white/80 mb-6">Beautiful translucent design with backdrop blur effects</p>
-          <div className="flex gap-3">
-            <button className="flex-1 bg-white/20 hover:bg-white/30 text-white font-medium py-3 rounded-xl transition-all duration-200">
-              Cancel
-            </button>
-            <button className="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-medium py-3 rounded-xl transition-all duration-200">
-              Confirm
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-
-  // Neumorphism Modal
-  const NeumorphismModal = () => (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-gray-100">
-      <div className="absolute inset-0 bg-gray-100/80" onClick={closeModal} />
-      <div className="relative bg-gray-100 rounded-3xl p-8 max-w-md w-full shadow-[20px_20px_40px_#bebebe,-20px_-20px_40px_#ffffff]">
-        <button 
-          onClick={closeModal}
-          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 shadow-[inset_5px_5px_10px_#bebebe,inset_-5px_-5px_10px_#ffffff] flex items-center justify-center text-gray-600 hover:text-gray-800 transition-colors"
-        >
-          <X size={16} />
-        </button>
-        <div className="text-center">
-          <div className="w-20 h-20 bg-gray-100 rounded-full shadow-[10px_10px_20px_#bebebe,-10px_-10px_20px_#ffffff] flex items-center justify-center mx-auto mb-6">
-            <Settings className="text-gray-600" size={28} />
-          </div>
-          <h3 className="text-2xl font-bold text-gray-800 mb-2">Neumorphism Design</h3>
-          <p className="text-gray-600 mb-6">Soft, extruded shapes that appear to emerge from the background</p>
-          <div className="flex gap-4">
-            <button className="flex-1 bg-gray-100 shadow-[5px_5px_10px_#bebebe,-5px_-5px_10px_#ffffff] hover:shadow-[inset_5px_5px_10px_#bebebe,inset_-5px_-5px_10px_#ffffff] text-gray-700 font-medium py-3 rounded-xl transition-all duration-200">
-              Cancel
-            </button>
-            <button className="flex-1 bg-blue-500 shadow-[5px_5px_10px_#4285d1,-5px_-5px_10px_#5ca5ff] hover:shadow-[inset_5px_5px_10px_#4285d1,inset_-5px_-5px_10px_#5ca5ff] text-white font-medium py-3 rounded-xl transition-all duration-200">
-              Confirm
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
 
   // Slide Up Mobile Modal
   const SlideUpModal = () => (
@@ -216,27 +157,7 @@ const ModernModals = () => {
         <p className="text-gray-600 text-center mb-12">Click any button to preview different modal styles</p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <button 
-            onClick={() => openModal('glassmorphism')}
-            className="bg-white/30 backdrop-blur-md hover:bg-white/40 border border-white/20 rounded-2xl p-6 text-left transition-all duration-200 hover:scale-105"
-          >
-            <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-4">
-              <Star className="text-white" size={20} />
-            </div>
-            <h3 className="font-semibold text-gray-800 mb-2">Glassmorphism</h3>
-            <p className="text-gray-600 text-sm">Translucent design with backdrop blur</p>
-          </button>
-
-          <button 
-            onClick={() => openModal('neumorphism')}
-            className="bg-gray-100 hover:bg-gray-200 shadow-[8px_8px_16px_#bebebe,-8px_-8px_16px_#ffffff] hover:shadow-[12px_12px_24px_#bebebe,-12px_-12px_24px_#ffffff] rounded-2xl p-6 text-left transition-all duration-200"
-          >
-            <div className="w-12 h-12 bg-gray-100 shadow-[4px_4px_8px_#bebebe,-4px_-4px_8px_#ffffff] rounded-xl flex items-center justify-center mb-4">
-              <Settings className="text-gray-600" size={20} />
-            </div>
-            <h3 className="font-semibold text-gray-800 mb-2">Neumorphism</h3>
-            <p className="text-gray-600 text-sm">Soft extruded shapes</p>
-          </button>
+        
 
           <button 
             onClick={() => openModal('slideUp')}
@@ -287,8 +208,6 @@ const ModernModals = () => {
       </div>
 
       {/* Render Active Modal */}
-      {activeModal === 'glassmorphism' && <GlassmorphismModal />}
-      {activeModal === 'neumorphism' && <NeumorphismModal />}
       {activeModal === 'slideUp' && <SlideUpModal />}
       {activeModal === 'gradient' && <GradientBorderModal />}
       {activeModal === 'notification' && <NotificationModal />}
