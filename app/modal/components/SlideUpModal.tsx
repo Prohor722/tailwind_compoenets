@@ -9,8 +9,10 @@ const SlideUpModal = () => {
 
   return (
     <div>
-      <div className={`fixed inset-0 z-50 flex items-end justify-center
-        ${activeModal === "slideUp" ? "block" : "hidden"}`}>
+      <div
+        className={`fixed inset-0 z-50 flex items-end justify-center
+        ${activeModal === "slideUp" ? "block" : "hidden"}`}
+      >
         <div className="absolute inset-0 bg-black/50" onClick={closeModal} />
         <div className="relative bg-white rounded-t-3xl w-full max-w-md p-6 transform animate-slide-up">
           <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-6" />
@@ -53,13 +55,12 @@ const SlideUpModal = () => {
 
       <button
         onClick={() => openModal("slideUp")}
-        className="bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-gray-300 rounded-2xl p-6 text-left transition-all duration-200 hover:scale-105"
+        className="cursor-pointer flex items-center justify-center gap-2 bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-gray-300 rounded-2xl p-2 text-left transition-all duration-200 hover:scale-105"
       >
-        <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mb-4">
+        <div className="bg-blue-500 rounded-xl flex items-center justify-center p-2">
           <Share2 className="text-white" size={20} />
         </div>
-        <h3 className="font-semibold text-gray-800 mb-2">Slide Up Mobile</h3>
-        <p className="text-gray-600 text-sm">Bottom sheet style modal</p>
+        <h3 className="font-semibold text-gray-800">Slide Up Mobile</h3>
       </button>
     </div>
   );
