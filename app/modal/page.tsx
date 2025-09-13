@@ -24,6 +24,7 @@ import AnimatedUploadModal from "./components/AnimatedUploadModal";
 import FloatingActionModal from "./components/FloatingActionModal";
 import CryptoTrackerModal from "./components/CryptoTrackerModal";
 import WeatherDashboardModal from "./components/WeatherDashboardModal";
+import GlassmorphismModal2 from "./components/GlassmorphismModal2";
 
 
 export default function ModalPage() {
@@ -81,6 +82,8 @@ export default function ModalPage() {
       <CryptoTrackerModal />
 
       <WeatherDashboardModal />
+
+      <GlassmorphismModal2 />
 
     </div>
   );
