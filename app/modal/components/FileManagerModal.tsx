@@ -59,7 +59,7 @@ const FileManagerModal = () => {
                 onClick={() =>
                   setViewMode(viewMode === "list" ? "grid" : "list")
                 }
-                className="p-2 hover:bg-gray-100 rounded-lg"
+                className="cursor-pointer p-2 hover:bg-gray-100 rounded-lg"
               >
                 {viewMode === "list" ? (
                   <Grid3x3 size={18} />
@@ -69,7 +69,7 @@ const FileManagerModal = () => {
               </button>
               <button
                 onClick={closeModal}
-                className="text-gray-400 hover:text-gray-600 p-2"
+                className="cursor-pointer text-gray-400 hover:text-gray-600 p-2"
               >
                 <X size={20} />
               </button>
@@ -131,11 +131,11 @@ const FileManagerModal = () => {
             <div className="text-sm text-gray-600">{files.length} items</div>
 
             <div className="flex gap-2">
-              <button className="flex items-center gap-2 px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-sm transition-colors">
+              <button className="cursor-pointer flex items-center gap-2 px-3 py-2 bg-gray-700 hover:bg-gray-500 rounded-lg text-sm transition-colors">
                 <Plus size={16} />
                 New Folder
               </button>
-              <button className="flex items-center gap-2 px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm transition-colors">
+              <button className="cursor-pointer flex items-center gap-2 px-3 py-2 bg-blue-600 hover:bg-blue-800 text-white rounded-lg text-sm transition-colors">
                 <Upload size={16} />
                 Upload
               </button>
