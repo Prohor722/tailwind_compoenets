@@ -27,6 +27,7 @@ import WeatherDashboardModal from "./components/WeatherDashboardModal";
 import GlassmorphismModal2 from "./components/GlassmorphismModal2";
 import SlideUpModal from "./components/SlideUpModal";
 import FileManagerModal from "./components/FileManagerModal";
+import GradientBorderModal from "./components/GradientBorderModal";
 
 
 export default function ModalPage() {
@@ -90,6 +91,8 @@ export default function ModalPage() {
       <SlideUpModal />
 
       <FileManagerModal />
+
+      <GradientBorderModal />
 
     </div>
   );
