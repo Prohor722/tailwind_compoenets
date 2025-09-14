@@ -37,7 +37,7 @@ const GradientBorderModal = () => {
                   Eye-catching gradient borders with dark theme design
                 </p>
                 <div className="flex gap-3">
-                  <button className="cursor-pointer flex-1 bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 rounded-xl transition-colors">
+                  <button onClick={closeModal} className="cursor-pointer flex-1 bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 rounded-xl transition-colors">
                     Cancel
                   </button>
                   <button className="cursor-pointer flex-1 bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white font-medium py-3 rounded-xl transition-all duration-200">
@@ -54,12 +54,11 @@ const GradientBorderModal = () => {
         onClick={() => openModal("gradient")}
         className="cursor-pointer bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 rounded-2xl p-[2px] text-left transition-all duration-200 hover:scale-105"
       >
-        <div className="bg-white rounded-2xl p-6">
-          <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-xl flex items-center justify-center mb-4">
-            <AlertTriangle className="text-white" size={20} />
-          </div>
-          <h3 className="font-semibold text-gray-800 mb-2">Gradient Border</h3>
-          <p className="text-gray-600 text-sm">Vibrant gradient borders</p>
+        <div className="flex items-center justify-center text-orange-400 gap-2 bg-gray-900 rounded-2xl p-3">
+          <AlertTriangle size={20} />
+          <h3 className="font-semibold">
+            Gradient Border Modal
+          </h3>
         </div>
       </button>
     </div>
