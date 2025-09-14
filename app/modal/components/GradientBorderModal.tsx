@@ -22,7 +22,7 @@ const GradientBorderModal = () => {
             <div className="bg-gray-900 rounded-2xl p-8">
               <button
                 onClick={closeModal}
-                className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
+                className="cursor-pointer absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
               >
                 <X size={24} />
               </button>
@@ -37,10 +37,10 @@ const GradientBorderModal = () => {
                   Eye-catching gradient borders with dark theme design
                 </p>
                 <div className="flex gap-3">
-                  <button className="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 rounded-xl transition-colors">
+                  <button className="cursor-pointer flex-1 bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 rounded-xl transition-colors">
                     Cancel
                   </button>
-                  <button className="flex-1 bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white font-medium py-3 rounded-xl transition-all duration-200">
+                  <button className="cursor-pointer flex-1 bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white font-medium py-3 rounded-xl transition-all duration-200">
                     Confirm
                   </button>
                 </div>
@@ -52,7 +52,7 @@ const GradientBorderModal = () => {
 
       <button
         onClick={() => openModal("gradient")}
-        className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 rounded-2xl p-[2px] text-left transition-all duration-200 hover:scale-105"
+        className="cursor-pointer bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 rounded-2xl p-[2px] text-left transition-all duration-200 hover:scale-105"
       >
         <div className="bg-white rounded-2xl p-6">
           <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-xl flex items-center justify-center mb-4">
