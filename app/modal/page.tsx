@@ -28,6 +28,7 @@ import GlassmorphismModal2 from "./components/GlassmorphismModal2";
 import SlideUpModal from "./components/SlideUpModal";
 import FileManagerModal from "./components/FileManagerModal";
 import GradientBorderModal from "./components/GradientBorderModal";
+import NotificationModal from "./components/NotificationModal";
 
 
 export default function ModalPage() {
@@ -93,6 +94,8 @@ export default function ModalPage() {
       <FileManagerModal />
 
       <GradientBorderModal />
+
+      <NotificationModal />
 
     </div>
   );
