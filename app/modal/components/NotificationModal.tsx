@@ -3,15 +3,36 @@ import React, { useState } from "react";
 
 const NotificationModal = () => {
   const [activeModal, setActiveModal] = useState<string | null>(null);
-
+  
   const openModal = (modalType: string) => setActiveModal(modalType);
   const closeModal = () => setActiveModal(null);
+  
+  // Handle backdrop click (clicking outside the modal)
+  const handleBackdropClick = (e: React.MouseEvent) => {
+    // Only close if the click target is the backdrop itself
+    if (e.target === e.currentTarget) {
+      closeModal();
+    }
+  };
+  
+  // Prevent modal from closing when clicking inside the modal content
+  const handleModalClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
 
   return (
     <div>
-      <div className={`fixed inset-0 z-50 flex items-start justify-center pt-20 px-4
-        ${activeModal === "notification" ? "block" : "hidden"}`}>
-        <div className="bg-white rounded-2xl shadow-2xl max-w-sm w-full border transform animate-bounce">
+      {/* Modal Backdrop */}
+      <div 
+        className={`fixed inset-0 z-50 flex items-start justify-center pt-20 px-4 bg-black bg-opacity-50
+          ${activeModal === "notification" ? "block" : "hidden"}`}
+        onClick={handleBackdropClick}
+      >
+        {/* Modal Content */}
+        <div 
+          className="bg-white rounded-2xl shadow-2xl max-w-sm w-full border transform animate-bounce"
+          onClick={handleModalClick}
+        >
           <div className="p-6">
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -46,6 +67,7 @@ const NotificationModal = () => {
         </div>
       </div>
 
+      {/* Trigger Button */}
       <button
         onClick={() => openModal("notification")}
         className="bg-white hover:bg-gray-50 border border-gray-200 hover:border-green-300 rounded-2xl p-6 text-left transition-all duration-200 hover:scale-105"
