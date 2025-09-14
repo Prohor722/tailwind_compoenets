@@ -1,11 +1,11 @@
 "use client";
-import GradientBorderModal from "../modal/components/GradientBorderModal";
+import NotificationModal from "../modal/components/NotificationModal";
 
 const page = () => {
-  
+
   return (
     <div>
-      <GradientBorderModal />
+      <NotificationModal />
     </div>
   );
 };

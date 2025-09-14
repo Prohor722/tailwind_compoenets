@@ -9,7 +9,8 @@ const NotificationModal = () => {
 
   return (
     <div>
-      <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 px-4">
+      <div className={`fixed inset-0 z-50 flex items-start justify-center pt-20 px-4
+        ${activeModal === "notification" ? "block" : "hidden"}`}>
         <div className="bg-white rounded-2xl shadow-2xl max-w-sm w-full border transform animate-bounce">
           <div className="p-6">
             <div className="flex items-start gap-4">
