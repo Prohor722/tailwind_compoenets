@@ -38,13 +38,12 @@ const FloatingActionModal2 = () => {
 
       <button
         onClick={() => openModal("floating")}
-        className="bg-white hover:bg-gray-50 shadow-lg hover:shadow-xl border border-gray-200 rounded-2xl p-6 text-left transition-all duration-200 hover:scale-105"
+        className="flex justify-center items-center gap-2 bg-white hover:bg-gray-50 shadow-lg hover:shadow-xl border border-gray-200 rounded-2xl p-2 text-left transition-all duration-200 hover:scale-105"
       >
-        <div className="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center mb-4">
+        <div className="bg-gray-800 rounded-xl p-2">
           <User className="text-white" size={20} />
         </div>
-        <h3 className="font-semibold text-gray-800 mb-2">Floating Action</h3>
-        <p className="text-gray-600 text-sm">Context menu style</p>
+        <h3 className="font-semibold text-gray-800">Floating Action Modal 2</h3>
       </button>
     </div>
   );
