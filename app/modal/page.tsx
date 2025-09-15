@@ -29,6 +29,7 @@ import SlideUpModal from "./components/SlideUpModal";
 import FileManagerModal from "./components/FileManagerModal";
 import GradientBorderModal from "./components/GradientBorderModal";
 import NotificationModal from "./components/NotificationModal";
+import FloatingActionModal2 from "./components/FloatingActionModal2";
 
 
 export default function ModalPage() {
@@ -96,6 +97,8 @@ export default function ModalPage() {
       <GradientBorderModal />
 
       <NotificationModal />
+
+      <FloatingActionModal2 />
 
     </div>
   );
