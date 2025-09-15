@@ -5,6 +5,7 @@ import BasicShadowCard from "./components/BasicShadowCard";
 import ImageCard from "./components/ImageCard";
 import BorderedCard from "./components/BorderedCard";
 import ProfileCard from "./components/ProfileCard";
+import ColoredCard from "./components/ColoredCard";
 
 const Card = () => {
   const imageList = [
@@ -25,16 +26,9 @@ const Card = () => {
 
         <BorderedCard />
 
-        {/* Profile Card */}
         <ProfileCard />
 
-        {/* Colored Card */}
-        <div className="bg-blue-600 text-white rounded-lg p-6 w-64 shadow-lg">
-          <h2 className="text-lg font-bold mb-2">Colorful Card</h2>
-          <p className="text-sm">
-            Great for callouts, tips, or promotional blocks.
-          </p>
-        </div>
+        <ColoredCard />
 
         <div className="w-80 p-6 bg-white/30 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 transition-transform hover:scale-105 duration-300">
           <h3 className="text-xl font-semibold text-gray-800 mb-2">
