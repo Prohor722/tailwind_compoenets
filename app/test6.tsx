@@ -9,42 +9,6 @@ const ModernModals = () => {
 
 
 
-  // Notification Modal
-  const NotificationModal = () => (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 px-4">
-      <div className="bg-white rounded-2xl shadow-2xl max-w-sm w-full border transform animate-bounce">
-        <div className="p-6">
-          <div className="flex items-start gap-4">
-            <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-              <Check className="text-green-600" size={20} />
-            </div>
-            <div className="flex-1">
-              <h4 className="font-semibold text-gray-900 mb-1">Success!</h4>
-              <p className="text-gray-600 text-sm mb-4">Your changes have been saved successfully.</p>
-              <div className="flex gap-2">
-                <button 
-                  onClick={closeModal}
-                  className="text-sm text-green-600 hover:text-green-700 font-medium"
-                >
-                  Dismiss
-                </button>
-                <button className="text-sm text-gray-500 hover:text-gray-700">
-                  View Details
-                </button>
-              </div>
-            </div>
-            <button 
-              onClick={closeModal}
-              className="text-gray-400 hover:text-gray-600 transition-colors"
-            >
-              <X size={16} />
-            </button>
-          </div>
-        </div>
-        <div className="h-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-b-2xl" />
-      </div>
-    </div>
-  );
 
   // Floating Action Modal
   const FloatingActionModal = () => (
@@ -83,16 +47,6 @@ const ModernModals = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <button 
-            onClick={() => openModal('notification')}
-            className="bg-white hover:bg-gray-50 border border-gray-200 hover:border-green-300 rounded-2xl p-6 text-left transition-all duration-200 hover:scale-105"
-          >
-            <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
-              <Check className="text-green-600" size={20} />
-            </div>
-            <h3 className="font-semibold text-gray-800 mb-2">Notification</h3>
-            <p className="text-gray-600 text-sm">Toast-style notifications</p>
-          </button>
 
           <button 
             onClick={() => openModal('floating')}
@@ -108,7 +62,6 @@ const ModernModals = () => {
       </div>
 
       {/* Render Active Modal */}
-      {activeModal === 'notification' && <NotificationModal />}
       {activeModal === 'floating' && <FloatingActionModal />}
 
       <style jsx>{`
