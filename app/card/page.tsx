@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import BasicShadowCard from "./components/BasicShadowCard";
 import ImageCard from "./components/ImageCard";
+import BorderedCard from "./components/BorderedCard";
 
 const Card = () => {
   const imageList = [
@@ -23,12 +24,7 @@ const Card = () => {
         <ImageCard />
 
         {/* Bordered Card */}
-        <div className="bg-white border border-gray-300 rounded-lg p-6 w-64">
-          <h2 className="text-lg font-semibold text-gray-800">Bordered Card</h2>
-          <p className="text-gray-600">
-            This card uses a subtle border instead of shadow.
-          </p>
-        </div>
+        <BorderedCard />
 
         {/* Profile Card */}
         <div className="bg-white shadow-md rounded-lg p-6 w-64 flex flex-col items-center text-center">

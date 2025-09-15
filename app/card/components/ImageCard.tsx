@@ -17,7 +17,7 @@ const ImageCard = () => {
         className="w-full h-40 object-cover"
       />
       <div className="p-4">
-        <h2 className="text-lg font-semibold">Nature View</h2>
+        <h2 className="text-lg font-semibold">Image Card</h2>
         <p className="text-gray-600 text-sm">
           Beautiful landscape from Unsplash.
         </p>
