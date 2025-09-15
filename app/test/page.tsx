@@ -1,11 +1,12 @@
 "use client";
+import FloatingActionModal2 from "../modal/components/FloatingActionModal2";
 import NotificationModal from "../modal/components/NotificationModal";
 
 const page = () => {
 
   return (
     <div>
-      <NotificationModal />
+      <FloatingActionModal2 />
     </div>
   );
 };

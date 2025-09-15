@@ -9,7 +9,8 @@ const FloatingActionModal2 = () => {
 
   return (
     <div>
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className={`fixed bottom-6 right-6 z-50
+        ${activeModal === "floating" ? "block" : "hidden"}`}>
         <div className="bg-white rounded-2xl shadow-2xl border p-4 w-64 transform origin-bottom-right animate-scale-up">
           <button
             onClick={closeModal}
