@@ -4,6 +4,7 @@ import React from "react";
 import BasicShadowCard from "./components/BasicShadowCard";
 import ImageCard from "./components/ImageCard";
 import BorderedCard from "./components/BorderedCard";
+import ProfileCard from "./components/ProfileCard";
 
 const Card = () => {
   const imageList = [
@@ -20,24 +21,12 @@ const Card = () => {
       <div className="flex flex-wrap justify-center gap-8 max-w-6xl">
         <BasicShadowCard />
 
-        {/* Image Card */}
         <ImageCard />
 
-        {/* Bordered Card */}
         <BorderedCard />
 
         {/* Profile Card */}
-        <div className="bg-white shadow-md rounded-lg p-6 w-64 flex flex-col items-center text-center">
-          <Image
-            width={200}
-            height={200}
-            className="w-20 h-20 rounded-full mb-4"
-            src={imageList?.[0] || "/placeholder.jpg"}
-            alt="Profile"
-          />
-          <h2 className="text-lg font-semibold text-gray-800">John Doe</h2>
-          <p className="text-gray-500 text-sm">UI/UX Designer</p>
-        </div>
+        <ProfileCard />
 
         {/* Colored Card */}
         <div className="bg-blue-600 text-white rounded-lg p-6 w-64 shadow-lg">
