@@ -1,5 +1,8 @@
+import { Basic } from "next/font/google";
 import Image from "next/image";
 import React from "react";
+import BasicShadowCard from "./components/BasicShadowCard";
+import ImageCard from "./components/ImageCard";
 
 const Card = () => {
   const imageList = [
@@ -14,30 +17,10 @@ const Card = () => {
       </h1>
 
       <div className="flex flex-wrap justify-center gap-8 max-w-6xl">
-        {/* Basic Shadow Card */}
-        <div className="bg-white shadow-md rounded-lg p-6 w-64">
-          <h2 className="text-lg font-semibold mb-2">Basic Card</h2>
-          <p className="text-gray-600">
-            This is a simple card with a shadow, padding, and border radius.
-          </p>
-        </div>
+        <BasicShadowCard />
 
         {/* Image Card */}
-        <div className="bg-white shadow-md rounded-lg overflow-hidden w-64">
-          <Image
-            width={200}
-            height={200}
-            src={imageList?.[0] || "/placeholder.jpg"}
-            alt="Nature"
-            className="w-full h-40 object-cover"
-          />
-          <div className="p-4">
-            <h2 className="text-lg font-semibold">Nature View</h2>
-            <p className="text-gray-600 text-sm">
-              Beautiful landscape from Unsplash.
-            </p>
-          </div>
-        </div>
+        <ImageCard />
 
         {/* Bordered Card */}
         <div className="bg-white border border-gray-300 rounded-lg p-6 w-64">
