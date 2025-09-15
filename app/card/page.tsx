@@ -6,6 +6,7 @@ import ImageCard from "./components/ImageCard";
 import BorderedCard from "./components/BorderedCard";
 import ProfileCard from "./components/ProfileCard";
 import ColoredCard from "./components/ColoredCard";
+import GlassmorphicCard from "./components/GlassmorphicCard";
 
 const Card = () => {
   const imageList = [
@@ -30,14 +31,7 @@ const Card = () => {
 
         <ColoredCard />
 
-        <div className="w-80 p-6 bg-white/30 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 transition-transform hover:scale-105 duration-300">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">
-            Glassmorphic Card
-          </h3>
-          <p className="text-gray-600">
-            A smooth frosted-glass look using Tailwind’s backdrop blur utility.
-          </p>
-        </div>
+        <GlassmorphicCard />
 
         <div className="w-80 bg-white rounded-xl overflow-hidden shadow-lg group cursor-pointer transition-all hover:shadow-2xl">
           <div className="overflow-hidden">
