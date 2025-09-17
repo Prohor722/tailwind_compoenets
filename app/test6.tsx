@@ -27,31 +27,9 @@ const AnimatedCards = () => {
         </h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
-          {/* Glassmorphism Hover Card */}
-          
 
           {/* Flip Card */}
-          <div className="h-64 perspective-1000">
-            <div 
-              className={`relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer ${flippedCard === 'flip' ? 'rotate-y-180' : ''}`}
-              onClick={() => toggleFlip('flip')}
-            >
-              {/* Front */}
-              <div className="absolute inset-0 w-full h-full backface-hidden rounded-2xl bg-gradient-to-br from-pink-500 to-violet-600 p-6 flex flex-col justify-center items-center text-white shadow-2xl">
-                <Code className="w-16 h-16 mb-4 animate-pulse" />
-                <h3 className="text-2xl font-bold mb-2">Flip Me!</h3>
-                <p className="text-center opacity-90">Click to reveal the magic</p>
-              </div>
-              
-              {/* Back */}
-              <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 p-6 flex flex-col justify-center items-center text-white shadow-2xl">
-                <Zap className="w-16 h-16 mb-4 animate-bounce" />
-                <h3 className="text-2xl font-bold mb-2">Surprise!</h3>
-                <p className="text-center opacity-90">3D flip animation with Tailwind CSS</p>
-              </div>
-            </div>
-          </div>
+          
 
           {/* Pulse Glow Card */}
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-purple-900 to-indigo-900 p-6 group">
