@@ -7,6 +7,7 @@ import BorderedCard from "./components/BorderedCard";
 import ProfileCard from "./components/ProfileCard";
 import ColoredCard from "./components/ColoredCard";
 import GlassmorphicCard from "./components/GlassmorphicCard";
+import GlassmorphismHoverCard from "./components/GlassmorphismHoverCard";
 
 const Card = () => {
   const imageList = [
@@ -73,6 +74,8 @@ const Card = () => {
             Learn More
           </button>
         </div>
+
+        <GlassmorphismHoverCard />
       </div>
     </div>
   );
