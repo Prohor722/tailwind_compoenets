@@ -8,6 +8,7 @@ import ProfileCard from "./components/ProfileCard";
 import ColoredCard from "./components/ColoredCard";
 import GlassmorphicCard from "./components/GlassmorphicCard";
 import GlassmorphismHoverCard from "./components/GlassmorphismHoverCard";
+import HoverZoomImageCard from "./components/HoverZoomImageCard";
 
 const Card = () => {
   const imageList = [
@@ -34,25 +35,9 @@ const Card = () => {
 
         <GlassmorphicCard />
 
-        <div className="w-80 bg-white rounded-xl overflow-hidden shadow-lg group cursor-pointer transition-all hover:shadow-2xl">
-          <div className="overflow-hidden">
-            <Image
-              width={200}
-              height={200}
-              src={imageList?.[0] || "/placeholder.jpg"}
-              alt="Random"
-              className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-          </div>
-          <div className="p-4">
-            <h3 className="text-lg font-bold text-gray-800 mb-1">
-              Hover Zoom Image
-            </h3>
-            <p className="text-sm text-gray-600">
-              Elegant card with animated image hover effect.
-            </p>
-          </div>
-        </div>
+        <HoverZoomImageCard />
+
+        
 
         <div className="w-80 p-6 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl text-white shadow-md transform transition duration-300 hover:-translate-y-1 hover:shadow-xl">
           <div className="flex items-center mb-4">
