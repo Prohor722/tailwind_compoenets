@@ -1,26 +1,17 @@
+"use client";
 import { Code, Zap } from "lucide-react";
 import { useState } from "react";
 
 const FlipCard = () => {
   const [likedCards, setLikedCards] = useState(new Set());
   const [flippedCard, setFlippedCard] = useState<string | null>(null);
-
-  const toggleLike = (cardId: string) => {
-    const newLiked = new Set(likedCards);
-    if (newLiked.has(cardId)) {
-      newLiked.delete(cardId);
-    } else {
-      newLiked.add(cardId);
-    }
-    setLikedCards(newLiked);
-  };
   
   const toggleFlip = (cardId:string) => {
     setFlippedCard(flippedCard === cardId ? null : cardId);
   };
 
   return (
-    <div className="h-64 perspective-1000">
+    <div className="h-64 w-80 perspective-1000">
       <div
         className={`relative w-full h-full transition-transform duration-700 transform-style-preserve-3d cursor-pointer ${
           flippedCard === "flip" ? "rotate-y-180" : ""
