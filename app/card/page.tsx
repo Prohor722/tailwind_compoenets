@@ -1,6 +1,3 @@
-import { Basic } from "next/font/google";
-import Image from "next/image";
-import React from "react";
 import BasicShadowCard from "./components/BasicShadowCard";
 import ImageCard from "./components/ImageCard";
 import BorderedCard from "./components/BorderedCard";
@@ -12,11 +9,7 @@ import HoverZoomImageCard from "./components/HoverZoomImageCard";
 import AnimatedCard from "./components/AnimatedCard";
 
 const Card = () => {
-  const imageList = [
-    "https://static.vecteezy.com/system/resources/thumbnails/052/248/075/small_2x/peacock-feather-wallpaper-hd-wallpaper-photo.jpeg",
-    "https://static.vecteezy.com/system/resources/thumbnails/052/248/075/small_2x/peacock-feather-wallpaper-hd-wallpaper-photo.jpeg",
-    "https://static.vecteezy.com/system/resources/thumbnails/052/248/075/small_2x/peacock-feather-wallpaper-hd-wallpaper-photo.jpeg",
-  ];
+  
   return (
     <div className="min-h-screen bg-gray-100 p-8 flex flex-col items-center gap-10">
       <h1 className="text-2xl font-bold text-gray-800">
@@ -41,6 +34,8 @@ const Card = () => {
         <AnimatedCard />
 
         <GlassmorphismHoverCard />
+
+
       </div>
     </div>
   );

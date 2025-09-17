@@ -1,5 +1,4 @@
 import { ArrowRight, Globe } from "lucide-react";
-import React from "react";
 
 const GlassmorphismHoverCard = () => {
   return (
