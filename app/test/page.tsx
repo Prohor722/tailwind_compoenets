@@ -1,12 +1,12 @@
 "use client";
-import FloatingActionModal2 from "../modal/components/FloatingActionModal2";
-import NotificationModal from "../modal/components/NotificationModal";
+
+import FlipCard from "../card/components/FlipCard";
 
 const page = () => {
 
   return (
     <div>
-      <FloatingActionModal2 />
+      <FlipCard />
     </div>
   );
 };
