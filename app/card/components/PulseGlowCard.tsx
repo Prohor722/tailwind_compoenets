@@ -18,7 +18,7 @@ const PulseGlowCard = () => {
         </p>
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-white">$29/mo</span>
-          <button className="px-4 py-2 bg-white/20 rounded-lg text-white font-medium hover:bg-white/30 transition-colors">
+          <button className="cursor-pointer px-4 py-2 bg-white/20 rounded-lg text-white font-medium hover:bg-white/30 transition-colors">
             Subscribe
           </button>
         </div>
