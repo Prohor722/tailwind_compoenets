@@ -3,7 +3,6 @@ import { Heart, Star, ShoppingCart, Eye, ArrowRight, Zap, Globe, Code } from 'lu
 
 const AnimatedCards = () => {
   const [likedCards, setLikedCards] = useState(new Set());
-  const [flippedCard, setFlippedCard] = useState<string | null>(null);
 
   const toggleLike = (cardId: string) => {
     const newLiked = new Set(likedCards);
@@ -15,9 +14,6 @@ const AnimatedCards = () => {
     setLikedCards(newLiked);
   };
 
-  const toggleFlip = (cardId:string) => {
-    setFlippedCard(flippedCard === cardId ? null : cardId);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-8">
@@ -28,8 +24,6 @@ const AnimatedCards = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {/* Flip Card */}
-          
 
           {/* Pulse Glow Card */}
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-purple-900 to-indigo-900 p-6 group">
