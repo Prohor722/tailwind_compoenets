@@ -8,6 +8,7 @@ import GlassmorphismHoverCard from "./components/GlassmorphismHoverCard";
 import HoverZoomImageCard from "./components/HoverZoomImageCard";
 import AnimatedCard from "./components/AnimatedCard";
 import FlipCard from "./components/FlipCard";
+import PulseGlowCard from "./components/PulseGlowCard";
 
 const Card = () => {
   
@@ -37,6 +38,8 @@ const Card = () => {
         <GlassmorphismHoverCard />
 
         <FlipCard />
+
+        <PulseGlowCard />
 
 
       </div>
