@@ -10,6 +10,7 @@ import AnimatedCard from "./components/AnimatedCard";
 import FlipCard from "./components/FlipCard";
 import PulseGlowCard from "./components/PulseGlowCard";
 import TiltCard from "./components/TiltCard";
+import LikeButtonCard from "./components/LikeButtonCard";
 
 const Card = () => {
   
@@ -43,6 +44,8 @@ const Card = () => {
         <PulseGlowCard />
 
         <TiltCard />
+
+        <LikeButtonCard />
 
 
       </div>
