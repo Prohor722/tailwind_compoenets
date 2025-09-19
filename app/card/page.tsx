@@ -9,6 +9,7 @@ import HoverZoomImageCard from "./components/HoverZoomImageCard";
 import AnimatedCard from "./components/AnimatedCard";
 import FlipCard from "./components/FlipCard";
 import PulseGlowCard from "./components/PulseGlowCard";
+import TiltCard from "./components/TiltCard";
 
 const Card = () => {
   
@@ -40,6 +41,8 @@ const Card = () => {
         <FlipCard />
 
         <PulseGlowCard />
+
+        <TiltCard />
 
 
       </div>
