@@ -1,3 +1,4 @@
+"use client"
 import { Eye, Heart } from "lucide-react";
 import { useState } from "react";
 
@@ -22,7 +23,7 @@ const LikeButtonCard = () => {
         </div>
         <button
           onClick={() => toggleLike("like")}
-          className={`p-2 rounded-full transition-all duration-300 ${
+          className={`cursor-pointer p-2 rounded-full transition-all duration-300 ${
             likedCards.has("like")
               ? "bg-red-500 scale-110"
               : "bg-slate-700 hover:bg-slate-600"
