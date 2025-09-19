@@ -15,7 +15,7 @@ const TiltCard = () => {
         </p>
         <div className="flex items-center justify-between">
           <span className="text-white/80">24 Products</span>
-          <button className="px-3 py-1 bg-white/20 rounded-full text-sm text-white hover:bg-white/30 transition-colors">
+          <button className="cursor-pointer px-3 py-1 bg-white/20 rounded-full text-sm text-white hover:bg-white/30 transition-colors">
             View All
           </button>
         </div>
