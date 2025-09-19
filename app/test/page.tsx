@@ -1,14 +1,12 @@
 "use client";
 
-import FlipCard from "../card/components/FlipCard";
-import PulseGlowCard from "../card/components/PulseGlowCard";
-import TiltCard from "../card/components/TiltCard";
+import LikeButtonCard from "../card/components/LikeButtonCard";
 
 const page = () => {
 
   return (
     <div>
-      <TiltCard />
+      <LikeButtonCard />
     </div>
   );
 };
