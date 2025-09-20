@@ -14,6 +14,7 @@ import LikeButtonCard from "./components/LikeButtonCard";
 import FloatingCard from "./components/FloatingCard";
 import GlassmorphismProfileCard from "./components/GlassmorphismProfileCard";
 import GradientBorderProductCard from "./components/GradientBorderProductCard";
+import NeumorphismStatsCard from "./components/NeumorphismStatsCard";
 
 const Card = () => {
   
@@ -55,6 +56,8 @@ const Card = () => {
         <GlassmorphismProfileCard />
 
         <GradientBorderProductCard />
+
+        <NeumorphismStatsCard />
 
 
       </div>
