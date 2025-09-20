@@ -13,6 +13,7 @@ import TiltCard from "./components/TiltCard";
 import LikeButtonCard from "./components/LikeButtonCard";
 import FloatingCard from "./components/FloatingCard";
 import GlassmorphismProfileCard from "./components/GlassmorphismProfileCard";
+import GradientBorderProductCard from "./components/GradientBorderProductCard";
 
 const Card = () => {
   
@@ -52,6 +53,8 @@ const Card = () => {
         <FloatingCard />
 
         <GlassmorphismProfileCard />
+
+        <GradientBorderProductCard />
 
 
       </div>
