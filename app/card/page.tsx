@@ -12,6 +12,7 @@ import PulseGlowCard from "./components/PulseGlowCard";
 import TiltCard from "./components/TiltCard";
 import LikeButtonCard from "./components/LikeButtonCard";
 import FloatingCard from "./components/FloatingCard";
+import GlassmorphismProfileCard from "./components/GlassmorphismProfileCard";
 
 const Card = () => {
   
@@ -49,6 +50,8 @@ const Card = () => {
         <LikeButtonCard />
 
         <FloatingCard />
+
+        <GlassmorphismProfileCard />
 
 
       </div>
