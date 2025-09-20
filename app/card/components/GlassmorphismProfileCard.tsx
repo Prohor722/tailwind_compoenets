@@ -18,10 +18,10 @@ const GlassmorphismProfileCard = () => {
           Creating beautiful digital experiences with modern design principles.
         </p>
         <div className="flex space-x-3">
-          <button className="flex-1 bg-white/20 hover:bg-white/30 rounded-lg px-4 py-2 text-sm font-medium transition-colors">
+          <button className="cursor-pointer flex-1 bg-white/20 hover:bg-white/30 rounded-lg px-4 py-2 text-sm font-medium transition-colors">
             Follow
           </button>
-          <button className="flex-1 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg px-4 py-2 text-sm font-medium transition-all">
+          <button className="cursor-pointer flex-1 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg px-4 py-2 text-sm font-medium transition-all">
             Message
           </button>
         </div>
