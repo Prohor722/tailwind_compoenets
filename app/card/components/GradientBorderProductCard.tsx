@@ -25,7 +25,7 @@ const GradientBorderProductCard = () => {
         </p>
         <div className="flex items-center justify-between">
           <span className="text-2xl font-bold text-white">$29.99</span>
-          <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105">
+          <button className="cursor-pointer bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105">
             Add to Cart
           </button>
         </div>
