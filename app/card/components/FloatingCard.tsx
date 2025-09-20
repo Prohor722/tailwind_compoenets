@@ -20,7 +20,7 @@ const FloatingCard = () => {
             <div className="w-2 h-2 bg-green-500 rounded-full animate-ping"></div>
             <span className="text-sm text-green-600 font-medium">Online</span>
           </div>
-          <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+          <button className="cursor-pointer px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 transform hover:scale-105">
             Connect
           </button>
         </div>
