@@ -12,10 +12,6 @@ const AnimatedCards = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-
-            {/*  3. Neumorphism Stats Card  */}
-            
-
             {/*  4. Holographic Feature Card  */}
             <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-6 hover:scale-105 transition-transform duration-300">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/20 via-purple-500/20 to-pink-500/20 animate-glow"></div>
