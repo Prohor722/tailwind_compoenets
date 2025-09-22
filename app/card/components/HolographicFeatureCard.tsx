@@ -25,7 +25,7 @@ const HolographicFeatureCard = () => {
           Experience blazing fast performance with our optimized architecture.
         </p>
         <div className="flex items-center text-cyan-400 font-medium">
-          <span>Learn more</span>
+          <span className="cursor-pointer">Learn more</span>
           <svg
             className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"
             fill="none"
