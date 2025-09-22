@@ -15,6 +15,7 @@ import FloatingCard from "./components/FloatingCard";
 import GlassmorphismProfileCard from "./components/GlassmorphismProfileCard";
 import GradientBorderProductCard from "./components/GradientBorderProductCard";
 import NeumorphismStatsCard from "./components/NeumorphismStatsCard";
+import HolographicFeatureCard from "./components/HolographicFeatureCard";
 
 const Card = () => {
   
@@ -58,6 +59,8 @@ const Card = () => {
         <GradientBorderProductCard />
 
         <NeumorphismStatsCard />
+
+        <HolographicFeatureCard />
 
 
       </div>
