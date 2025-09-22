@@ -12,9 +12,6 @@ const AnimatedCards = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            {/*  4. Holographic Feature Card  */}
-            
-
             {/*  5. 3D Tilting Card  */}
             <div className="relative group perspective-1000">
               <div className="relative w-full h-64 transform-style-preserve-3d transition-transform duration-300 group-hover:rotate-y-10 group-hover:rotate-x-5">
