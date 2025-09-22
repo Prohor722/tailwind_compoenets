@@ -60,7 +60,7 @@ const D3TiltingCard = () => {
               Advanced analytics
             </li>
           </ul>
-          <button className="w-full bg-gradient-to-r from-orange-400 to-red-500 text-white py-3 rounded-lg font-medium hover:from-orange-500 hover:to-red-600 transition-colors">
+          <button className="cursor-pointer w-full bg-gradient-to-r from-orange-400 to-red-500 text-white py-3 rounded-lg font-medium hover:from-orange-500 hover:to-red-600 transition-colors">
             Get Started
           </button>
         </div>
