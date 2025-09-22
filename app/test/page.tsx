@@ -1,13 +1,12 @@
 "use client";
 
-import HolographicFeatureCard from "../card/components/HolographicFeatureCard";
-import NeumorphismStatsCard from "../card/components/NeumorphismStatsCard";
+import D3TiltingCard from "../card/components/D3TiltingCard";
 
 const page = () => {
 
   return (
     <div>
-      <HolographicFeatureCard />
+      <D3TiltingCard />
     </div>
   );
 };
