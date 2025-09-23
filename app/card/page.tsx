@@ -18,6 +18,7 @@ import NeumorphismStatsCard from "./components/NeumorphismStatsCard";
 import HolographicFeatureCard from "./components/HolographicFeatureCard";
 import D3TiltingCard from "./components/D3TiltingCard";
 import AnimatedGradientCard from "./components/AnimatedGradientCard";
+import SocialMediaCard from "./components/SocialMediaCard";
 
 const Card = () => {
   
@@ -67,6 +68,8 @@ const Card = () => {
         <D3TiltingCard />
 
         <AnimatedGradientCard />
+
+        <SocialMediaCard />
 
 
       </div>
