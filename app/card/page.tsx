@@ -17,6 +17,7 @@ import GradientBorderProductCard from "./components/GradientBorderProductCard";
 import NeumorphismStatsCard from "./components/NeumorphismStatsCard";
 import HolographicFeatureCard from "./components/HolographicFeatureCard";
 import D3TiltingCard from "./components/D3TiltingCard";
+import AnimatedGradientCard from "./components/AnimatedGradientCard";
 
 const Card = () => {
   
@@ -64,6 +65,8 @@ const Card = () => {
         <HolographicFeatureCard />
 
         <D3TiltingCard />
+
+        <AnimatedGradientCard />
 
 
       </div>
