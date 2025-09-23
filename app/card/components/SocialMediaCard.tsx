@@ -28,7 +28,7 @@ const SocialMediaCard = () => {
           </div>
           <p className="text-gray-500 text-sm">@sarahjohnson • 2h ago</p>
         </div>
-        <button className="text-gray-400 hover:text-gray-600">
+        <button className="cursor-pointer text-gray-400 hover:text-gray-600">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
           </svg>
@@ -43,7 +43,7 @@ const SocialMediaCard = () => {
         <span className="text-white text-6xl">📱</span>
       </div>
       <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-        <button className="flex items-center space-x-2 text-gray-500 hover:text-red-500 transition-colors">
+        <button className="cursor-pointer flex items-center space-x-2 text-gray-500 hover:text-red-500 transition-colors">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path
               fillRule="evenodd"
@@ -53,7 +53,7 @@ const SocialMediaCard = () => {
           </svg>
           <span>24</span>
         </button>
-        <button className="flex items-center space-x-2 text-gray-500 hover:text-blue-500 transition-colors">
+        <button className="cursor-pointer flex items-center space-x-2 text-gray-500 hover:text-blue-500 transition-colors">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path
               fillRule="evenodd"
@@ -63,7 +63,7 @@ const SocialMediaCard = () => {
           </svg>
           <span>8</span>
         </button>
-        <button className="flex items-center space-x-2 text-gray-500 hover:text-green-500 transition-colors">
+        <button className="cursor-pointer flex items-center space-x-2 text-gray-500 hover:text-green-500 transition-colors">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"></path>
           </svg>
