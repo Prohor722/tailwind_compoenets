@@ -1,5 +1,3 @@
-import React from "react";
-
 const AnimatedGradientCard = () => {
   return (
     <div className="relative overflow-hidden rounded-2xl bg-gray-900 p-6 group">
