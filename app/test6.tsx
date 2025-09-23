@@ -12,9 +12,6 @@ const AnimatedCards = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            {/*  5. 3D Tilting Card  */}
-            
-
             {/*  6. Animated Gradient Card  */}
             <div className="relative overflow-hidden rounded-2xl bg-gray-900 p-6 group">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
