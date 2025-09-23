@@ -20,9 +20,9 @@ const SocialMediaCard = () => {
               viewBox="0 0 20 20"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </div>
@@ -46,9 +46,9 @@ const SocialMediaCard = () => {
         <button className="flex items-center space-x-2 text-gray-500 hover:text-red-500 transition-colors">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
           <span>24</span>
@@ -56,9 +56,9 @@ const SocialMediaCard = () => {
         <button className="flex items-center space-x-2 text-gray-500 hover:text-blue-500 transition-colors">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
           <span>8</span>
