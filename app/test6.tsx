@@ -11,10 +11,6 @@ const AnimatedCards = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-
-            {/*  8. Weather Card  */}
-            
 
             {/*  9. Music Player Card  */}
             <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl p-6 text-white shadow-2xl">
