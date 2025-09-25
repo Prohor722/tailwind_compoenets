@@ -19,6 +19,7 @@ import HolographicFeatureCard from "./components/HolographicFeatureCard";
 import D3TiltingCard from "./components/D3TiltingCard";
 import AnimatedGradientCard from "./components/AnimatedGradientCard";
 import SocialMediaCard from "./components/SocialMediaCard";
+import WeatherCard from "./components/WeatherCard";
 
 const Card = () => {
   
@@ -70,6 +71,8 @@ const Card = () => {
         <AnimatedGradientCard />
 
         <SocialMediaCard />
+
+        <WeatherCard />
 
 
       </div>
