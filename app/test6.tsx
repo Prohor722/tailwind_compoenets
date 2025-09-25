@@ -12,8 +12,6 @@ const AnimatedCards = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            {/*  7. Social Media Card  */}
-            
 
             {/*  8. Weather Card  */}
             <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600 p-6 text-white animate-tilt">
