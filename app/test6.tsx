@@ -12,9 +12,6 @@ const AnimatedCards = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            {/*  9. Music Player Card  */}
-            
-
             {/*  10. Notification Card  */}
             <div className="bg-white rounded-2xl p-6 shadow-lg border-l-4 border-blue-500 hover:shadow-xl transition-all duration-300 hover:border-blue-600">
               <div className="flex items-start space-x-4">
