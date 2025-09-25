@@ -20,6 +20,7 @@ import D3TiltingCard from "./components/D3TiltingCard";
 import AnimatedGradientCard from "./components/AnimatedGradientCard";
 import SocialMediaCard from "./components/SocialMediaCard";
 import WeatherCard from "./components/WeatherCard";
+import MusicPlayerCard from "./components/MusicPlayerCard";
 
 const Card = () => {
   
@@ -73,6 +74,8 @@ const Card = () => {
         <SocialMediaCard />
 
         <WeatherCard />
+
+        <MusicPlayerCard />
 
 
       </div>
