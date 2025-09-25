@@ -27,10 +27,10 @@ const NotificationCard = () => {
             take a look and let me know your thoughts?
           </p>
           <div className="flex space-x-3">
-            <button className="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors">
+            <button className="cursor-pointer text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors">
               Reply
             </button>
-            <button className="text-xs text-gray-500 hover:text-gray-700 transition-colors">
+            <button className="cursor-pointer text-xs text-gray-500 hover:text-gray-700 transition-colors">
               Mark as read
             </button>
           </div>
