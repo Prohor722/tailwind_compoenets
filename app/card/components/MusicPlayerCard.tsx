@@ -21,7 +21,7 @@ const MusicPlayerCard = () => {
           <span className="text-xs text-gray-400">4:01</span>
         </div>
         <div className="flex items-center justify-between">
-          <button className="text-gray-400 hover:text-white transition-colors">
+          <button className="cursor-pointer text-gray-400 hover:text-white transition-colors">
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path
                 fillRule="evenodd"
@@ -30,7 +30,7 @@ const MusicPlayerCard = () => {
               ></path>
             </svg>
           </button>
-          <button className="w-14 h-14 bg-white text-gray-900 rounded-full flex items-center justify-center hover:scale-105 transition-transform">
+          <button className="cursor-pointer w-14 h-14 bg-white text-gray-900 rounded-full flex items-center justify-center hover:scale-105 transition-transform">
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path
                 fillRule="evenodd"
@@ -39,7 +39,7 @@ const MusicPlayerCard = () => {
               ></path>
             </svg>
           </button>
-          <button className="text-gray-400 hover:text-white transition-colors">
+          <button className="cursor-pointer text-gray-400 hover:text-white transition-colors">
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path
                 fillRule="evenodd"
