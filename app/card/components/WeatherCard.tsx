@@ -21,9 +21,9 @@ const WeatherCard = () => {
           <div className="flex items-center space-x-2">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
             <span>Sunny</span>
@@ -31,9 +31,9 @@ const WeatherCard = () => {
           <div className="flex items-center space-x-2">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
             <span>18° / 25°</span>
