@@ -12,10 +12,7 @@ const AnimatedCards = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            {/*  10. Notification Card  */}
-            
-
-            {/* 11. Cryptocurrency Card  */}
+          {/* 11. Cryptocurrency Card  */}
             <div className="bg-gradient-to-br from-yellow-400 via-yellow-500 to-orange-500 rounded-2xl p-6 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-rotate-1">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center space-x-3">
