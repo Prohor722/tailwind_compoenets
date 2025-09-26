@@ -8,11 +8,6 @@ const AnimatedCards = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            {/* 12. Team Member Card  */}
-            
-          </div>
 
           {/* Usage Instructions */}
           <div className="mt-16 bg-white/5 rounded-3xl p-8 backdrop-blur-lg border border-white/10">
