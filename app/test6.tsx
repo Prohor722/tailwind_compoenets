@@ -1,6 +1,4 @@
 import React from "react";
-import { Zap } from "lucide-react";
-import Image from "next/image";
 
 const AnimatedCards = () => {
   return (
@@ -11,9 +9,6 @@ const AnimatedCards = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-          {/* 11. Cryptocurrency Card  */}
-            
 
             {/* 12. Team Member Card  */}
             <div className="bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105 group">

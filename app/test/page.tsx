@@ -1,14 +1,12 @@
 "use client";
 
-import CryptocurrencyCard from "../card/components/CryptocurrencyCard";
-import MusicPlayerCard from "../card/components/MusicPlayerCard";
-import NotificationCard from "../card/components/NotificationCard";
+import AnimatedCards from "../test6";
 
 const page = () => {
 
   return (
     <div>
-      <CryptocurrencyCard />
+      <AnimatedCards />
     </div>
   );
 };
