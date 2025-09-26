@@ -24,6 +24,7 @@ import MusicPlayerCard from "./components/MusicPlayerCard";
 import NotificationCard from "./components/NotificationCard";
 import CryptocurrencyCard from "./components/CryptocurrencyCard";
 import TeamMemberCard from "./components/TeamMemberCard";
+import UsageInstructions from "./components/UsageInstructions";
 
 const Card = () => {
   
@@ -85,6 +86,8 @@ const Card = () => {
         <CryptocurrencyCard />
 
         <TeamMemberCard />
+
+        <UsageInstructions />
 
       </div>
     </div>

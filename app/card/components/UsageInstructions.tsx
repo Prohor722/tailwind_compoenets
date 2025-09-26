@@ -2,7 +2,7 @@ import React from "react";
 
 const UsageInstructions = () => {
   return (
-    <div className="mt-16 bg-white/5 rounded-3xl p-8 backdrop-blur-lg border border-white/10">
+    <div className="mt-16 bg-gray-700 rounded-3xl p-8 backdrop-blur-lg border border-white/10">
       <h2 className="text-3xl font-bold text-white mb-6">
         How to Use These Cards
       </h2>
