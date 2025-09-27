@@ -89,6 +89,8 @@ const Card = () => {
 
         <UsageInstructions />
 
+        
+
       </div>
     </div>
   );
