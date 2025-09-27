@@ -1,9 +1,9 @@
 import { ArrowRight, Heart, Star } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const GlassmorphismCard = () => {
   const [likedCards, setLikedCards] = useState(new Set());
-  
+
   const toggleLike = (cardId: string) => {
     setLikedCards((prev) => {
       const newSet = new Set(prev);

@@ -26,6 +26,7 @@ import CryptocurrencyCard from "./components/CryptocurrencyCard";
 import TeamMemberCard from "./components/TeamMemberCard";
 import UsageInstructions from "./components/UsageInstructions";
 import CodeExamplesCard from "./components/CodeExamplesCard";
+import GlassmorphismCard from "./components/GlassmorphismCard";
 
 const Card = () => {
   
@@ -91,6 +92,8 @@ const Card = () => {
         <UsageInstructions />
 
         <CodeExamplesCard />
+
+        <GlassmorphismCard />
 
       </div>
     </div>
