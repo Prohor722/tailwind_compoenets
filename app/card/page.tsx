@@ -25,6 +25,7 @@ import NotificationCard from "./components/NotificationCard";
 import CryptocurrencyCard from "./components/CryptocurrencyCard";
 import TeamMemberCard from "./components/TeamMemberCard";
 import UsageInstructions from "./components/UsageInstructions";
+import CodeExamplesCard from "./components/CodeExamplesCard";
 
 const Card = () => {
   
@@ -89,7 +90,7 @@ const Card = () => {
 
         <UsageInstructions />
 
-        
+        <CodeExamplesCard />
 
       </div>
     </div>
