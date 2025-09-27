@@ -1,3 +1,4 @@
+"use client"
 import { ArrowRight, Heart, Star } from "lucide-react";
 import { useState } from "react";
 
@@ -26,7 +27,7 @@ const GlassmorphismCard = () => {
           </div>
           <button
             onClick={() => toggleLike("glass")}
-            className="p-2 hover:bg-white/10 rounded-full transition-colors"
+            className="cursor-pointer p-2 hover:bg-white/10 rounded-full transition-colors"
           >
             <Heart
               className={`w-5 h-5 transition-colors ${
