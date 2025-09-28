@@ -27,6 +27,7 @@ import TeamMemberCard from "./components/TeamMemberCard";
 import UsageInstructions from "./components/UsageInstructions";
 import CodeExamplesCard from "./components/CodeExamplesCard";
 import GlassmorphismCard from "./components/GlassmorphismCard";
+import NeonCard from "./components/NeonCard";
 
 const Card = () => {
   
@@ -94,6 +95,8 @@ const Card = () => {
         <CodeExamplesCard />
 
         <GlassmorphismCard />
+
+        <NeonCard />
 
       </div>
     </div>
