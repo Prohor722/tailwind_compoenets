@@ -2,19 +2,7 @@ import React, { useState } from 'react';
 import { Heart, Star, ArrowRight, Bookmark, Share2, Play, MapPin, Calendar, Users } from 'lucide-react';
 
 export default function UniqueCardDesigns() {
-  const [bookmarkedCards, setBookmarkedCards] = useState(new Set());
-
-  const toggleBookmark = (cardId: string) => {
-    setBookmarkedCards(prev => {
-      const newSet = new Set(prev);
-      if (newSet.has(cardId)) {
-        newSet.delete(cardId);
-      } else {
-        newSet.add(cardId);
-      }
-      return newSet;
-    });
-  };
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 p-6">
@@ -25,42 +13,8 @@ export default function UniqueCardDesigns() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
-
-          {/* Neon Card */}
-          
-
           {/* 3D Floating Card */}
-          <div className="perspective-1000">
-            <div className="relative transform-gpu transition-all duration-500 hover:rotate-y-12 hover:-translate-y-2 preserve-3d">
-              <div className="bg-gradient-to-br from-orange-400 via-pink-500 to-purple-600 rounded-2xl p-6 shadow-2xl">
-                <div className="flex justify-between items-start mb-4">
-                  <div className="text-white">
-                    <h3 className="text-2xl font-bold">3D Float</h3>
-                    <p className="opacity-90">Interactive Design</p>
-                  </div>
-                  <button 
-                    onClick={() => toggleBookmark('float')}
-                    className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
-                  >
-                    <Bookmark className={`w-5 h-5 transition-colors ${bookmarkedCards.has('float') ? 'text-yellow-300 fill-yellow-300' : 'text-white'}`} />
-                  </button>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2 text-white/90">
-                    <MapPin className="w-4 h-4" />
-                    <span className="text-sm">San Francisco, CA</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-white/90">
-                    <Calendar className="w-4 h-4" />
-                    <span className="text-sm">Sep 25, 2024</span>
-                  </div>
-                </div>
-                <button className="mt-4 w-full bg-white/20 hover:bg-white/30 text-white py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
-                  Get Started
-                </button>
-              </div>
-            </div>
-          </div>
+          
 
           {/* Minimal Elegant Card */}
           <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border border-gray-100">
