@@ -20,7 +20,7 @@ const NeonCard = () => {
         </p>
         <div className="flex justify-between items-center">
           <span className="text-cyan-400 font-mono text-sm">2024.09.25</span>
-          <button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-lg hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+          <button className="cursor-pointer px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-lg hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
             Explore
           </button>
         </div>
