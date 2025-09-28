@@ -2,12 +2,13 @@
 
 import CodeExamplesCard from "../card/components/CodeExamplesCard";
 import GlassmorphismCard from "../card/components/GlassmorphismCard";
+import NeonCard from "../card/components/NeonCard";
 
 const page = () => {
 
   return (
     <div>
-      <GlassmorphismCard />
+      <NeonCard />
     </div>
   );
 };
