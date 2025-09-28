@@ -27,7 +27,7 @@ const D3FloatingCard = () => {
             </div>
             <button
               onClick={() => toggleBookmark("float")}
-              className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
+              className="cursor-pointer p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
             >
               <Bookmark
                 className={`w-5 h-5 transition-colors ${
@@ -48,7 +48,7 @@ const D3FloatingCard = () => {
               <span className="text-sm">Sep 25, 2024</span>
             </div>
           </div>
-          <button className="mt-4 w-full bg-white/20 hover:bg-white/30 text-white py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
+          <button className="cursor-pointer mt-4 w-full bg-white/20 hover:bg-white/30 text-white py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105">
             Get Started
           </button>
         </div>
