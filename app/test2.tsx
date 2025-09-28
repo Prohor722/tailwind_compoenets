@@ -2,20 +2,7 @@ import React, { useState } from 'react';
 import { Heart, Star, ArrowRight, Bookmark, Share2, Play, MapPin, Calendar, Users } from 'lucide-react';
 
 export default function UniqueCardDesigns() {
-  const [likedCards, setLikedCards] = useState(new Set());
   const [bookmarkedCards, setBookmarkedCards] = useState(new Set());
-
-  const toggleLike = (cardId: string) => {
-    setLikedCards(prev => {
-      const newSet = new Set(prev);
-      if (newSet.has(cardId)) {
-        newSet.delete(cardId);
-      } else {
-        newSet.add(cardId);
-      }
-      return newSet;
-    });
-  };
 
   const toggleBookmark = (cardId: string) => {
     setBookmarkedCards(prev => {
@@ -37,8 +24,6 @@ export default function UniqueCardDesigns() {
         </h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
-          {/* Glassmorphism Card */}
           
 
           {/* Neon Card */}
