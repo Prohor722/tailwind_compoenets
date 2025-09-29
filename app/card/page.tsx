@@ -29,6 +29,7 @@ import CodeExamplesCard from "./components/CodeExamplesCard";
 import GlassmorphismCard from "./components/GlassmorphismCard";
 import NeonCard from "./components/NeonCard";
 import D3FloatingCard from "./components/D3FloatingCard";
+import MinimalElegantCard from "./components/MinimalElegantCard";
 
 const Card = () => {
   
@@ -100,6 +101,10 @@ const Card = () => {
         <NeonCard />
 
         <D3FloatingCard />
+        
+        <MinimalElegantCard />
+
+        
 
       </div>
     </div>
