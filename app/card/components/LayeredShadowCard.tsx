@@ -18,7 +18,7 @@ const LayeredShadowCard = () => {
             Multiple shadow layers create depth and visual hierarchy for
             stunning effects.
           </p>
-          <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300">
+          <button className="cursor-pointer bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300">
             Discover More
           </button>
         </div>
