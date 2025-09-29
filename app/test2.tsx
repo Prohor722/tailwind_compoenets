@@ -12,9 +12,6 @@ export default function UniqueCardDesigns() {
         </h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
-          {/* 3D Floating Card */}
-          
 
           {/* Minimal Elegant Card */}
           <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border border-gray-100">
