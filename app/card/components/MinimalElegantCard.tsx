@@ -1,4 +1,4 @@
-import React from "react";
+import { Share2, Users } from "lucide-react";
 
 const MinimalElegantCard = () => {
   return (
