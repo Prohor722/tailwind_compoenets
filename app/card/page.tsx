@@ -30,6 +30,7 @@ import GlassmorphismCard from "./components/GlassmorphismCard";
 import NeonCard from "./components/NeonCard";
 import D3FloatingCard from "./components/D3FloatingCard";
 import MinimalElegantCard from "./components/MinimalElegantCard";
+import GradientMeshCard from "./components/GradientMeshCard";
 
 const Card = () => {
   
@@ -104,7 +105,7 @@ const Card = () => {
         
         <MinimalElegantCard />
 
-        
+        <GradientMeshCard />
 
       </div>
     </div>
