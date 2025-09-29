@@ -14,10 +14,10 @@ const MinimalElegantCard = () => {
           Clean, minimal design with subtle interactions and perfect typography.
         </p>
         <div className="flex gap-3 justify-center">
-          <button className="flex-1 bg-gray-900 text-white py-3 px-6 rounded-2xl hover:bg-gray-800 transition-colors">
+          <button className="cursor-pointer flex-1 bg-gray-900 text-white py-3 px-6 rounded-2xl hover:bg-gray-800 transition-colors">
             Join Team
           </button>
-          <button className="p-3 border-2 border-gray-200 rounded-2xl hover:border-gray-300 transition-colors">
+          <button className="cursor-pointer p-3 border-2 border-gray-200 rounded-2xl hover:border-gray-300 transition-colors">
             <Share2 className="w-5 h-5 text-gray-600" />
           </button>
         </div>
