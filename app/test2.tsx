@@ -13,9 +13,6 @@ export default function UniqueCardDesigns() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {/* Minimal Elegant Card */}
-          
-
           {/* Gradient Mesh Card */}
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-violet-600 via-pink-500 to-orange-400 p-[1px] hover:scale-105 transition-transform duration-300">
             <div className="bg-gray-900 rounded-2xl p-6 h-full">
