@@ -1,14 +1,13 @@
 "use client";
 
-import GradientMeshCard from "../card/components/GradientMeshCard";
-import LayeredShadowCard from "../card/components/LayeredShadowCard";
+import GlassmorphismStyle from "../navbar/components/GlassmorphismStyle";
 
 
 const page = () => {
 
   return (
     <div>
-      <LayeredShadowCard />
+      <GlassmorphismStyle />
     </div>
   );
 };
