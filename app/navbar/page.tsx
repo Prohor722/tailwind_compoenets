@@ -1,6 +1,7 @@
 import React from "react";
 import { Menu, Home, User } from "lucide-react";
 import GlassmorphismStyle from "./components/GlassmorphismStyle";
+import BasicFlexNavbar from "./components/BasicFlexNavbar";
 
 const Navbar = () => {
   return (
@@ -8,32 +9,7 @@ const Navbar = () => {
       <div className="min-h-screen bg-gray-100 p-6 flex flex-col items-center gap-10">
         <h1 className="text-2xl font-bold text-gray-800">Tailwind Navbars</h1>
 
-        {/* Basic Flex Navbar */}
-        <nav className="w-full max-w-4xl flex items-center justify-between bg-white shadow px-6 py-4 rounded">
-          <div className="text-xl font-bold text-blue-600">MyApp</div>
-          <ul className="flex gap-6 text-gray-700 font-medium">
-            <li>
-              <a href="#" className="hover:text-blue-600">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-600">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-600">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-600">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <BasicFlexNavbar />
 
         {/* Centered Brand Navbar */}
         <nav className="w-full max-w-4xl bg-blue-50 px-6 py-4 rounded flex flex-col md:flex-row md:items-center md:justify-between shadow">
