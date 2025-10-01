@@ -6,8 +6,8 @@ const GlassmorphismStyle = () => {
   const [mobileMenu1, setMobileMenu1] = useState(false);
 
   return (
-      <nav className="relative bg-white/70 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl">
-        <div className="max-w-7xl mx-auto px-6 py-4">
+      <nav className="w-full relative bg-white/70 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl">
+        <div className="max-w-full mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Brand
