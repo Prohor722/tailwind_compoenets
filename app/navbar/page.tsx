@@ -2,6 +2,7 @@ import React from "react";
 import { Menu, Home, User } from "lucide-react";
 import GlassmorphismStyle from "./components/GlassmorphismStyle";
 import BasicFlexNavbar from "./components/BasicFlexNavbar";
+import CenteredBrandNavbar from "./components/CenteredBrandNavbar";
 
 const Navbar = () => {
   return (
@@ -11,29 +12,7 @@ const Navbar = () => {
 
         <BasicFlexNavbar />
 
-        {/* Centered Brand Navbar */}
-        <nav className="w-full max-w-4xl bg-blue-50 px-6 py-4 rounded flex flex-col md:flex-row md:items-center md:justify-between shadow">
-          <div className="text-2xl font-semibold text-blue-700 text-center md:text-left">
-            BrandName
-          </div>
-          <ul className="flex justify-center gap-6 mt-4 md:mt-0 font-medium text-blue-800">
-            <li>
-              <a href="#" className="hover:underline">
-                Features
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Docs
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <CenteredBrandNavbar />
 
         {/* Dark Mode Icon Navbar */}
         <nav className="w-full max-w-4xl bg-gray-900 text-white px-6 py-4 rounded flex justify-between items-center shadow">
