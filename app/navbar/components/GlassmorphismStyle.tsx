@@ -1,3 +1,4 @@
+"use client";
 import { Menu, Search, X } from "lucide-react";
 import { useState } from "react";
 
