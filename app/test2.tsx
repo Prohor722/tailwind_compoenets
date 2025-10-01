@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Menu, X, Search, ShoppingCart, User, ChevronDown } from 'lucide-react';
 
 export default function ModernNavbars() {
-  const [mobileMenu1, setMobileMenu1] = useState(false);
   const [mobileMenu2, setMobileMenu2] = useState(false);
   const [mobileMenu3, setMobileMenu3] = useState(false);
 
