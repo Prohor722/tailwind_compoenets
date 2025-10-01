@@ -6,10 +6,6 @@ const GlassmorphismStyle = () => {
   const [mobileMenu1, setMobileMenu1] = useState(false);
 
   return (
-    <div className="space-y-4">
-      <h2 className="text-2xl font-bold text-gray-800">
-        1. Glassmorphism Navbar
-      </h2>
       <nav className="relative bg-white/70 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -98,7 +94,6 @@ const GlassmorphismStyle = () => {
           )}
         </div>
       </nav>
-    </div>
   );
 };
 
