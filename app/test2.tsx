@@ -7,8 +7,6 @@ export default function ModernNavbars() {
 
   return (
     <div className="min-h-screen bg-gray-50 space-y-12 p-4">
-      {/* Navbar 1: Glassmorphism Style */}
-      
 
       {/* Navbar 2: Bold Dark Mode */}
       <div className="space-y-4">

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Menu, Home, User } from 'lucide-react'; 
+import GlassmorphismStyle from './components/GlassmorphismStyle';
 
 const Navbar = () => {
   return (
@@ -39,7 +40,10 @@ const Navbar = () => {
         <li><button className="bg-blue-600 px-4 py-1.5 rounded hover:bg-blue-700 text-sm">Login</button></li>
       </ul>
     </nav>
-  </div></div>
+  </div>
+  
+    <GlassmorphismStyle />
+  </div>
   )
 }
 
