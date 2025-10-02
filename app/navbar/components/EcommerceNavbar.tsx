@@ -31,7 +31,7 @@ const EcommerceNavbar = () => {
 
           <div className="hidden lg:flex items-center space-x-8">
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-gray-700 hover:text-gray-900">
+              <button className="cursor-pointer flex items-center space-x-1 text-gray-700 hover:text-gray-900">
                 <span>Categories</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -48,13 +48,13 @@ const EcommerceNavbar = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+            <button className="cursor-pointer p-2 hover:bg-gray-100 rounded-lg transition-colors">
               <Search className="w-5 h-5 text-gray-700" />
             </button>
-            <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+            <button className="cursor-pointer p-2 hover:bg-gray-100 rounded-lg transition-colors">
               <User className="w-5 h-5 text-gray-700" />
             </button>
-            <button className="relative p-2 hover:bg-gray-100 rounded-lg transition-colors">
+            <button className="cursor-pointer relative p-2 hover:bg-gray-100 rounded-lg transition-colors">
               <ShoppingCart className="w-5 h-5 text-gray-700" />
               <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">
                 3
