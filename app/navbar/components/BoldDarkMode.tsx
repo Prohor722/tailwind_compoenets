@@ -92,10 +92,10 @@ const BoldDarkMode = () => {
               Blog
             </a>
             <div className="space-y-2 pt-2">
-              <button className="w-full px-5 py-2 text-white border border-gray-700 rounded-lg">
+              <button className="cursor-pointer w-full px-5 py-2 text-white border border-gray-700 rounded-lg">
                 Log In
               </button>
-              <button className="w-full px-6 py-2 bg-cyan-500 text-gray-900 font-bold rounded-lg">
+              <button className="cursor-pointer w-full px-6 py-2 bg-cyan-500 text-gray-900 font-bold rounded-lg">
                 Get Started
               </button>
             </div>
