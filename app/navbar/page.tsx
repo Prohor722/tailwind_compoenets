@@ -3,6 +3,7 @@ import GlassmorphismStyle from "./components/GlassmorphismStyle";
 import BasicFlexNavbar from "./components/BasicFlexNavbar";
 import CenteredBrandNavbar from "./components/CenteredBrandNavbar";
 import DarkModeIconNavbar from "./components/DarkModeIconNavbar";
+import BoldDarkMode from "./components/BoldDarkMode";
 
 const Navbar = () => {
   return (
@@ -17,6 +18,8 @@ const Navbar = () => {
         <DarkModeIconNavbar />
 
         <GlassmorphismStyle />
+
+        <BoldDarkMode />
       </div>
     </div>
   );
