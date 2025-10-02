@@ -1,9 +1,9 @@
 import { Menu, X } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const BoldDarkMode = () => {
   const [mobileMenu2, setMobileMenu2] = useState(false);
-  
+
   return (
     <nav className="bg-gray-900 rounded-2xl shadow-2xl">
       <div className="max-w-7xl mx-auto px-6 py-4">
