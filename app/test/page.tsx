@@ -1,12 +1,12 @@
 "use client";
 
-import BoldDarkMode from "../navbar/components/BoldDarkMode";
+import EcommerceNavbar from "../navbar/components/EcommerceNavbar";
 
 const page = () => {
 
   return (
     <div>
-      <BoldDarkMode />
+      <EcommerceNavbar />
     </div>
   );
 };
