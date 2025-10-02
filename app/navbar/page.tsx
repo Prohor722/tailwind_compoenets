@@ -4,6 +4,7 @@ import BasicFlexNavbar from "./components/BasicFlexNavbar";
 import CenteredBrandNavbar from "./components/CenteredBrandNavbar";
 import DarkModeIconNavbar from "./components/DarkModeIconNavbar";
 import BoldDarkMode from "./components/BoldDarkMode";
+import EcommerceMultiCategoryNavigation from "./components/EcommerceMultiCategoryNavigation";
 
 const Navbar = () => {
   return (
@@ -20,6 +21,9 @@ const Navbar = () => {
         <GlassmorphismStyle />
 
         <BoldDarkMode />
+
+        <EcommerceMultiCategoryNavigation />
+        
       </div>
     </div>
   );
