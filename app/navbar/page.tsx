@@ -5,6 +5,7 @@ import CenteredBrandNavbar from "./components/CenteredBrandNavbar";
 import DarkModeIconNavbar from "./components/DarkModeIconNavbar";
 import BoldDarkMode from "./components/BoldDarkMode";
 import EcommerceMultiCategoryNavigation from "./components/EcommerceMultiCategoryNavigation";
+import SaasPlatformFeature from "./components/SaasPlatformFeature";
 
 const Navbar = () => {
   return (
@@ -23,6 +24,8 @@ const Navbar = () => {
         <BoldDarkMode />
 
         <EcommerceMultiCategoryNavigation />
+
+        <SaasPlatformFeature />
         
       </div>
     </div>
