@@ -1,5 +1,6 @@
+'use client'
 import { Award, ChevronDown, Heart, MapPin, Package, Phone, Search, Shield, ShoppingBag, Star, TrendingUp, Truck, User, Zap } from 'lucide-react'
-import React from 'react'
+import { useState } from 'react'
 
 const EcommerceCategorie = () => {
   const [mobileMenu1, setMobileMenu1] = useState(false);
