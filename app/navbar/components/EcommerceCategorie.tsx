@@ -1,9 +1,11 @@
 'use client'
-import { Award, ChevronDown, Heart, MapPin, Package, Phone, Search, Shield, ShoppingBag, Star, TrendingUp, Truck, User, Zap } from 'lucide-react'
+import { Award, ChevronDown, Heart, MapPin, Menu, Package, Phone, Search, Shield, ShoppingBag, Star, TrendingUp, Truck, User, X, Zap } from 'lucide-react'
 import { useState } from 'react'
 
 const EcommerceCategorie = () => {
   const [mobileMenu1, setMobileMenu1] = useState(false);
+  const [mobileProducts, setMobileProducts] = useState(false);
+
   return (
     <div className="space-y-4">
         <h2 className="text-2xl font-bold text-gray-800">1. E-commerce Multi-Category Navigation</h2>
