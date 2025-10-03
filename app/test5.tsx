@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Menu, X, ChevronDown, Search, ShoppingBag, Heart, User, Home, Package, Zap, Code, Database, Cloud, Shield, Truck, CreditCard, HelpCircle, Phone, Mail, MapPin, Star, TrendingUp, Award, Wrench } from 'lucide-react';
 
 export default function DetailedNavbars() {
-  const [mobileMenu1, setMobileMenu1] = useState(false);
   const [mobileMenu2, setMobileMenu2] = useState(false);
   const [mobileMenu3, setMobileMenu3] = useState(false);
   const [showProducts, setShowProducts] = useState(false);
@@ -15,7 +14,6 @@ export default function DetailedNavbars() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 space-y-12 p-4">
       
-      {/* Navbar 1: E-commerce with Categories */}
 
       {/* Navbar 2: SaaS Platform with Features */}
       <div className="space-y-4">

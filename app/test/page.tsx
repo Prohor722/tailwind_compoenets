@@ -1,13 +1,15 @@
 "use client";
 
+import EcommerceCategorie from "../navbar/components/EcommerceCategorie";
 import EcommerceMultiCategoryNavigation from "../navbar/components/EcommerceMultiCategoryNavigation";
-import EcommerceNavbar from "../navbar/components/EcommerceNavbar";
+
 
 const page = () => {
 
   return (
     <div>
-      <EcommerceMultiCategoryNavigation />
+      {/* <EcommerceCategorie /> */}
+      
     </div>
   );
 };
