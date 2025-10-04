@@ -1,21 +1,11 @@
 import { Menu, Sparkles, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const MorphingBlobBackground = () => {
   const [mobileMenu1, setMobileMenu1] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
-  const [scrolled, setScrolled] = useState(false);
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
-  useEffect(() => {
-      const handleScroll = () => {
-        setScrolled(window.scrollY > 20);
-      };
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-  
-    const tabs = ['Home', 'About', 'Services', 'Portfolio', 'Contact'];
+  const tabs = ["Home", "About", "Services", "Portfolio", "Contact"];
 
   return (
     <nav className="relative bg-black/40 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden">
