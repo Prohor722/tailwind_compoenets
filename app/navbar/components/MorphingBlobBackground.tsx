@@ -32,7 +32,7 @@ const MorphingBlobBackground = () => {
               <button
                 key={idx}
                 onClick={() => setActiveTab(idx)}
-                className={`relative px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+                className={`cursor-pointer relative px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                   activeTab === idx
                     ? "text-white"
                     : "text-gray-400 hover:text-white"
@@ -46,7 +46,7 @@ const MorphingBlobBackground = () => {
             ))}
           </div>
 
-          <button className="hidden md:block px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-bold hover:shadow-lg hover:shadow-purple-500/50 transition-all hover:scale-105">
+          <button className="cursor-pointer hidden md:block px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-bold hover:shadow-lg hover:shadow-purple-500/50 transition-all hover:scale-105">
             Launch
           </button>
 
