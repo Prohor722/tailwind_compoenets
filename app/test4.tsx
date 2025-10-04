@@ -1,34 +1,12 @@
-import { useState, useEffect } from 'react';
-import { Menu, X, Sparkles, Rocket, Compass, Layers, Home, Briefcase, Mail, User } from 'lucide-react';
+import { useState } from 'react';
+import { Menu, X, Compass, Layers, Home, Briefcase, Mail, User } from 'lucide-react';
 
 export default function UniqueAnimatedNavbars() {
-  const [mobileMenu2, setMobileMenu2] = useState(false);
   const [mobileMenu3, setMobileMenu3] = useState(false);
   const [mobileMenu4, setMobileMenu4] = useState(false);
-  const [mobileMenu1, setMobileMenu1] = useState(false);
-  const [activeTab, setActiveTab] = useState(0);
-  const [scrolled, setScrolled] = useState(false);
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const tabs = ['Home', 'About', 'Services', 'Portfolio', 'Contact'];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 space-y-12 p-4">
-      
-
-      {/* Navbar 2: 3D Tilt Effect */}
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">2. 3D Tilt Navigation</h2>
-        
-      </div>
 
       {/* Navbar 3: Glassmorphic Floating with Particles */}
       <div className="space-y-4 relative">
