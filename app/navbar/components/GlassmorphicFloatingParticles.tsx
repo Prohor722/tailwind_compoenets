@@ -6,7 +6,7 @@ const GlassmorphicFloatingParticles = () => {
   const [mobileMenu3, setMobileMenu3] = useState(false);
 
   return (
-    <nav className="relative bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl shadow-2xl">
+    <nav className="w-full relative bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl shadow-2xl">
       <div className="max-w-7xl mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
