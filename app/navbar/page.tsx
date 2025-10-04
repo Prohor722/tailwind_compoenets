@@ -9,6 +9,7 @@ import SaasPlatformFeature from "./components/SaasPlatformFeature";
 import ServiceBusinessContactInfo from "./components/ServiceBusinessContactInfo";
 import MorphingBlobBackground from "./components/MorphingBlobBackground";
 import TiltEffect from "./components/TiltEffect";
+import GlassmorphicFloatingParticles from "./components/GlassmorphicFloatingParticles";
 
 const Navbar = () => {
   return (
@@ -35,6 +36,8 @@ const Navbar = () => {
         <MorphingBlobBackground />
 
         <TiltEffect />
+
+        <GlassmorphicFloatingParticles />
         
       </div>
     </div>
