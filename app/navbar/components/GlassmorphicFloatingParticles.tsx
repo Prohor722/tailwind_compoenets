@@ -27,7 +27,8 @@ const GlassmorphicFloatingParticles = () => {
               <a
                 key={idx}
                 href="#"
-                className="relative text-white/80 hover:text-white font-medium transition-all group"
+                className="relative text-gray-600 font-semibold transition-all group
+                hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-400 hover:bg-clip-text hover:text-transparent"
               >
                 <span className="relative z-10">{item}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/0 via-cyan-500/20 to-cyan-500/0 opacity-0 group-hover:opacity-100 blur-xl transition-all duration-500"></div>
