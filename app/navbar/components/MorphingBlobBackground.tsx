@@ -1,3 +1,4 @@
+"use client";
 import { Menu, Sparkles, X } from "lucide-react";
 import { useState } from "react";
 

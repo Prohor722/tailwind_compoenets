@@ -23,11 +23,6 @@ export default function UniqueAnimatedNavbars() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 space-y-12 p-4">
       
-      {/* Navbar 1: Morphing Blob Background */}
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">1. Morphing Blob Navigation</h2>
-        
-      </div>
 
       {/* Navbar 2: 3D Tilt Effect */}
       <div className="space-y-4">
