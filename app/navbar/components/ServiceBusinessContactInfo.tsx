@@ -20,8 +20,8 @@ const ServiceBusinessContactInfo = () => {
   const [mobileServices, setMobileServices] = useState(false);
 
   return (
-    <nav className="bg-white rounded-2xl shadow-xl">
-      {/* Top Contact Bar */}
+    <nav className="w-full bg-white rounded-2xl shadow-xl">
+      
       <div className="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-t-2xl">
         <div className="max-w-7xl mx-auto px-6 py-3">
           <div className="flex items-center justify-between text-white text-sm">

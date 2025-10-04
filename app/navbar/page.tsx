@@ -6,6 +6,7 @@ import DarkModeIconNavbar from "./components/DarkModeIconNavbar";
 import BoldDarkMode from "./components/BoldDarkMode";
 import EcommerceMultiCategoryNavigation from "./components/EcommerceMultiCategoryNavigation";
 import SaasPlatformFeature from "./components/SaasPlatformFeature";
+import ServiceBusinessContactInfo from "./components/ServiceBusinessContactInfo";
 
 const Navbar = () => {
   return (
@@ -26,6 +27,8 @@ const Navbar = () => {
         <EcommerceMultiCategoryNavigation />
 
         <SaasPlatformFeature />
+
+        <ServiceBusinessContactInfo />
         
       </div>
     </div>
