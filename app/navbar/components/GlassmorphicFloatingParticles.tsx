@@ -35,7 +35,7 @@ const GlassmorphicFloatingParticles = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-3">
-            <button className="relative px-6 py-2 overflow-hidden rounded-full group">
+            <button className="cursor-pointer relative px-6 py-2 overflow-hidden rounded-full group">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 blur-xl opacity-0 group-hover:opacity-50 transition-all duration-300"></div>
               <span className="relative text-white font-bold">Connect</span>
