@@ -6,7 +6,7 @@ const TiltEffect = () => {
   const [mobileMenu2, setMobileMenu2] = useState(false);
   return (
     <nav
-      className="relative bg-gradient-to-br from-cyan-500 to-blue-600 rounded-3xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]"
+      className="w-full max-w-4xl relative bg-gradient-to-br from-cyan-500 to-blue-600 rounded-3xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]"
       style={{
         transformStyle: "preserve-3d",
         transform: "perspective(1000px) rotateX(2deg)",
