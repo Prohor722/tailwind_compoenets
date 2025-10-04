@@ -18,7 +18,7 @@ const ServiceBusinessContactInfo = () => {
   const [mobileMenu3, setMobileMenu3] = useState(false);
   const [showCompany, setShowCompany] = useState(false);
   const [mobileServices, setMobileServices] = useState(false);
-  
+
   return (
     <nav className="bg-white rounded-2xl shadow-xl">
       {/* Top Contact Bar */}
@@ -41,7 +41,7 @@ const ServiceBusinessContactInfo = () => {
             </div>
             <div className="flex items-center space-x-4">
               <span className="text-xs">Mon-Fri: 9AM-6PM</span>
-              <button className="px-4 py-1 bg-white/20 hover:bg-white/30 rounded-full text-xs font-medium transition-colors">
+              <button className="cursor-pointer px-4 py-1 bg-white/20 hover:bg-white/30 rounded-full text-xs font-medium transition-colors">
                 Get Quote
               </button>
             </div>
@@ -192,7 +192,7 @@ const ServiceBusinessContactInfo = () => {
           </div>
 
           <div className="hidden lg:flex items-center space-x-3">
-            <button className="px-6 py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 transition-colors">
+            <button className="cursor-pointer px-6 py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 transition-colors">
               Request Quote
             </button>
           </div>
@@ -293,7 +293,7 @@ const ServiceBusinessContactInfo = () => {
               Contact
             </a>
 
-            <button className="w-full px-6 py-2 bg-blue-600 text-white rounded-lg font-bold mt-4">
+            <button className="cursor-pointer w-full px-6 py-2 bg-blue-600 text-white rounded-lg font-bold mt-4">
               Request Quote
             </button>
           </div>
