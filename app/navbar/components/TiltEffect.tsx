@@ -41,10 +41,10 @@ const TiltEffect = () => {
           </div>
 
           <div className="hidden lg:flex items-center space-x-3">
-            <button className="px-5 py-2 text-white hover:bg-white/10 rounded-xl transition-all">
+            <button className="cursor-pointer px-5 py-2 text-white hover:bg-white/10 rounded-xl transition-all">
               Login
             </button>
-            <button className="px-6 py-2 bg-white text-blue-600 rounded-xl font-bold hover:shadow-xl hover:scale-105 transition-all">
+            <button className="cursor-pointer px-6 py-2 bg-white text-blue-600 rounded-xl font-bold hover:shadow-xl hover:scale-105 transition-all">
               Get Started
             </button>
           </div>
