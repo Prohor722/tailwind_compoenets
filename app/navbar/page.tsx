@@ -8,6 +8,7 @@ import EcommerceMultiCategoryNavigation from "./components/EcommerceMultiCategor
 import SaasPlatformFeature from "./components/SaasPlatformFeature";
 import ServiceBusinessContactInfo from "./components/ServiceBusinessContactInfo";
 import MorphingBlobBackground from "./components/MorphingBlobBackground";
+import TiltEffect from "./components/TiltEffect";
 
 const Navbar = () => {
   return (
@@ -32,6 +33,8 @@ const Navbar = () => {
         <ServiceBusinessContactInfo />
 
         <MorphingBlobBackground />
+
+        <TiltEffect />
         
       </div>
     </div>
