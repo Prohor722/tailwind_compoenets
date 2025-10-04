@@ -1,8 +1,24 @@
 "use client";
-import { ChevronDown, Code, CreditCard, HelpCircle, Home, Mail, MapPin, Menu, Phone, Wrench, X } from "lucide-react";
-import React from "react";
+import {
+  ChevronDown,
+  Code,
+  CreditCard,
+  HelpCircle,
+  Home,
+  Mail,
+  MapPin,
+  Menu,
+  Phone,
+  Wrench,
+  X,
+} from "lucide-react";
+import React, { useState } from "react";
 
 const ServiceBusinessContactInfo = () => {
+  const [mobileMenu3, setMobileMenu3] = useState(false);
+  const [showCompany, setShowCompany] = useState(false);
+  const [mobileServices, setMobileServices] = useState(false);
+  
   return (
     <nav className="bg-white rounded-2xl shadow-xl">
       {/* Top Contact Bar */}
