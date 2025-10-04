@@ -7,6 +7,7 @@ import BoldDarkMode from "./components/BoldDarkMode";
 import EcommerceMultiCategoryNavigation from "./components/EcommerceMultiCategoryNavigation";
 import SaasPlatformFeature from "./components/SaasPlatformFeature";
 import ServiceBusinessContactInfo from "./components/ServiceBusinessContactInfo";
+import MorphingBlobBackground from "./components/MorphingBlobBackground";
 
 const Navbar = () => {
   return (
@@ -29,6 +30,8 @@ const Navbar = () => {
         <SaasPlatformFeature />
 
         <ServiceBusinessContactInfo />
+
+        <MorphingBlobBackground />
         
       </div>
     </div>
