@@ -1,4 +1,5 @@
-import { Layers } from "lucide-react";
+"use client";
+import { Menu, X, Layers, Home, Briefcase, Mail, User } from 'lucide-react';
 import React, { useState } from "react";
 
 const AnimatedIconsNavigation = () => {
