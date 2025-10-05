@@ -8,7 +8,6 @@ export default function UniqueAnimatedNavs() {
   const [mobileMenu4, setMobileMenu4] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [scrolled, setScrolled] = useState(false);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleScroll = () => {
