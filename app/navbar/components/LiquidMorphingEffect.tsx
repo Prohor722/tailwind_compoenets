@@ -1,9 +1,12 @@
 "use client";
+import { ArrowRight, Sparkles } from "lucide-react";
 import React, { useState } from "react";
 
 const LiquidMorphingEffect = () => {
-    const [mobileMenu1, setMobileMenu1] = useState(false);
-    const [activeIndex, setActiveIndex] = useState(0);
+  const [mobileMenu1, setMobileMenu1] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const navItems = ["Home", "Products", "About", "Contact"];
+  
   return (
     <nav className="relative bg-black/40 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden">
       {/* Animated Background Blobs */}
