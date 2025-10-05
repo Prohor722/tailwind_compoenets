@@ -11,6 +11,7 @@ import MorphingBlobBackground from "./components/MorphingBlobBackground";
 import TiltEffect from "./components/TiltEffect";
 import GlassmorphicFloatingParticles from "./components/GlassmorphicFloatingParticles";
 import AnimatedIconsNavigation from "./components/AnimatedIconsNavigation";
+import LiquidMorphingEffect from "./components/LiquidMorphingEffect";
 
 const Navbar = () => {
   return (
@@ -41,6 +42,8 @@ const Navbar = () => {
         <GlassmorphicFloatingParticles />
 
         <AnimatedIconsNavigation />
+
+        <LiquidMorphingEffect />
         
       </div>
     </div>
