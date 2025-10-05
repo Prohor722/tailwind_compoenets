@@ -10,6 +10,7 @@ import ServiceBusinessContactInfo from "./components/ServiceBusinessContactInfo"
 import MorphingBlobBackground from "./components/MorphingBlobBackground";
 import TiltEffect from "./components/TiltEffect";
 import GlassmorphicFloatingParticles from "./components/GlassmorphicFloatingParticles";
+import AnimatedIconsNavigation from "./components/AnimatedIconsNavigation";
 
 const Navbar = () => {
   return (
@@ -38,6 +39,8 @@ const Navbar = () => {
         <TiltEffect />
 
         <GlassmorphicFloatingParticles />
+
+        <AnimatedIconsNavigation />
         
       </div>
     </div>

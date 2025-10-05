@@ -6,7 +6,7 @@ const AnimatedIconsNavigation = () => {
   const [mobileMenu4, setMobileMenu4] = useState(false);
   return (
     <nav className="w-full bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 rounded-3xl shadow-2xl">
-      <div className="max-w-7xl mx-auto px-6 py-6">
+      <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center group hover:rotate-12 transition-transform">
