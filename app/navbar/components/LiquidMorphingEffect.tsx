@@ -6,7 +6,7 @@ const LiquidMorphingEffect = () => {
   const [mobileMenu1, setMobileMenu1] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const navItems = ["Home", "Products", "About", "Contact"];
-  
+
   return (
     <nav className="relative bg-black/40 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden">
       {/* Animated Background Blobs */}
@@ -44,7 +44,7 @@ const LiquidMorphingEffect = () => {
               <button
                 key={idx}
                 onClick={() => setActiveIndex(idx)}
-                className={`relative px-6 py-2 rounded-full font-medium transition-all duration-500 ${
+                className={`cursor-pointer relative px-6 py-2 rounded-full font-medium transition-all duration-500 ${
                   activeIndex === idx
                     ? "text-white z-10"
                     : "text-gray-400 hover:text-white"
@@ -61,7 +61,7 @@ const LiquidMorphingEffect = () => {
             ))}
           </div>
 
-          <button className="hidden lg:flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-bold hover:shadow-lg hover:shadow-purple-500/50 transition-all hover:scale-105 group">
+          <button className="cursor-pointer hidden lg:flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-bold hover:shadow-lg hover:shadow-purple-500/50 transition-all hover:scale-105 group">
             <span>Launch</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
