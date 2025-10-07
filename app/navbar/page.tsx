@@ -12,6 +12,7 @@ import TiltEffect from "./components/TiltEffect";
 import GlassmorphicFloatingParticles from "./components/GlassmorphicFloatingParticles";
 import AnimatedIconsNavigation from "./components/AnimatedIconsNavigation";
 import LiquidMorphingEffect from "./components/LiquidMorphingEffect";
+import NeonGlowEffect from "./components/NeonGlowEffect";
 
 const Navbar = () => {
   return (
@@ -44,6 +45,8 @@ const Navbar = () => {
         <AnimatedIconsNavigation />
 
         <LiquidMorphingEffect />
+
+        <NeonGlowEffect />
         
       </div>
     </div>
