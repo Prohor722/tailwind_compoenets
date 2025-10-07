@@ -7,9 +7,6 @@ const GlassmorphismFloatingElements = () => {
   
   return (
     <div className="space-y-4">
-      <h2 className="text-2xl font-bold text-white">
-        3. Floating Glass Navigation
-      </h2>
       <div className="relative">
         {/* Floating Particles */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">

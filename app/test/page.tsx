@@ -1,5 +1,6 @@
 "use client";
 
+import GlassmorphismFloatingElements from "../navbar/components/GlassmorphismFloatingElements";
 import NeonGlowEffect from "../navbar/components/NeonGlowEffect";
 
 const page = () => {
@@ -7,7 +8,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <NeonGlowEffect />
+      <GlassmorphismFloatingElements />
     </div>
   );
 };
