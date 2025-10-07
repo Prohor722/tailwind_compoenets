@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Menu, X, Circle } from 'lucide-react';
 
 
 const GlassmorphismFloatingElements = () => {
+  const [mobileMenu3, setMobileMenu3] = useState(false);
+  
   return (
     <div className="space-y-4">
       <h2 className="text-2xl font-bold text-white">
