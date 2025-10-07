@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { Menu, X, Zap } from 'lucide-react';
+
 
 const NeonGlowEffect = () => {
   return (
