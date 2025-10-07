@@ -18,13 +18,6 @@ export default function UniqueAnimatedNavs() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 space-y-16 p-4 pt-8">
       
-
-      {/* Navbar 2: Neon Glow Effect */}
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">2. Neon Cyber Navigation</h2>
-        
-      </div>
-
       {/* Navbar 3: Glassmorphism with Floating Elements */}
       <div className="space-y-4">
         <h2 className="text-2xl font-bold text-white">3. Floating Glass Navigation</h2>
