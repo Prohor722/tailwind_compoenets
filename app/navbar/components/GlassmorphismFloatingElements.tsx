@@ -1,4 +1,6 @@
 import React from "react";
+import { Menu, X, Circle } from 'lucide-react';
+
 
 const GlassmorphismFloatingElements = () => {
   return (

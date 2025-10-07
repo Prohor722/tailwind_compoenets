@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Home, User, Rocket, Circle, ShoppingCart, Heart } from 'lucide-react';
+import { Menu, X, Home, User, Rocket, ShoppingCart, Heart } from 'lucide-react';
 
 export default function UniqueAnimatedNavs() {
     const [mobileMenu3, setMobileMenu3] = useState(false);
