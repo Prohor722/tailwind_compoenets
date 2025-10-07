@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Home, Briefcase, Mail, User, Zap, Sparkles, Rocket, Circle, ArrowRight, ShoppingCart, Search, Heart } from 'lucide-react';
 
 export default function UniqueAnimatedNavs() {
-    const [mobileMenu2, setMobileMenu2] = useState(false);
     const [mobileMenu3, setMobileMenu3] = useState(false);
     const [mobileMenu4, setMobileMenu4] = useState(false);
   const [scrolled, setScrolled] = useState(false);

@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
-import { Menu, X, Zap } from 'lucide-react';
-
+import React, { useState } from "react";
+import { Menu, X, Zap } from "lucide-react";
 
 const NeonGlowEffect = () => {
+  const [mobileMenu2, setMobileMenu2] = useState(false);
+
   return (
     <nav className="relative bg-black/80 backdrop-blur-sm border-2 border-cyan-500/50 rounded-2xl overflow-hidden shadow-lg shadow-cyan-500/20">
       {/* Animated Border Glow */}
