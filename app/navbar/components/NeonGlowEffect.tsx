@@ -6,7 +6,7 @@ const NeonGlowEffect = () => {
   const [mobileMenu2, setMobileMenu2] = useState(false);
 
   return (
-    <nav className="relative bg-black/80 backdrop-blur-sm border-2 border-cyan-500/50 rounded-2xl overflow-hidden shadow-lg shadow-cyan-500/20">
+    <nav className="w-full relative bg-black/80 backdrop-blur-sm border-2 border-cyan-500/50 rounded-2xl overflow-hidden shadow-lg shadow-cyan-500/20">
       {/* Animated Border Glow */}
       <div className="absolute inset-0 rounded-2xl">
         <div className="absolute inset-0 rounded-2xl border-2 border-cyan-400 animate-pulse"></div>
@@ -45,7 +45,7 @@ const NeonGlowEffect = () => {
             ))}
           </div>
 
-          <button className="hidden lg:block px-6 py-2 bg-cyan-500 text-black rounded-lg font-bold hover:bg-cyan-400 transition-all relative group">
+          <button className="cursor-pointer hidden lg:block px-6 py-2 bg-cyan-500 text-black rounded-lg font-bold hover:bg-cyan-400 transition-all relative group">
             <span className="relative z-10">Connect</span>
             <div className="absolute inset-0 bg-cyan-400 rounded-lg blur-lg opacity-0 group-hover:opacity-50 transition-all"></div>
           </button>
