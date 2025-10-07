@@ -73,7 +73,7 @@ const NeonGlowEffect = () => {
                 {item}
               </a>
             ))}
-            <button className="w-full px-6 py-2 bg-cyan-500 text-black rounded-lg font-bold mt-4">
+            <button className="cursor-pointer w-full px-6 py-2 bg-cyan-500 text-black rounded-lg font-bold mt-4">
               Connect
             </button>
           </div>
