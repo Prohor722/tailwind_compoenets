@@ -1,3 +1,4 @@
+"use client";
 import { Flame, Menu, X } from "lucide-react";
 import React, { useState } from "react";
 
