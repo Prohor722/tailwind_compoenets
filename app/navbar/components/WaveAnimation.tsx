@@ -1,5 +1,5 @@
 "use client";
-import { Menu, Rocket, X } from "lucide-react";
+import { Menu, X, Home, User, Rocket, ShoppingCart, Heart } from 'lucide-react';
 import React, { useState } from "react";
 
 const WaveAnimation = () => {
