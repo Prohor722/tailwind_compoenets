@@ -17,12 +17,6 @@ export default function UniqueAnimatedNavs() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 space-y-16 p-4 pt-8">
 
-      {/* Navbar 4: Wave Animation on Hover */}
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">4. Wave Ripple Navigation</h2>
-        
-      </div>
-
       {/* Custom Animations */}
       <style jsx>{`
         @keyframes float {
