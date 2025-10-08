@@ -14,6 +14,7 @@ import AnimatedIconsNavigation from "./components/AnimatedIconsNavigation";
 import LiquidMorphingEffect from "./components/LiquidMorphingEffect";
 import NeonGlowEffect from "./components/NeonGlowEffect";
 import GlassmorphismFloatingElements from "./components/GlassmorphismFloatingElements";
+import WaveAnimation from "./components/WaveAnimation";
 
 const Navbar = () => {
   return (
@@ -50,6 +51,8 @@ const Navbar = () => {
         <NeonGlowEffect />
 
         <GlassmorphismFloatingElements />
+
+        <WaveAnimation />
         
       </div>
     </div>
