@@ -28,7 +28,7 @@ const DepthEffect = () => {
         style={{ animationDuration: "3s" }}
       ></div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-6">
+      <div className="relative max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="relative group">
@@ -67,7 +67,7 @@ const DepthEffect = () => {
           </div>
 
           <button
-            className="hidden lg:block px-8 py-3 bg-white text-red-600 rounded-2xl font-bold shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            className="cursor-pointer hidden lg:block px-8 py-3 bg-white text-red-600 rounded-2xl font-bold shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
             style={{ transform: "translateZ(30px)" }}
           >
             Get Started
