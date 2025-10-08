@@ -6,8 +6,8 @@ const WaveAnimation = () => {
   const [mobileMenu4, setMobileMenu4] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 rounded-3xl shadow-2xl overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 py-5">
+    <nav className="w-full bg-gradient-to-r from-violet-600 via-purple-600 to-fuchsia-600 rounded-3xl shadow-2xl overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="relative group">
