@@ -1,6 +1,8 @@
-import React from "react";
+import { Flame, Menu, X } from "lucide-react";
+import React, { useState } from "react";
 
 const DepthEffect = () => {
+  const [mobileMenu1, setMobileMenu1] = useState(false);
   return (
     <nav
       className="relative bg-gradient-to-br from-orange-500 via-red-500 to-pink-500 rounded-3xl shadow-2xl overflow-hidden"
