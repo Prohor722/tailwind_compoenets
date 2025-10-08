@@ -29,7 +29,7 @@ const WaveAnimation = () => {
             ].map((item, idx) => (
               <button
                 key={idx}
-                className="group relative px-5 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/10 transition-all overflow-hidden"
+                className="cursor-pointer group relative px-5 py-3 rounded-xl text-white/80 hover:text-white hover:bg-white/10 transition-all overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                 <div className="relative flex items-center space-x-2">
@@ -40,7 +40,7 @@ const WaveAnimation = () => {
             ))}
           </div>
 
-          <button className="hidden lg:block relative px-8 py-3 bg-white text-purple-600 rounded-xl font-bold overflow-hidden group">
+          <button className="cursor-pointer hidden lg:block relative px-8 py-3 bg-white text-purple-600 rounded-xl font-bold overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-400 -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
             <span className="relative group-hover:text-white transition-colors">
               Join Now
