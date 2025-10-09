@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, Home, Compass, Flame, Wind, Droplets, Sun, Moon, Star, Globe, Radio } from 'lucide-react';
+import { Menu, X, Droplets, Sun, Moon, Radio } from 'lucide-react';
 
 export default function MoreUniqueAnimatedNavs() {
   const [mobileMenu3, setMobileMenu3] = useState(false);
@@ -9,12 +9,6 @@ export default function MoreUniqueAnimatedNavs() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950 space-y-16 p-4 pt-8">
       
-
-      {/* Navbar 2: Aurora Borealis Effect */}
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">2. Aurora Wave Navigation</h2>
-       
-      </div>
 
       {/* Navbar 3: Day/Night Toggle */}
       <div className="space-y-4">
