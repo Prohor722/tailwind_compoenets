@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Menu, X, Droplets, Sun, Moon } from 'lucide-react';
 
 const DayNightToggle = () => {
   const [mobileMenu3, setMobileMenu3] = useState(false);
