@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const DayNightToggle = () => {
+  const [mobileMenu3, setMobileMenu3] = useState(false);
+  const [isDay, setIsDay] = useState(true);
   return (
     <nav
       className={`relative rounded-3xl overflow-hidden transition-all duration-700 ${

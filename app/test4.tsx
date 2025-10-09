@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { Menu, X, Droplets, Sun, Moon, Radio } from 'lucide-react';
 
 export default function MoreUniqueAnimatedNavs() {
-  const [mobileMenu3, setMobileMenu3] = useState(false);
   const [mobileMenu4, setMobileMenu4] = useState(false);
-  const [isDay, setIsDay] = useState(true);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950 space-y-16 p-4 pt-8">
