@@ -16,6 +16,7 @@ import NeonGlowEffect from "./components/NeonGlowEffect";
 import GlassmorphismFloatingElements from "./components/GlassmorphismFloatingElements";
 import WaveAnimation from "./components/WaveAnimation";
 import DepthEffect from "./components/DepthEffect";
+import AuroraBorealisEffect from "./components/AuroraBorealisEffect";
 
 const Navbar = () => {
   return (
@@ -56,6 +57,8 @@ const Navbar = () => {
         <WaveAnimation />
 
         <DepthEffect />
+
+        <AuroraBorealisEffect />
         
       </div>
     </div>
