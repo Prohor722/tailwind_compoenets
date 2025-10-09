@@ -75,12 +75,12 @@ const DayNightToggle = () => {
           <div className="flex items-center space-x-3">
             <button
               onClick={() => setIsDay(!isDay)}
-              className={`relative w-16 h-8 rounded-full transition-all duration-500 ${
+              className={`cursor-pointer relative w-16 h-8 rounded-full transition-all duration-500 ${
                 isDay ? "bg-white/30" : "bg-indigo-950/50"
               }`}
             >
               <div
-                className={`cursor-pointer absolute top-1 w-6 h-6 rounded-full transition-all duration-500 flex items-center justify-center ${
+                className={`absolute top-1 w-6 h-6 rounded-full transition-all duration-500 flex items-center justify-center ${
                   isDay ? "left-1 bg-yellow-400" : "left-9 bg-indigo-300"
                 }`}
               >
