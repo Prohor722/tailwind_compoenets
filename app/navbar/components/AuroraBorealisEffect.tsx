@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { Menu, X, Home, Compass, Wind, Star, Globe } from 'lucide-react';
 
@@ -20,7 +21,7 @@ const AuroraBorealisEffect = () => {
         ></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-5">
+      <div className="relative max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="relative">
