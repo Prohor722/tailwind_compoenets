@@ -7,7 +7,7 @@ const AuroraBorealisEffect = () => {
   const [activeNav, setActiveNav] = useState(0);
 
   return (
-    <nav className="relative bg-black/60 backdrop-blur-xl rounded-3xl overflow-hidden border border-emerald-500/30">
+    <nav className="w-full relative bg-black/60 backdrop-blur-xl rounded-3xl overflow-hidden border border-emerald-500/30">
       {/* Animated Aurora Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div
