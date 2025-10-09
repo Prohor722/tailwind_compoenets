@@ -1,4 +1,6 @@
 import React from "react";
+import { Menu, X, Home, Compass, Wind, Star, Globe } from 'lucide-react';
+
 
 const AuroraBorealisEffect = () => {
   return (
