@@ -17,6 +17,7 @@ import GlassmorphismFloatingElements from "./components/GlassmorphismFloatingEle
 import WaveAnimation from "./components/WaveAnimation";
 import DepthEffect from "./components/DepthEffect";
 import AuroraBorealisEffect from "./components/AuroraBorealisEffect";
+import DayNightToggle from "./components/DayNightToggle";
 
 const Navbar = () => {
   return (
@@ -59,6 +60,8 @@ const Navbar = () => {
         <DepthEffect />
 
         <AuroraBorealisEffect />
+
+        <DayNightToggle />
         
       </div>
     </div>
