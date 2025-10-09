@@ -2,10 +2,8 @@ import { useState } from 'react';
 import { Menu, X, Home, Compass, Flame, Wind, Droplets, Sun, Moon, Star, Globe, Radio } from 'lucide-react';
 
 export default function MoreUniqueAnimatedNavs() {
-  const [mobileMenu2, setMobileMenu2] = useState(false);
   const [mobileMenu3, setMobileMenu3] = useState(false);
   const [mobileMenu4, setMobileMenu4] = useState(false);
-  const [activeNav, setActiveNav] = useState(0);
   const [isDay, setIsDay] = useState(true);
 
   return (

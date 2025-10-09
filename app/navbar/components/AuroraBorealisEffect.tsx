@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Menu, X, Home, Compass, Wind, Star, Globe } from 'lucide-react';
 
 
 const AuroraBorealisEffect = () => {
+  const [mobileMenu2, setMobileMenu2] = useState(false);
+  const [activeNav, setActiveNav] = useState(0);
+
   return (
     <nav className="relative bg-black/60 backdrop-blur-xl rounded-3xl overflow-hidden border border-emerald-500/30">
       {/* Animated Aurora Background */}
