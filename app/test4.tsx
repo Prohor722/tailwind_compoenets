@@ -11,11 +11,6 @@ export default function MoreUniqueAnimatedNavs() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-950 space-y-16 p-4 pt-8">
       
-      {/* Navbar 1: 3D Depth Effect */}
-      <div className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">1. 3D Depth Navigation</h2>
-        
-      </div>
 
       {/* Navbar 2: Aurora Borealis Effect */}
       <div className="space-y-4">
