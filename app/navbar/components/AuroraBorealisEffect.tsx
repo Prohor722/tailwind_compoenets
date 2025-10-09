@@ -46,7 +46,7 @@ const AuroraBorealisEffect = () => {
               <button
                 key={idx}
                 onClick={() => setActiveNav(idx)}
-                className={`relative px-5 py-3 rounded-2xl font-medium transition-all duration-500 group ${
+                className={`cursor-pointer relative px-5 py-3 rounded-2xl font-medium transition-all duration-500 group ${
                   activeNav === idx
                     ? "text-white"
                     : "text-emerald-300/70 hover:text-emerald-300"
@@ -67,7 +67,7 @@ const AuroraBorealisEffect = () => {
             ))}
           </div>
 
-          <button className="hidden lg:block px-6 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-2xl font-bold hover:shadow-lg hover:shadow-emerald-500/50 transition-all hover:scale-105">
+          <button className="cursor-pointer hidden lg:block px-6 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-2xl font-bold hover:shadow-lg hover:shadow-emerald-500/50 transition-all hover:scale-105">
             Join Now
           </button>
 
