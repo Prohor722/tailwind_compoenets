@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { Menu, X, Droplets, Sun, Moon } from 'lucide-react';
 
@@ -6,7 +7,7 @@ const DayNightToggle = () => {
   const [isDay, setIsDay] = useState(true);
   return (
     <nav
-      className={`relative rounded-3xl overflow-hidden transition-all duration-700 ${
+      className={`w-full relative rounded-3xl overflow-hidden transition-all duration-700 ${
         isDay
           ? "bg-gradient-to-r from-sky-400 via-blue-400 to-cyan-400"
           : "bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900"
@@ -79,7 +80,7 @@ const DayNightToggle = () => {
               }`}
             >
               <div
-                className={`absolute top-1 w-6 h-6 rounded-full transition-all duration-500 flex items-center justify-center ${
+                className={`cursor-pointer absolute top-1 w-6 h-6 rounded-full transition-all duration-500 flex items-center justify-center ${
                   isDay ? "left-1 bg-yellow-400" : "left-9 bg-indigo-300"
                 }`}
               >
@@ -91,7 +92,7 @@ const DayNightToggle = () => {
               </div>
             </button>
 
-            <button className="hidden lg:block px-6 py-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-xl font-bold transition-all">
+            <button className="cursor-pointer hidden lg:block px-6 py-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white rounded-xl font-bold transition-all">
               Subscribe
             </button>
 
@@ -119,7 +120,7 @@ const DayNightToggle = () => {
                 {item}
               </a>
             ))}
-            <button className="w-full mt-4 px-6 py-2 bg-white/20 backdrop-blur-sm text-white rounded-xl font-bold">
+            <button className="cursor-pointer w-full mt-4 px-6 py-2 bg-white/20 backdrop-blur-sm text-white rounded-xl font-bold">
               Subscribe
             </button>
           </div>
