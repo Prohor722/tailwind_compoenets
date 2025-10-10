@@ -19,6 +19,7 @@ import DepthEffect from "./components/DepthEffect";
 import AuroraBorealisEffect from "./components/AuroraBorealisEffect";
 import DayNightToggle from "./components/DayNightToggle";
 import PulseRadarEffect from "./components/PulseRadarEffect";
+import MinimalFloating from "./components/MinimalFloating";
 
 const Navbar = () => {
   return (
@@ -65,6 +66,8 @@ const Navbar = () => {
         <DayNightToggle />
 
         <PulseRadarEffect />
+
+        <MinimalFloating />
         
       </div>
     </div>
