@@ -3,6 +3,7 @@
 import AuroraBorealisEffect from "../navbar/components/AuroraBorealisEffect";
 import DayNightToggle from "../navbar/components/DayNightToggle";
 import DepthEffect from "../navbar/components/DepthEffect";
+import PulseRadarEffect from "../navbar/components/PulseRadarEffect";
 
 
 const page = () => {
@@ -10,7 +11,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <DayNightToggle />
+      <PulseRadarEffect />
     </div>
   );
 };
