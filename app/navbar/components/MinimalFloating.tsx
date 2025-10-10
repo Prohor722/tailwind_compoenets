@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { Menu, X } from 'lucide-react';
 
@@ -43,7 +44,7 @@ const MinimalFloating = () => {
         </div>
 
         <div className="flex items-center space-x-3">
-          <button className="hidden sm:block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-full transition-colors">
+          <button className="cursor-pointer hidden sm:block px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-full transition-colors">
             Menu
           </button>
           <button
