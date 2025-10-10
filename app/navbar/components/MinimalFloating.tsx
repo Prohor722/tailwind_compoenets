@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Menu, X } from 'lucide-react';
+
 
 const MinimalFloating = () => {
   const [mobileMenu1, setMobileMenu1] = useState(false);
