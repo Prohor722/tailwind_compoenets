@@ -1,8 +1,9 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const PulseRadarEffect = () => {
   const [mobileMenu4, setMobileMenu4] = useState(false);
-  
+
   return (
     <nav className="relative bg-black/80 backdrop-blur-xl rounded-3xl overflow-hidden border border-green-500/30">
       {/* Radar Rings */}
