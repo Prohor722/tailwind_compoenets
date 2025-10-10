@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Menu, X, Bell, Settings, ChevronDown, Zap, Globe, Moon, Sun } from 'lucide-react';
 
 export default function MoreModernNavbars() {
-  const [mobileMenu1, setMobileMenu1] = useState(false);
   const [mobileMenu2, setMobileMenu2] = useState(false);
   const [mobileMenu3, setMobileMenu3] = useState(false);
   const [mobileMenu4, setMobileMenu4] = useState(false);

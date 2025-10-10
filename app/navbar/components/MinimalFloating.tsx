@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const MinimalFloating = () => {
+  const [mobileMenu1, setMobileMenu1] = useState(false);
+
   return (
     <nav className="max-w-6xl mx-auto bg-white rounded-full shadow-xl px-8 py-4">
       <div className="flex items-center justify-between">
