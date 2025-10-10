@@ -6,7 +6,7 @@ const PulseRadarEffect = () => {
   const [mobileMenu4, setMobileMenu4] = useState(false);
 
   return (
-    <nav className="relative bg-black/80 backdrop-blur-xl rounded-3xl overflow-hidden border border-green-500/30">
+    <nav className="w-full relative bg-black/80 backdrop-blur-xl rounded-3xl overflow-hidden border border-green-500/30">
       {/* Radar Rings */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
         <div
@@ -53,7 +53,7 @@ const PulseRadarEffect = () => {
             ))}
           </div>
 
-          <button className="hidden lg:block px-6 py-2 bg-green-500 text-black rounded-lg font-bold font-mono hover:bg-green-400 transition-all relative group">
+          <button className="cursor-pointer hidden lg:block px-6 py-2 bg-green-500 text-black rounded-lg font-bold font-mono hover:bg-green-400 transition-all relative group">
             <span className="relative z-10">CONNECT</span>
             <div className="absolute inset-0 bg-green-400 rounded-lg opacity-0 group-hover:opacity-100 blur-lg transition-all"></div>
           </button>
