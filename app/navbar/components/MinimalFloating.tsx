@@ -7,7 +7,7 @@ const MinimalFloating = () => {
   const [mobileMenu1, setMobileMenu1] = useState(false);
 
   return (
-    <nav className="max-w-6xl mx-auto bg-white rounded-full shadow-xl px-8 py-4">
+    <nav className="w-full mx-auto bg-white rounded-full shadow-xl px-8 py-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full"></div>
