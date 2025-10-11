@@ -43,11 +43,11 @@ const GradientBorder = () => {
           </div>
 
           <div className="hidden lg:flex items-center space-x-4">
-            <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors relative">
+            <button className="cursor-pointer p-2 hover:bg-gray-100 rounded-lg transition-colors relative">
               <Bell className="w-5 h-5 text-gray-700" />
               <span className="absolute top-1 right-1 w-2 h-2 bg-pink-500 rounded-full"></span>
             </button>
-            <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+            <button className="cursor-pointer p-2 hover:bg-gray-100 rounded-lg transition-colors">
               <Settings className="w-5 h-5 text-gray-700" />
             </button>
             <div className="w-9 h-9 bg-gradient-to-br from-pink-500 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold">
