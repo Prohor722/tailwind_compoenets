@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import { Menu, X, Bell, Settings } from "lucide-react";
+import React, { useState } from "react";
 
 const GradientBorder = () => {
   const [mobileMenu2, setMobileMenu2] = useState(false);
