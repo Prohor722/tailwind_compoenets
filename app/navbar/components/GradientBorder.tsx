@@ -1,6 +1,7 @@
 import React from "react";
 
 const GradientBorder = () => {
+  const [mobileMenu2, setMobileMenu2] = useState(false);
   return (
     <nav className="bg-white rounded-2xl shadow-lg overflow-hidden">
       <div className="h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"></div>
