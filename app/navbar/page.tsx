@@ -20,6 +20,7 @@ import AuroraBorealisEffect from "./components/AuroraBorealisEffect";
 import DayNightToggle from "./components/DayNightToggle";
 import PulseRadarEffect from "./components/PulseRadarEffect";
 import MinimalFloating from "./components/MinimalFloating";
+import GradientBorder from "./components/GradientBorder";
 
 const Navbar = () => {
   return (
@@ -68,6 +69,8 @@ const Navbar = () => {
         <PulseRadarEffect />
 
         <MinimalFloating />
+
+        <GradientBorder />
         
       </div>
     </div>
