@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const GradientBorder = () => {
   const [mobileMenu2, setMobileMenu2] = useState(false);
   return (
-    <nav className="bg-white rounded-2xl shadow-lg overflow-hidden">
+    <nav className="w-full bg-white rounded-2xl shadow-lg overflow-hidden">
       <div className="h-1 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500"></div>
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
