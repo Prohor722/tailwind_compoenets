@@ -80,10 +80,10 @@ const SplitDesign = () => {
               Docs
             </a>
             <div className="space-y-2 pt-2">
-              <button className="w-full px-5 py-2 text-white border border-white/30 rounded-lg">
+              <button className="cursor-pointer w-full px-5 py-2 text-white border border-white/30 rounded-lg">
                 Sign In
               </button>
-              <button className="w-full px-6 py-2 bg-white text-indigo-600 rounded-lg font-bold">
+              <button className="cursor-pointer w-full px-6 py-2 bg-white text-indigo-600 rounded-lg font-bold">
                 Start Free
               </button>
             </div>
