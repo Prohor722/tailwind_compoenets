@@ -6,6 +6,7 @@ import DepthEffect from "../navbar/components/DepthEffect";
 import GradientBorder from "../navbar/components/GradientBorder";
 import MinimalFloating from "../navbar/components/MinimalFloating";
 import PulseRadarEffect from "../navbar/components/PulseRadarEffect";
+import SplitDesign from "../navbar/components/SplitDesign";
 
 
 const page = () => {
@@ -13,7 +14,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <GradientBorder />
+      <SplitDesign />
     </div>
   );
 };
