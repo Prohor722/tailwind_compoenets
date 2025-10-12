@@ -45,10 +45,10 @@ const SplitDesign = () => {
           </div>
 
           <div className="hidden lg:flex items-center space-x-3">
-            <button className="px-5 py-2 text-white hover:bg-white/10 rounded-lg transition-colors font-medium">
+            <button className="cursor-pointer px-5 py-2 text-white hover:bg-white/10 rounded-lg transition-colors font-medium">
               Sign In
             </button>
-            <button className="px-6 py-2 bg-white text-indigo-600 rounded-lg hover:shadow-lg transition-all font-bold">
+            <button className="cursor-pointer px-6 py-2 bg-white text-indigo-600 rounded-lg hover:shadow-lg transition-all font-bold">
               Start Free
             </button>
           </div>
