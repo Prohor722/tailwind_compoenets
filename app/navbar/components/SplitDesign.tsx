@@ -7,7 +7,7 @@ const SplitDesign = () => {
   const [mobileMenu3, setMobileMenu3] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl shadow-2xl">
+    <nav className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl shadow-2xl">
       <div className="max-w-7xl mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-8">
