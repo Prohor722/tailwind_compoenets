@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Menu, X, Bell, Settings, ChevronDown, Zap, Globe, Moon, Sun } from 'lucide-react';
+
 
 const SplitDesign = () => {
   const [mobileMenu3, setMobileMenu3] = useState(false);
