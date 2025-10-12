@@ -21,6 +21,7 @@ import DayNightToggle from "./components/DayNightToggle";
 import PulseRadarEffect from "./components/PulseRadarEffect";
 import MinimalFloating from "./components/MinimalFloating";
 import GradientBorder from "./components/GradientBorder";
+import SplitDesign from "./components/SplitDesign";
 
 const Navbar = () => {
   return (
@@ -71,6 +72,8 @@ const Navbar = () => {
         <MinimalFloating />
 
         <GradientBorder />
+
+        <SplitDesign />
         
       </div>
     </div>
