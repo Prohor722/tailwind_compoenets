@@ -22,6 +22,7 @@ import PulseRadarEffect from "./components/PulseRadarEffect";
 import MinimalFloating from "./components/MinimalFloating";
 import GradientBorder from "./components/GradientBorder";
 import SplitDesign from "./components/SplitDesign";
+import DarkModeToggle from "./components/DarkModeToggle";
 
 const Navbar = () => {
   return (
@@ -74,6 +75,8 @@ const Navbar = () => {
         <GradientBorder />
 
         <SplitDesign />
+
+        <DarkModeToggle />
         
       </div>
     </div>
