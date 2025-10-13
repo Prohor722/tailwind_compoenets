@@ -1,9 +1,10 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const DarkModeToggle = () => {
   const [mobileMenu4, setMobileMenu4] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  
+
   return (
     <nav
       className={`${
