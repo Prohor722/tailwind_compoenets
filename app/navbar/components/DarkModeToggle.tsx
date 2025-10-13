@@ -67,7 +67,7 @@ const DarkModeToggle = () => {
           <div className="flex items-center space-x-4">
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className={`p-2 rounded-lg transition-all ${
+              className={`cursor-pointer p-2 rounded-lg transition-all ${
                 darkMode
                   ? "bg-gray-800 hover:bg-gray-700"
                   : "bg-gray-100 hover:bg-gray-200"
@@ -80,7 +80,7 @@ const DarkModeToggle = () => {
               )}
             </button>
             <button
-              className={`hidden md:block px-5 py-2 rounded-lg font-medium transition-colors ${
+              className={`cursor-pointer hidden md:block px-5 py-2 rounded-lg font-medium transition-colors ${
                 darkMode
                   ? "bg-cyan-500 text-gray-900 hover:bg-cyan-400"
                   : "bg-blue-600 text-white hover:bg-blue-700"
