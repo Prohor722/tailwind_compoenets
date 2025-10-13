@@ -311,7 +311,7 @@ export default function MoreTableDesigns() {
 
                         <div className="h-1 bg-white/20 rounded-full overflow-hidden">
                           <div className="h-full bg-white/80 bar-fill" style={{
-                            '--bar-width': `${row.score}%`,
+                            ['--bar-width' as string]: `${row.score}%`,
                             animationDelay: `${idx * 0.1 + 0.3}s`
                           }}></div>
                         </div>
@@ -414,7 +414,7 @@ export default function MoreTableDesigns() {
                       <div 
                         className="h-full bg-gradient-to-r from-blue-500 to-purple-500 bar-fill"
                         style={{
-                          '--bar-width': `${row.score}%`,
+                          ['--bar-width' as string]: `${row.score}%`,
                           animationDelay: `${idx * 0.1}s`
                         }}
                       ></div>
