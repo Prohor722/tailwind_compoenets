@@ -461,11 +461,9 @@ export default function MoreTableDesigns() {
                     <div
                       className="h-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bar-fill"
                       style={{
-                        ...( {
-                          ['--bar-width']: `${row.score}%`,
-                          animationDelay: `${idx * 0.1 + 0.2}s`
-                        } as React.CSSProperties )
-                      }}
+                        ['--bar-width' as any]: `${row.score}%`,
+                        animationDelay: `${idx * 0.1 + 0.2}s`
+                      } as React.CSSProperties}
                     ></div>
                   </div>
                 </div>
