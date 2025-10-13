@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ChevronUp, ChevronDown, Search, Filter } from 'lucide-react';
 
 export default function ModernTables() {
-  const [sortConfig, setSortConfig] = useState({ key: 'name', direction: 'asc' });
+  // const [sortConfig, setSortConfig] = useState({ key: 'name', direction: 'asc' });
   const [searchTerm, setSearchTerm] = useState('');
 
   const data = [
