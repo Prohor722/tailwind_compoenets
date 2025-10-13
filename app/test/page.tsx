@@ -1,6 +1,5 @@
 "use client";
 
-import AuroraBorealisEffect from "../navbar/components/AuroraBorealisEffect";
 import DarkModeToggle from "../navbar/components/DarkModeToggle";
 
 
