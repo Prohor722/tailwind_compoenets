@@ -4,7 +4,7 @@ import { ChevronRight, Plus, Minus, MoreVertical, Bell, Zap, Flame, Lightbulb, T
 export default function EvenMoreTableDesigns() {
   const [expandedRows, setExpandedRows] = useState(new Set());
   const [activeFilter, setActiveFilter] = useState('all');
-  const [quantities, setQuantities] = useState({});
+  const [quantities, setQuantities] = useState<Record<number, number>>({});
 
   const data = [
     { id: 1, name: 'Sarah Anderson', role: 'Product Manager', status: 'Active', price: '$12,500', priority: 'High', category: 'PM', tags: ['Leadership', 'Strategy'], progress: 85 },
@@ -14,26 +14,26 @@ export default function EvenMoreTableDesigns() {
     { id: 5, name: 'Lisa Garcia', role: 'Manager', status: 'Offline', price: '$15,600', priority: 'Critical', category: 'Management', tags: ['Team', 'Planning'], progress: 95 },
   ];
 
-  const getPriorityIcon = (priority) => {
+  const getPriorityIcon = (priority: string) => {
     if (priority === 'Critical') return <Flame className="w-4 h-4 text-red-500" />;
     if (priority === 'High') return <Zap className="w-4 h-4 text-amber-500" />;
     return <Lightbulb className="w-4 h-4 text-blue-500" />;
   };
 
-  const getPriorityColor = (priority) => {
-    if (priority === 'Critical') return 'from-red-600 to-red-700';
-    if (priority === 'High') return 'from-amber-600 to-amber-700';
-    return 'from-blue-600 to-blue-700';
-  };
+//   const getPriorityColor = (priority) => {
+//     if (priority === 'Critical') return 'from-red-600 to-red-700';
+//     if (priority === 'High') return 'from-amber-600 to-amber-700';
+//     return 'from-blue-600 to-blue-700';
+//   };
 
-  const toggleRow = (id) => {
+  const toggleRow = (id: number) => {
     const newSet = new Set(expandedRows);
     if (newSet.has(id)) newSet.delete(id);
     else newSet.add(id);
     setExpandedRows(newSet);
   };
 
-  const updateQty = (id, change) => {
+  const updateQty = (id: number, change: number) => {
     setQuantities(prev => ({
       ...prev,
       [id]: Math.max(1, (prev[id] || 1) + change)
@@ -141,7 +141,7 @@ export default function EvenMoreTableDesigns() {
                     </tr>
                     {expandedRows.has(item.id) && (
                       <tr className="border-b border-slate-100 bg-gradient-to-r from-blue-50/50 to-purple-50/50">
-                        <td colSpan="5" className="px-6 py-6">
+                        <td colSpan={5} className="px-6 py-6">
                           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div>
                               <p className="text-xs font-semibold text-slate-500 mb-2 uppercase">Contact</p>
@@ -256,13 +256,13 @@ export default function EvenMoreTableDesigns() {
               </thead>
               <tbody>
                 {data.map((item) => {
-                  const colorMap = {
+                  const colorMap: Record<string, string> = {
                     'Critical': 'border-l-red-500 bg-red-50 hover:bg-red-100',
                     'High': 'border-l-amber-500 bg-amber-50 hover:bg-amber-100',
                     'Medium': 'border-l-blue-500 bg-blue-50 hover:bg-blue-100'
                   };
                   return (
-                    <tr key={item.id} className={`border-b border-slate-100 border-l-4 transition-colors group cursor-pointer ${colorMap[item.priority] || 'border-l-slate-500'}`}>
+                    <tr key={item.id} className={`border-b border-slate-100 border-l-4 transition-colors group cursor-pointer ${colorMap[item.priority] ?? 'border-l-slate-500'}`}>
                       <td className="px-6 py-4"></td>
                       <td className="px-6 py-4 text-sm font-semibold text-slate-900">{item.name}</td>
                       <td className="px-6 py-4 text-sm text-slate-600">{item.role}</td>
