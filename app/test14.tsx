@@ -459,7 +459,7 @@ export default function MoreTableDesigns() {
                   
                   <div className="mt-3 h-1 bg-slate-700 rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bar-fill" style={{
-                      '--bar-width': `${row.score}%`,
+                      ['--bar-width' as string]: `${row.score}%`,
                       animationDelay: `${idx * 0.1 + 0.2}s`
                     }}></div>
                   </div>
