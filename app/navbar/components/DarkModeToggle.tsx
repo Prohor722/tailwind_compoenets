@@ -8,7 +8,7 @@ const DarkModeToggle = () => {
 
   return (
     <nav
-      className={`${
+      className={`w-full ${
         darkMode ? "bg-gray-900" : "bg-white"
       } rounded-2xl shadow-xl transition-colors duration-300`}
     >
