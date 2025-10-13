@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { TrendingUp, TrendingDown, Zap, Star, Lock, Unlock, BarChart3 } from 'lucide-react';
 
 export default function UniqueTableDesigns() {
-  const [hoveredId, setHoveredId] = useState(null);
+  const [hoveredId, setHoveredId] = useState<number | null>(null);
   const [activeCell, setActiveCell] = useState(null);
   
   const tableData = [
