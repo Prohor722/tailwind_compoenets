@@ -3,7 +3,6 @@ import { TrendingUp, TrendingDown, Zap, Star } from 'lucide-react';
 
 export default function UniqueTableDesigns() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
-  const [activeCell, setActiveCell] = useState(null);
   
   const tableData = [
     { id: 1, name: 'Acme Corp', revenue: 12.5, growth: 24.5, status: 'active', score: 92 },
