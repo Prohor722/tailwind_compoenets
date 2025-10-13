@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ChevronRight, MessageCircle, Heart, Share2, BookmarkPlus, Eye, Zap, MapPin, Calendar, Users, Award, TrendingUp, Edit2, Trash2, Copy } from 'lucide-react';
 
 export default function MoreUniqueTableDesigns() {
-  const [hoveredId, setHoveredId] = useState(null);
+  const [hoveredId, setHoveredId] = useState<number | null>(null);
   const [likedItems, setLikedItems] = useState(new Set());
   const [activeTab, setActiveTab] = useState(1);
 
@@ -14,7 +14,7 @@ export default function MoreUniqueTableDesigns() {
     { id: 5, name: 'Lisa Garcia', role: 'Manager', status: 'Offline', revenue: '$15,600', views: 1523, engagement: 95, location: 'Toronto' },
   ];
 
-  const toggleLike = (id) => {
+  const toggleLike = (id: number) => {
     const newSet = new Set(likedItems);
     if (newSet.has(id)) newSet.delete(id);
     else newSet.add(id);
