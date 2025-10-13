@@ -1,6 +1,9 @@
 import React from "react";
 
 const DarkModeToggle = () => {
+  const [mobileMenu4, setMobileMenu4] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+  
   return (
     <nav
       className={`${

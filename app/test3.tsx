@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { Menu, X, Bell, Settings, ChevronDown, Zap, Globe, Moon, Sun } from 'lucide-react';
 
 export default function MoreModernNavbars() {
-  const [mobileMenu4, setMobileMenu4] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 space-y-12 p-4">
