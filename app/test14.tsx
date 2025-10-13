@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TrendingUp, TrendingDown, Zap, ArrowRight, Circle } from 'lucide-react';
+import {  Circle } from 'lucide-react';
 
 export default function MoreTableDesigns() {
   const [selectedId, setSelectedId] = useState<number | null>(null);
