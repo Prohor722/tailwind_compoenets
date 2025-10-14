@@ -1,5 +1,3 @@
-import React from "react";
-
 const BorderedTable = () => {
   return (
     <div className="bg-white shadow-md rounded-lg p-4 w-full max-w-md">

@@ -1,6 +1,7 @@
 "use client";
 
 import DarkModeToggle from "../navbar/components/DarkModeToggle";
+import BorderedTable from "../table/components/BorderedTable";
 
 
 const page = () => {
@@ -8,7 +9,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <DarkModeToggle />
+      <BorderedTable />
     </div>
   );
 };
