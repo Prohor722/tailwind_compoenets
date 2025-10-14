@@ -1,6 +1,6 @@
 const BorderedTable = () => {
   return (
-      <table className="table-auto w-full border border-gray-400 text-gray-800">
+      <table className="table-auto w-md border border-gray-400 text-gray-800">
         <thead className="bg-gray-600 text-white">
           <tr>
             <th className="border px-4 py-2">Name</th>

@@ -2,9 +2,9 @@ import React from "react";
 
 const DarkTable = () => {
   return (
-    <table className="table-auto w-full">
+    <table className="table-auto w-md">
       <thead>
-        <tr>
+        <tr className="bg-gray-900">
           <th className="px-4 py-2">City</th>
           <th className="px-4 py-2">Country</th>
         </tr>

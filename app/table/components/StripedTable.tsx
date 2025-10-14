@@ -2,7 +2,7 @@ import React from "react";
 
 const StripedTable = () => {
   return (
-    <table className="table-auto w-full text-gray-800">
+    <table className="table-auto w-md text-gray-800">
       <thead className="bg-gray-700 text-white">
         <tr>
           <th className="px-4 py-2">Product</th>

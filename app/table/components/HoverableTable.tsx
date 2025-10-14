@@ -2,7 +2,7 @@ import React from "react";
 
 const HoverableTable = () => {
   return (
-    <table className="table-auto w-full text-gray-800">
+    <table className="table-auto w-md text-gray-800">
       <thead className="bg-blue-600 text-white">
         <tr>
           <th className="px-4 py-2">User</th>
