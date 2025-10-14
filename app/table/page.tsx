@@ -1,5 +1,6 @@
 import React from "react";
 import BorderedTable from "./components/BorderedTable";
+import StripedTable from "./components/StripedTable";
 
 const table = () => {
   return (
@@ -12,13 +13,7 @@ const table = () => {
 
         <BorderedTable />
 
-        {/* Striped Table */}
-        <div className="bg-white shadow-md rounded-lg p-4 w-full max-w-md">
-          <h2 className="text-lg font-semibold text-gray-800 mb-2">
-            Striped Table
-          </h2>
-          
-        </div>
+        <StripedTable />
 
         {/* Hoverable Table */}
         <div className="bg-white shadow-md rounded-lg p-4 w-full max-w-md">
