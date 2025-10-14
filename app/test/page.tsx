@@ -2,6 +2,7 @@
 
 import DarkModeToggle from "../navbar/components/DarkModeToggle";
 import BorderedTable from "../table/components/BorderedTable";
+import StripedTable from "../table/components/StripedTable";
 
 
 const page = () => {
@@ -9,7 +10,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <BorderedTable />
+      <StripedTable />
     </div>
   );
 };
