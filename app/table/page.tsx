@@ -2,6 +2,7 @@ import React from "react";
 import BorderedTable from "./components/BorderedTable";
 import StripedTable from "./components/StripedTable";
 import HoverableTable from "./components/HoverableTable";
+import DarkTable from "./components/DarkTable";
 
 const table = () => {
   return (
@@ -18,11 +19,9 @@ const table = () => {
 
         <HoverableTable />
 
-        {/* Dark Table */}
-        <div className="bg-gray-800 shadow rounded-lg p-4 w-full max-w-md text-white">
-          <h2 className="font-semibold mb-2">Dark Table</h2>
-          
-        </div>
+        <DarkTable />
+        
+        
       </div>
     </div>
   );
