@@ -1,9 +1,5 @@
 const BorderedTable = () => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 w-full max-w-md">
-      <h2 className="text-lg font-semibold text-gray-800 mb-2">
-        Bordered Table
-      </h2>
       <table className="table-auto w-full border border-gray-400 text-gray-800">
         <thead className="bg-gray-600 text-white">
           <tr>
@@ -22,7 +18,6 @@ const BorderedTable = () => {
           </tr>
         </tbody>
       </table>
-    </div>
   );
 };
 
