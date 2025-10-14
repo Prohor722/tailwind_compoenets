@@ -1,4 +1,5 @@
 import React from "react";
+import BorderedTable from "./components/BorderedTable";
 
 const table = () => {
   return (
@@ -8,8 +9,8 @@ const table = () => {
       </h1>
 
       <div className="flex flex-wrap justify-center gap-10">
-        {/* Bordered Table */}
-        
+
+        <BorderedTable />
 
         {/* Striped Table */}
         <div className="bg-white shadow-md rounded-lg p-4 w-full max-w-md">
