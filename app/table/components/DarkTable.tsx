@@ -2,7 +2,7 @@ import React from "react";
 
 const DarkTable = () => {
   return (
-    <table className="table-auto w-md">
+    <table className="table-auto max-w-lg md:w-md overflow-scroll">
       <thead>
         <tr className="bg-gray-900">
           <th className="px-4 py-2">City</th>
