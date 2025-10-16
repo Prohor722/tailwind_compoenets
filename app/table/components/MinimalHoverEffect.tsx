@@ -1,6 +1,9 @@
 import React from "react";
 
 const MinimalHoverEffect = () => {
+  const statusList = ['Active', 'Away', 'Offline'] as const;
+  type StatusType = (typeof statusList)[number];
+
   const data = [
     {
       id: 1,
@@ -38,6 +41,15 @@ const MinimalHoverEffect = () => {
       revenue: "$15,600",
     },
   ];
+  const getStatusColor = (status: string) => {
+    const colors: Record<StatusType, string> = {
+      Active: "bg-emerald-100 text-emerald-800",
+      Away: "bg-amber-100 text-amber-800",
+      Offline: "bg-gray-100 text-gray-800",
+    };
+    return colors[status as StatusType] || colors["Offline"];
+  };
+
   return (
     <table className="w-full">
       <thead>
