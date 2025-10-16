@@ -28,11 +28,7 @@ export default function ModernTables() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-8">
       <div className="max-w-6xl mx-auto space-y-8">
-        {/* Header */}
-        <div>
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">Modern Table Designs</h1>
-          <p className="text-slate-600">Beautiful, responsive table components with Tailwind CSS</p>
-        </div>
+        
 
         {/* Table 1: Minimal with Hover Effect */}
         <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
