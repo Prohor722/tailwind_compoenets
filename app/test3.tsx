@@ -30,16 +30,6 @@ export default function ModernTables() {
       <div className="max-w-6xl mx-auto space-y-8">
         
 
-        {/* Table 1: Minimal with Hover Effect */}
-        <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200">
-            <h2 className="text-lg font-semibold text-slate-900">Minimal Design</h2>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
-        </div>
-
         {/* Table 2: With Search and Filter */}
         <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
           <div className="p-6 border-b border-slate-200">
