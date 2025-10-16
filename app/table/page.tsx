@@ -96,7 +96,7 @@ const table = () => {
         <span className="relative z-10">Tailwind Table Showcase</span>
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-8">
 
         <BorderedTable />
 
