@@ -4,6 +4,7 @@ import StripedTable from "./components/StripedTable";
 import HoverableTable from "./components/HoverableTable";
 import DarkTable from "./components/DarkTable";
 import MinimalHoverEffect from "./components/MinimalHoverEffect";
+import WithSearchFilter from "./components/WithSearchFilter";
 
 const table = () => {
   return (
@@ -108,6 +109,7 @@ const table = () => {
 
        <MinimalHoverEffect /> 
         
+        <WithSearchFilter />
         
       </div>
     </div>

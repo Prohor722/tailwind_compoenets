@@ -1,6 +1,7 @@
 "use client";
 
 import MinimalHoverEffect from "../table/components/MinimalHoverEffect";
+import WithSearchFilter from "../table/components/WithSearchFilter";
 
 
 const page = () => {
@@ -8,7 +9,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <MinimalHoverEffect />
+      <WithSearchFilter />
     </div>
   );
 };
