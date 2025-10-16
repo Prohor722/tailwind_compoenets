@@ -7,7 +7,7 @@ import MinimalHoverEffect from "./components/MinimalHoverEffect";
 
 const table = () => {
   return (
-    <div className="w-full min-h-screen bg-gray-100 p-6 flex flex-col items-center gap-10">
+    <div className="w-full min-h-screen bg-gray-100 p-2 md:p-6 flex flex-col items-center gap-10">
        <style>{`
         @keyframes wave1 {
           0% {
@@ -96,7 +96,7 @@ const table = () => {
         <span className="relative z-10">Tailwind Table Showcase</span>
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap w-full overflow-hidden justify-center gap-8">
 
         <BorderedTable />
 
