@@ -3,6 +3,7 @@ import BorderedTable from "./components/BorderedTable";
 import StripedTable from "./components/StripedTable";
 import HoverableTable from "./components/HoverableTable";
 import DarkTable from "./components/DarkTable";
+import MinimalHoverEffect from "./components/MinimalHoverEffect";
 
 const table = () => {
   return (
@@ -105,7 +106,7 @@ const table = () => {
 
         <DarkTable />
 
-        
+       <MinimalHoverEffect /> 
         
         
       </div>
