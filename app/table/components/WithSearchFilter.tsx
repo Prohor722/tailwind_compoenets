@@ -40,6 +40,19 @@ const WithSearchFilter = () => {
       revenue: "$15,600",
     },
   ];
+
+  const statusList = ['Active', 'Away', 'Offline'] as const;
+  type StatusType = typeof statusList[number];
+
+  const getStatusColor = (status: string) => {
+    const colors: Record<StatusType, string> = {
+      'Active': 'bg-emerald-100 text-emerald-800',
+      'Away': 'bg-amber-100 text-amber-800',
+      'Offline': 'bg-gray-100 text-gray-800',
+    };
+    return colors[status as StatusType] || colors['Offline'];
+  };
+
   return (
     <div className="overflow-x-auto">
       <table className="w-full">
