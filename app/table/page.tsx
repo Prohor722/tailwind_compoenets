@@ -7,7 +7,7 @@ import MinimalHoverEffect from "./components/MinimalHoverEffect";
 
 const table = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-6 flex flex-col items-center gap-10">
+    <div className="w-full min-h-screen bg-gray-100 p-6 flex flex-col items-center gap-10">
        <style>{`
         @keyframes wave1 {
           0% {

@@ -51,7 +51,7 @@ const MinimalHoverEffect = () => {
   };
 
   return (
-    <table className="w-full">
+    <table className="w-full max-w-lg overflow-hidden">
       <thead>
         <tr className="bg-slate-50 border-b border-slate-200">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700">
