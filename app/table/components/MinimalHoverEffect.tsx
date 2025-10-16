@@ -41,6 +41,7 @@ const MinimalHoverEffect = () => {
       revenue: "$15,600",
     },
   ];
+  
   const getStatusColor = (status: string) => {
     const colors: Record<StatusType, string> = {
       Active: "bg-emerald-100 text-emerald-800",
