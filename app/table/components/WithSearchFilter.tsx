@@ -55,7 +55,7 @@ const WithSearchFilter = () => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
+    <div className="max-w-md bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
       <div className="p-6 border-b border-slate-200">
         <h2 className="text-lg font-semibold text-slate-900 mb-4">
           With Search & Filter
