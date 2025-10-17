@@ -1,6 +1,13 @@
 import React from 'react'
 
 const StripedDarkAccent = () => {
+    const data = [
+    { id: 1, name: 'Sarah Anderson', role: 'Product Manager', status: 'Active', revenue: '$12,500' },
+    { id: 2, name: 'Mike Chen', role: 'Developer', status: 'Active', revenue: '$9,200' },
+    { id: 3, name: 'Emma Wilson', role: 'Designer', status: 'Away', revenue: '$8,100' },
+    { id: 4, name: 'James Johnson', role: 'Analyst', status: 'Active', revenue: '$11,300' },
+    { id: 5, name: 'Lisa Garcia', role: 'Manager', status: 'Offline', revenue: '$15,600' },
+  ];
   return (
     <table className="w-full">
               <thead>
