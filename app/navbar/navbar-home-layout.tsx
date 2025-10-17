@@ -1,8 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { href: '/button', label: 'Buttons' },
@@ -15,12 +16,19 @@ const navLinks = [
   { href: '/calendar', label: 'Calendar' },
   { href: '/modal', label: 'Modal' },
   { href: '/pagination', label: 'Pagination' },
+  { href: '/test', label: 'Test', disabled: false },
   { href: '/', label: 'Disable', disabled: true },
   
 ];
 
 export const NavHome = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [ active, setActive ] = useState('');
+    const pathname = usePathname();
+
+    useEffect(() => {
+      setActive(pathname);
+    }, [pathname]);
 
   return (
     <nav className="fixed w-full bg-white shadow-md px-6 py-4 top-0 z-50">
@@ -39,7 +47,7 @@ export const NavHome = () => {
       <div
         className={`${
           menuOpen ? 'flex' : 'hidden'
-        } flex-col md:flex md:flex-row md:items-center md:space-x-6 mt-4 md:mt-0`}
+        } flex-col md:flex md:flex-row md:items-center md:space-x-4 mt-4 md:mt-0`}
       >
         {navLinks.map((link) =>
           link.disabled ? (
@@ -53,7 +61,8 @@ export const NavHome = () => {
             <Link
               key={link.href}
               href={link.href}
-              className="px-4 py-2 text-gray-700 hover:text-blue-500 font-medium transition"
+              className={`px-4 py-2 text-gray-700 text-md hover:text-blue-500 font-medium transition
+                ${active === link.href ? 'text-blue-600 font-semibold' : ''}`}
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
