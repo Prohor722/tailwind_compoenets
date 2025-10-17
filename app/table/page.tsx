@@ -113,6 +113,8 @@ const table = () => {
         <WithSearchFilter />
 
         <StripedDarkAccent />
+
+        
         
       </div>
     </div>

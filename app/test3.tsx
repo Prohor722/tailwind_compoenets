@@ -26,15 +26,6 @@ export default function ModernTables() {
       <div className="max-w-6xl mx-auto space-y-8">
         
 
-        {/* Table 3: Striped with Dark Accent */}
-        <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200">
-            <h2 className="text-lg font-semibold text-slate-900">Striped Design</h2>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
-        </div>
 
         {/* Table 4: Compact with Left Accent */}
         <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
