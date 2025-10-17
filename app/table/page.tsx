@@ -5,6 +5,7 @@ import HoverableTable from "./components/HoverableTable";
 import DarkTable from "./components/DarkTable";
 import MinimalHoverEffect from "./components/MinimalHoverEffect";
 import WithSearchFilter from "./components/WithSearchFilter";
+import StripedDarkAccent from "./components/StripedDarkAccent";
 
 const table = () => {
   return (
@@ -110,6 +111,8 @@ const table = () => {
        <MinimalHoverEffect /> 
         
         <WithSearchFilter />
+
+        <StripedDarkAccent />
         
       </div>
     </div>
