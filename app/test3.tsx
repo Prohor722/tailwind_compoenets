@@ -32,32 +32,7 @@ export default function ModernTables() {
           <div className="p-6 border-b border-slate-200">
             <h2 className="text-lg font-semibold text-slate-900">Compact with Accent</h2>
           </div>
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="bg-gradient-to-r from-blue-50 to-slate-50 border-b-2 border-blue-200">
-                  <th className="px-6 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wide">Name</th>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wide">Role</th>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wide">Status</th>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-slate-700 uppercase tracking-wide">Revenue</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.map((item) => (
-                  <tr key={item.id} className="border-b border-slate-100 hover:bg-slate-50 transition-colors group">
-                    <td className="px-6 py-3 text-sm font-medium text-slate-900 border-l-4 border-transparent group-hover:border-blue-500 transition-colors">{item.name}</td>
-                    <td className="px-6 py-3 text-sm text-slate-600">{item.role}</td>
-                    <td className="px-6 py-3">
-                      <span className={`inline-flex px-2 py-1 rounded text-xs font-semibold ${getStatusColor(item.status)}`}>
-                        {item.status}
-                      </span>
-                    </td>
-                    <td className="px-6 py-3 text-sm font-semibold text-slate-900">{item.revenue}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          
         </div>
       </div>
     </div>
