@@ -55,11 +55,11 @@ const StatusIndicators = () => {
 
   const getStatusDot = (status: string) => {
     const colors = {
-      'Active': 'bg-emerald-500',
-      'Away': 'bg-amber-500',
-      'Offline': 'bg-gray-400',
+      Active: "bg-emerald-500",
+      Away: "bg-amber-500",
+      Offline: "bg-gray-400",
     };
-    return colors[status as keyof typeof colors] || colors['Offline'];
+    return colors[status as keyof typeof colors] || colors["Offline"];
   };
 
   return (
