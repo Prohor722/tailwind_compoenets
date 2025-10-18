@@ -1,6 +1,7 @@
 "use client";
 
 import CardStyle from "../table/components/CardStyle";
+import ColorfulHeaders from "../table/components/ColorfulHeaders";
 import CompactLeftAccent from "../table/components/CompactLeftAccent";
 import MinimalHoverEffect from "../table/components/MinimalHoverEffect";
 import StripedDarkAccent from "../table/components/StripedDarkAccent";
@@ -12,7 +13,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <CardStyle />
+      <ColorfulHeaders />
     </div>
   );
 };
