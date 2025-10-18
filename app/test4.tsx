@@ -34,11 +34,7 @@ export default function ModernTables() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
-        {/* Header */}
-        <div>
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">More Modern Table Designs</h1>
-          <p className="text-slate-600">Additional beautiful table variations for your Next.js project</p>
-        </div>
+
 
 
         {/* Table 6: Colorful Headers */}
@@ -46,32 +42,7 @@ export default function ModernTables() {
           <div className="p-6 border-b border-slate-200">
             <h2 className="text-lg font-semibold text-slate-900">Colorful Headers</h2>
           </div>
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600 text-white">
-                  <th className="px-6 py-4 text-left text-sm font-semibold">Name</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold">Role</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold">Status</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold">Revenue</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.map((item) => (
-                  <tr key={item.id} className="border-b border-slate-100 hover:bg-gradient-to-r hover:from-purple-50 hover:to-cyan-50 transition-colors">
-                    <td className="px-6 py-4 text-sm font-medium text-slate-900">{item.name}</td>
-                    <td className="px-6 py-4 text-sm text-slate-600">{item.role}</td>
-                    <td className="px-6 py-4">
-                      <span className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold ${getStatusColor(item.status)}`}>
-                        {item.status}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 text-sm font-semibold text-slate-900">{item.revenue}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          
         </div>
 
         {/* Table 7: With Status Indicators */}
