@@ -6,6 +6,7 @@ import DarkTable from "./components/DarkTable";
 import MinimalHoverEffect from "./components/MinimalHoverEffect";
 import WithSearchFilter from "./components/WithSearchFilter";
 import StripedDarkAccent from "./components/StripedDarkAccent";
+import CardStyle from "./components/CardStyle";
 
 const table = () => {
   return (
@@ -114,7 +115,7 @@ const table = () => {
 
         <StripedDarkAccent />
 
-        
+        <CardStyle />
         
       </div>
     </div>
