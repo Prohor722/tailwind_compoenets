@@ -36,15 +36,6 @@ export default function ModernTables() {
       <div className="max-w-7xl mx-auto space-y-8">
 
 
-
-        {/* Table 6: Colorful Headers */}
-        <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200">
-            <h2 className="text-lg font-semibold text-slate-900">Colorful Headers</h2>
-          </div>
-          
-        </div>
-
         {/* Table 7: With Status Indicators */}
         <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
           <div className="p-6 border-b border-slate-200">
