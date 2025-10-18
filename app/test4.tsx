@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { ChevronUp, ChevronDown, Search, Filter, MoreHorizontal, ArrowRight } from 'lucide-react';
+import { ChevronUp, ChevronDown, ArrowRight } from 'lucide-react';
 
 export default function ModernTables() {
   const [expandedRow, setExpandedRow] = useState<number | null>(null);
-  const [sortConfig, setSortConfig] = useState({ key: 'name', direction: 'asc' });
 
+  
   const data = [
     { id: 1, name: 'Sarah Anderson', role: 'Product Manager', status: 'Active', revenue: '$12,500', email: 'sarah@company.com' },
     { id: 2, name: 'Mike Chen', role: 'Developer', status: 'Active', revenue: '$9,200', email: 'mike@company.com' },
@@ -40,13 +40,6 @@ export default function ModernTables() {
           <p className="text-slate-600">Additional beautiful table variations for your Next.js project</p>
         </div>
 
-        {/* Table 5: Card Style */}
-        <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200">
-            <h2 className="text-lg font-semibold text-slate-900">Card Style Layout</h2>
-          </div>
-          
-        </div>
 
         {/* Table 6: Colorful Headers */}
         <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
