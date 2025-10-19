@@ -125,7 +125,7 @@ const table = () => {
 
         <StatusIndicators />
 
-        <ExpandableRows />
+        <ExpandableRows />   {/* some issue */}
 
         <VerticalTimelineStyle />
         
