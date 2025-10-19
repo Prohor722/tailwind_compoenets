@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ChevronDown } from 'lucide-react';
 
 const ExpandableRows = () => {
   const [expandedRow, setExpandedRow] = useState<number | null>(null);
