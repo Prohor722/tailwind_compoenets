@@ -53,6 +53,15 @@ const VerticalTimelineStyle = () => {
     return colors[status as keyof typeof colors] || colors["Offline"];
   };
 
+  const getStatusColor = (status: string) => {
+    const colors = {
+      Active: "bg-emerald-100 text-emerald-800",
+      Away: "bg-amber-100 text-amber-800",
+      Offline: "bg-gray-100 text-gray-800",
+    };
+    return colors[status as keyof typeof colors] || colors["Offline"];
+  };
+
   return (
     <div className="p-6">
       <div className="space-y-6">
