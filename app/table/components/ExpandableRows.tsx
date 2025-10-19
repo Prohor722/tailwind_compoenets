@@ -73,10 +73,10 @@ const ExpandableRows = () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((item) => (
+          {data.map((item,index) => (
             <>
               <tr
-                key={item.id}
+                key={index}
                 className="border-b border-slate-100 hover:bg-slate-50 transition-colors cursor-pointer"
                 onClick={() =>
                   setExpandedRow(expandedRow === item.id ? null : item.id)
