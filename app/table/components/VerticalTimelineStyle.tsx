@@ -1,6 +1,14 @@
 import React from "react";
 
 const VerticalTimelineStyle = () => {
+  const data = [
+    { id: 1, name: 'Sarah Anderson', role: 'Product Manager', status: 'Active', revenue: '$12,500', email: 'sarah@company.com' },
+    { id: 2, name: 'Mike Chen', role: 'Developer', status: 'Active', revenue: '$9,200', email: 'mike@company.com' },
+    { id: 3, name: 'Emma Wilson', role: 'Designer', status: 'Away', revenue: '$8,100', email: 'emma@company.com' },
+    { id: 4, name: 'James Johnson', role: 'Analyst', status: 'Active', revenue: '$11,300', email: 'james@company.com' },
+    { id: 5, name: 'Lisa Garcia', role: 'Manager', status: 'Offline', revenue: '$15,600', email: 'lisa@company.com' },
+  ];
+
   return (
     <div className="p-6">
       <div className="space-y-6">
