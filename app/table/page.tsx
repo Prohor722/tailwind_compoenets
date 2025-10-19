@@ -9,6 +9,7 @@ import StripedDarkAccent from "./components/StripedDarkAccent";
 import CardStyle from "./components/CardStyle";
 import ColorfulHeaders from "./components/ColorfulHeaders";
 import StatusIndicators from "./components/StatusIndicators";
+import ExpandableRows from "./components/ExpandableRows";
 
 const table = () => {
   return (
@@ -122,6 +123,8 @@ const table = () => {
         <ColorfulHeaders />
 
         <StatusIndicators />
+
+        <ExpandableRows />
         
       </div>
     </div>
