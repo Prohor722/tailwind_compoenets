@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { ChevronUp, ChevronDown, ArrowRight } from 'lucide-react';
 
 export default function ModernTables() {
-  const [expandedRow, setExpandedRow] = useState<number | null>(null);
 
   
   const data = [
