@@ -7,6 +7,7 @@ import ExpandableRows from "../table/components/ExpandableRows";
 import MinimalHoverEffect from "../table/components/MinimalHoverEffect";
 import StatusIndicators from "../table/components/StatusIndicators";
 import StripedDarkAccent from "../table/components/StripedDarkAccent";
+import VerticalTimelineStyle from "../table/components/VerticalTimelineStyle";
 import WithSearchFilter from "../table/components/WithSearchFilter";
 
 
@@ -15,7 +16,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <ExpandableRows />
+      <VerticalTimelineStyle />
     </div>
   );
 };
