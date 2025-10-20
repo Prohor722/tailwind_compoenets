@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowRight } from "lucide-react";
 
 const ShadowedCards = () => {
   const data = [
@@ -43,7 +44,25 @@ const ShadowedCards = () => {
       email: "lisa@company.com",
     },
   ];
+
+  const getStatusColor = (status: string) => {
+    const colors = {
+      Active: "bg-emerald-100 text-emerald-800",
+      Away: "bg-amber-100 text-amber-800",
+      Offline: "bg-gray-100 text-gray-800",
+    };
+    return colors[status as keyof typeof colors] || colors["Offline"];
+  };
   
+  const getStatusDot = (status: string) => {
+    const colors = {
+      Active: "bg-emerald-500",
+      Away: "bg-amber-500",
+      Offline: "bg-gray-400",
+    };
+    return colors[status as keyof typeof colors] || colors["Offline"];
+  };
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {data.map((item) => (

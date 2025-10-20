@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ChevronUp, ChevronDown, ArrowRight } from 'lucide-react';
 
 export default function ModernTables() {
 
@@ -12,23 +11,9 @@ export default function ModernTables() {
     { id: 5, name: 'Lisa Garcia', role: 'Manager', status: 'Offline', revenue: '$15,600', email: 'lisa@company.com' },
   ];
 
-  const getStatusColor = (status: string) => {
-    const colors = {
-      'Active': 'bg-emerald-100 text-emerald-800',
-      'Away': 'bg-amber-100 text-amber-800',
-      'Offline': 'bg-gray-100 text-gray-800',
-    };
-    return colors[status as keyof typeof colors] || colors['Offline'];
-  };
+  
 
-  const getStatusDot = (status: string) => {
-    const colors = {
-      'Active': 'bg-emerald-500',
-      'Away': 'bg-amber-500',
-      'Offline': 'bg-gray-400',
-    };
-    return colors[status as keyof typeof colors] || colors['Offline'];
-  };
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-8">
