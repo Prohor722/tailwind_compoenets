@@ -11,6 +11,7 @@ import ColorfulHeaders from "./components/ColorfulHeaders";
 import StatusIndicators from "./components/StatusIndicators";
 import ExpandableRows from "./components/ExpandableRows";
 import VerticalTimelineStyle from "./components/VerticalTimelineStyle";
+import ShadowedCards from "./components/ShadowedCards";
 
 const table = () => {
   return (
@@ -128,6 +129,8 @@ const table = () => {
         <ExpandableRows />
 
         <VerticalTimelineStyle />
+
+        <ShadowedCards />
         
       </div>
     </div>
