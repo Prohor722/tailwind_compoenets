@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 const ExpandableRows = () => {
@@ -74,7 +74,7 @@ const ExpandableRows = () => {
         </thead>
         <tbody>
           {data.map((item) => (
-            <>
+            <React.Fragment key={item.id}>
               <tr
                 key={item.id}
                 className="border-b border-slate-100 hover:bg-slate-50 transition-colors cursor-pointer"
@@ -127,7 +127,7 @@ const ExpandableRows = () => {
                   </td>
                 </tr>
               )}
-            </>
+            </React.Fragment>
           ))}
         </tbody>
       </table>
