@@ -12,6 +12,7 @@ import StatusIndicators from "./components/StatusIndicators";
 import ExpandableRows from "./components/ExpandableRows";
 import VerticalTimelineStyle from "./components/VerticalTimelineStyle";
 import ShadowedCards from "./components/ShadowedCards";
+import Glassmorphism from "./components/Glassmorphism";
 
 const table = () => {
   return (
@@ -131,6 +132,8 @@ const table = () => {
         <VerticalTimelineStyle />
 
         <ShadowedCards />
+
+        <Glassmorphism />
         
       </div>
     </div>
