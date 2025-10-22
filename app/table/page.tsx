@@ -133,6 +133,7 @@ const table = () => {
 
         <ShadowedCards />
 
+        <Glassmorphism />
         
       </div>
     </div>
