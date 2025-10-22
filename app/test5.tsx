@@ -27,14 +27,6 @@ export default function UniqueTableDesigns() {
       <div className="max-w-7xl mx-auto space-y-8">
         
 
-        {/* Table 11: Glassmorphism */}
-        <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl overflow-hidden shadow-2xl">
-          <div className="p-6 border-b border-white/10">
-            <h2 className="text-lg font-semibold text-white">Glassmorphism Style</h2>
-          </div>
-          
-        </div>
-
         {/* Table 12: Sparkline with Charts */}
         <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl border border-slate-600 overflow-hidden shadow-2xl">
           <div className="p-6 border-b border-slate-600">
