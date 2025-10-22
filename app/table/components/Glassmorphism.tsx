@@ -1,15 +1,61 @@
 import React from "react";
-import { AlertCircle, CheckCircle, Clock } from 'lucide-react';
-
+import { AlertCircle, CheckCircle, Clock } from "lucide-react";
 
 const Glassmorphism = () => {
-
   const getStatusIcon = (status: string) => {
     if (status === "Active")
       return <CheckCircle className="w-4 h-4 text-emerald-500" />;
     if (status === "Away") return <Clock className="w-4 h-4 text-amber-500" />;
     return <AlertCircle className="w-4 h-4 text-gray-400" />;
   };
+
+  const data = [
+    {
+      id: 1,
+      name: "Sarah Anderson",
+      role: "Product Manager",
+      status: "Active",
+      revenue: "$12,500",
+      growth: "+24%",
+      score: 92,
+    },
+    {
+      id: 2,
+      name: "Mike Chen",
+      role: "Developer",
+      status: "Active",
+      revenue: "$9,200",
+      growth: "+18%",
+      score: 85,
+    },
+    {
+      id: 3,
+      name: "Emma Wilson",
+      role: "Designer",
+      status: "Away",
+      revenue: "$8,100",
+      growth: "+12%",
+      score: 78,
+    },
+    {
+      id: 4,
+      name: "James Johnson",
+      role: "Analyst",
+      status: "Active",
+      revenue: "$11,300",
+      growth: "+31%",
+      score: 88,
+    },
+    {
+      id: 5,
+      name: "Lisa Garcia",
+      role: "Manager",
+      status: "Offline",
+      revenue: "$15,600",
+      growth: "+9%",
+      score: 95,
+    },
+  ];
 
   return (
     <div className="overflow-x-auto">
