@@ -13,11 +13,7 @@ export default function UniqueTableDesigns() {
     { id: 5, name: 'Lisa Garcia', role: 'Manager', status: 'Offline', revenue: '$15,600', growth: '+9%', score: 95 },
   ];
 
-  const getStatusIcon = (status: string) => {
-    if (status === 'Active') return <CheckCircle className="w-4 h-4 text-emerald-500" />;
-    if (status === 'Away') return <Clock className="w-4 h-4 text-amber-500" />;
-    return <AlertCircle className="w-4 h-4 text-gray-400" />;
-  };
+
 
   const toggleRow = (id: number) => {
     const newSet = new Set(selectedRows);

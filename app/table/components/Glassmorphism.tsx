@@ -1,6 +1,14 @@
 import React from "react";
 
 const Glassmorphism = () => {
+    
+  const getStatusIcon = (status: string) => {
+    if (status === "Active")
+      return <CheckCircle className="w-4 h-4 text-emerald-500" />;
+    if (status === "Away") return <Clock className="w-4 h-4 text-amber-500" />;
+    return <AlertCircle className="w-4 h-4 text-gray-400" />;
+  };
+
   return (
     <div className="overflow-x-auto">
       <table className="w-full">
