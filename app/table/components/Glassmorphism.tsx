@@ -59,7 +59,7 @@ const Glassmorphism = () => {
 
   return (
     <div className="overflow-x-auto">
-      <table className="w-full">
+      <table className="max-w-md bg-black">
         <thead>
           <tr className="border-b border-white/10">
             <th className="px-6 py-4 text-left text-sm font-semibold text-slate-200">
