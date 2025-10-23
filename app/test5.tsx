@@ -12,13 +12,6 @@ export default function UniqueTableDesigns() {
     { id: 5, name: 'Lisa Garcia', role: 'Manager', status: 'Offline', revenue: '$15,600', growth: '+9%', score: 95 },
   ];
 
-  const toggleRow = (id: number) => {
-    const newSet = new Set(selectedRows);
-    if (newSet.has(id)) newSet.delete(id);
-    else newSet.add(id);
-    setSelectedRows(newSet);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
