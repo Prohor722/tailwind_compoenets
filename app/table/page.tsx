@@ -13,6 +13,7 @@ import ExpandableRows from "./components/ExpandableRows";
 import VerticalTimelineStyle from "./components/VerticalTimelineStyle";
 import ShadowedCards from "./components/ShadowedCards";
 import Glassmorphism from "./components/Glassmorphism";
+import SparklineCharts from "./components/SparklineCharts";
 
 const table = () => {
   return (
@@ -134,6 +135,8 @@ const table = () => {
         <ShadowedCards />
 
         <Glassmorphism />
+
+        <SparklineCharts />
         
       </div>
     </div>

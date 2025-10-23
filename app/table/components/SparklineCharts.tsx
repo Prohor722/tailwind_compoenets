@@ -52,7 +52,7 @@ const data = [
 const SparklineCharts = () => {
   return (
     <div className="overflow-x-auto">
-      <table className="w-full">
+      <table className="max-w-md bg-gray-900">
         <thead>
           <tr className="border-b border-slate-600 bg-slate-800/50">
             <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">
