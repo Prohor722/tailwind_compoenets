@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { TrendingUp, Zap, BarChart3 } from 'lucide-react';
 
 export default function UniqueTableDesigns() {
   const [selectedRows, setSelectedRows] = useState(new Set());

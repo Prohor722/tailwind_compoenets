@@ -1,4 +1,5 @@
 import React from "react";
+import { TrendingUp, Zap, BarChart3 } from 'lucide-react';
 
 const NestedDetails = () => {
   return (
