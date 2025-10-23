@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { ChevronRight, Star, TrendingUp, AlertCircle, CheckCircle, Clock, Zap, BarChart3 } from 'lucide-react';
 
 export default function UniqueTableDesigns() {
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
   const [selectedRows, setSelectedRows] = useState(new Set());
 
   const data = [
