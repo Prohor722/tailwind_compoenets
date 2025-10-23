@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { TrendingUp, Zap, BarChart3 } from 'lucide-react';
 
 const NestedDetails = () => {
