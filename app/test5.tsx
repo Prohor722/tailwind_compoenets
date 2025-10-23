@@ -27,14 +27,6 @@ export default function UniqueTableDesigns() {
       <div className="max-w-7xl mx-auto space-y-8">
         
 
-        {/* Table 12: Sparkline with Charts */}
-        <div className="bg-gradient-to-br from-slate-800 to-slate-700 rounded-2xl border border-slate-600 overflow-hidden shadow-2xl">
-          <div className="p-6 border-b border-slate-600">
-            <h2 className="text-lg font-semibold text-white">With Performance Metrics</h2>
-          </div>
-          
-        </div>
-
         {/* Table 13: Dual-Column Hover Effect */}
         <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
           <div className="p-6 border-b border-slate-200">
