@@ -1,5 +1,6 @@
 "use client";
 import Glassmorphism from "../table/components/Glassmorphism";
+import SparklineCharts from "../table/components/SparklineCharts";
 
 
 const page = () => {
@@ -7,7 +8,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <Glassmorphism />
+      <SparklineCharts />
     </div>
   );
 };
