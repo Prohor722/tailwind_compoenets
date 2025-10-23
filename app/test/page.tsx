@@ -1,5 +1,6 @@
 "use client";
 import CheckboxSelectionGradientHighlight from "../table/components/CheckboxSelectionGradientHighlight";
+import NestedDetails from "../table/components/NestedDetails";
 
 
 const page = () => {
@@ -7,7 +8,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <CheckboxSelectionGradientHighlight />
+      <NestedDetails />
     </div>
   );
 };
