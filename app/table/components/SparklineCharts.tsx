@@ -1,4 +1,6 @@
 import React from "react";
+import { Star, TrendingUp } from 'lucide-react';
+
 
 const SparklineCharts = () => {
   return (
