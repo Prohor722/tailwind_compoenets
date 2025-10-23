@@ -16,6 +16,7 @@ import Glassmorphism from "./components/Glassmorphism";
 import SparklineCharts from "./components/SparklineCharts";
 import DualColumnHover from "./components/DualColumnHover";
 import CheckboxSelectionGradientHighlight from "./components/CheckboxSelectionGradientHighlight";
+import NestedDetails from "./components/NestedDetails";
 
 const table = () => {
   return (
@@ -143,6 +144,8 @@ const table = () => {
         <DualColumnHover />
 
         <CheckboxSelectionGradientHighlight />
+
+        <NestedDetails />
         
       </div>
     </div>
