@@ -15,6 +15,7 @@ import ShadowedCards from "./components/ShadowedCards";
 import Glassmorphism from "./components/Glassmorphism";
 import SparklineCharts from "./components/SparklineCharts";
 import DualColumnHover from "./components/DualColumnHover";
+import CheckboxSelectionGradientHighlight from "./components/CheckboxSelectionGradientHighlight";
 
 const table = () => {
   return (
@@ -140,6 +141,8 @@ const table = () => {
         <SparklineCharts />
 
         <DualColumnHover />
+
+        <CheckboxSelectionGradientHighlight />
         
       </div>
     </div>
