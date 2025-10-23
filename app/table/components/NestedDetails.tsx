@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { TrendingUp, Zap, BarChart3 } from 'lucide-react';
 
 const NestedDetails = () => {
-  const [selectedRows, setSelectedRows] = useState(new Set());
   const data = [
     { id: 1, name: 'Sarah Anderson', role: 'Product Manager', status: 'Active', revenue: '$12,500', growth: '+24%', score: 92 },
     { id: 2, name: 'Mike Chen', role: 'Developer', status: 'Active', revenue: '$9,200', growth: '+18%', score: 85 },
