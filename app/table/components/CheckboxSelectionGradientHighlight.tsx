@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CheckboxSelectionGradientHighlight = () => {
+  const [selectedRows, setSelectedRows] = useState(new Set());
   const data = [
     {
       id: 1,
@@ -55,7 +56,7 @@ const CheckboxSelectionGradientHighlight = () => {
     else newSet.add(id);
     setSelectedRows(newSet);
   };
-  
+
   return (
     <div className="overflow-x-auto">
       <table className="w-full">
