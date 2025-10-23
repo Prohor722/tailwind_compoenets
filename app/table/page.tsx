@@ -14,6 +14,7 @@ import VerticalTimelineStyle from "./components/VerticalTimelineStyle";
 import ShadowedCards from "./components/ShadowedCards";
 import Glassmorphism from "./components/Glassmorphism";
 import SparklineCharts from "./components/SparklineCharts";
+import DualColumnHover from "./components/DualColumnHover";
 
 const table = () => {
   return (
@@ -138,7 +139,7 @@ const table = () => {
 
         <SparklineCharts />
 
-        
+        <DualColumnHover />
         
       </div>
     </div>
