@@ -2,6 +2,8 @@ import React from "react";
 import { TrendingUp, Zap, BarChart3 } from 'lucide-react';
 
 const NestedDetails = () => {
+  const [selectedRows, setSelectedRows] = useState(new Set());
+  
   return (
     <div className="overflow-x-auto">
       <table className="w-full">

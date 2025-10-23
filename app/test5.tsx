@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 export default function UniqueTableDesigns() {
-  const [selectedRows, setSelectedRows] = useState(new Set());
 
   const data = [
     { id: 1, name: 'Sarah Anderson', role: 'Product Manager', status: 'Active', revenue: '$12,500', growth: '+24%', score: 92 },
