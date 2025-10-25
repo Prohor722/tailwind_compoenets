@@ -18,6 +18,7 @@ import DualColumnHover from "./components/DualColumnHover";
 import CheckboxSelectionGradientHighlight from "./components/CheckboxSelectionGradientHighlight";
 import NestedDetails from "./components/NestedDetails";
 import AnimatedProgressRows from "./components/AnimatedProgressRows";
+import SocialMediaFeedStyle from "./components/SocialMediaFeedStyle";
 
 const table = () => {
   return (
@@ -149,6 +150,8 @@ const table = () => {
         <NestedDetails />
 
         <AnimatedProgressRows />
+
+        <SocialMediaFeedStyle />
         
       </div>
     </div>
