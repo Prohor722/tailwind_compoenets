@@ -4,7 +4,6 @@ import { ChevronRight, MessageCircle, Heart, Share2, BookmarkPlus, Eye, Zap, Map
 export default function MoreUniqueTableDesigns() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
   const [likedItems, setLikedItems] = useState(new Set());
-  const [activeTab, setActiveTab] = useState(1);
 
   const data = [
     { id: 1, name: 'Sarah Anderson', role: 'Product Manager', status: 'Active', revenue: '$12,500', views: 1240, engagement: 84, location: 'San Francisco' },
