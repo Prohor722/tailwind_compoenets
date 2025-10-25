@@ -1,4 +1,5 @@
 import React from "react";
+import { MessageCircle, Heart, Share2, BookmarkPlus, Edit2 } from 'lucide-react';
 
 const SocialMediaFeedStyle = () => {
   const data = [
