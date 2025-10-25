@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   MessageCircle,
   Heart,
@@ -69,7 +69,7 @@ const SocialMediaFeedStyle = () => {
       location: "Toronto",
     },
   ];
-  
+
   return (
     <div>
       {data.map((item) => (

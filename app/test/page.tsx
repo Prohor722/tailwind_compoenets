@@ -2,6 +2,7 @@
 import AnimatedProgressRows from "../table/components/AnimatedProgressRows";
 import CheckboxSelectionGradientHighlight from "../table/components/CheckboxSelectionGradientHighlight";
 import NestedDetails from "../table/components/NestedDetails";
+import SocialMediaFeedStyle from "../table/components/SocialMediaFeedStyle";
 
 
 const page = () => {
@@ -9,7 +10,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <AnimatedProgressRows />
+      <SocialMediaFeedStyle />
     </div>
   );
 };
