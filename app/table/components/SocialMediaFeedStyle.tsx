@@ -1,7 +1,22 @@
-import React from "react";
-import { MessageCircle, Heart, Share2, BookmarkPlus, Edit2 } from 'lucide-react';
+import React, { useState } from "react";
+import {
+  MessageCircle,
+  Heart,
+  Share2,
+  BookmarkPlus,
+  Edit2,
+} from "lucide-react";
 
 const SocialMediaFeedStyle = () => {
+  const [likedItems, setLikedItems] = useState(new Set());
+
+  const toggleLike = (id: number) => {
+    const newSet = new Set(likedItems);
+    if (newSet.has(id)) newSet.delete(id);
+    else newSet.add(id);
+    setLikedItems(newSet);
+  };
+
   const data = [
     {
       id: 1,
@@ -54,6 +69,7 @@ const SocialMediaFeedStyle = () => {
       location: "Toronto",
     },
   ];
+  
   return (
     <div>
       {data.map((item) => (

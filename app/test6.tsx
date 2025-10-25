@@ -3,7 +3,6 @@ import { ChevronRight, MessageCircle, Heart, Share2, BookmarkPlus, Eye, Zap, Map
 
 export default function MoreUniqueTableDesigns() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
-  const [likedItems, setLikedItems] = useState(new Set());
 
   const data = [
     { id: 1, name: 'Sarah Anderson', role: 'Product Manager', status: 'Active', revenue: '$12,500', views: 1240, engagement: 84, location: 'San Francisco' },
@@ -12,13 +11,6 @@ export default function MoreUniqueTableDesigns() {
     { id: 4, name: 'James Johnson', role: 'Analyst', status: 'Active', revenue: '$11,300', views: 1056, engagement: 91, location: 'Austin' },
     { id: 5, name: 'Lisa Garcia', role: 'Manager', status: 'Offline', revenue: '$15,600', views: 1523, engagement: 95, location: 'Toronto' },
   ];
-
-  const toggleLike = (id: number) => {
-    const newSet = new Set(likedItems);
-    if (newSet.has(id)) newSet.delete(id);
-    else newSet.add(id);
-    setLikedItems(newSet);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-900 to-slate-950 p-8">
