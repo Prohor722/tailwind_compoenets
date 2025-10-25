@@ -135,8 +135,6 @@ const table = () => {
 
         <ExpandableRows />
 
-        <VerticalTimelineStyle />
-
         <ShadowedCards />
 
         <Glassmorphism />
@@ -150,6 +148,8 @@ const table = () => {
         <NestedDetails />
 
         <AnimatedProgressRows />
+
+        <VerticalTimelineStyle />
 
         <SocialMediaFeedStyle />
         

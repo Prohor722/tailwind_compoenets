@@ -11,7 +11,7 @@ const NestedDetails = () => {
 
   return (
     <div className="overflow-x-auto">
-      <table className="max-w-md">
+      <table className="max-w-lg">
         <thead>
           <tr className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
             <th className="px-6 py-4 text-left text-sm font-semibold">

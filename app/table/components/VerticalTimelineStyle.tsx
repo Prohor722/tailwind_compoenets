@@ -63,7 +63,7 @@ const VerticalTimelineStyle = () => {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="w-md">
       {data.map((item, idx) => (
         <div key={item.id} className="flex gap-4">
           <div className="flex flex-col items-center">
