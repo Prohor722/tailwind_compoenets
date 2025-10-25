@@ -71,7 +71,7 @@ const SocialMediaFeedStyle = () => {
   ];
 
   return (
-    <div>
+    <div className="max-w-md">
       {data.map((item) => (
         <div
           key={item.id}
