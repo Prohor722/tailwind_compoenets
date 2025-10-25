@@ -71,7 +71,7 @@ const SocialMediaFeedStyle = () => {
   ];
 
   return (
-    <div className="max-w-md">
+    <div className="flex flex-col gap-4 max-w-md">
       {data.map((item) => (
         <div
           key={item.id}
