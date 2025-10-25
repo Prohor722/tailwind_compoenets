@@ -13,14 +13,6 @@ export default function UniqueTableDesigns() {
       <div className="max-w-7xl mx-auto space-y-8">
         
 
-        {/* Table 15: Nested Details with Icon Grid */}
-        <div className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl border border-purple-200 overflow-hidden shadow-xl">
-          <div className="p-6 border-b border-purple-200">
-            <h2 className="text-lg font-semibold text-slate-900">Nested Details with Icons</h2>
-          </div>
-          
-        </div>
-
         {/* Table 16: Animated Progress Rows */}
         <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
           <div className="p-6 border-b border-slate-200">
