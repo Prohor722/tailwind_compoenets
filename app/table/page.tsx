@@ -17,6 +17,7 @@ import SparklineCharts from "./components/SparklineCharts";
 import DualColumnHover from "./components/DualColumnHover";
 import CheckboxSelectionGradientHighlight from "./components/CheckboxSelectionGradientHighlight";
 import NestedDetails from "./components/NestedDetails";
+import AnimatedProgressRows from "./components/AnimatedProgressRows";
 
 const table = () => {
   return (
@@ -146,6 +147,8 @@ const table = () => {
         <CheckboxSelectionGradientHighlight />
 
         <NestedDetails />
+
+        <AnimatedProgressRows />
         
       </div>
     </div>
