@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MapPin, TrendingUp, Edit2, Trash2, Copy } from 'lucide-react';
 
 const GridHoverOverlay = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
