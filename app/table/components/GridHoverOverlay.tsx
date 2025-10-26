@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { MapPin, TrendingUp, Edit2, Trash2, Copy } from 'lucide-react';
 
