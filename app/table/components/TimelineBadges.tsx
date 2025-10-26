@@ -56,7 +56,7 @@ const TimelineBadges = () => {
   ];
 
   return (
-    <div className="p-6 space-y-6">
+    <div className="max-w-md p-6">
       {data.map((item, idx) => (
         <div key={item.id} className="flex gap-4 group">
           <div className="flex flex-col items-center">

@@ -4,6 +4,7 @@ import CheckboxSelectionGradientHighlight from "../table/components/CheckboxSele
 import KanbanBoardStyle from "../table/components/KanbanBoardStyle";
 import NestedDetails from "../table/components/NestedDetails";
 import SocialMediaFeedStyle from "../table/components/SocialMediaFeedStyle";
+import TimelineBadges from "../table/components/TimelineBadges";
 
 
 const page = () => {
@@ -11,7 +12,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <KanbanBoardStyle />
+      <TimelineBadges />
     </div>
   );
 };
