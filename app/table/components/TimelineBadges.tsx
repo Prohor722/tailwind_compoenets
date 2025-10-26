@@ -1,4 +1,5 @@
 import React from "react";
+import { Eye, Award, TrendingUp } from 'lucide-react';
 
 const TimelineBadges = () => {
   const data = [
