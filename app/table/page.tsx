@@ -19,6 +19,7 @@ import CheckboxSelectionGradientHighlight from "./components/CheckboxSelectionGr
 import NestedDetails from "./components/NestedDetails";
 import AnimatedProgressRows from "./components/AnimatedProgressRows";
 import SocialMediaFeedStyle from "./components/SocialMediaFeedStyle";
+import KanbanBoardStyle from "./components/KanbanBoardStyle";
 
 const table = () => {
   return (
@@ -152,6 +153,8 @@ const table = () => {
         <VerticalTimelineStyle />
 
         <SocialMediaFeedStyle />
+
+        <KanbanBoardStyle />
         
       </div>
     </div>
