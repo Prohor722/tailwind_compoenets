@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronRight, MessageCircle, Heart, Share2, BookmarkPlus, Eye, Zap, MapPin, Calendar, Users, Award, TrendingUp, Edit2, Trash2, Copy } from 'lucide-react';
+import { ChevronRight, Eye, Zap, MapPin, Award, TrendingUp, Edit2, Trash2, Copy } from 'lucide-react';
 
 export default function MoreUniqueTableDesigns() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
