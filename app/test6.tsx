@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { ChevronRight, Eye, Zap, MapPin, Award, TrendingUp, Edit2, Trash2, Copy } from 'lucide-react';
 
 export default function MoreUniqueTableDesigns() {
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   const data = [
     { id: 1, name: 'Sarah Anderson', role: 'Product Manager', status: 'Active', revenue: '$12,500', views: 1240, engagement: 84, location: 'San Francisco' },
@@ -22,74 +21,10 @@ export default function MoreUniqueTableDesigns() {
         </div>
 
 
-        {/* Table 19: Timeline with Badges */}
-        <div className="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden">
-          <div className="p-6 border-b border-slate-700">
-            <h2 className="text-lg font-semibold text-white">Timeline with Achievement Badges</h2>
-          </div>
-          
-        </div>
-
         {/* Table 20: Grid with Hover Overlay */}
         <div>
           <h2 className="text-lg font-semibold text-white mb-4">Grid with Hover Overlay</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {data.map((item) => (
-              <div key={item.id} className="relative group rounded-xl overflow-hidden" onMouseEnter={() => setHoveredId(item.id)} onMouseLeave={() => setHoveredId(null)}>
-                <div className="bg-gradient-to-br from-slate-700 to-slate-800 border border-slate-600 p-6 rounded-xl h-full flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center text-white font-bold">
-                        {item.name.charAt(0)}
-                      </div>
-                      <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-                        #{item.id}
-                      </span>
-                    </div>
-                    <h3 className="text-white font-semibold text-lg mb-1">{item.name}</h3>
-                    <p className="text-slate-400 text-sm mb-4">{item.role}</p>
-                    
-                    <div className="space-y-2 text-sm">
-                      <div className="flex items-center gap-2 text-slate-300">
-                        <MapPin className="w-4 h-4 text-purple-400" />
-                        {item.location}
-                      </div>
-                      <div className="flex items-center gap-2 text-slate-300">
-                        <TrendingUp className="w-4 h-4 text-emerald-400" />
-                        {item.revenue}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mt-6 pt-4 border-t border-slate-600">
-                    <div className="text-xs text-slate-400">{item.engagement}% engagement</div>
-                    <div className="w-full bg-slate-600 rounded-full h-2 mt-2 overflow-hidden">
-                      <div style={{ width: `${item.engagement}%` }} className="h-full bg-gradient-to-r from-blue-400 to-purple-400"></div>
-                    </div>
-                  </div>
-                </div>
-
-                {hoveredId === item.id && (
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-xl flex items-end justify-between p-4 animate-in fade-in duration-200">
-                    <div>
-                      <p className="text-white text-xs font-semibold mb-1">Quick Actions</p>
-                    </div>
-                    <div className="flex gap-2">
-                      <button className="p-2 bg-blue-500/80 hover:bg-blue-500 rounded-lg transition-colors text-white">
-                        <Copy className="w-4 h-4" />
-                      </button>
-                      <button className="p-2 bg-amber-500/80 hover:bg-amber-500 rounded-lg transition-colors text-white">
-                        <Edit2 className="w-4 h-4" />
-                      </button>
-                      <button className="p-2 bg-red-500/80 hover:bg-red-500 rounded-lg transition-colors text-white">
-                        <Trash2 className="w-4 h-4" />
-                      </button>
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+          
         </div>
 
         {/* Table 21: Comparison Matrix */}
