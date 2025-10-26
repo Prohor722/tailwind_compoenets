@@ -21,11 +21,6 @@ export default function MoreUniqueTableDesigns() {
           <p className="text-slate-400">Even more creative and advanced table layouts</p>
         </div>
 
-        {/* Table 18: Kanban Board Style */}
-        <div>
-          <h2 className="text-lg font-semibold text-white mb-4 px-2">Kanban Board Style</h2>
-          
-        </div>
 
         {/* Table 19: Timeline with Badges */}
         <div className="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden">
