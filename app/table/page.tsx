@@ -21,6 +21,7 @@ import AnimatedProgressRows from "./components/AnimatedProgressRows";
 import SocialMediaFeedStyle from "./components/SocialMediaFeedStyle";
 import KanbanBoardStyle from "./components/KanbanBoardStyle";
 import TimelineBadges from "./components/TimelineBadges";
+import GridHoverOverlay from "./components/GridHoverOverlay";
 
 const table = () => {
   return (
@@ -158,6 +159,8 @@ const table = () => {
         <KanbanBoardStyle />
 
         <TimelineBadges />
+
+        <GridHoverOverlay />
         
       </div>
     </div>
