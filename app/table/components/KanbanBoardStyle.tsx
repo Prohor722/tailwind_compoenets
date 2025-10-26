@@ -1,4 +1,5 @@
 import React from "react";
+import { ChevronRight, MessageCircle, Heart, Share2, BookmarkPlus, Eye, Zap, MapPin, Calendar, Users, Award, TrendingUp, Edit2, Trash2, Copy } from 'lucide-react';
 
 const KanbanBoardStyle = () => {
   const data = [
