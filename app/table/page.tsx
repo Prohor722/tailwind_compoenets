@@ -20,6 +20,7 @@ import NestedDetails from "./components/NestedDetails";
 import AnimatedProgressRows from "./components/AnimatedProgressRows";
 import SocialMediaFeedStyle from "./components/SocialMediaFeedStyle";
 import KanbanBoardStyle from "./components/KanbanBoardStyle";
+import TimelineBadges from "./components/TimelineBadges";
 
 const table = () => {
   return (
@@ -155,6 +156,8 @@ const table = () => {
         <SocialMediaFeedStyle />
 
         <KanbanBoardStyle />
+
+        <TimelineBadges />
         
       </div>
     </div>
