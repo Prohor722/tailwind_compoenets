@@ -22,6 +22,7 @@ import SocialMediaFeedStyle from "./components/SocialMediaFeedStyle";
 import KanbanBoardStyle from "./components/KanbanBoardStyle";
 import TimelineBadges from "./components/TimelineBadges";
 import GridHoverOverlay from "./components/GridHoverOverlay";
+import ComparisonMatrix from "./components/ComparisonMatrix";
 
 const table = () => {
   return (
@@ -161,6 +162,8 @@ const table = () => {
         <TimelineBadges />
 
         <GridHoverOverlay />
+
+        <ComparisonMatrix />
         
       </div>
     </div>
