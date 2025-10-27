@@ -1,7 +1,59 @@
-import { Eye, Zap, TrendingUp } from 'lucide-react';
-
+import { Eye, Zap, TrendingUp } from "lucide-react";
 
 const ComparisonMatrix = () => {
+  const data = [
+    {
+      id: 1,
+      name: "Sarah Anderson",
+      role: "Product Manager",
+      status: "Active",
+      revenue: "$12,500",
+      views: 1240,
+      engagement: 84,
+      location: "San Francisco",
+    },
+    {
+      id: 2,
+      name: "Mike Chen",
+      role: "Developer",
+      status: "Active",
+      revenue: "$9,200",
+      views: 892,
+      engagement: 76,
+      location: "New York",
+    },
+    {
+      id: 3,
+      name: "Emma Wilson",
+      role: "Designer",
+      status: "Away",
+      revenue: "$8,100",
+      views: 756,
+      engagement: 68,
+      location: "London",
+    },
+    {
+      id: 4,
+      name: "James Johnson",
+      role: "Analyst",
+      status: "Active",
+      revenue: "$11,300",
+      views: 1056,
+      engagement: 91,
+      location: "Austin",
+    },
+    {
+      id: 5,
+      name: "Lisa Garcia",
+      role: "Manager",
+      status: "Offline",
+      revenue: "$15,600",
+      views: 1523,
+      engagement: 95,
+      location: "Toronto",
+    },
+  ];
+
   return (
     <div className="overflow-x-auto">
       <table className="w-full">
