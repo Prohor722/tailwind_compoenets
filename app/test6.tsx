@@ -19,13 +19,6 @@ export default function MoreUniqueTableDesigns() {
           <p className="text-slate-400">Even more creative and advanced table layouts</p>
         </div>
 
-        {/* Table 21: Comparison Matrix */}
-        <div className="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden">
-          <div className="p-6 border-b border-slate-700">
-            <h2 className="text-lg font-semibold text-white">Comparison Matrix</h2>
-          </div>
-          
-        </div>
 
         {/* Table 22: Minimal List with Badges */}
         <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
