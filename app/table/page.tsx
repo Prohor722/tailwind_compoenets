@@ -23,6 +23,7 @@ import KanbanBoardStyle from "./components/KanbanBoardStyle";
 import TimelineBadges from "./components/TimelineBadges";
 import GridHoverOverlay from "./components/GridHoverOverlay";
 import ComparisonMatrix from "./components/ComparisonMatrix";
+import MinimalListBadges from "./components/MinimalListBadges";
 
 const table = () => {
   return (
@@ -164,6 +165,8 @@ const table = () => {
         <GridHoverOverlay />
 
         <ComparisonMatrix />
+
+        <MinimalListBadges />
         
       </div>
     </div>
