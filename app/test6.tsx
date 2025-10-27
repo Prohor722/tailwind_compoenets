@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { ChevronRight, Eye, Zap, MapPin, Award, TrendingUp, Edit2, Trash2, Copy } from 'lucide-react';
 
 export default function MoreUniqueTableDesigns() {

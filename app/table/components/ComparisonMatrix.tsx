@@ -1,4 +1,5 @@
-import React from "react";
+import { Eye, Zap, TrendingUp } from 'lucide-react';
+
 
 const ComparisonMatrix = () => {
   return (
