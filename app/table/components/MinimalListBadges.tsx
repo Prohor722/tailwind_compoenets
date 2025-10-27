@@ -55,7 +55,7 @@ const MinimalListBadges = () => {
     },
   ];
   return (
-    <div className="max-w-md divide-y divide-slate-200">
+    <div className="max-w-md divide-y divide-slate-200 bg-gray-100 shadow">
       {data.map((item) => (
         <div
           key={item.id}
