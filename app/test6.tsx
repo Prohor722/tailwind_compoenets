@@ -20,13 +20,6 @@ export default function MoreUniqueTableDesigns() {
           <p className="text-slate-400">Even more creative and advanced table layouts</p>
         </div>
 
-
-        {/* Table 20: Grid with Hover Overlay */}
-        <div>
-          <h2 className="text-lg font-semibold text-white mb-4">Grid with Hover Overlay</h2>
-          
-        </div>
-
         {/* Table 21: Comparison Matrix */}
         <div className="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden">
           <div className="p-6 border-b border-slate-700">
