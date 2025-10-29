@@ -24,6 +24,7 @@ import TimelineBadges from "./components/TimelineBadges";
 import GridHoverOverlay from "./components/GridHoverOverlay";
 import ComparisonMatrix from "./components/ComparisonMatrix";
 import MinimalListBadges from "./components/MinimalListBadges";
+import PricingTableQuantitySelector from "./components/PricingTableQuantitySelector";
 
 const table = () => {
   return (
@@ -167,6 +168,9 @@ const table = () => {
         <ComparisonMatrix />
 
         <MinimalListBadges />
+
+        <PricingTableQuantitySelector />
+        
         
       </div>
     </div>
