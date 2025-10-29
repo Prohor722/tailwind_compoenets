@@ -3,7 +3,6 @@ import { ChevronRight, Plus, Minus, MoreVertical, Bell, Zap, Flame, Lightbulb, T
 
 export default function EvenMoreTableDesigns() {
   const [expandedRows, setExpandedRows] = useState(new Set());
-  const [activeFilter, setActiveFilter] = useState('all');
   const [quantities, setQuantities] = useState<Record<number, number>>({});
 
   const data = [
