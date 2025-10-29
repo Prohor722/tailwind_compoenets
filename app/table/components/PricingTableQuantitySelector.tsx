@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Plus, Minus, Briefcase } from "lucide-react";
 
 const PricingTableQuantitySelector = () => {
+  const [quantities, setQuantities] = useState<Record<number, number>>({});
   const data = [
     {
       id: 1,
@@ -59,7 +60,8 @@ const PricingTableQuantitySelector = () => {
       progress: 95,
     },
   ];
-  
+
+
   return (
     <table className="w-full">
       <thead>
