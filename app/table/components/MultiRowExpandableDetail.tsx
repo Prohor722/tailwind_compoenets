@@ -168,10 +168,10 @@ const MultiRowExpandableDetail = () => {
                         Actions
                       </p>
                       <div className="flex gap-2">
-                        <button className="px-3 py-1 bg-blue-500 text-white text-xs rounded-lg hover:bg-blue-600 transition-colors font-medium">
+                        <button className="cursor-pointer px-3 py-1 bg-blue-500 text-white text-xs rounded-lg hover:bg-blue-600 transition-colors font-medium">
                           Edit
                         </button>
-                        <button className="px-3 py-1 bg-slate-200 text-slate-700 text-xs rounded-lg hover:bg-slate-300 transition-colors font-medium">
+                        <button className="cursor-pointer px-3 py-1 bg-slate-200 text-slate-700 text-xs rounded-lg hover:bg-slate-300 transition-colors font-medium">
                           Delete
                         </button>
                       </div>
