@@ -1,4 +1,5 @@
 "use client";
+import MultiRowExpandableDetail from "../table/components/MultiRowExpandableDetail";
 import PricingTableQuantitySelector from "../table/components/PricingTableQuantitySelector";
 
 
@@ -7,7 +8,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <PricingTableQuantitySelector />
+      <MultiRowExpandableDetail />
     </div>
   );
 };
