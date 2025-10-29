@@ -1,4 +1,5 @@
 import React from "react";
+import { Plus, Minus, Briefcase } from 'lucide-react';
 
 const PricingTableQuantitySelector = () => {
   return (
