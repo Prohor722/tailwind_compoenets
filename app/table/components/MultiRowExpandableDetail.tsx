@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { ChevronRight, Zap, Flame, Lightbulb } from 'lucide-react';
 
