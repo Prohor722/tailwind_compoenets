@@ -172,7 +172,7 @@ const table = () => {
 
         <PricingTableQuantitySelector />
 
-        <MultiRowExpandableDetail />
+        {/* <MultiRowExpandableDetail /> */}
 
         
       </div>
