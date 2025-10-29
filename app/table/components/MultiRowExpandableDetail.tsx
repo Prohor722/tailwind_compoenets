@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Zap, Flame, Lightbulb } from 'lucide-react';
+
 
 const MultiRowExpandableDetail = () => {
   const [expandedRows, setExpandedRows] = useState(new Set());
@@ -66,6 +67,12 @@ const MultiRowExpandableDetail = () => {
     if (newSet.has(id)) newSet.delete(id);
     else newSet.add(id);
     setExpandedRows(newSet);
+  };
+
+  const getPriorityIcon = (priority: string) => {
+    if (priority === 'Critical') return <Flame className="w-4 h-4 text-red-500" />;
+    if (priority === 'High') return <Zap className="w-4 h-4 text-amber-500" />;
+    return <Lightbulb className="w-4 h-4 text-blue-500" />;
   };
 
   return (
