@@ -25,6 +25,7 @@ import GridHoverOverlay from "./components/GridHoverOverlay";
 import ComparisonMatrix from "./components/ComparisonMatrix";
 import MinimalListBadges from "./components/MinimalListBadges";
 import PricingTableQuantitySelector from "./components/PricingTableQuantitySelector";
+import MultiRowExpandableDetail from "./components/MultiRowExpandableDetail";
 
 const table = () => {
   return (
@@ -170,7 +171,9 @@ const table = () => {
         <MinimalListBadges />
 
         <PricingTableQuantitySelector />
-        
+
+        <MultiRowExpandableDetail />
+
         
       </div>
     </div>
