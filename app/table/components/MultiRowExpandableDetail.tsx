@@ -77,7 +77,7 @@ const MultiRowExpandableDetail = () => {
   };
 
   return (
-    <table className="w-full">
+    <table className="max-w-md bg-white">
       <thead>
         <tr className="bg-gradient-to-r from-blue-50 to-purple-50 border-b border-slate-200">
           <th className="px-6 py-4 text-left w-8"></th>
