@@ -40,16 +40,6 @@ export default function EvenMoreTableDesigns() {
           <p className="text-slate-600">Additional advanced variations and interaction patterns</p>
         </div>
 
-        {/* Table 23: Pricing Table with Quantity Selector */}
-        <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
-            <h2 className="text-lg font-semibold text-slate-900">Pricing Table with Quantity Control</h2>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
-        </div>
-
         {/* Table 24: Multi-Row Expandable with Details */}
         <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
           <div className="p-6 border-b border-slate-200">
