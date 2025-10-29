@@ -60,7 +60,7 @@ const PricingTableQuantitySelector = () => {
       progress: 95,
     },
   ];
-  
+
   const updateQty = (id: number, change: number) => {
     setQuantities(prev => ({
       ...prev,
@@ -69,7 +69,7 @@ const PricingTableQuantitySelector = () => {
   };
 
   return (
-    <table className="w-full">
+    <table className="max-w-md">
       <thead>
         <tr className="bg-slate-100 border-b border-slate-200">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700">
