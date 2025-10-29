@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { ChevronRight } from "lucide-react";
 
 const MultiRowExpandableDetail = () => {
+  const [expandedRows, setExpandedRows] = useState(new Set());
   const data = [
     {
       id: 1,
@@ -59,6 +60,13 @@ const MultiRowExpandableDetail = () => {
       progress: 95,
     },
   ];
+
+  const toggleRow = (id: number) => {
+    const newSet = new Set(expandedRows);
+    if (newSet.has(id)) newSet.delete(id);
+    else newSet.add(id);
+    setExpandedRows(newSet);
+  };
 
   return (
     <table className="w-full">

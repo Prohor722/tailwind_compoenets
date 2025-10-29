@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { ChevronRight, Plus, Minus, MoreVertical, Bell, Zap, Flame, Lightbulb, Target, Lock, Unlock, Download, Share2, GitBranch, Code, Briefcase, BarChart2 } from 'lucide-react';
+import { ChevronRight, MoreVertical, Zap, Flame, Lightbulb, Target, Download, Share2 } from 'lucide-react';
 
 export default function EvenMoreTableDesigns() {
-  const [expandedRows, setExpandedRows] = useState(new Set());
 
   const data = [
     { id: 1, name: 'Sarah Anderson', role: 'Product Manager', status: 'Active', price: '$12,500', priority: 'High', category: 'PM', tags: ['Leadership', 'Strategy'], progress: 85 },
@@ -24,12 +23,6 @@ export default function EvenMoreTableDesigns() {
 //     return 'from-blue-600 to-blue-700';
 //   };
 
-  const toggleRow = (id: number) => {
-    const newSet = new Set(expandedRows);
-    if (newSet.has(id)) newSet.delete(id);
-    else newSet.add(id);
-    setExpandedRows(newSet);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 p-8">
