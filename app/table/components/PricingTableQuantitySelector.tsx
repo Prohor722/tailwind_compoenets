@@ -60,7 +60,13 @@ const PricingTableQuantitySelector = () => {
       progress: 95,
     },
   ];
-
+  
+  const updateQty = (id: number, change: number) => {
+    setQuantities(prev => ({
+      ...prev,
+      [id]: Math.max(1, (prev[id] || 1) + change)
+    }));
+  };
 
   return (
     <table className="w-full">

@@ -3,7 +3,6 @@ import { ChevronRight, Plus, Minus, MoreVertical, Bell, Zap, Flame, Lightbulb, T
 
 export default function EvenMoreTableDesigns() {
   const [expandedRows, setExpandedRows] = useState(new Set());
-  const [quantities, setQuantities] = useState<Record<number, number>>({});
 
   const data = [
     { id: 1, name: 'Sarah Anderson', role: 'Product Manager', status: 'Active', price: '$12,500', priority: 'High', category: 'PM', tags: ['Leadership', 'Strategy'], progress: 85 },
@@ -30,13 +29,6 @@ export default function EvenMoreTableDesigns() {
     if (newSet.has(id)) newSet.delete(id);
     else newSet.add(id);
     setExpandedRows(newSet);
-  };
-
-  const updateQty = (id: number, change: number) => {
-    setQuantities(prev => ({
-      ...prev,
-      [id]: Math.max(1, (prev[id] || 1) + change)
-    }));
   };
 
   return (
