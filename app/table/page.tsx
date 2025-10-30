@@ -26,6 +26,7 @@ import ComparisonMatrix from "./components/ComparisonMatrix";
 import MinimalListBadges from "./components/MinimalListBadges";
 import PricingTableQuantitySelector from "./components/PricingTableQuantitySelector";
 import MultiRowExpandableDetail from "./components/MultiRowExpandableDetail";
+import DarkMinimalIconIndicators from "./components/DarkMinimalIconIndicators";
 
 const table = () => {
   return (
@@ -173,6 +174,8 @@ const table = () => {
         <PricingTableQuantitySelector />
 
         <MultiRowExpandableDetail />
+
+        <DarkMinimalIconIndicators />
 
         
       </div>
