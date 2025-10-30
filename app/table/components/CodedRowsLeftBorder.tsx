@@ -1,4 +1,4 @@
-import React from "react";
+import { Zap, Flame, Lightbulb } from 'lucide-react';
 
 const CodedRowsLeftBorder = () => {
   const data = [
@@ -65,7 +65,7 @@ const CodedRowsLeftBorder = () => {
     if (priority === "High") return <Zap className="w-4 h-4 text-amber-500" />;
     return <Lightbulb className="w-4 h-4 text-blue-500" />;
   };
-  
+
   return (
     <table className="w-full">
       <thead>
