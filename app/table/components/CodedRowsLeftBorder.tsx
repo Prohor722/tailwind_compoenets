@@ -67,7 +67,7 @@ const CodedRowsLeftBorder = () => {
   };
 
   return (
-    <table className="w-full">
+    <table className="max-w-md">
       <thead>
         <tr className="bg-slate-100 border-b border-slate-200">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700 w-1"></th>
@@ -106,7 +106,7 @@ const CodedRowsLeftBorder = () => {
               <td className="px-6 py-4 text-sm text-slate-600">{item.role}</td>
               <td className="px-6 py-4">
                 <span
-                  className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-white/60 backdrop-blur-sm`}
+                  className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-gray-600 text-white backdrop-blur-sm`}
                 >
                   {getPriorityIcon(item.priority)}
                   {item.priority}
