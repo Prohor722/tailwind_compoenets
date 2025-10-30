@@ -67,7 +67,7 @@ const CodedRowsLeftBorder = () => {
   };
 
   return (
-    <table className="max-w-md">
+    <table className="max-w-md shadow-lg border border-slate-100">
       <thead>
         <tr className="bg-slate-100 border-b border-slate-200">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700 w-1"></th>
