@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronRight, MoreVertical, Zap, Flame, Lightbulb, Target, Download, Share2 } from 'lucide-react';
+import { ChevronRight, Zap, Flame, Lightbulb, Target } from 'lucide-react';
 
 export default function EvenMoreTableDesigns() {
 
