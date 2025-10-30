@@ -33,16 +33,6 @@ export default function EvenMoreTableDesigns() {
           <p className="text-slate-600">Additional advanced variations and interaction patterns</p>
         </div>
 
-        {/* Table 24: Multi-Row Expandable with Details */}
-        <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200">
-            <h2 className="text-lg font-semibold text-slate-900">Expandable Details View</h2>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
-        </div>
-
         {/* Table 25: Dark Minimal with Icon Indicators */}
         <div className="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden">
           <div className="p-6 border-b border-slate-800">
