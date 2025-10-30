@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { ChevronRight, Zap, Flame, Lightbulb, Target } from 'lucide-react';
 
 export default function EvenMoreTableDesigns() {
