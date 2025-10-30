@@ -1,4 +1,3 @@
-import React from "react";
 import { MoreVertical, Download, Share2 } from "lucide-react";
 
 const DarkMinimalIconIndicators = () => {
@@ -60,7 +59,7 @@ const DarkMinimalIconIndicators = () => {
     },
   ];
   return (
-    <table className="w-full">
+    <table className="max-w-md">
       <thead>
         <tr className="border-b border-slate-800 bg-slate-800/50">
           <th className="px-6 py-3 text-left text-xs font-bold text-slate-300 uppercase tracking-wider">
