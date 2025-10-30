@@ -1,4 +1,5 @@
 import React from "react";
+import { MoreVertical, Download, Share2 } from 'lucide-react';
 
 const DarkMinimalIconIndicators = () => {
   return (
