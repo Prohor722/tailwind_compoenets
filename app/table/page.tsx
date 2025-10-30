@@ -27,6 +27,7 @@ import MinimalListBadges from "./components/MinimalListBadges";
 import PricingTableQuantitySelector from "./components/PricingTableQuantitySelector";
 import MultiRowExpandableDetail from "./components/MultiRowExpandableDetail";
 import DarkMinimalIconIndicators from "./components/DarkMinimalIconIndicators";
+import CodedRowsLeftBorder from "./components/CodedRowsLeftBorder";
 
 const table = () => {
   return (
@@ -176,6 +177,8 @@ const table = () => {
         <MultiRowExpandableDetail />
 
         <DarkMinimalIconIndicators />
+
+        <CodedRowsLeftBorder />
 
         
       </div>
