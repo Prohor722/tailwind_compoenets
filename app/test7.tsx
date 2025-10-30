@@ -17,12 +17,6 @@ export default function EvenMoreTableDesigns() {
     return <Lightbulb className="w-4 h-4 text-blue-500" />;
   };
 
-//   const getPriorityColor = (priority) => {
-//     if (priority === 'Critical') return 'from-red-600 to-red-700';
-//     if (priority === 'High') return 'from-amber-600 to-amber-700';
-//     return 'from-blue-600 to-blue-700';
-//   };
-
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 p-8">
@@ -33,15 +27,6 @@ export default function EvenMoreTableDesigns() {
           <p className="text-slate-600">Additional advanced variations and interaction patterns</p>
         </div>
 
-        {/* Table 25: Dark Minimal with Icon Indicators */}
-        <div className="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden">
-          <div className="p-6 border-b border-slate-800">
-            <h2 className="text-lg font-semibold text-white">Dark Minimal with Icons</h2>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
-        </div>
 
         {/* Table 26: Color-Coded Rows with Left Border */}
         <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
