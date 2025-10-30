@@ -1,6 +1,71 @@
 import React from "react";
 
 const CodedRowsLeftBorder = () => {
+  const data = [
+    {
+      id: 1,
+      name: "Sarah Anderson",
+      role: "Product Manager",
+      status: "Active",
+      price: "$12,500",
+      priority: "High",
+      category: "PM",
+      tags: ["Leadership", "Strategy"],
+      progress: 85,
+    },
+    {
+      id: 2,
+      name: "Mike Chen",
+      role: "Developer",
+      status: "Active",
+      price: "$9,200",
+      priority: "Medium",
+      category: "Dev",
+      tags: ["Backend", "Frontend"],
+      progress: 72,
+    },
+    {
+      id: 3,
+      name: "Emma Wilson",
+      role: "Designer",
+      status: "Away",
+      price: "$8,100",
+      priority: "High",
+      category: "Design",
+      tags: ["UI/UX", "Branding"],
+      progress: 68,
+    },
+    {
+      id: 4,
+      name: "James Johnson",
+      role: "Analyst",
+      status: "Active",
+      price: "$11,300",
+      priority: "Medium",
+      category: "Analytics",
+      tags: ["Data", "Insights"],
+      progress: 91,
+    },
+    {
+      id: 5,
+      name: "Lisa Garcia",
+      role: "Manager",
+      status: "Offline",
+      price: "$15,600",
+      priority: "Critical",
+      category: "Management",
+      tags: ["Team", "Planning"],
+      progress: 95,
+    },
+  ];
+
+  const getPriorityIcon = (priority: string) => {
+    if (priority === "Critical")
+      return <Flame className="w-4 h-4 text-red-500" />;
+    if (priority === "High") return <Zap className="w-4 h-4 text-amber-500" />;
+    return <Lightbulb className="w-4 h-4 text-blue-500" />;
+  };
+  
   return (
     <table className="w-full">
       <thead>
