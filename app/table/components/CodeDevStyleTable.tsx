@@ -59,7 +59,7 @@ const CodeDevStyleTable = () => {
     },
   ];
   return (
-    <table className="max-w-md text-sm">
+    <table className="max-w-md text-sm bg-gray-700">
       <thead>
         <tr className="border-b border-slate-700 text-slate-300">
           <th className="px-6 py-3 text-left font-mono text-xs">
