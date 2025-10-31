@@ -28,6 +28,7 @@ import PricingTableQuantitySelector from "./components/PricingTableQuantitySelec
 import MultiRowExpandableDetail from "./components/MultiRowExpandableDetail";
 import DarkMinimalIconIndicators from "./components/DarkMinimalIconIndicators";
 import CodedRowsLeftBorder from "./components/CodedRowsLeftBorder";
+import BadgeHeavyStatusWorkflow from "./components/BadgeHeavyStatusWorkflow";
 
 const table = () => {
   return (
@@ -179,6 +180,8 @@ const table = () => {
         <DarkMinimalIconIndicators />
 
         <CodedRowsLeftBorder />
+
+        <BadgeHeavyStatusWorkflow />
 
         
       </div>
