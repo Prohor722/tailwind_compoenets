@@ -19,16 +19,6 @@ export default function EvenMoreTableDesigns() {
           <p className="text-slate-600">Additional advanced variations and interaction patterns</p>
         </div>
 
-        {/* Table 27: Badge-Heavy with Status Workflow */}
-        <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200">
-            <h2 className="text-lg font-semibold text-slate-900">Status Workflow with Badges</h2>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
-        </div>
-
         {/* Table 28: Code/Dev Style Table */}
         <div className="bg-slate-900 rounded-2xl border border-slate-700 overflow-hidden font-mono">
           <div className="p-6 border-b border-slate-700 bg-slate-800">
