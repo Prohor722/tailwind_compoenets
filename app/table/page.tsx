@@ -29,6 +29,7 @@ import MultiRowExpandableDetail from "./components/MultiRowExpandableDetail";
 import DarkMinimalIconIndicators from "./components/DarkMinimalIconIndicators";
 import CodedRowsLeftBorder from "./components/CodedRowsLeftBorder";
 import BadgeHeavyStatusWorkflow from "./components/BadgeHeavyStatusWorkflow";
+import CodeDevStyleTable from "./components/CodeDevStyleTable";
 
 const table = () => {
   return (
@@ -182,6 +183,8 @@ const table = () => {
         <CodedRowsLeftBorder />
 
         <BadgeHeavyStatusWorkflow />
+
+        <CodeDevStyleTable />
 
         
       </div>
