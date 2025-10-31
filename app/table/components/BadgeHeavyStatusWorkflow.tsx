@@ -1,4 +1,4 @@
-import React from "react";
+import { ChevronRight, Target } from 'lucide-react';
 
 const BadgeHeavyStatusWorkflow = () => {
   const data = [
