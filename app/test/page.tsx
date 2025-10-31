@@ -1,5 +1,6 @@
 "use client";
 import BadgeHeavyStatusWorkflow from "../table/components/BadgeHeavyStatusWorkflow";
+import CodeDevStyleTable from "../table/components/CodeDevStyleTable";
 import CodedRowsLeftBorder from "../table/components/CodedRowsLeftBorder";
 import DarkMinimalIconIndicators from "../table/components/DarkMinimalIconIndicators";
 import MultiRowExpandableDetail from "../table/components/MultiRowExpandableDetail";
@@ -11,7 +12,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <BadgeHeavyStatusWorkflow />
+      <CodeDevStyleTable />
     </div>
   );
 };
