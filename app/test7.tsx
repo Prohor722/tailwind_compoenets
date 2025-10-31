@@ -10,13 +10,6 @@ export default function EvenMoreTableDesigns() {
     { id: 5, name: 'Lisa Garcia', role: 'Manager', status: 'Offline', price: '$15,600', priority: 'Critical', category: 'Management', tags: ['Team', 'Planning'], progress: 95 },
   ];
 
-  const getPriorityIcon = (priority: string) => {
-    if (priority === 'Critical') return <Flame className="w-4 h-4 text-red-500" />;
-    if (priority === 'High') return <Zap className="w-4 h-4 text-amber-500" />;
-    return <Lightbulb className="w-4 h-4 text-blue-500" />;
-  };
-
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
@@ -24,17 +17,6 @@ export default function EvenMoreTableDesigns() {
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-slate-900 mb-2">Even More Table Designs</h1>
           <p className="text-slate-600">Additional advanced variations and interaction patterns</p>
-        </div>
-
-
-        {/* Table 26: Color-Coded Rows with Left Border */}
-        <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200">
-            <h2 className="text-lg font-semibold text-slate-900">Color-Coded Priority Rows</h2>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
         </div>
 
         {/* Table 27: Badge-Heavy with Status Workflow */}
