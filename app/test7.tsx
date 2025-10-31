@@ -25,38 +25,7 @@ export default function EvenMoreTableDesigns() {
             <h2 className="text-lg font-semibold text-white">Dev-Style Data Table</h2>
           </div>
           <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-slate-700 text-slate-300">
-                  <th className="px-6 py-3 text-left font-mono text-xs">&lt;name&gt;</th>
-                  <th className="px-6 py-3 text-left font-mono text-xs">&lt;type&gt;</th>
-                  <th className="px-6 py-3 text-left font-mono text-xs">&lt;status&gt;</th>
-                  <th className="px-6 py-3 text-left font-mono text-xs">&lt;value&gt;</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.map((item) => (
-                  <tr key={item.id} className="border-b border-slate-700 hover:bg-slate-800/50 transition-colors group">
-                    <td className="px-6 py-3 text-blue-400 font-mono">
-                      <span className="text-slate-500">"</span>{item.name}<span className="text-slate-500">"</span>
-                    </td>
-                    <td className="px-6 py-3 font-mono">
-                      <span className="text-purple-400">"{item.role}"</span>
-                    </td>
-                    <td className="px-6 py-3 font-mono">
-                      {item.status === 'Active' ? (
-                        <span className="text-emerald-400">true</span>
-                      ) : (
-                        <span className="text-red-400">false</span>
-                      )}
-                    </td>
-                    <td className="px-6 py-3 font-mono">
-                      <span className="text-amber-400">{item.price}</span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            
           </div>
         </div>
       </div>
