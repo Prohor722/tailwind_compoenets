@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Star, Trash2, Edit2 } from 'lucide-react';
+
 
 const SidebarActionsTable = () => {
   const [favorites, setFavorites] = useState(new Set());

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { ChevronRight, Star, Trash2, Edit2, Eye, EyeOff, Lock, Unlock, CheckCircle2, Circle, AlertTriangle, Zap, TrendingUp, TrendingDown, Clock, MapPin, Mail, Phone, LinkIcon, BarChart3, PieChart, Activity } from 'lucide-react';
 
 export default function MoreAndMoreTableDesigns() {
-  const [favorites, setFavorites] = useState(new Set());
   const [visibleColumns, setVisibleColumns] = useState(new Set([0, 1, 2, 3]));
 
   const data = [
