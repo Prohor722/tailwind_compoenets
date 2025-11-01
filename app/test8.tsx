@@ -42,45 +42,7 @@ export default function MoreAndMoreTableDesigns() {
             <h2 className="text-lg font-semibold text-white">Sidebar Action Menu</h2>
           </div>
           <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="border-b border-slate-700 bg-slate-700/50">
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">Name</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">Department</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">Rating</th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-slate-300">Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.map((item) => (
-                  <tr key={item.id} className="border-b border-slate-700 hover:bg-slate-700/30 transition-all group">
-                    <td className="px-6 py-4 text-sm font-semibold text-white">{item.name}</td>
-                    <td className="px-6 py-4 text-sm text-slate-400">{item.dept}</td>
-                    <td className="px-6 py-4">
-                      <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className={`w-4 h-4 ${i < Math.floor(item.rating) ? 'fill-yellow-400 text-yellow-400' : 'text-slate-600'}`} />
-                        ))}
-                        <span className="text-xs text-slate-400 ml-1">{item.rating}</span>
-                      </div>
-                    </td>
-                    <td className="px-6 py-4">
-                      <div className="flex items-center justify-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <button onClick={() => toggleFavorite(item.id)} className="p-2 hover:bg-slate-600 rounded-lg transition-colors text-slate-400 hover:text-yellow-400">
-                          <Star className={`w-4 h-4 ${favorites.has(item.id) ? 'fill-yellow-400 text-yellow-400' : ''}`} />
-                        </button>
-                        <button className="p-2 hover:bg-slate-600 rounded-lg transition-colors text-slate-400 hover:text-blue-400">
-                          <Edit2 className="w-4 h-4" />
-                        </button>
-                        <button className="p-2 hover:bg-slate-600 rounded-lg transition-colors text-slate-400 hover:text-red-400">
-                          <Trash2 className="w-4 h-4" />
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            
           </div>
         </div>
 
