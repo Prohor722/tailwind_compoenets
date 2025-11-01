@@ -4,8 +4,6 @@ import { ChevronRight, Star, Trash2, Edit2, Eye, EyeOff, Lock, Unlock, CheckCirc
 export default function MoreAndMoreTableDesigns() {
   const [favorites, setFavorites] = useState(new Set());
   const [visibleColumns, setVisibleColumns] = useState(new Set([0, 1, 2, 3]));
-  const [sortBy, setSortBy] = useState('name');
-  const [filterTag, setFilterTag] = useState('all');
 
   const data = [
     { id: 1, name: 'Sarah Anderson', dept: 'Product', email: 'sarah@company.com', phone: '+1-555-0101', rating: 4.8, tasks: 24, time: '3:45 PM', trend: 'up', alerts: 2, verified: true },
