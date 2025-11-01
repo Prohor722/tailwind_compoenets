@@ -81,32 +81,27 @@ const ColumnVisibilityToggle = () => {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
+    <div className="max-w-md bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
       <div className="p-6 border-b border-slate-200">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-semibold text-slate-900">
-            Column Visibility Control
-          </h2>
-          <div className="flex gap-2">
-            {["Name", "Email", "Phone", "Tasks"].map((col, idx) => (
-              <button
-                key={idx}
-                onClick={() => toggleColumn(idx)}
-                className={`flex items-center gap-1 px-3 py-1 rounded-lg text-sm font-medium transition-all ${
-                  visibleColumns.has(idx)
-                    ? "bg-blue-100 text-blue-700"
-                    : "bg-slate-100 text-slate-500"
-                }`}
-              >
-                {visibleColumns.has(idx) ? (
-                  <Eye className="w-3 h-3" />
-                ) : (
-                  <EyeOff className="w-3 h-3" />
-                )}
-                {col}
-              </button>
-            ))}
-          </div>
+        <div className="flex gap-2">
+          {["Name", "Email", "Phone", "Tasks"].map((col, idx) => (
+            <button
+              key={idx}
+              onClick={() => toggleColumn(idx)}
+              className={`flex items-center gap-1 px-3 py-1 rounded-lg text-sm font-medium transition-all ${
+                visibleColumns.has(idx)
+                  ? "bg-blue-100 text-blue-700"
+                  : "bg-slate-100 text-slate-500"
+              }`}
+            >
+              {visibleColumns.has(idx) ? (
+                <Eye className="w-3 h-3" />
+              ) : (
+                <EyeOff className="w-3 h-3" />
+              )}
+              {col}
+            </button>
+          ))}
         </div>
       </div>
       <div className="overflow-x-auto">
