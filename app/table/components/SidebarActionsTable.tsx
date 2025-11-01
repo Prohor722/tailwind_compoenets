@@ -1,6 +1,7 @@
-import React from "react";
+import { useState } from "react";
 
 const SidebarActionsTable = () => {
+  const [favorites, setFavorites] = useState(new Set());
   const data = [
     {
       id: 1,
