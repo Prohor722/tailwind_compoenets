@@ -31,6 +31,7 @@ import CodedRowsLeftBorder from "./components/CodedRowsLeftBorder";
 import BadgeHeavyStatusWorkflow from "./components/BadgeHeavyStatusWorkflow";
 import CodeDevStyleTable from "./components/CodeDevStyleTable";
 import SidebarActionsTable from "./components/SidebarActionsTable";
+import ColumnVisibilityToggle from "./components/ColumnVisibilityToggle";
 
 const table = () => {
   return (
@@ -188,6 +189,8 @@ const table = () => {
         <CodeDevStyleTable />
 
         <SidebarActionsTable />
+
+        <ColumnVisibilityToggle />
 
         
       </div>
