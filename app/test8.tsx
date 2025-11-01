@@ -13,13 +13,6 @@ export default function MoreAndMoreTableDesigns() {
     { id: 5, name: 'Lisa Garcia', dept: 'Management', email: 'lisa@company.com', phone: '+1-555-0105', rating: 4.7, tasks: 28, time: '1:00 PM', trend: 'stable', alerts: 0, verified: true },
   ];
 
-  const toggleFavorite = (id: number) => {
-    const newSet = new Set(favorites);
-    if (newSet.has(id)) newSet.delete(id);
-    else newSet.add(id);
-    setFavorites(newSet);
-  };
-
   const toggleColumn = (idx: number) => {
     const newSet = new Set(visibleColumns);
     if (newSet.has(idx)) newSet.delete(idx);
