@@ -79,7 +79,7 @@ const SidebarActionsTable = () => {
     setFavorites(newSet);
   };
   return (
-    <table className="w-full">
+    <table className="max-w-md">
       <thead>
         <tr className="border-b border-slate-700 bg-slate-700/50">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">
@@ -127,7 +127,7 @@ const SidebarActionsTable = () => {
               <div className="flex items-center justify-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                 <button
                   onClick={() => toggleFavorite(item.id)}
-                  className="p-2 hover:bg-slate-600 rounded-lg transition-colors text-slate-400 hover:text-yellow-400"
+                  className="cursor-pointer p-2 hover:bg-slate-600 rounded-lg transition-colors text-slate-400 hover:text-yellow-400"
                 >
                   <Star
                     className={`w-4 h-4 ${
@@ -137,10 +137,10 @@ const SidebarActionsTable = () => {
                     }`}
                   />
                 </button>
-                <button className="p-2 hover:bg-slate-600 rounded-lg transition-colors text-slate-400 hover:text-blue-400">
+                <button className="cursor-pointer p-2 hover:bg-slate-600 rounded-lg transition-colors text-slate-400 hover:text-blue-400">
                   <Edit2 className="w-4 h-4" />
                 </button>
-                <button className="p-2 hover:bg-slate-600 rounded-lg transition-colors text-slate-400 hover:text-red-400">
+                <button className="cursor-pointer p-2 hover:bg-slate-600 rounded-lg transition-colors text-slate-400 hover:text-red-400">
                   <Trash2 className="w-4 h-4" />
                 </button>
               </div>
