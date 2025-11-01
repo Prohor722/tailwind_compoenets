@@ -97,25 +97,7 @@ export default function MoreAndMoreTableDesigns() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-blue-400 to-purple-400 mb-2">
-            More Unique Tables
-          </h1>
-          <p className="text-slate-400">
-            Advanced interactions and unique data visualizations
-          </p>
-        </div>
-
-        {/* Table 29: Sidebar Actions Table */}
-        <div className="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-2xl">
-          <div className="p-6 border-b border-slate-700">
-            <h2 className="text-lg font-semibold text-white">
-              Sidebar Action Menu
-            </h2>
-          </div>
-          <div className="overflow-x-auto"></div>
-        </div>
+        
 
         {/* Table 30: Column Visibility Toggle */}
         <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
