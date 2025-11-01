@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Star, Trash2, Edit2 } from 'lucide-react';
 
@@ -79,7 +80,7 @@ const SidebarActionsTable = () => {
     setFavorites(newSet);
   };
   return (
-    <table className="max-w-md">
+    <table className="max-w-md bg-gray-600">
       <thead>
         <tr className="border-b border-slate-700 bg-slate-700/50">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">
