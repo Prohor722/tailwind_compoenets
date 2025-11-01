@@ -5,6 +5,7 @@ import CodedRowsLeftBorder from "../table/components/CodedRowsLeftBorder";
 import DarkMinimalIconIndicators from "../table/components/DarkMinimalIconIndicators";
 import MultiRowExpandableDetail from "../table/components/MultiRowExpandableDetail";
 import PricingTableQuantitySelector from "../table/components/PricingTableQuantitySelector";
+import SidebarActionsTable from "../table/components/SidebarActionsTable";
 
 
 const page = () => {
@@ -12,7 +13,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <CodeDevStyleTable />
+      <SidebarActionsTable />
     </div>
   );
 };
