@@ -2,8 +2,6 @@ import { useState } from "react";
 import {
   ChevronRight,
   Star,
-  Eye,
-  EyeOff,
   CheckCircle2,
   Circle,
   AlertTriangle,

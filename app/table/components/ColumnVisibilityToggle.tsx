@@ -1,20 +1,5 @@
 import React, { useState } from "react";
-import {
-  ChevronRight,
-  Star,
-  Eye,
-  EyeOff,
-  CheckCircle2,
-  Circle,
-  AlertTriangle,
-  TrendingUp,
-  TrendingDown,
-  Mail,
-  Phone,
-  BarChart3,
-  PieChart,
-  Activity,
-} from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 
 const ColumnVisibilityToggle = () => {
   const [visibleColumns, setVisibleColumns] = useState(new Set([0, 1, 2, 3]));
