@@ -30,6 +30,7 @@ import DarkMinimalIconIndicators from "./components/DarkMinimalIconIndicators";
 import CodedRowsLeftBorder from "./components/CodedRowsLeftBorder";
 import BadgeHeavyStatusWorkflow from "./components/BadgeHeavyStatusWorkflow";
 import CodeDevStyleTable from "./components/CodeDevStyleTable";
+import SidebarActionsTable from "./components/SidebarActionsTable";
 
 const table = () => {
   return (
@@ -185,6 +186,8 @@ const table = () => {
         <BadgeHeavyStatusWorkflow />
 
         <CodeDevStyleTable />
+
+        <SidebarActionsTable />
 
         
       </div>
