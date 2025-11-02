@@ -97,9 +97,6 @@ export default function MoreAndMoreTableDesigns() {
       <div className="max-w-7xl mx-auto space-y-8">
         
 
-        {/* Table 30: Column Visibility Toggle */}
-        
-
         {/* Table 31: Status Indicator Rows */}
         <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl border border-slate-700 overflow-hidden">
           <div className="p-6 border-b border-slate-700">
