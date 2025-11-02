@@ -73,9 +73,9 @@ const StatusIndicatorRows = () => {
   ];
 
   return (
-    <table className="max-w-md">
+    <table className="max-w-md bg-gray-700 rounded-lg shadow-lg overflow-hidden">
       <thead>
-        <tr className="border-b border-slate-700 bg-slate-700/30">
+        <tr className="border-b border-slate-700 bg-slate-900/30">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300"></th>
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">
             Name
@@ -89,10 +89,11 @@ const StatusIndicatorRows = () => {
         </tr>
       </thead>
       <tbody>
-        {data.map((item) => (
+        {data.map((item,index) => (
           <tr
             key={item.id}
-            className="border-b border-slate-700 hover:bg-slate-700/50 transition-colors"
+            className={`hover:bg-slate-900/50 transition-colors
+                ${data.length - 1 === index ? "border-none" : "border-b border-slate-600 "}`}
           >
             <td className="px-6 py-4">
               {item.verified ? (
