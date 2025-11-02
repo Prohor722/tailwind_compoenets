@@ -1,9 +1,6 @@
-import { useState } from "react";
 import {
   ChevronRight,
   Star,
-  CheckCircle2,
-  Circle,
   AlertTriangle,
   TrendingUp,
   TrendingDown,
