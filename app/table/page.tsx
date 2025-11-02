@@ -33,6 +33,7 @@ import CodeDevStyleTable from "./components/CodeDevStyleTable";
 import SidebarActionsTable from "./components/SidebarActionsTable";
 import ColumnVisibilityToggle from "./components/ColumnVisibilityToggle";
 import StatusIndicatorRows from "./components/StatusIndicatorRows";
+import TrendVisualization from "./components/TrendVisualization";
 
 const table = () => {
   return (
@@ -194,6 +195,8 @@ const table = () => {
         <ColumnVisibilityToggle />
 
         <StatusIndicatorRows />
+
+        <TrendVisualization />
 
         
       </div>
