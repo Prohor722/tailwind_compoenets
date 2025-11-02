@@ -32,6 +32,7 @@ import BadgeHeavyStatusWorkflow from "./components/BadgeHeavyStatusWorkflow";
 import CodeDevStyleTable from "./components/CodeDevStyleTable";
 import SidebarActionsTable from "./components/SidebarActionsTable";
 import ColumnVisibilityToggle from "./components/ColumnVisibilityToggle";
+import StatusIndicatorRows from "./components/StatusIndicatorRows";
 
 const table = () => {
   return (
@@ -191,6 +192,8 @@ const table = () => {
         <SidebarActionsTable />
 
         <ColumnVisibilityToggle />
+
+        <StatusIndicatorRows />
 
         
       </div>
