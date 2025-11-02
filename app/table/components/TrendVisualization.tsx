@@ -1,4 +1,4 @@
-import React from "react";
+import { AlertTriangle, TrendingUp, TrendingDown } from "lucide-react";
 
 const TrendVisualization = () => {
   return (
