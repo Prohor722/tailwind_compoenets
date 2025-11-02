@@ -1,5 +1,8 @@
-import React from "react";
-
+import {
+  CheckCircle2,
+  Circle,
+  Activity,
+} from "lucide-react";
 const StatusIndicatorRows = () => {
   const data = [
     {

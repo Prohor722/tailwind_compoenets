@@ -15,8 +15,6 @@ import {
 } from "lucide-react";
 
 export default function MoreAndMoreTableDesigns() {
-  const [visibleColumns, setVisibleColumns] = useState(new Set([0, 1, 2, 3]));
-
   const data = [
     {
       id: 1,
@@ -84,13 +82,6 @@ export default function MoreAndMoreTableDesigns() {
       verified: true,
     },
   ];
-
-  const toggleColumn = (idx: number) => {
-    const newSet = new Set(visibleColumns);
-    if (newSet.has(idx)) newSet.delete(idx);
-    else newSet.add(idx);
-    setVisibleColumns(newSet);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-8">
