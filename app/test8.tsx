@@ -85,18 +85,6 @@ export default function MoreAndMoreTableDesigns() {
       <div className="max-w-7xl mx-auto space-y-8">
         
 
-        {/* Table 31: Status Indicator Rows */}
-        <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl border border-slate-700 overflow-hidden">
-          <div className="p-6 border-b border-slate-700">
-            <h2 className="text-lg font-semibold text-white">
-              Status Indicator Rows
-            </h2>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
-        </div>
-
         {/* Table 32: Trend Visualization */}
         <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
           <div className="p-6 border-b border-slate-200">
