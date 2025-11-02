@@ -88,10 +88,11 @@ const TrendVisualization = () => {
         </tr>
       </thead>
       <tbody>
-        {data.map((item) => (
+        {data.map((item,index) => (
           <tr
             key={item.id}
-            className="border-b border-slate-100 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 hover:shadow-lg transition-all group cursor-pointer"
+            className={`hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 hover:shadow-lg transition-all group cursor-pointer
+                ${data.length - 1 === index ? "" : "border-b border-slate-100"}`}
           >
             <td className="px-6 py-4 text-sm font-semibold text-slate-900 group-hover:text-blue-600">
               {item.name}
