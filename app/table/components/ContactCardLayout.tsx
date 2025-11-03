@@ -70,7 +70,7 @@ const ContactCardLayout = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="max-w-md grid grid-cols-1 md:grid-cols-2 gap-4">
       {data.map((item) => (
         <div
           key={item.id}
