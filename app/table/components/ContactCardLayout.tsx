@@ -1,4 +1,4 @@
-import React from "react";
+import { ChevronRight, Star, Mail, Phone } from "lucide-react";
 
 const ContactCardLayout = () => {
   const data = [
