@@ -72,12 +72,7 @@ export default function MoreAndMoreTableDesigns() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
-        {/* Table 33: Contact Card Layout */}
-        <div>
-          <h2 className="text-lg font-semibold text-white mb-4">
-            Contact Card Layout
-          </h2>
-        </div>
+        
 
         {/* Table 34: Icon-Rich Data Table */}
         <div className="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
