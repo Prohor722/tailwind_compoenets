@@ -1,12 +1,4 @@
-import {
-  ChevronRight,
-  Star,
-  Mail,
-  Phone,
-  BarChart3,
-  PieChart,
-  Activity,
-} from "lucide-react";
+import { BarChart3, PieChart, Activity } from "lucide-react";
 
 export default function MoreAndMoreTableDesigns() {
   const data = [
@@ -85,7 +77,6 @@ export default function MoreAndMoreTableDesigns() {
           <h2 className="text-lg font-semibold text-white mb-4">
             Contact Card Layout
           </h2>
-          
         </div>
 
         {/* Table 34: Icon-Rich Data Table */}
