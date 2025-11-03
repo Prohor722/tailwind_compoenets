@@ -85,62 +85,7 @@ export default function MoreAndMoreTableDesigns() {
           <h2 className="text-lg font-semibold text-white mb-4">
             Contact Card Layout
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {data.map((item) => (
-              <div
-                key={item.id}
-                className="bg-slate-800 rounded-xl border border-slate-700 p-5 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all group cursor-pointer"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex-1">
-                    <h3 className="text-white font-semibold group-hover:text-purple-300 transition-colors">
-                      {item.name}
-                    </h3>
-                    <p className="text-sm text-slate-400">{item.dept}</p>
-                  </div>
-                  <div
-                    className={`w-3 h-3 rounded-full ${
-                      item.verified ? "bg-emerald-500" : "bg-slate-500"
-                    }`}
-                  ></div>
-                </div>
-
-                <div className="space-y-2 mb-4 pb-4 border-b border-slate-700">
-                  <div className="flex items-center gap-2 text-sm text-slate-300">
-                    <Mail className="w-4 h-4 text-slate-500" />
-                    <a
-                      href={`mailto:${item.email}`}
-                      className="hover:text-blue-400 transition-colors truncate"
-                    >
-                      {item.email}
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-slate-300">
-                    <Phone className="w-4 h-4 text-slate-500" />
-                    {item.phone}
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-between">
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-3 h-3 ${
-                          i < Math.floor(item.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-slate-600"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <button className="text-slate-400 hover:text-slate-200 transition-colors">
-                    <ChevronRight className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+          
         </div>
 
         {/* Table 34: Icon-Rich Data Table */}
