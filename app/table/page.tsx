@@ -34,6 +34,7 @@ import SidebarActionsTable from "./components/SidebarActionsTable";
 import ColumnVisibilityToggle from "./components/ColumnVisibilityToggle";
 import StatusIndicatorRows from "./components/StatusIndicatorRows";
 import TrendVisualization from "./components/TrendVisualization";
+import ContactCardLayout from "./components/ContactCardLayout";
 
 const table = () => {
   return (
@@ -197,6 +198,8 @@ const table = () => {
         <StatusIndicatorRows />
 
         <TrendVisualization />
+
+        <ContactCardLayout />
 
         
       </div>
