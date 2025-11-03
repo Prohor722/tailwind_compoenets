@@ -35,6 +35,7 @@ import ColumnVisibilityToggle from "./components/ColumnVisibilityToggle";
 import StatusIndicatorRows from "./components/StatusIndicatorRows";
 import TrendVisualization from "./components/TrendVisualization";
 import ContactCardLayout from "./components/ContactCardLayout";
+import IconRichDataTable from "./components/IconRichDataTable";
 
 const table = () => {
   return (
@@ -200,6 +201,8 @@ const table = () => {
         <TrendVisualization />
 
         <ContactCardLayout />
+
+        <IconRichDataTable />
 
         
       </div>
