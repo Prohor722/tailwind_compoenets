@@ -70,7 +70,7 @@ const IconRichDataTable = () => {
   ];
 
   return (
-    <table className="max-w-md bg-white">
+    <table className="max-w-md bg-white shadow-md rounded-lg overflow-hidden">
       <thead>
         <tr className="bg-slate-50 border-b border-slate-200">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700">
@@ -100,7 +100,8 @@ const IconRichDataTable = () => {
         {data.map((item) => (
           <tr
             key={item.id}
-            className="border-b border-slate-100 hover:bg-slate-50 transition-colors"
+            className="border-b border-slate-100 hover:shadow 
+            hover:bg-gradient-to-r hover:from-white hover:to-slate-50 transition-colors"
           >
             <td className="px-6 py-4 text-sm font-semibold text-slate-900">
               {item.name}
