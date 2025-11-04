@@ -23,15 +23,6 @@ export default function EvenMoreAndMoreTableDesigns() {
     <div className="min-h-screen bg-slate-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
 
-        {/* Table 37: Nested Hierarchy Table */}
-        <div className="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
-          <div className="p-6 border-b border-slate-800">
-            <h2 className="text-lg font-semibold text-white">Team Hierarchy</h2>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
-        </div>
 
         {/* Table 38: Inline Edit Table */}
         <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
