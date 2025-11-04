@@ -36,6 +36,7 @@ import StatusIndicatorRows from "./components/StatusIndicatorRows";
 import TrendVisualization from "./components/TrendVisualization";
 import ContactCardLayout from "./components/ContactCardLayout";
 import IconRichDataTable from "./components/IconRichDataTable";
+import AnimatedBadgeTable from "./components/AnimatedBadgeTable";
 
 const table = () => {
   return (
@@ -204,6 +205,7 @@ const table = () => {
 
         <IconRichDataTable />
 
+        <AnimatedBadgeTable/>
         
       </div>
     </div>
