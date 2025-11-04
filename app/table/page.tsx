@@ -39,6 +39,7 @@ import IconRichDataTable from "./components/IconRichDataTable";
 import AnimatedBadgeTable from "./components/AnimatedBadgeTable";
 import SalaryTransparencyTable from "./components/SalaryTransparencyTable";
 import NestedHierarchyTable from "./components/NestedHierarchyTable";
+import InlineEditTable from "./components/InlineEditTable";
 
 const table = () => {
   return (
@@ -212,6 +213,8 @@ const table = () => {
         <SalaryTransparencyTable />
 
         <NestedHierarchyTable />
+
+        <InlineEditTable />
         
         
       </div>
