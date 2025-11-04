@@ -3,7 +3,6 @@ import { ChevronDown, X, AlertCircle, CheckCircle, Clock, Zap, Users, TrendingUp
 
 export default function EvenMoreAndMoreTableDesigns() {
   const [selectedRows, setSelectedRows] = useState(new Set());
-  const [expandedId, setExpandedId] = useState<number | null>(null);
 
   const data = [
     { id: 1, name: 'Sarah Anderson', position: 'Senior PM', salary: '$145,000', start: '2021-03-15', team: 8, performance: 94, department: 'Product', badge: 'Lead' },

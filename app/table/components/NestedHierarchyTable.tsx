@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const NestedHierarchyTable = () => {
+  const [expandedId, setExpandedId] = useState<number | null>(null);
   const data = [
     {
       id: 1,
