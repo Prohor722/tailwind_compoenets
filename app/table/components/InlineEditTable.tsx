@@ -13,7 +13,7 @@ const InlineEditTable = () => {
   ];
 
   return (
-    <table className="w-full">
+    <table className="max-w-md bg-white shadow-md rounded-lg overflow-hidden">
       <thead>
         <tr className="bg-slate-50 border-b border-slate-200">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700">
@@ -41,7 +41,7 @@ const InlineEditTable = () => {
                 <span className="text-sm text-slate-600">
                   {item.department}
                 </span>
-                <button className="p-1 opacity-0 group-hover/edit:opacity-100 hover:bg-slate-200 rounded transition-all">
+                <button className="cursor-pointer p-1 opacity-0 group-hover/edit:opacity-100 hover:bg-slate-200 rounded transition-all">
                   <Settings className="w-3 h-3 text-slate-500" />
                 </button>
               </div>
