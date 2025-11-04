@@ -37,6 +37,7 @@ import TrendVisualization from "./components/TrendVisualization";
 import ContactCardLayout from "./components/ContactCardLayout";
 import IconRichDataTable from "./components/IconRichDataTable";
 import AnimatedBadgeTable from "./components/AnimatedBadgeTable";
+import SalaryTransparencyTable from "./components/SalaryTransparencyTable";
 
 const table = () => {
   return (
@@ -206,6 +207,8 @@ const table = () => {
         <IconRichDataTable />
 
         <AnimatedBadgeTable/>
+
+        <SalaryTransparencyTable />
         
       </div>
     </div>
