@@ -62,7 +62,7 @@ const NestedHierarchyTable = () => {
     },
   ];
   return (
-    <table className="w-full">
+    <table className="max-w-md bg-gray-700 rounded-lg shadow-lg overflow-hidden">
       <thead>
         <tr className="border-b border-slate-800 bg-slate-800/50">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300"></th>
