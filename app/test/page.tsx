@@ -1,3 +1,4 @@
+import NestedHierarchyTable from "../table/components/NestedHierarchyTable";
 import SalaryTransparencyTable from "../table/components/SalaryTransparencyTable";
 
 const page = () => {
@@ -5,7 +6,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <SalaryTransparencyTable />
+      <NestedHierarchyTable />
     </div>
   );
 };
