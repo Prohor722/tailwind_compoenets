@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ChevronDown } from 'lucide-react';
 
 const NestedHierarchyTable = () => {
   const [expandedId, setExpandedId] = useState<number | null>(null);
