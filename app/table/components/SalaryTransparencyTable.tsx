@@ -1,4 +1,5 @@
 import React from "react";
+import { Calendar, DollarSign, ArrowUpRight, ArrowDownLeft, Download } from 'lucide-react';
 
 const SalaryTransparencyTable = () => {
   return (
