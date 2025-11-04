@@ -38,6 +38,7 @@ import ContactCardLayout from "./components/ContactCardLayout";
 import IconRichDataTable from "./components/IconRichDataTable";
 import AnimatedBadgeTable from "./components/AnimatedBadgeTable";
 import SalaryTransparencyTable from "./components/SalaryTransparencyTable";
+import NestedHierarchyTable from "./components/NestedHierarchyTable";
 
 const table = () => {
   return (
@@ -209,6 +210,9 @@ const table = () => {
         <AnimatedBadgeTable/>
 
         <SalaryTransparencyTable />
+
+        <NestedHierarchyTable />
+        
         
       </div>
     </div>
