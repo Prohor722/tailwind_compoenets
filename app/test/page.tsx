@@ -1,3 +1,4 @@
+import AnimatedBadgeTable from "../table/components/AnimatedBadgeTable";
 import IconRichDataTable from "../table/components/IconRichDataTable";
 
 const page = () => {
@@ -5,7 +6,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <IconRichDataTable />
+      <AnimatedBadgeTable />
     </div>
   );
 };
