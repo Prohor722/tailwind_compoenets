@@ -56,6 +56,17 @@ const AnimatedBadgeTable = () => {
       badge: "Executive",
     },
   ];
+
+  const getBadgeColor = (badge: string) => {
+    const colors: Record<string, string> = {
+      Lead: "from-purple-500 to-blue-500",
+      Expert: "from-red-500 to-pink-500",
+      Contributor: "from-blue-500 to-cyan-500",
+      Rising: "from-amber-500 to-orange-500",
+      Executive: "from-indigo-500 to-purple-500",
+    };
+    return colors[badge] || "from-slate-500 to-slate-600";
+  };
   
   return (
     <table className="w-full">
