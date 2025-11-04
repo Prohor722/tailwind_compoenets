@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { ChevronRight, ChevronDown, Plus, X, AlertCircle, CheckCircle, Clock, Zap, Shield, Users, Briefcase, Calendar, DollarSign, TrendingUp, ArrowUpRight, ArrowDownLeft, Radio, Volume2, Settings, Bell, Search, Filter, Download } from 'lucide-react';
+import { ChevronDown, X, AlertCircle, CheckCircle, Clock, Zap, Users, Calendar, DollarSign, TrendingUp, ArrowUpRight, ArrowDownLeft, Radio, Settings, Download } from 'lucide-react';
 
 export default function EvenMoreAndMoreTableDesigns() {
   const [selectedRows, setSelectedRows] = useState(new Set());
   const [expandedId, setExpandedId] = useState<number | null>(null);
-  const [filterActive, setFilterActive] = useState(false);
 
   const data = [
     { id: 1, name: 'Sarah Anderson', position: 'Senior PM', salary: '$145,000', start: '2021-03-15', team: 8, performance: 94, department: 'Product', badge: 'Lead' },
@@ -35,11 +34,6 @@ export default function EvenMoreAndMoreTableDesigns() {
   return (
     <div className="min-h-screen bg-slate-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-white mb-2">Even More Table Designs</h1>
-          <p className="text-slate-400">Advanced patterns and sophisticated interactions</p>
-        </div>
 
         {/* Table 35: Animated Badge Table */}
         <div className="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
