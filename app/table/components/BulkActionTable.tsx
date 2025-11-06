@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 
 const BulkActionTable = () => {
   const [selectedRows, setSelectedRows] = useState(new Set());
@@ -67,7 +68,7 @@ const BulkActionTable = () => {
     else newSet.add(id);
     setSelectedRows(newSet);
   };
-  
+
   return (
     <div className="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
       <div className="p-6 border-b border-slate-800 flex items-center justify-between">
