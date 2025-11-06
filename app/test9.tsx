@@ -24,16 +24,6 @@ export default function EvenMoreAndMoreTableDesigns() {
       <div className="max-w-7xl mx-auto space-y-8">
 
 
-        {/* Table 38: Inline Edit Table */}
-        <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200">
-            <h2 className="text-lg font-semibold text-slate-900">Quick Edit Table</h2>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
-        </div>
-
         {/* Table 39: Bulk Action Table */}
         <div className="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
           <div className="p-6 border-b border-slate-800 flex items-center justify-between">
