@@ -71,7 +71,7 @@ const BulkActionTable = () => {
   };
 
   return (
-    <div className="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
+    <div className="max-w-md bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
       <div className="p-6 border-b border-slate-800 flex items-center justify-between">
         <h2 className="text-lg font-semibold text-white">
           Bulk Actions & Selection
