@@ -1,9 +1,25 @@
 "use client";
 import { X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
+interface DataItem {
+  id: number;
+  name: string;
+  position: string;
+  salary: string;
+  start: string;
+  team: number;
+  performance: number;
+  department: string;
+  badge: string;
+}
 const BulkActionTable = () => {
   const [selectedRows, setSelectedRows] = useState(new Set());
+  const [ newData, setNewData ] = useState<DataItem[]>([]);
+
+  useEffect(() => {
+    setNewData(data);
+  }, []);
 
   const data = [
     {
@@ -63,6 +79,14 @@ const BulkActionTable = () => {
     },
   ];
 
+  const deleteData = () => {
+    const filteredData = newData.filter(
+      (item) => !selectedRows.has(item.id)
+    );
+    setNewData(filteredData);
+    setSelectedRows(new Set());
+  }
+
   const toggleRow = (id: number) => {
     const newSet = new Set(selectedRows);
     if (newSet.has(id)) newSet.delete(id);
@@ -81,7 +105,9 @@ const BulkActionTable = () => {
             <span className="text-sm text-slate-300">
               {selectedRows.size} selected
             </span>
-            <button className="flex items-center gap-2 px-3 py-1 bg-red-500/20 text-red-400 hover:bg-red-500/30 rounded-lg text-sm font-medium transition-colors">
+            <button
+                onClick={deleteData} 
+                className="cursor-pointer flex items-center gap-2 px-3 py-1 bg-red-500/20 text-red-400 hover:bg-red-500/30 rounded-lg text-sm font-medium transition-colors">
               <X className="w-4 h-4" />
               Delete
             </button>
@@ -110,7 +136,7 @@ const BulkActionTable = () => {
             </tr>
           </thead>
           <tbody>
-            {data.map((item) => (
+            {newData.map((item) => (
               <tr
                 key={item.id}
                 className={`border-b border-slate-800 cursor-pointer transition-all ${
