@@ -42,6 +42,7 @@ import NestedHierarchyTable from "./components/NestedHierarchyTable";
 import InlineEditTable from "./components/InlineEditTable";
 import BulkActionTable from "./components/BulkActionTable";
 import MultiStatRowTable from "./components/MultiStatRowTable";
+import TimelineStatusTable from "./components/TimelineStatusTable";
 
 const table = () => {
   return (
@@ -222,7 +223,7 @@ const table = () => {
 
         <MultiStatRowTable />
 
-        
+        <TimelineStatusTable />
         
       </div>
     </div>
