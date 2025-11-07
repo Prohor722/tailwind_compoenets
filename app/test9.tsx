@@ -1,4 +1,4 @@
-import { AlertCircle, CheckCircle, Clock, Zap, Users, TrendingUp } from 'lucide-react';
+import { AlertCircle, CheckCircle, Clock } from 'lucide-react';
 
 export default function EvenMoreAndMoreTableDesigns() {
 
@@ -14,15 +14,6 @@ export default function EvenMoreAndMoreTableDesigns() {
     <div className="min-h-screen bg-slate-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
 
-        {/* Table 40: Multi-Stat Row Table */}
-        <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200">
-            <h2 className="text-lg font-semibold text-slate-900">Employee Stats</h2>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
-        </div>
 
         {/* Table 41: Timeline Status Table */}
         <div className="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
