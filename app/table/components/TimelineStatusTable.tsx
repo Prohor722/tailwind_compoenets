@@ -1,4 +1,4 @@
-import React from "react";
+import { AlertCircle, CheckCircle, Clock } from 'lucide-react';
 
 const TimelineStatusTable = () => {
   const data = [
@@ -8,7 +8,7 @@ const TimelineStatusTable = () => {
     { id: 4, name: 'James Johnson', position: 'Data Analyst', salary: '$135,000', start: '2021-11-05', team: 4, performance: 85, department: 'Analytics', badge: 'Rising' },
     { id: 5, name: 'Lisa Garcia', position: 'Director', salary: '$185,000', start: '2019-05-01', team: 15, performance: 96, department: 'Operations', badge: 'Executive' },
   ];
-  
+
   return (
     <table className="w-full">
       <thead>
