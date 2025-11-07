@@ -10,7 +10,7 @@ const TimelineStatusTable = () => {
   ];
 
   return (
-    <table className="max-w-md">
+    <table className="max-w-md bg-gray-700">
       <thead>
         <tr className="border-b border-slate-800 bg-slate-800/50">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">
