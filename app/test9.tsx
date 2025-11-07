@@ -1,8 +1,6 @@
-import { useState } from 'react';
-import { X, AlertCircle, CheckCircle, Clock, Zap, Users, TrendingUp } from 'lucide-react';
+import { AlertCircle, CheckCircle, Clock, Zap, Users, TrendingUp } from 'lucide-react';
 
 export default function EvenMoreAndMoreTableDesigns() {
-  const [selectedRows, setSelectedRows] = useState(new Set());
 
   const data = [
     { id: 1, name: 'Sarah Anderson', position: 'Senior PM', salary: '$145,000', start: '2021-03-15', team: 8, performance: 94, department: 'Product', badge: 'Lead' },
@@ -12,20 +10,9 @@ export default function EvenMoreAndMoreTableDesigns() {
     { id: 5, name: 'Lisa Garcia', position: 'Director', salary: '$185,000', start: '2019-05-01', team: 15, performance: 96, department: 'Operations', badge: 'Executive' },
   ];
 
-  const toggleRow = (id: number) => {
-    const newSet = new Set(selectedRows);
-    if (newSet.has(id)) newSet.delete(id);
-    else newSet.add(id);
-    setSelectedRows(newSet);
-  };
-
   return (
     <div className="min-h-screen bg-slate-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
-
-
-        {/* Table 39: Bulk Action Table */}
-        
 
         {/* Table 40: Multi-Stat Row Table */}
         <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
