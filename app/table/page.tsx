@@ -41,6 +41,7 @@ import SalaryTransparencyTable from "./components/SalaryTransparencyTable";
 import NestedHierarchyTable from "./components/NestedHierarchyTable";
 import InlineEditTable from "./components/InlineEditTable";
 import BulkActionTable from "./components/BulkActionTable";
+import MultiStatRowTable from "./components/MultiStatRowTable";
 
 const table = () => {
   return (
@@ -218,6 +219,10 @@ const table = () => {
         <InlineEditTable />
         
         <BulkActionTable />
+
+        <MultiStatRowTable />
+
+        
         
       </div>
     </div>
