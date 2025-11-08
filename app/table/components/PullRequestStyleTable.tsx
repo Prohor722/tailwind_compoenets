@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+'use client';
+import { useState } from "react";
 import { Pin, ThumbsUp, MessageSquare, AlertCircle, Zap, Flame, MoreHorizontal, GitCommit, GitBranch, Code2 } from 'lucide-react';
 
 
