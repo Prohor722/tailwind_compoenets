@@ -71,6 +71,19 @@ const PullRequestStyleTable = () => {
     },
   ];
 
+  const togglePin = (id: number) => {
+    const newSet = new Set(pinnedRows);
+    if (newSet.has(id)) newSet.delete(id);
+    else newSet.add(id);
+    setPinnedRows(newSet);
+  };
+
+  const toggleLike = (id: number) => {
+    const newSet = new Set(likedRows);
+    if (newSet.has(id)) newSet.delete(id);
+    else newSet.add(id);
+    setLikedRows(newSet);
+  };
   
   const getPriorityIcon = (priority: string) => {
     if (priority === 'Critical') return <Flame className="w-4 h-4 text-red-500" />;

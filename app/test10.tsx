@@ -15,20 +15,6 @@ export default function MoreMoreMoreTableDesigns() {
     { id: 5, title: 'Refactor Components', author: 'Lisa', status: 'In Review', commits: 22, changes: 891, likes: 56, comments: 18, timestamp: '3 days ago', priority: 'High', branch: 'refactor/components' },
   ];
 
-  const togglePin = (id: number) => {
-    const newSet = new Set(pinnedRows);
-    if (newSet.has(id)) newSet.delete(id);
-    else newSet.add(id);
-    setPinnedRows(newSet);
-  };
-
-  const toggleLike = (id: number) => {
-    const newSet = new Set(likedRows);
-    if (newSet.has(id)) newSet.delete(id);
-    else newSet.add(id);
-    setLikedRows(newSet);
-  };
-
   const handleCopy = (id: number) => {
     setCopiedId(id);
     setTimeout(() => setCopiedId(null), 2000);
