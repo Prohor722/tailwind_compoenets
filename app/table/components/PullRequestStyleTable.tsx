@@ -110,7 +110,7 @@ const PullRequestStyleTable = () => {
   });
 
   return (
-    <div className="divide-y divide-slate-800">
+    <div className="max-w-md bg-gray-700 divide-y divide-slate-800">
       {sortedData.map((item, idx) => (
         <div
           key={item.id}
