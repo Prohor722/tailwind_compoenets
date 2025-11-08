@@ -34,18 +34,6 @@ export default function MoreMoreMoreTableDesigns() {
     setTimeout(() => setCopiedId(null), 2000);
   };
 
-  const getPriorityIcon = (priority: string) => {
-    if (priority === 'Critical') return <Flame className="w-4 h-4 text-red-500" />;
-    if (priority === 'High') return <Zap className="w-4 h-4 text-amber-500" />;
-    return <AlertCircle className="w-4 h-4 text-blue-500" />;
-  };
-
-  const getStatusColor = (status: string) => {
-    if (status === 'Merged') return 'from-purple-500 to-pink-500';
-    if (status === 'Open') return 'from-green-500 to-emerald-500';
-    return 'from-yellow-500 to-amber-500';
-  };
-
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 p-8">
