@@ -46,11 +46,6 @@ export default function MoreMoreMoreTableDesigns() {
     return 'from-yellow-500 to-amber-500';
   };
 
-  const sortedData = [...data].sort((a, b) => {
-    if (pinnedRows.has(a.id) && !pinnedRows.has(b.id)) return -1;
-    if (!pinnedRows.has(a.id) && pinnedRows.has(b.id)) return 1;
-    return 0;
-  });
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 p-8">

@@ -70,6 +70,12 @@ const PullRequestStyleTable = () => {
       branch: "refactor/components",
     },
   ];
+  
+  const sortedData = [...data].sort((a, b) => {
+    if (pinnedRows.has(a.id) && !pinnedRows.has(b.id)) return -1;
+    if (!pinnedRows.has(a.id) && pinnedRows.has(b.id)) return 1;
+    return 0;
+  });
 
   return (
     <div className="divide-y divide-slate-800">
