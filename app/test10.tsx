@@ -22,16 +22,6 @@ export default function MoreMoreMoreTableDesigns() {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
 
-        {/* Table 42: Pull Request Style Table */}
-        <div className="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
-          <div className="p-6 border-b border-slate-800">
-            <h2 className="text-lg font-semibold text-white flex items-center gap-2">
-              <GitPullRequest className="w-5 h-5 text-blue-400" />
-              Pull Requests
-            </h2>
-          </div>
-          
-        </div>
 
         {/* Table 43: Infrastructure Status Table */}
         <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
