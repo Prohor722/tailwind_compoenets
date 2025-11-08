@@ -2,10 +2,7 @@ import { useState } from 'react';
 import { ChevronRight, Pin, ThumbsUp, MessageSquare, Share2, Link2, Copy, Check, AlertCircle, CheckCircle2, Zap, Flame, MoreHorizontal, GitCommit, GitPullRequest, GitBranch, Code2, Database, Cloud, Server, Wifi } from 'lucide-react';
 
 export default function MoreMoreMoreTableDesigns() {
-  const [pinnedRows, setPinnedRows] = useState(new Set());
   const [copiedId, setCopiedId] = useState<number | null>(null);
-  const [likedRows, setLikedRows] = useState(new Set());
-  const [hoveredRow, setHoveredRow] = useState<number | null>(null);
 
   const data = [
     { id: 1, title: 'Critical Bug Fix', author: 'Sarah', status: 'Merged', commits: 12, changes: 342, likes: 45, comments: 8, timestamp: '2 hours ago', priority: 'Critical', branch: 'hotfix/auth-issue' },

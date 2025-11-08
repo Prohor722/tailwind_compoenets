@@ -2,6 +2,9 @@ import React, { useState } from "react";
 
 const PullRequestStyleTable = () => {
   const [hoveredRow, setHoveredRow] = useState<number | null>(null);
+  const [pinnedRows, setPinnedRows] = useState(new Set());
+  const [likedRows, setLikedRows] = useState(new Set());
+  const [hoveredRow, setHoveredRow] = useState<number | null>(null);
 
   const data = [
     {
