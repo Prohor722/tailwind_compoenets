@@ -43,6 +43,7 @@ import InlineEditTable from "./components/InlineEditTable";
 import BulkActionTable from "./components/BulkActionTable";
 import MultiStatRowTable from "./components/MultiStatRowTable";
 import TimelineStatusTable from "./components/TimelineStatusTable";
+import PullRequestStyleTable from "./components/PullRequestStyleTable";
 
 const table = () => {
   return (
@@ -224,6 +225,8 @@ const table = () => {
         <MultiStatRowTable />
 
         <TimelineStatusTable />
+
+        <PullRequestStyleTable />
         
       </div>
     </div>
