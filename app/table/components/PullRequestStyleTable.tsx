@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const PullRequestStyleTable = () => {
   const [hoveredRow, setHoveredRow] = useState<number | null>(null);
