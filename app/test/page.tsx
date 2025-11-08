@@ -1,5 +1,6 @@
 import BulkActionTable from "../table/components/BulkActionTable";
 import MultiStatRowTable from "../table/components/MultiStatRowTable";
+import PullRequestStyleTable from "../table/components/PullRequestStyleTable";
 import TimelineStatusTable from "../table/components/TimelineStatusTable";
 
 const page = () => {
@@ -7,7 +8,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <TimelineStatusTable />
+      <PullRequestStyleTable />
     </div>
   );
 };
