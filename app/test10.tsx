@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { ChevronRight, Share2, Link2, Copy, Check, Code2, Database, Cloud, Server, Wifi } from 'lucide-react';
 
 export default function MoreMoreMoreTableDesigns() {
-  const [copiedId, setCopiedId] = useState<number | null>(null);
 
   const data = [
     { id: 1, title: 'Critical Bug Fix', author: 'Sarah', status: 'Merged', commits: 12, changes: 342, likes: 45, comments: 8, timestamp: '2 hours ago', priority: 'Critical', branch: 'hotfix/auth-issue' },
