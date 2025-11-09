@@ -34,10 +34,11 @@ const CompactActionMenu = () => {
         </tr>
       </thead>
       <tbody>
-        {data.slice(0, 4).map((item) => (
+        {data.map((item,index) => (
           <tr
             key={item.id}
-            className="border-b border-slate-800 hover:bg-slate-800/50 transition-colors group"
+            className={`hover:bg-slate-800/50 transition-colors group
+                ${data.length - 1 === index ? "" : "border-b border-slate-800"  }`}
           >
             <td className="px-6 py-4 text-sm font-semibold text-white">
               {item.title}
