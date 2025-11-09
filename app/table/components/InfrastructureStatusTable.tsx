@@ -1,6 +1,15 @@
 import React from "react";
 
 const InfrastructureStatusTable = () => {
+  
+  const data = [
+    { id: 1, title: 'Critical Bug Fix', author: 'Sarah', status: 'Merged', commits: 12, changes: 342, likes: 45, comments: 8, timestamp: '2 hours ago', priority: 'Critical', branch: 'hotfix/auth-issue' },
+    { id: 2, title: 'Feature: Dark Mode', author: 'Mike', status: 'Open', commits: 8, changes: 156, likes: 23, comments: 12, timestamp: '4 hours ago', priority: 'Medium', branch: 'feature/dark-mode' },
+    { id: 3, title: 'Performance Optimization', author: 'Emma', status: 'In Review', commits: 15, changes: 567, likes: 34, comments: 6, timestamp: '1 day ago', priority: 'High', branch: 'perf/optimize-bundle' },
+    { id: 4, title: 'Documentation Update', author: 'James', status: 'Merged', commits: 3, changes: 89, likes: 12, comments: 2, timestamp: '2 days ago', priority: 'Low', branch: 'docs/api-reference' },
+    { id: 5, title: 'Refactor Components', author: 'Lisa', status: 'In Review', commits: 22, changes: 891, likes: 56, comments: 18, timestamp: '3 days ago', priority: 'High', branch: 'refactor/components' },
+  ];
+
   return (
     <table className="w-full">
       <thead>
