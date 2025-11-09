@@ -19,7 +19,7 @@ const CompactActionMenu = () => {
   };
 
   return (
-    <table className="w-full">
+    <table className="max-w-md bg-gray-700 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
       <thead>
         <tr className="border-b border-slate-800 bg-slate-800/50">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-300">
