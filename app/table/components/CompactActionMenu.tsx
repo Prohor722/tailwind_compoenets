@@ -1,3 +1,4 @@
+"use client";
 import { Share2, Link2, Copy, Check } from 'lucide-react';
 import { useState } from 'react';
 
