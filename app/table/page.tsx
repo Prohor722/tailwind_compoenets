@@ -45,6 +45,7 @@ import MultiStatRowTable from "./components/MultiStatRowTable";
 import TimelineStatusTable from "./components/TimelineStatusTable";
 import PullRequestStyleTable from "./components/PullRequestStyleTable";
 import InfrastructureStatusTable from "./components/InfrastructureStatusTable";
+import CompactActionMenu from "./components/CompactActionMenu";
 
 const table = () => {
   return (
@@ -230,6 +231,8 @@ const table = () => {
         <PullRequestStyleTable />
 
         <InfrastructureStatusTable />
+
+        <CompactActionMenu />
         
       </div>
     </div>
