@@ -51,7 +51,7 @@ const CompactActionMenu = () => {
               <div className="flex items-center justify-end gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                 <button
                   onClick={() => handleCopy(item.id)}
-                  className={`p-2 rounded-lg transition-all ${
+                  className={`cursor-pointer p-2 rounded-lg transition-all ${
                     copiedId === item.id
                       ? "bg-emerald-500/20 text-emerald-400"
                       : "hover:bg-slate-700 text-slate-400"
@@ -63,10 +63,10 @@ const CompactActionMenu = () => {
                     <Copy className="w-4 h-4" />
                   )}
                 </button>
-                <button className="p-2 hover:bg-slate-700 rounded-lg transition-colors text-slate-400 hover:text-slate-200">
+                <button className="cursor-pointer p-2 hover:bg-slate-700 rounded-lg transition-colors text-slate-400 hover:text-slate-200">
                   <Link2 className="w-4 h-4" />
                 </button>
-                <button className="p-2 hover:bg-slate-700 rounded-lg transition-colors text-slate-400 hover:text-slate-200">
+                <button className="cursor-pointer p-2 hover:bg-slate-700 rounded-lg transition-colors text-slate-400 hover:text-slate-200">
                   <Share2 className="w-4 h-4" />
                 </button>
               </div>
