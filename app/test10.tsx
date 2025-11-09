@@ -11,12 +11,6 @@ export default function MoreMoreMoreTableDesigns() {
     { id: 5, title: 'Refactor Components', author: 'Lisa', status: 'In Review', commits: 22, changes: 891, likes: 56, comments: 18, timestamp: '3 days ago', priority: 'High', branch: 'refactor/components' },
   ];
 
-  const handleCopy = (id: number) => {
-    setCopiedId(id);
-    setTimeout(() => setCopiedId(null), 2000);
-  };
-
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">

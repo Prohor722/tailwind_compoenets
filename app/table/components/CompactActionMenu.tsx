@@ -11,6 +11,11 @@ const CompactActionMenu = () => {
     { id: 4, title: 'Documentation Update', author: 'James', status: 'Merged', commits: 3, changes: 89, likes: 12, comments: 2, timestamp: '2 days ago', priority: 'Low', branch: 'docs/api-reference' },
     { id: 5, title: 'Refactor Components', author: 'Lisa', status: 'In Review', commits: 22, changes: 891, likes: 56, comments: 18, timestamp: '3 days ago', priority: 'High', branch: 'refactor/components' },
   ];
+  
+  const handleCopy = (id: number) => {
+    setCopiedId(id);
+    setTimeout(() => setCopiedId(null), 2000);
+  };
 
   return (
     <table className="w-full">
