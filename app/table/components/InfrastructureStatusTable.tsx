@@ -1,4 +1,4 @@
-import { ChevronRight, Share2, Link2, Copy, Check, AlertCircle, CheckCircle2, GitPullRequest, Code2, Database, Cloud, Server, Wifi } from 'lucide-react';
+import { AlertCircle, CheckCircle2 } from 'lucide-react';
 
 
 const InfrastructureStatusTable = () => {
