@@ -44,6 +44,7 @@ import BulkActionTable from "./components/BulkActionTable";
 import MultiStatRowTable from "./components/MultiStatRowTable";
 import TimelineStatusTable from "./components/TimelineStatusTable";
 import PullRequestStyleTable from "./components/PullRequestStyleTable";
+import InfrastructureStatusTable from "./components/InfrastructureStatusTable";
 
 const table = () => {
   return (
@@ -227,6 +228,8 @@ const table = () => {
         <TimelineStatusTable />
 
         <PullRequestStyleTable />
+
+        <InfrastructureStatusTable />
         
       </div>
     </div>
