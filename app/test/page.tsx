@@ -1,3 +1,4 @@
+import CompactActionMenu from "../table/components/CompactActionMenu";
 import PullRequestStyleTable from "../table/components/PullRequestStyleTable";
 
 const page = () => {
@@ -5,7 +6,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <PullRequestStyleTable />
+      <CompactActionMenu />
     </div>
   );
 };
