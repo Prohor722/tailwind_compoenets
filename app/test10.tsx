@@ -1,4 +1,4 @@
-import { ChevronRight, Share2, Link2, Copy, Check, Code2, Database, Cloud, Server, Wifi } from 'lucide-react';
+import { ChevronRight, Wifi } from 'lucide-react';
 
 export default function MoreMoreMoreTableDesigns() {
 
