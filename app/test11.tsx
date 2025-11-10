@@ -9,14 +9,7 @@ export default function FinalTableDesigns() {
     { id: 4, name: 'James Johnson', company: 'InnovateLabs', value: '$280K', deal: 'Partnership', stage: 'Discovery', probability: 25, amount: 280000, daysOpen: 15, owner: 'Emma' },
     { id: 5, name: 'Lisa Garcia', company: 'MegaScale', value: '$1.2M', deal: 'Strategic', stage: 'Closed Won', probability: 100, amount: 1200000, daysOpen: 72, owner: 'James' },
   ];
-
-  // const toggleRow = (id) => {
-  //   const newSet = new Set(selectedRows);
-  //   if (newSet.has(id)) newSet.delete(id);
-  //   else newSet.add(id);
-  //   setSelectedRows(newSet);
-  // };
-
+  
   const getStageColor = (stage: string) => {
     const colors: { [key: string]: string } = {
       'Discovery': 'from-blue-500 to-cyan-500',
