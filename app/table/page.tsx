@@ -47,6 +47,7 @@ import PullRequestStyleTable from "./components/PullRequestStyleTable";
 import InfrastructureStatusTable from "./components/InfrastructureStatusTable";
 import CompactActionMenu from "./components/CompactActionMenu";
 import TechnologyStackDisplay from "./components/TechnologyStackDisplay";
+import RealTimeActivityFeed from "./components/RealTimeActivityFeed";
 
 const table = () => {
   return (
@@ -236,6 +237,8 @@ const table = () => {
         <CompactActionMenu />
 
         <TechnologyStackDisplay />
+
+        <RealTimeActivityFeed />
         
       </div>
     </div>
