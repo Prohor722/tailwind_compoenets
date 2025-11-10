@@ -1,12 +1,6 @@
-import { useState } from 'react';
-import { ChevronRight, ChevronDown, Pin, Flag, Shield, ThumbsUp, MessageSquare, Share2, Link2, Copy, Check, AlertCircle, CheckCircle2, Clock, Zap, Flame, RefreshCw, MoreHorizontal, GitCommit, GitPullRequest, GitBranch, Code2, Database, Cloud, Server, Cpu, HardDrive, Wifi, BarChart3, PieChart, LineChart, TrendingUp, TrendingDown, MapPin, Mail, Phone, ExternalLink, Lock, Unlock, Eye, EyeOff, Trash2, Edit2, Plus, X, Radio, Volume2, Settings, Bell, Search, Filter, Download, Users, Briefcase, Calendar, DollarSign, Award, Activity } from 'lucide-react';
+import { Shield, Zap, TrendingUp, ExternalLink, Lock, Edit2, Plus, Users, DollarSign, Award } from 'lucide-react';
 
 export default function FinalTableDesigns() {
-  const [expandedId, setExpandedId] = useState(null);
-  const [selectedRows, setSelectedRows] = useState(new Set());
-  const [filterStatus, setFilterStatus] = useState('all');
-  const [sortBy, setSortBy] = useState('name');
-  const [showDetails, setShowDetails] = useState(null);
 
   const data = [
     { id: 1, name: 'Sarah Anderson', company: 'TechCorp', value: '$450K', deal: 'Enterprise', stage: 'Closed Won', probability: 95, amount: 450000, daysOpen: 45, owner: 'John' },
