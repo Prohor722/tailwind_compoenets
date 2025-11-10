@@ -21,13 +21,13 @@ const TechnologyStackDisplay = () => {
           name: "Database",
           items: ["PostgreSQL", "MongoDB", "Redis"],
           icon: Database,
-          color: "emerald",
+          color: "green",
         },
         {
           name: "Infrastructure",
           items: ["AWS", "Docker", "Kubernetes"],
           icon: Cloud,
-          color: "orange",
+          color: "yellow",
         },
       ].map((stack, idx) => (
         <div
@@ -46,7 +46,7 @@ const TechnologyStackDisplay = () => {
             {stack.items.map((item, i) => (
               <span
                 key={i}
-                className={`px-2 py-1 bg-${stack.color}-200 text-${stack.color}-700 text-xs rounded font-medium`}
+                className={`px-2 py-1 bg-${stack.color}-300 text-${stack.color}-700 text-xs rounded font-medium`}
               >
                 {item}
               </span>
