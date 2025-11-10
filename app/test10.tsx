@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { ChevronRight, Share2, Link2, Copy, Check, Code2, Database, Cloud, Server, Wifi } from 'lucide-react';
 
 export default function MoreMoreMoreTableDesigns() {
