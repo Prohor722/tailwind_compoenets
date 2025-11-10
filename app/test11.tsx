@@ -9,7 +9,7 @@ export default function FinalTableDesigns() {
     { id: 4, name: 'James Johnson', company: 'InnovateLabs', value: '$280K', deal: 'Partnership', stage: 'Discovery', probability: 25, amount: 280000, daysOpen: 15, owner: 'Emma' },
     { id: 5, name: 'Lisa Garcia', company: 'MegaScale', value: '$1.2M', deal: 'Strategic', stage: 'Closed Won', probability: 100, amount: 1200000, daysOpen: 72, owner: 'James' },
   ];
-  
+
   const getStageColor = (stage: string) => {
     const colors: { [key: string]: string } = {
       'Discovery': 'from-blue-500 to-cyan-500',
@@ -29,11 +29,7 @@ export default function FinalTableDesigns() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">Final Collection of Table Designs</h1>
-          <p className="text-slate-600">Professional, advanced, and specialized layouts</p>
-        </div>
+
 
         {/* Table 47: CRM Deal Pipeline */}
         <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
