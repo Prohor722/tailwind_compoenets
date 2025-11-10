@@ -2,7 +2,7 @@ import { ChevronRight } from 'lucide-react';
 
 const RealTimeActivityFeed = () => {
   return (
-    <div className="max-w-md divide-y divide-slate-800 max-h-96 overflow-y-auto">
+    <div className="bg-gray-700 max-w-md divide-y divide-slate-800 max-h-96 overflow-y-auto">
       {[
         {
           action: "Deploy completed",
