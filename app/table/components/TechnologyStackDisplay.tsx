@@ -3,7 +3,7 @@ import { Code2, Database, Cloud, Server } from 'lucide-react';
 
 const TechnologyStackDisplay = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6">
+    <div className="max-w-md grid grid-cols-1 md:grid-cols-2 gap-4 p-6">
       {[
         {
           name: "Frontend",
@@ -38,7 +38,7 @@ const TechnologyStackDisplay = () => {
             <div className={`p-2 rounded-lg bg-${stack.color}-200`}>
               <stack.icon className={`w-5 h-5 text-${stack.color}-700`} />
             </div>
-            <h3 className={`font-semibold text-${stack.color}-900`}>
+            <h3 className={`font-semibold text-${stack.color}-700`}>
               {stack.name}
             </h3>
           </div>
