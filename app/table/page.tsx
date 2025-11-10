@@ -46,6 +46,7 @@ import TimelineStatusTable from "./components/TimelineStatusTable";
 import PullRequestStyleTable from "./components/PullRequestStyleTable";
 import InfrastructureStatusTable from "./components/InfrastructureStatusTable";
 import CompactActionMenu from "./components/CompactActionMenu";
+import TechnologyStackDisplay from "./components/TechnologyStackDisplay";
 
 const table = () => {
   return (
@@ -233,6 +234,8 @@ const table = () => {
         <InfrastructureStatusTable />
 
         <CompactActionMenu />
+
+        <TechnologyStackDisplay />
         
       </div>
     </div>
