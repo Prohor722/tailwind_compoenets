@@ -1,4 +1,5 @@
-import React from "react";
+import { Code2, Database, Cloud, Server } from 'lucide-react';
+
 
 const TechnologyStackDisplay = () => {
   return (
