@@ -82,7 +82,7 @@ const CRMDealPipeline = () => {
   };
 
   return (
-    <table className="bg-white max-w-md">
+    <table className="bg-white max-w-md shadow-md overflow-hidden border border-slate-200">
       <thead>
         <tr className="bg-gradient-to-r from-slate-100 to-blue-50 border-b border-slate-200">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700">
