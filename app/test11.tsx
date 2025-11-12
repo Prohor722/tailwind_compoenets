@@ -10,22 +10,6 @@ export default function FinalTableDesigns() {
     { id: 5, name: 'Lisa Garcia', company: 'MegaScale', value: '$1.2M', deal: 'Strategic', stage: 'Closed Won', probability: 100, amount: 1200000, daysOpen: 72, owner: 'James' },
   ];
 
-  const getStageColor = (stage: string) => {
-    const colors: { [key: string]: string } = {
-      'Discovery': 'from-blue-500 to-cyan-500',
-      'Proposal': 'from-purple-500 to-pink-500',
-      'Negotiation': 'from-amber-500 to-orange-500',
-      'Closed Won': 'from-emerald-500 to-teal-500',
-    };
-    return colors[stage] || 'from-slate-500 to-slate-600';
-  };
-
-  const getProbabilityColor = (prob: number) => {
-    if (prob >= 80) return 'text-emerald-600 bg-emerald-100';
-    if (prob >= 50) return 'text-amber-600 bg-amber-100';
-    return 'text-red-600 bg-red-100';
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
