@@ -49,6 +49,7 @@ import CompactActionMenu from "./components/CompactActionMenu";
 import TechnologyStackDisplay from "./components/TechnologyStackDisplay";
 import RealTimeActivityFeed from "./components/RealTimeActivityFeed";
 import CRMDealPipeline from "./components/CRMDealPipeline";
+import FinancialSummarySparklines from "./components/FinancialSummarySparklines";
 
 const table = () => {
   return (
@@ -242,6 +243,8 @@ const table = () => {
         <RealTimeActivityFeed />
 
         <CRMDealPipeline />
+
+        <FinancialSummarySparklines />
         
       </div>
     </div>
