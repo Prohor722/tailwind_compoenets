@@ -48,6 +48,7 @@ import InfrastructureStatusTable from "./components/InfrastructureStatusTable";
 import CompactActionMenu from "./components/CompactActionMenu";
 import TechnologyStackDisplay from "./components/TechnologyStackDisplay";
 import RealTimeActivityFeed from "./components/RealTimeActivityFeed";
+import CRMDealPipeline from "./components/CRMDealPipeline";
 
 const table = () => {
   return (
@@ -239,6 +240,8 @@ const table = () => {
         <TechnologyStackDisplay />
 
         <RealTimeActivityFeed />
+
+        <CRMDealPipeline />
         
       </div>
     </div>
