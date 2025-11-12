@@ -1,4 +1,5 @@
-import React from "react";
+import { ExternalLink, Edit2, DollarSign } from 'lucide-react';
+
 
 const CRMDealPipeline = () => {
   const data = [
