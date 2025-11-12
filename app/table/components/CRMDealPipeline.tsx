@@ -148,10 +148,10 @@ const CRMDealPipeline = () => {
             </td>
             <td className="px-6 py-4 text-right">
               <div className="flex items-center justify-end gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                <button className="p-2 hover:bg-slate-200 rounded-lg transition-colors text-slate-600">
+                <button className="cursor-pointer p-2 hover:bg-slate-200 rounded-lg transition-colors text-slate-600">
                   <Edit2 className="w-4 h-4" />
                 </button>
-                <button className="p-2 hover:bg-slate-200 rounded-lg transition-colors text-slate-600">
+                <button className="cursor-pointer p-2 hover:bg-slate-200 rounded-lg transition-colors text-slate-600">
                   <ExternalLink className="w-4 h-4" />
                 </button>
               </div>
