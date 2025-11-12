@@ -1,3 +1,4 @@
+import CRMDealPipeline from "../table/components/CRMDealPipeline";
 import RealTimeActivityFeed from "../table/components/RealTimeActivityFeed";
 
 const page = () => {
@@ -5,7 +6,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <RealTimeActivityFeed />
+      <CRMDealPipeline />
     </div>
   );
 };
