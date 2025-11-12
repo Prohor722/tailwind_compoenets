@@ -31,20 +31,6 @@ export default function FinalTableDesigns() {
       <div className="max-w-7xl mx-auto space-y-8">
 
 
-        {/* Table 47: CRM Deal Pipeline */}
-        <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200 flex items-center justify-between">
-            <h2 className="text-lg font-semibold text-slate-900">Sales Pipeline</h2>
-            <button className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm">
-              <Plus className="w-4 h-4" />
-              New Deal
-            </button>
-          </div>
-          <div className="overflow-x-auto">
-            
-          </div>
-        </div>
-
         {/* Table 48: Financial Summary with Sparklines */}
         <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl border border-slate-700 overflow-hidden shadow-2xl">
           <div className="p-6 border-b border-slate-700">
