@@ -11,7 +11,7 @@ const ProjectTimelineGanttstyle = () => {
   ];
 
   return (
-    <table className="min-w-md max-w-lg bg-gray-100 shadow-lg border overflow-hidden">
+    <table className="min-w-md max-w-lg bg-white shadow-lg border overflow-hidden">
       <thead>
         <tr className="bg-slate-100 border-b border-slate-200">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700 w-32">
@@ -31,7 +31,7 @@ const ProjectTimelineGanttstyle = () => {
         ].map((phase, idx) => (
           <tr
             key={idx}
-            className="border-b border-slate-100 hover:bg-slate-50 transition-colors"
+            className="border-b border-slate-200 hover:bg-gray-200 transition-colors"
           >
             <td className="px-6 py-4 text-sm font-semibold text-slate-900">
               {phase.name}
