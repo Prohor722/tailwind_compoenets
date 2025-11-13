@@ -50,6 +50,7 @@ import TechnologyStackDisplay from "./components/TechnologyStackDisplay";
 import RealTimeActivityFeed from "./components/RealTimeActivityFeed";
 import CRMDealPipeline from "./components/CRMDealPipeline";
 import FinancialSummarySparklines from "./components/FinancialSummarySparklines";
+import TeamPerformanceMatrix from "./components/TeamPerformanceMatrix";
 
 const table = () => {
   return (
@@ -245,6 +246,8 @@ const table = () => {
         <CRMDealPipeline />
 
         <FinancialSummarySparklines />
+
+        <TeamPerformanceMatrix />
         
       </div>
     </div>
