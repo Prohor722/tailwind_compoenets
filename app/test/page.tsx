@@ -1,4 +1,5 @@
 import FinancialSummarySparklines from "../table/components/FinancialSummarySparklines";
+import ProjectTimelineGanttstyle from "../table/components/ProjectTimelineGanttstyle";
 import TeamPerformanceMatrix from "../table/components/TeamPerformanceMatrix";
 
 const page = () => {
@@ -6,7 +7,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <TeamPerformanceMatrix />
+      <ProjectTimelineGanttstyle />
     </div>
   );
 };
