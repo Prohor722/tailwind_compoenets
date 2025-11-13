@@ -51,6 +51,7 @@ import RealTimeActivityFeed from "./components/RealTimeActivityFeed";
 import CRMDealPipeline from "./components/CRMDealPipeline";
 import FinancialSummarySparklines from "./components/FinancialSummarySparklines";
 import TeamPerformanceMatrix from "./components/TeamPerformanceMatrix";
+import ProjectTimelineGanttstyle from "./components/ProjectTimelineGanttstyle";
 
 const table = () => {
   return (
@@ -248,6 +249,8 @@ const table = () => {
         <FinancialSummarySparklines />
 
         <TeamPerformanceMatrix />
+
+        <ProjectTimelineGanttstyle />
         
       </div>
     </div>
