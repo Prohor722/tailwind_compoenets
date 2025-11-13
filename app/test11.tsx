@@ -1,4 +1,4 @@
-import { Shield, Zap, ExternalLink, Lock, Users, Award } from 'lucide-react';
+import { Shield, ExternalLink, Lock } from 'lucide-react';
 
 export default function FinalTableDesigns() {
 
