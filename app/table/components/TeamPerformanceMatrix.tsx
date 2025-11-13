@@ -1,4 +1,4 @@
-import React from "react";
+import { Zap, Users, Award } from 'lucide-react';
 
 const TeamPerformanceMatrix = () => {
   return (
