@@ -9,9 +9,9 @@ const TeamPerformanceMatrix = () => {
     { id: 4, name: 'James Johnson', company: 'InnovateLabs', value: '$280K', deal: 'Partnership', stage: 'Discovery', probability: 25, amount: 280000, daysOpen: 15, owner: 'Emma' },
     { id: 5, name: 'Lisa Garcia', company: 'MegaScale', value: '$1.2M', deal: 'Strategic', stage: 'Closed Won', probability: 100, amount: 1200000, daysOpen: 72, owner: 'James' },
   ];
-  
+
   return (
-    <table className="w-full">
+    <table className="max-w-md bg-white shadow-lg border border-slate-200">
       <thead>
         <tr className="bg-slate-100 border-b border-slate-200">
           <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700">
