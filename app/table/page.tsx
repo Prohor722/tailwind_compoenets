@@ -55,7 +55,7 @@ import ProjectTimelineGanttstyle from "./components/ProjectTimelineGanttstyle";
 
 const table = () => {
   return (
-    <div className="w-full min-h-screen bg-gray-100 p-2 md:p-6 flex flex-col items-center gap-10">
+    <div className="w-full min-h-screen bg-gray-100 p-2 mb-4 md:p-6 flex flex-col items-center gap-10">
        <style>{`
         @keyframes wave1 {
           0% {
