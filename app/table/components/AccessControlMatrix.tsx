@@ -1,4 +1,4 @@
-import React from "react";
+import { Shield, Lock } from 'lucide-react';
 
 const AccessControlMatrix = () => {
   return (
