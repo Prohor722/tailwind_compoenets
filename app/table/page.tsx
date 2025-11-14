@@ -53,6 +53,7 @@ import FinancialSummarySparklines from "./components/FinancialSummarySparklines"
 import TeamPerformanceMatrix from "./components/TeamPerformanceMatrix";
 import ProjectTimelineGanttstyle from "./components/ProjectTimelineGanttstyle";
 import AccessControlMatrix from "./components/AccessControlMatrix";
+import EventLogSeverity from "./components/EventLogSeverity";
 
 const table = () => {
   return (
@@ -254,6 +255,8 @@ const table = () => {
         <ProjectTimelineGanttstyle />
 
         <AccessControlMatrix />
+
+        <EventLogSeverity />
         
       </div>
     </div>
