@@ -2,7 +2,7 @@ import { ExternalLink } from 'lucide-react';
 
 const EventLogSeverity = () => {
   return (
-    <div className="divide-y divide-slate-200 max-h-96 overflow-y-auto">
+    <div className="max-w-md bg-white shadow border divide-y divide-slate-200 max-h-96 overflow-y-auto">
       {[
         {
           timestamp: "2025-10-13 14:32",
