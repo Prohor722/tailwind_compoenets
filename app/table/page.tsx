@@ -52,6 +52,7 @@ import CRMDealPipeline from "./components/CRMDealPipeline";
 import FinancialSummarySparklines from "./components/FinancialSummarySparklines";
 import TeamPerformanceMatrix from "./components/TeamPerformanceMatrix";
 import ProjectTimelineGanttstyle from "./components/ProjectTimelineGanttstyle";
+import AccessControlMatrix from "./components/AccessControlMatrix";
 
 const table = () => {
   return (
@@ -251,6 +252,8 @@ const table = () => {
         <TeamPerformanceMatrix />
 
         <ProjectTimelineGanttstyle />
+
+        <AccessControlMatrix />
         
       </div>
     </div>
