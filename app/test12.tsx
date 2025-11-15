@@ -52,16 +52,6 @@ export default function MoreMoreMoreMoreTableDesigns() {
           <p className="text-slate-400">Specialized tables for different industries and use cases</p>
         </div>
 
-        {/* Table 54: Email Inbox */}
-        <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200">
-            <h2 className="text-lg font-semibold text-slate-900 flex items-center gap-2">
-              <Inbox className="w-5 h-5 text-blue-600" />
-              Inbox
-            </h2>
-          </div>
-          
-        </div>
 
         {/* Table 55: Shopping Cart Wishlist */}
         <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
