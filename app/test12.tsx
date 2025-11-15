@@ -1,12 +1,9 @@
 import { useState } from 'react';
-import { ChevronRight, ChevronDown, Plus, X, AlertCircle, CheckCircle2, Clock, Zap, Flame, TrendingUp, TrendingDown, BarChart3, PieChart, LineChart, MapPin, Mail, Phone, ExternalLink, Lock, Unlock, Eye, EyeOff, Trash2, Edit2, Radio, Volume2, Settings, Bell, Search, Filter, Download, Users, Briefcase, Calendar, DollarSign, Award, Activity, Heart, Share2, MessageCircle, Star, GitBranch, Tag, Layers, Grid3x3, List, Inbox, Send, Archive, Bookmark, MoreVertical, ShoppingCart, Package, Truck, Home, MapPinIcon } from 'lucide-react';
+import { ChevronRight, Plus, Clock, MapPin, Eye, Users, Heart, Star, Layers, Inbox, ShoppingCart, Truck } from 'lucide-react';
 
 export default function MoreMoreMoreMoreTableDesigns() {
-  const [expandedId, setExpandedId] = useState(null);
-  const [viewMode, setViewMode] = useState('table');
   const [cartItems, setCartItems] = useState(new Set());
   const [favoriteEmails, setFavoriteEmails] = useState(new Set());
-  const [activeCategory, setActiveCategory] = useState('all');
 
   const data = [
     { id: 1, name: 'Sarah Anderson', title: 'Senior PM', avatar: 'SA', rating: 4.8, availability: 'Available', responseTime: '2min', timezone: 'PST', status: 'online' },
