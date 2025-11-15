@@ -55,6 +55,7 @@ import ProjectTimelineGanttstyle from "./components/ProjectTimelineGanttstyle";
 import AccessControlMatrix from "./components/AccessControlMatrix";
 import EventLogSeverity from "./components/EventLogSeverity";
 import TeamAvailabilityDashboard from "./components/TeamAvailabilityDashboard";
+import EmailInboxTable from "./components/EmailInboxTable";
 
 const table = () => {
   return (
@@ -260,6 +261,8 @@ const table = () => {
         <EventLogSeverity />
 
         <TeamAvailabilityDashboard />
+
+        <EmailInboxTable />
         
       </div>
     </div>
