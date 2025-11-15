@@ -4,22 +4,6 @@ import { ChevronRight, Plus, Clock, MapPin, Eye, Users, Heart, Star, Layers, Inb
 export default function MoreMoreMoreMoreTableDesigns() {
   const [cartItems, setCartItems] = useState(new Set());
 
-  const data = [
-    { id: 1, name: 'Sarah Anderson', title: 'Senior PM', avatar: 'SA', rating: 4.8, availability: 'Available', responseTime: '2min', timezone: 'PST', status: 'online' },
-    { id: 2, name: 'Mike Chen', title: 'Lead Developer', avatar: 'MC', rating: 4.5, availability: 'In Meeting', responseTime: '1hr', timezone: 'EST', status: 'busy' },
-    { id: 3, name: 'Emma Wilson', title: 'UX Designer', avatar: 'EW', rating: 4.9, availability: 'Available', responseTime: '5min', timezone: 'CST', status: 'online' },
-    { id: 4, name: 'James Johnson', title: 'Data Analyst', avatar: 'JJ', rating: 4.6, availability: 'Away', responseTime: '30min', timezone: 'MST', status: 'away' },
-    { id: 5, name: 'Lisa Garcia', title: 'Director', avatar: 'LG', rating: 4.7, availability: 'Available', responseTime: '10min', timezone: 'PST', status: 'online' },
-  ];
-
-  const emailData = [
-    { id: 1, from: 'client@company.com', subject: 'Q4 Budget Proposal', preview: 'Please review the attached proposal...', received: '2h ago', unread: true, starred: false, label: 'work' },
-    { id: 2, from: 'team@startup.io', subject: 'Weekly Standup', preview: 'Thanks everyone for the updates on...', received: '4h ago', unread: true, starred: true, label: 'work' },
-    { id: 3, from: 'hr@company.com', subject: 'Benefits Enrollment', preview: 'Your benefits enrollment period starts...', received: '1d ago', unread: false, starred: false, label: 'personal' },
-    { id: 4, from: 'support@vendor.com', subject: 'Order Confirmation #12345', preview: 'Your order has been confirmed...', received: '2d ago', unread: false, starred: false, label: 'shopping' },
-    { id: 5, from: 'manager@company.com', subject: 'Performance Review Scheduled', preview: 'Your annual review is scheduled for...', received: '3d ago', unread: false, starred: true, label: 'work' },
-  ];
-
   const cartData = [
     { id: 1, product: 'Wireless Headphones', price: 129.99, quantity: 1, category: 'electronics', inCart: false, image: '🎧' },
     { id: 2, product: 'USB-C Cable (2m)', price: 19.99, quantity: 2, category: 'accessories', inCart: true, image: '🔌' },

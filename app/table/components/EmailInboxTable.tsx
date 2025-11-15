@@ -3,6 +3,14 @@ import { useState } from "react";
 
 const EmailInboxTable = () => {
   const [favoriteEmails, setFavoriteEmails] = useState(new Set());
+  
+  const emailData = [
+    { id: 1, from: 'client@company.com', subject: 'Q4 Budget Proposal', preview: 'Please review the attached proposal...', received: '2h ago', unread: true, starred: false, label: 'work' },
+    { id: 2, from: 'team@startup.io', subject: 'Weekly Standup', preview: 'Thanks everyone for the updates on...', received: '4h ago', unread: true, starred: true, label: 'work' },
+    { id: 3, from: 'hr@company.com', subject: 'Benefits Enrollment', preview: 'Your benefits enrollment period starts...', received: '1d ago', unread: false, starred: false, label: 'personal' },
+    { id: 4, from: 'support@vendor.com', subject: 'Order Confirmation #12345', preview: 'Your order has been confirmed...', received: '2d ago', unread: false, starred: false, label: 'shopping' },
+    { id: 5, from: 'manager@company.com', subject: 'Performance Review Scheduled', preview: 'Your annual review is scheduled for...', received: '3d ago', unread: false, starred: true, label: 'work' },
+  ];
     
 
   const toggleStarred = (id: number) => {
