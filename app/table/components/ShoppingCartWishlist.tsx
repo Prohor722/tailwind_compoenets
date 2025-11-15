@@ -50,7 +50,7 @@ const ShoppingCartWishlist = () => {
             <td className="px-6 py-4">
               <button
                 onClick={() => toggleCart(item.id)}
-                className={`p-2 rounded-lg transition-all ${
+                className={`cursor-pointer p-2 rounded-lg transition-all ${
                   cartItems.has(item.id)
                     ? "bg-emerald-500 text-white"
                     : "bg-slate-100 text-slate-400 group-hover:bg-slate-200"
