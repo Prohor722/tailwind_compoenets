@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 
 const ShoppingCartWishlist = () => {
     const [cartItems, setCartItems] = useState(new Set());
@@ -17,7 +18,7 @@ const ShoppingCartWishlist = () => {
     else newSet.add(id);
     setCartItems(newSet);
   };
-  
+
   return (
     <table className="w-full">
       <thead>
