@@ -54,6 +54,7 @@ import TeamPerformanceMatrix from "./components/TeamPerformanceMatrix";
 import ProjectTimelineGanttstyle from "./components/ProjectTimelineGanttstyle";
 import AccessControlMatrix from "./components/AccessControlMatrix";
 import EventLogSeverity from "./components/EventLogSeverity";
+import TeamAvailabilityDashboard from "./components/TeamAvailabilityDashboard";
 
 const table = () => {
   return (
@@ -257,6 +258,8 @@ const table = () => {
         <AccessControlMatrix />
 
         <EventLogSeverity />
+
+        <TeamAvailabilityDashboard />
         
       </div>
     </div>
