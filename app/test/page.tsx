@@ -1,5 +1,6 @@
 
 import EmailInboxTable from "../table/components/EmailInboxTable";
+import ShipmentTrackingTable from "../table/components/ShipmentTrackingTable";
 import ShoppingCartWishlist from "../table/components/ShoppingCartWishlist";
 
 const page = () => {
@@ -7,7 +8,7 @@ const page = () => {
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <ShoppingCartWishlist />
+      <ShipmentTrackingTable />
     </div>
   );
 };
