@@ -21,7 +21,7 @@ const ShoppingCartWishlist = () => {
   };
 
   return (
-    <table className="w-full">
+    <table className="max-w-md bg-white shadow border border-gray-200">
       <thead>
         <tr className="bg-slate-100 border-b border-slate-200">
           <th className="px-6 py-4 text-left w-8"></th>
