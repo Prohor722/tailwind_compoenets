@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronRight, Plus, Clock, MapPin, Eye, Heart, Star, Layers, ShoppingCart, Truck } from 'lucide-react';
+import { ChevronRight, Clock, MapPin, Eye, Heart, Star, Layers, Truck } from 'lucide-react';
 
 export default function MoreMoreMoreMoreTableDesigns() {
   

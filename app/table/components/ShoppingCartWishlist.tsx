@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Plus } from 'lucide-react';
 
 const ShoppingCartWishlist = () => {
     const [cartItems, setCartItems] = useState(new Set());
