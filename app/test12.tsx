@@ -2,22 +2,7 @@ import { useState } from 'react';
 import { ChevronRight, Plus, Clock, MapPin, Eye, Heart, Star, Layers, ShoppingCart, Truck } from 'lucide-react';
 
 export default function MoreMoreMoreMoreTableDesigns() {
-  const [cartItems, setCartItems] = useState(new Set());
-
-  const cartData = [
-    { id: 1, product: 'Wireless Headphones', price: 129.99, quantity: 1, category: 'electronics', inCart: false, image: '🎧' },
-    { id: 2, product: 'USB-C Cable (2m)', price: 19.99, quantity: 2, category: 'accessories', inCart: true, image: '🔌' },
-    { id: 3, product: 'Laptop Stand', price: 49.99, quantity: 1, category: 'office', inCart: false, image: '🖥️' },
-    { id: 4, product: 'Mechanical Keyboard', price: 159.99, quantity: 1, category: 'electronics', inCart: true, image: '⌨️' },
-    { id: 5, product: 'Monitor Light Bar', price: 99.99, quantity: 1, category: 'office', inCart: false, image: '💡' },
-  ];
-
-  const toggleCart = (id: number) => {
-    const newSet = new Set(cartItems);
-    if (newSet.has(id)) newSet.delete(id);
-    else newSet.add(id);
-    setCartItems(newSet);
-  };
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8">
