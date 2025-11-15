@@ -1,6 +1,15 @@
 import React from "react";
 
 const TeamAvailabilityDashboard = () => {
+    
+
+  const getStatusColor = (status: string) => {
+    if (status === 'online') return 'bg-emerald-500';
+    if (status === 'busy') return 'bg-red-500';
+    if (status === 'away') return 'bg-amber-500';
+    return 'bg-slate-400';
+  };
+  
   return (
     <table className="w-full">
       <thead>

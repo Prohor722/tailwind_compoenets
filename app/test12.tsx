@@ -43,13 +43,6 @@ export default function MoreMoreMoreMoreTableDesigns() {
     setFavoriteEmails(newSet);
   };
 
-  const getStatusColor = (status: string) => {
-    if (status === 'online') return 'bg-emerald-500';
-    if (status === 'busy') return 'bg-red-500';
-    if (status === 'away') return 'bg-amber-500';
-    return 'bg-slate-400';
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
