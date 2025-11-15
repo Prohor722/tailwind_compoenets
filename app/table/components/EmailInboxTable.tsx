@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 
 const EmailInboxTable = () => {
+  const [favoriteEmails, setFavoriteEmails] = useState(new Set());
     
 
   const toggleStarred = (id: number) => {
@@ -9,7 +11,7 @@ const EmailInboxTable = () => {
     else newSet.add(id);
     setFavoriteEmails(newSet);
   };
-  
+
   return (
     <div className="divide-y divide-slate-200">
       {emailData.map((email) => (

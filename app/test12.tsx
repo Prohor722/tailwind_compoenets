@@ -3,7 +3,6 @@ import { ChevronRight, Plus, Clock, MapPin, Eye, Users, Heart, Star, Layers, Inb
 
 export default function MoreMoreMoreMoreTableDesigns() {
   const [cartItems, setCartItems] = useState(new Set());
-  const [favoriteEmails, setFavoriteEmails] = useState(new Set());
 
   const data = [
     { id: 1, name: 'Sarah Anderson', title: 'Senior PM', avatar: 'SA', rating: 4.8, availability: 'Available', responseTime: '2min', timezone: 'PST', status: 'online' },
