@@ -2,6 +2,13 @@ import React from "react";
 
 const TeamAvailabilityDashboard = () => {
     
+  const data = [
+    { id: 1, name: 'Sarah Anderson', title: 'Senior PM', avatar: 'SA', rating: 4.8, availability: 'Available', responseTime: '2min', timezone: 'PST', status: 'online' },
+    { id: 2, name: 'Mike Chen', title: 'Lead Developer', avatar: 'MC', rating: 4.5, availability: 'In Meeting', responseTime: '1hr', timezone: 'EST', status: 'busy' },
+    { id: 3, name: 'Emma Wilson', title: 'UX Designer', avatar: 'EW', rating: 4.9, availability: 'Available', responseTime: '5min', timezone: 'CST', status: 'online' },
+    { id: 4, name: 'James Johnson', title: 'Data Analyst', avatar: 'JJ', rating: 4.6, availability: 'Away', responseTime: '30min', timezone: 'MST', status: 'away' },
+    { id: 5, name: 'Lisa Garcia', title: 'Director', avatar: 'LG', rating: 4.7, availability: 'Available', responseTime: '10min', timezone: 'PST', status: 'online' },
+  ];
 
   const getStatusColor = (status: string) => {
     if (status === 'online') return 'bg-emerald-500';
@@ -9,7 +16,7 @@ const TeamAvailabilityDashboard = () => {
     if (status === 'away') return 'bg-amber-500';
     return 'bg-slate-400';
   };
-  
+
   return (
     <table className="w-full">
       <thead>
