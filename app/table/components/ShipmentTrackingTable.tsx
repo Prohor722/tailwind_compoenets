@@ -3,7 +3,7 @@ import React from "react";
 
 const ShipmentTrackingTable = () => {
   return (
-    <div className="max-w-md space-y-4 p-6">
+    <div className="max-w-lg space-y-4 p-6">
       {[
         {
           tracking: "#SHP-001",
