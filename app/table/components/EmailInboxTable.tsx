@@ -22,7 +22,7 @@ const EmailInboxTable = () => {
   };
 
   return (
-    <div className="divide-y divide-slate-200">
+    <div className="max-w-md bg-balck divide-y divide-slate-200">
       {emailData.map((email) => (
         <div
           key={email.id}
