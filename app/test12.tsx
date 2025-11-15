@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { ChevronRight, Clock, MapPin, Eye, Heart, Star, Layers, Truck } from 'lucide-react';
 
 export default function MoreMoreMoreMoreTableDesigns() {
