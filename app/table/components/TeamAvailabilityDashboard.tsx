@@ -47,7 +47,7 @@ const TeamAvailabilityDashboard = () => {
             <td className="px-6 py-4">
               <div className="flex items-center gap-3">
                 <div
-                  className={`min-w-8 min-h-8 max-w-10 max-h-10 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center text-white font-bold text-sm relative`}
+                  className={`min-w-8 min-h-8 max-w-10 max-h-10 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center text-white font-bold text-[12px] relative`}
                 >
                   {item.avatar}
                   <div
