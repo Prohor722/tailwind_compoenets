@@ -57,6 +57,7 @@ import EventLogSeverity from "./components/EventLogSeverity";
 import TeamAvailabilityDashboard from "./components/TeamAvailabilityDashboard";
 import EmailInboxTable from "./components/EmailInboxTable";
 import ShoppingCartWishlist from "./components/ShoppingCartWishlist";
+import ShipmentTrackingTable from "./components/ShipmentTrackingTable";
 
 const table = () => {
   return (
@@ -266,6 +267,8 @@ const table = () => {
         <EmailInboxTable />
 
         <ShoppingCartWishlist />
+
+        <ShipmentTrackingTable />
         
       </div>
     </div>
