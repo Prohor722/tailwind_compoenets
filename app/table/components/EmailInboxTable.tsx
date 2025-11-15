@@ -1,6 +1,15 @@
 import React from "react";
 
 const EmailInboxTable = () => {
+    
+
+  const toggleStarred = (id: number) => {
+    const newSet = new Set(favoriteEmails);
+    if (newSet.has(id)) newSet.delete(id);
+    else newSet.add(id);
+    setFavoriteEmails(newSet);
+  };
+  
   return (
     <div className="divide-y divide-slate-200">
       {emailData.map((email) => (
