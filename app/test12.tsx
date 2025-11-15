@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronRight, Plus, Clock, MapPin, Eye, Users, Heart, Star, Layers, Inbox, ShoppingCart, Truck } from 'lucide-react';
+import { ChevronRight, Plus, Clock, MapPin, Eye, Heart, Star, Layers, ShoppingCart, Truck } from 'lucide-react';
 
 export default function MoreMoreMoreMoreTableDesigns() {
   const [cartItems, setCartItems] = useState(new Set());
@@ -22,12 +22,6 @@ export default function MoreMoreMoreMoreTableDesigns() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 mb-2">More Creative Designs</h1>
-          <p className="text-slate-400">Specialized tables for different industries and use cases</p>
-        </div>
-
 
         {/* Table 55: Shopping Cart Wishlist */}
         <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
