@@ -1,9 +1,74 @@
-import React from 'react'
+import React from "react";
 
 const ShoppingCartWishlist = () => {
   return (
-    <div>ShoppingCartWishlist</div>
-  )
-}
+    <table className="w-full">
+      <thead>
+        <tr className="bg-slate-100 border-b border-slate-200">
+          <th className="px-6 py-4 text-left w-8"></th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-slate-700">
+            Product
+          </th>
+          <th className="px-6 py-4 text-center text-sm font-semibold text-slate-700">
+            Category
+          </th>
+          <th className="px-6 py-4 text-right text-sm font-semibold text-slate-700">
+            Price
+          </th>
+          <th className="px-6 py-4 text-center text-sm font-semibold text-slate-700">
+            Stock
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {cartData.map((item) => (
+          <tr
+            key={item.id}
+            className={`border-b border-slate-100 hover:bg-blue-50 transition-colors group ${
+              cartItems.has(item.id) ? "bg-emerald-50" : ""
+            }`}
+          >
+            <td className="px-6 py-4">
+              <button
+                onClick={() => toggleCart(item.id)}
+                className={`p-2 rounded-lg transition-all ${
+                  cartItems.has(item.id)
+                    ? "bg-emerald-500 text-white"
+                    : "bg-slate-100 text-slate-400 group-hover:bg-slate-200"
+                }`}
+              >
+                <Plus className="w-4 h-4" />
+              </button>
+            </td>
+            <td className="px-6 py-4">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">{item.image}</span>
+                <div>
+                  <p className="text-sm font-semibold text-slate-900">
+                    {item.product}
+                  </p>
+                  <p className="text-xs text-slate-500">Qty: {item.quantity}</p>
+                </div>
+              </div>
+            </td>
+            <td className="px-6 py-4 text-center">
+              <span className="inline-flex px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded font-medium capitalize">
+                {item.category}
+              </span>
+            </td>
+            <td className="px-6 py-4 text-right text-sm font-bold text-slate-900">
+              ${item.price.toFixed(2)}
+            </td>
+            <td className="px-6 py-4 text-center">
+              <span className="inline-flex px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded-full">
+                In Stock
+              </span>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
 
-export default ShoppingCartWishlist
+export default ShoppingCartWishlist;
