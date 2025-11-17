@@ -2,7 +2,7 @@ import { ChevronRight, Clock } from 'lucide-react';
 
 const KnowledgeBaseArticlesTable = () => {
   return (
-    <div className="divide-y divide-slate-800">
+    <div className="max-w-md  divide-y divide-slate-800">
       {[
         {
           title: "Getting Started with API",
