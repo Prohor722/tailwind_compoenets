@@ -7,16 +7,6 @@ export default function MoreMoreMoreMoreTableDesigns() {
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
 
-        {/* Table 57: Portfolio/Gallery Table */}
-        <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
-          <div className="p-6 border-b border-slate-200">
-            <h2 className="text-lg font-semibold text-slate-900 flex items-center gap-2">
-              <Layers className="w-5 h-5 text-blue-600" />
-              Project Portfolio
-            </h2>
-          </div>
-          
-        </div>
 
         {/* Table 58: Knowledge Base Articles */}
         <div className="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
