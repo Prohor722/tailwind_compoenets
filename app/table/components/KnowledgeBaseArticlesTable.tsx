@@ -1,4 +1,4 @@
-import React from "react";
+import { ChevronRight, Clock } from 'lucide-react';
 
 const KnowledgeBaseArticlesTable = () => {
   return (
