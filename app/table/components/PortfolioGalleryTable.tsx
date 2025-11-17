@@ -1,4 +1,4 @@
-import React from "react";
+import { Eye, Heart, Star } from 'lucide-react';
 
 const PortfolioGalleryTable = () => {
   return (
