@@ -59,6 +59,7 @@ import EmailInboxTable from "./components/EmailInboxTable";
 import ShoppingCartWishlist from "./components/ShoppingCartWishlist";
 import ShipmentTrackingTable from "./components/ShipmentTrackingTable";
 import PortfolioGalleryTable from "./components/PortfolioGalleryTable";
+import KnowledgeBaseArticlesTable from "./components/KnowledgeBaseArticlesTable";
 
 const table = () => {
   return (
@@ -272,6 +273,8 @@ const table = () => {
         <ShipmentTrackingTable />
 
         <PortfolioGalleryTable />
+        
+        <KnowledgeBaseArticlesTable />
         
       </div>
     </div>
