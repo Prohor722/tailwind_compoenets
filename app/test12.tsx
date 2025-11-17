@@ -1,4 +1,4 @@
-import { ChevronRight, Clock, MapPin, Eye, Heart, Star, Layers, Truck } from 'lucide-react';
+import { ChevronRight, Clock, Eye, Heart, Star, Layers } from 'lucide-react';
 
 export default function MoreMoreMoreMoreTableDesigns() {
   
@@ -6,18 +6,6 @@ export default function MoreMoreMoreMoreTableDesigns() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8">
       <div className="max-w-7xl mx-auto space-y-8">
-
-
-        {/* Table 56: Shipment Tracking */}
-        <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
-          <div className="p-6 border-b border-slate-800">
-            <h2 className="text-lg font-semibold text-white flex items-center gap-2">
-              <Truck className="w-5 h-5 text-cyan-400" />
-              Shipment Tracking
-            </h2>
-          </div>
-          
-        </div>
 
         {/* Table 57: Portfolio/Gallery Table */}
         <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
