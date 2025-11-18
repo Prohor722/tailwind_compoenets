@@ -178,13 +178,6 @@ export default function UniqueTableDesigns() {
 
       <div className="max-w-7xl mx-auto space-y-12">
         
-        {/* Table 1: Glassmorphic Neon */}
-        <div className="animate-slide-up stagger-1">
-          
-          <div className="bg-slate-900/30 backdrop-blur-lg rounded-2xl border border-slate-700/50 overflow-hidden neon-border glow-on-hover">
-            
-          </div>
-        </div>
 
         {/* Table 2: Cellular Matrix */}
         <div className="animate-slide-up stagger-2">
