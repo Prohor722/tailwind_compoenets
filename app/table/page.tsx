@@ -60,6 +60,7 @@ import ShoppingCartWishlist from "./components/ShoppingCartWishlist";
 import ShipmentTrackingTable from "./components/ShipmentTrackingTable";
 import PortfolioGalleryTable from "./components/PortfolioGalleryTable";
 import KnowledgeBaseArticlesTable from "./components/KnowledgeBaseArticlesTable";
+import GlassmorphicNeon from "./components/GlassmorphicNeon";
 
 const table = () => {
   return (
@@ -275,6 +276,8 @@ const table = () => {
         <PortfolioGalleryTable />
         
         <KnowledgeBaseArticlesTable />
+        
+        <GlassmorphicNeon />
         
       </div>
     </div>
