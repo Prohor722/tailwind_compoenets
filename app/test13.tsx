@@ -177,15 +177,10 @@ export default function UniqueTableDesigns() {
       `}</style>
 
       <div className="max-w-7xl mx-auto space-y-12">
-        {/* Header */}
-        <div className="animate-slide-down">
-          <h1 className="text-4xl font-bold text-white mb-2">Unique Table Designs</h1>
-          <p className="text-slate-400">Advanced, experimental animations</p>
-        </div>
-
+        
         {/* Table 1: Glassmorphic Neon */}
         <div className="animate-slide-up stagger-1">
-          <h2 className="text-2xl font-bold text-white mb-4">Glassmorphic Neon</h2>
+          
           <div className="bg-slate-900/30 backdrop-blur-lg rounded-2xl border border-slate-700/50 overflow-hidden neon-border glow-on-hover">
             <table className="w-full">
               <thead>
