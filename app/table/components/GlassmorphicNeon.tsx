@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+"use client";
+import { useState } from "react";
 
 const GlassmorphicNeon = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
