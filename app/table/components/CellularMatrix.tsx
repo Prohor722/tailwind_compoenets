@@ -11,7 +11,7 @@ const CellularMatrix = () => {
   ];
 
   return (
-    <table className="w-full">
+    <table className="max-w-md bg-black border border-slate-700/50 shadow-lg">
       <thead>
         <tr className="bg-slate-800/80 border-b-2 border-blue-500/50">
           <th className="px-6 py-4 text-left text-xs font-bold text-blue-400 uppercase tracking-widest">
