@@ -14,7 +14,7 @@ const GlassmorphicNeon = () => {
   ];
 
   return (
-    <table className="w-full">
+    <table className="max-w-md bg-black border shadhow-lg neon-border glow-on-hover">
       <thead>
         <tr className="bg-gradient-to-r from-purple-600/20 to-blue-600/20 border-b border-slate-700">
           <th className="px-6 py-4 text-left text-sm font-semibold text-purple-300">
