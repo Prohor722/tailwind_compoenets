@@ -61,6 +61,7 @@ import ShipmentTrackingTable from "./components/ShipmentTrackingTable";
 import PortfolioGalleryTable from "./components/PortfolioGalleryTable";
 import KnowledgeBaseArticlesTable from "./components/KnowledgeBaseArticlesTable";
 import GlassmorphicNeon from "./components/GlassmorphicNeon";
+import CellularMatrix from "./components/CellularMatrix";
 
 const table = () => {
   return (
@@ -278,7 +279,9 @@ const table = () => {
         <KnowledgeBaseArticlesTable />
         
         <GlassmorphicNeon />
-        
+
+        <CellularMatrix />
+
       </div>
     </div>
   );
