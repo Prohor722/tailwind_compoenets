@@ -1,4 +1,5 @@
 "use client";
+import { TrendingDown, TrendingUp } from "lucide-react";
 import { useState } from "react";
 
 const GlassmorphicNeon = () => {
