@@ -64,7 +64,7 @@ const CardStackEffect = () => {
 };
 
   return (
-    <div className="space-y-2">
+    <div className="max-w-md space-y-2">
       {tableData.map((row, idx) => (
         <div
           onClick={() => updateReactValue(row.id)}
@@ -106,7 +106,7 @@ const CardStackEffect = () => {
             </div>
             <div className="text-right">
               <Star
-                className={`w-5 h-5 transition-all duration-300 ${
+                className={`w-5 h-5 cursor-pointer transition-all duration-300 ${
                   hoveredId === row.id
                     ? "text-yellow-400 animate-bounce"
                     : "text-slate-600"
