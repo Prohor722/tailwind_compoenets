@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Star } from 'lucide-react';
 
@@ -11,7 +12,7 @@ const CardStackEffect = () => {
     { id: 4, name: 'Cloud Services', revenue: 15.2, growth: 32.1, status: 'active', score: 95 },
     { id: 5, name: 'Data Analytics', revenue: 3.8, growth: 11.3, status: 'inactive', score: 71 },
   ];
-  
+
   return (
     <div className="space-y-2">
       {tableData.map((row, idx) => (
