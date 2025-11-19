@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const CardStackEffect = () => {
+  const [hoveredId, setHoveredId] = useState<number | null>(null);
+  
     const tableData = [
     { id: 1, name: 'Acme Corp', revenue: 12.5, growth: 24.5, status: 'active', score: 92 },
     { id: 2, name: 'TechStart Inc', revenue: 8.3, growth: -5.2, status: 'active', score: 78 },
