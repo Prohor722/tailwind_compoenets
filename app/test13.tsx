@@ -178,11 +178,6 @@ export default function UniqueTableDesigns() {
 
       <div className="max-w-7xl mx-auto space-y-12">
 
-        {/* Table 3: Card Stack Effect */}
-        <div className="animate-slide-up stagger-3">
-          <h2 className="text-2xl font-bold text-white mb-4">Card Stack Effect</h2>
-          
-        </div>
 
         {/* Table 4: Holographic Grid */}
         <div className="animate-slide-up stagger-4">
