@@ -62,6 +62,7 @@ import PortfolioGalleryTable from "./components/PortfolioGalleryTable";
 import KnowledgeBaseArticlesTable from "./components/KnowledgeBaseArticlesTable";
 import GlassmorphicNeon from "./components/GlassmorphicNeon";
 import CellularMatrix from "./components/CellularMatrix";
+import CardStackEffect from "./components/CardStackEffect";
 
 const table = () => {
   return (
@@ -281,6 +282,8 @@ const table = () => {
         <GlassmorphicNeon />
 
         <CellularMatrix />
+
+        <CardStackEffect />
 
       </div>
     </div>
