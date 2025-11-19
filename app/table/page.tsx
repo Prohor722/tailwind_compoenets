@@ -63,6 +63,7 @@ import KnowledgeBaseArticlesTable from "./components/KnowledgeBaseArticlesTable"
 import GlassmorphicNeon from "./components/GlassmorphicNeon";
 import CellularMatrix from "./components/CellularMatrix";
 import CardStackEffect from "./components/CardStackEffect";
+import HolographicGridTable from "./components/HolographicGridTable";
 
 const table = () => {
   return (
@@ -284,6 +285,10 @@ const table = () => {
         <CellularMatrix />
 
         <CardStackEffect />
+
+        <HolographicGridTable />
+
+        
 
       </div>
     </div>
