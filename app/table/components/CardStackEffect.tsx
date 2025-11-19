@@ -1,22 +1,73 @@
 "use client";
 import { useState } from "react";
-import { Star } from 'lucide-react';
+import { Star } from "lucide-react";
 
 const CardStackEffect = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
+  const [react, setReact] = useState([
+    { id: 1, value: false },
+    { id: 2, value: false },
+    { id: 3, value: false },
+    { id: 4, value: false },
+    { id: 5, value: false },
+  ]);
 
   const tableData = [
-    { id: 1, name: 'Acme Corp', revenue: 12.5, growth: 24.5, status: 'active', score: 92 },
-    { id: 2, name: 'TechStart Inc', revenue: 8.3, growth: -5.2, status: 'active', score: 78 },
-    { id: 3, name: 'Design Studio', revenue: 5.1, growth: 18.7, status: 'pending', score: 85 },
-    { id: 4, name: 'Cloud Services', revenue: 15.2, growth: 32.1, status: 'active', score: 95 },
-    { id: 5, name: 'Data Analytics', revenue: 3.8, growth: 11.3, status: 'inactive', score: 71 },
+    {
+      id: 1,
+      name: "Acme Corp",
+      revenue: 12.5,
+      growth: 24.5,
+      status: "active",
+      score: 92,
+    },
+    {
+      id: 2,
+      name: "TechStart Inc",
+      revenue: 8.3,
+      growth: -5.2,
+      status: "active",
+      score: 78,
+    },
+    {
+      id: 3,
+      name: "Design Studio",
+      revenue: 5.1,
+      growth: 18.7,
+      status: "pending",
+      score: 85,
+    },
+    {
+      id: 4,
+      name: "Cloud Services",
+      revenue: 15.2,
+      growth: 32.1,
+      status: "active",
+      score: 95,
+    },
+    {
+      id: 5,
+      name: "Data Analytics",
+      revenue: 3.8,
+      growth: 11.3,
+      status: "inactive",
+      score: 71,
+    },
   ];
+
+  const updateReactValue = ( id:number ) => {
+  setReact(prev =>
+    prev.map(item =>
+      item.id === id ? { ...item, value: !item.value } : item
+    )
+  );
+};
 
   return (
     <div className="space-y-2">
       {tableData.map((row, idx) => (
         <div
+          onClick={() => updateReactValue(row.id)}
           key={row.id}
           className="bg-gradient-to-r from-slate-800 to-slate-900 p-4 rounded-lg border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer group animate-slide-up"
           style={{
@@ -59,7 +110,8 @@ const CardStackEffect = () => {
                   hoveredId === row.id
                     ? "text-yellow-400 animate-bounce"
                     : "text-slate-600"
-                }`}
+                } 
+                ${react[row.id - 1].value ? "fill-yellow-300" : ""}`}
               />
             </div>
           </div>
