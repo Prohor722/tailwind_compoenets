@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TrendingUp, TrendingDown, Zap, Star } from 'lucide-react';
+import { Zap, Star } from 'lucide-react';
 
 export default function UniqueTableDesigns() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
@@ -177,15 +177,6 @@ export default function UniqueTableDesigns() {
       `}</style>
 
       <div className="max-w-7xl mx-auto space-y-12">
-        
-
-        {/* Table 2: Cellular Matrix */}
-        <div className="animate-slide-up stagger-2">
-          <h2 className="text-2xl font-bold text-white mb-4">Cellular Matrix</h2>
-          <div className="bg-slate-900/50 rounded-lg border border-slate-700 overflow-hidden">
-            
-          </div>
-        </div>
 
         {/* Table 3: Card Stack Effect */}
         <div className="animate-slide-up stagger-3">
