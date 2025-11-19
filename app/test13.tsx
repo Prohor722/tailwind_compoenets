@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Zap, Star } from 'lucide-react';
+import { Zap } from 'lucide-react';
 
 export default function UniqueTableDesigns() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
