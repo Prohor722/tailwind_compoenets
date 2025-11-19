@@ -15,7 +15,7 @@ const HolographicGridTable = () => {
       {tableData.map((row, idx) => (
         <div
           key={row.id}
-          className="hologram-effect border border-blue-500/30 rounded-lg p-6 hover:border-blue-500/80 transition-all duration-300 group animate-slide-up"
+          className="hologram-effect border bg-black border-blue-500/30 rounded-lg p-6 hover:border-blue-500/80 transition-all duration-300 group animate-slide-up"
           style={{ animationDelay: `${idx * 0.1}s` }}
         >
           <div className="relative z-10">
