@@ -1,4 +1,4 @@
-import React from "react";
+import { Zap } from 'lucide-react';
 
 const HolographicGridTable = () => {
     
@@ -9,7 +9,7 @@ const HolographicGridTable = () => {
     { id: 4, name: 'Cloud Services', revenue: 15.2, growth: 32.1, status: 'active', score: 95 },
     { id: 5, name: 'Data Analytics', revenue: 3.8, growth: 11.3, status: 'inactive', score: 71 },
   ];
-  
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {tableData.map((row, idx) => (
