@@ -11,7 +11,7 @@ const HolographicGridTable = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="max-w-md grid grid-cols-1 md:grid-cols-2 gap-4">
       {tableData.map((row, idx) => (
         <div
           key={row.id}
