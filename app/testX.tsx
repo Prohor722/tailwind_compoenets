@@ -38,13 +38,7 @@ export default function AccordionShowcase() {
         {/* Style 1: Minimal with Border */}
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold text-slate-800 mb-4">Style 1: Minimal Border</h2>
-          <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            {items.map((item, index) => (
-              <div key={index} className="border-b border-slate-200 last:border-b-0">
-                <button
-                  onClick={() => toggleAccordion(index, setOpenIndex1, openIndex1)}
-                  className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-slate-50 transition-colors duration-200"
-                >
+     
                   <span className="font-medium text-slate-900">{item.title}</span>
                   <ChevronDown
                     className={`w-5 h-5 text-slate-600 transition-transform duration-300 ${
