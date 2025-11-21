@@ -15,10 +15,8 @@ export default function AccordionShowcase() {
       title: "How long does shipping take?",
       content: "Standard shipping typically takes 5-7 business days. Express shipping options are available at checkout for delivery within 2-3 business days."
     },
-    {
-      title: "Do you ship internationally?",
-      content: "Yes, we ship to over 50 countries worldwide. International shipping times vary by location but typically range from 7-14 business days."
-    },
+
+
     {
       title: "How can I track my order?",
       content: "Once your order ships, you'll receive a tracking number via email. You can use this number to track your package on our website or the carrier's site."
