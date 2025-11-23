@@ -91,7 +91,7 @@ export default function AccordionShowcase() {
         </div>
 
         {/* Style 3: Bold with Gradient Accent */}
-        <div className="space-y-4">
+       
           <h2 className="text-2xl font-semibold text-slate-800 mb-4">Style 3: Gradient Accent</h2>
           <div className="space-y-3">
             {items.map((item, index) => (
