@@ -99,16 +99,7 @@ export default function AccordionShowcase() {
                 key={index}
                 className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <button
-                  onClick={() => toggleAccordion(index, setOpenIndex3, openIndex3)}
-                  className={`w-full px-6 py-5 flex items-center justify-between text-left transition-colors duration-300 ${
-                    openIndex3 === index ? 'bg-gradient-to-r from-purple-50 to-pink-50' : ''
-                  }`}
-                >
-                  <span className={`font-semibold transition-colors duration-300 ${
-                    openIndex3 === index ? 'text-purple-900' : 'text-slate-900'
-                  }`}>
-                    {item.title}
+                
                   </span>
                   <div className={`transition-all duration-300 ${
                     openIndex3 === index ? 'scale-110' : ''
