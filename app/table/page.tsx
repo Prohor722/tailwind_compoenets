@@ -64,6 +64,7 @@ import GlassmorphicNeon from "./components/GlassmorphicNeon";
 import CellularMatrix from "./components/CellularMatrix";
 import CardStackEffect from "./components/CardStackEffect";
 import HolographicGridTable from "./components/HolographicGridTable";
+import MinimalistBlocksTable from "./components/MinimalistBlocksTable";
 
 const table = () => {
   return (
@@ -288,7 +289,7 @@ const table = () => {
 
         <HolographicGridTable />
 
-        
+        <MinimalistBlocksTable />
 
       </div>
     </div>
