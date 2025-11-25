@@ -22,7 +22,7 @@ const MinimalistBlocksTable = () => {
           onMouseEnter={() => setHoveredId(row.id)}
           onMouseLeave={() => setHoveredId(null)}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/5 group-hover:to-purple-500/5 rounded-xl transition-all duration-300"></div>
+          <div className="absolute inset-0 from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/5 group-hover:to-purple-500/5 rounded-xl transition-all duration-300"></div>
 
           <div className="relative z-10 text-center">
             <div className="text-xs text-slate-400 mb-2 line-clamp-2">
