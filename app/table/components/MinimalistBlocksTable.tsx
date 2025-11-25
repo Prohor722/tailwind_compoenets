@@ -13,7 +13,7 @@ const MinimalistBlocksTable = () => {
     ];
     
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+    <div className="max-w-md grid grid-cols-2 md:grid-cols-3 gap-3">
       {tableData.map((row, idx) => (
         <div
           key={row.id}
