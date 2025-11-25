@@ -178,12 +178,6 @@ export default function UniqueTableDesigns() {
       <div className="max-w-7xl mx-auto space-y-12">
 
 
-        {/* Table 4: Holographic Grid */}
-        <div className="animate-slide-up stagger-4">
-          <h2 className="text-2xl font-bold text-white mb-4">Holographic Grid</h2>
-          
-        </div>
-
         {/* Table 5: Minimalist Blocks */}
         <div className="animate-slide-up stagger-5">
           <h2 className="text-2xl font-bold text-white mb-4">Minimalist Blocks</h2>
