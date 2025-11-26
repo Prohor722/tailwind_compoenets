@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const FloatingRowSelectionTable = () => {
       const [selectedId, setSelectedId] = useState<number | null>(null);
