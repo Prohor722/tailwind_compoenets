@@ -1,7 +1,7 @@
 import React from "react";
 
 const TimelineViewTable = () => {
-    const tableData = [
+  const tableData = [
     { id: 1, name: 'Acme Corp', revenue: 12.5, growth: 24.5, status: 'active', score: 92 },
     { id: 2, name: 'TechStart Inc', revenue: 8.3, growth: -5.2, status: 'active', score: 78 },
     { id: 3, name: 'Design Studio', revenue: 5.1, growth: 18.7, status: 'pending', score: 85 },
