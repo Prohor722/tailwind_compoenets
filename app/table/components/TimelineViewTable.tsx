@@ -10,7 +10,7 @@ const TimelineViewTable = () => {
   ];
 
   return (
-    <div className="space-y-6">
+    <div className="max-w-md space-y-6">
       {tableData.map((row, idx) => (
         <div
           key={row.id}
