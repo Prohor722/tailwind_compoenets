@@ -175,14 +175,6 @@ export default function MoreTableDesigns() {
       <div className="max-w-7xl mx-auto space-y-12">
 
 
-        {/* Table 1: Floating Row Selection */}
-        <div className="animate-slide-up stagger-1">
-          <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-            <Circle className="w-5 h-5" /> Floating Selection Table
-          </h2>
-          
-        </div>
-
         {/* Table 2: Gradient Bar Chart Hybrid */}
         <div className="animate-slide-up stagger-2">
           <h2 className="text-2xl font-bold text-white mb-4">Gradient Bar Chart Hybrid</h2>
