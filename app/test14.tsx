@@ -173,11 +173,7 @@ export default function MoreTableDesigns() {
       `}</style>
 
       <div className="max-w-7xl mx-auto space-y-12">
-        {/* Header */}
-        <div className="animate-slide-down">
-          <h1 className="text-4xl font-bold text-white mb-2">More Unique Tables</h1>
-          <p className="text-slate-400">Fresh designs with advanced interactions</p>
-        </div>
+
 
         {/* Table 1: Floating Row Selection */}
         <div className="animate-slide-up stagger-1">
