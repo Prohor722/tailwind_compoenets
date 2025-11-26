@@ -10,11 +10,11 @@ const TimelineViewTable = () => {
   ];
 
   return (
-    <div className="max-w-md space-y-6">
+    <div className="max-w-md">
       {tableData.map((row, idx) => (
         <div
           key={row.id}
-          className="pl-20 animate-slide-left"
+          className="bg-gray-600 m-2 animate-slide-left"
           style={{ animationDelay: `${idx * 0.1}s` }}
         >
           <div className="absolute left-0 top-2 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center border-4 border-slate-950 group hover:scale-110 transition-transform">
