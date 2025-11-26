@@ -65,6 +65,7 @@ import CellularMatrix from "./components/CellularMatrix";
 import CardStackEffect from "./components/CardStackEffect";
 import HolographicGridTable from "./components/HolographicGridTable";
 import MinimalistBlocksTable from "./components/MinimalistBlocksTable";
+import TimelineViewTable from "./components/TimelineViewTable";
 
 const table = () => {
   return (
@@ -290,6 +291,8 @@ const table = () => {
         <HolographicGridTable />
 
         <MinimalistBlocksTable />
+
+        <TimelineViewTable />
 
       </div>
     </div>
