@@ -1,6 +1,16 @@
 import React from "react";
 
 const FloatingRowSelectionTable = () => {
+      const [selectedId, setSelectedId] = useState<number | null>(null);
+      
+      const tableData = [
+        { id: 1, name: 'Acme Corp', revenue: 12.5, growth: 24.5, status: 'active', score: 92, change: '+2.1%' },
+        { id: 2, name: 'TechStart Inc', revenue: 8.3, growth: -5.2, status: 'active', score: 78, change: '-1.3%' },
+        { id: 3, name: 'Design Studio', revenue: 5.1, growth: 18.7, status: 'pending', score: 85, change: '+3.2%' },
+        { id: 4, name: 'Cloud Services', revenue: 15.2, growth: 32.1, status: 'active', score: 95, change: '+4.5%' },
+        { id: 5, name: 'Data Analytics', revenue: 3.8, growth: 11.3, status: 'inactive', score: 71, change: '+1.8%' },
+      ];
+    
   return (
     <div className="space-y-2 bg-slate-900/30 p-6 rounded-xl border border-slate-800">
       {tableData.map((row, idx) => (
