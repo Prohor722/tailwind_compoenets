@@ -66,6 +66,7 @@ import CardStackEffect from "./components/CardStackEffect";
 import HolographicGridTable from "./components/HolographicGridTable";
 import MinimalistBlocksTable from "./components/MinimalistBlocksTable";
 import TimelineViewTable from "./components/TimelineViewTable";
+import FloatingRowSelectionTable from "./components/FloatingRowSelectionTable";
 
 const table = () => {
   return (
@@ -293,6 +294,8 @@ const table = () => {
         <MinimalistBlocksTable />
 
         <TimelineViewTable />
+
+        <FloatingRowSelectionTable />
 
       </div>
     </div>
