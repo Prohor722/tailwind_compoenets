@@ -170,12 +170,6 @@ export default function MoreTableDesigns() {
 
       <div className="max-w-7xl mx-auto space-y-12">
 
-        {/* Table 3: Isometric 3D Cards */}
-        <div className="animate-slide-up stagger-3">
-          <h2 className="text-2xl font-bold text-white mb-4">3D Isometric Cards</h2>
-          
-        </div>
-
         {/* Table 4: Minimal Dots Connection */}
         <div className="animate-slide-up stagger-4">
           <h2 className="text-2xl font-bold text-white mb-4">Minimal Dot Connection</h2>
