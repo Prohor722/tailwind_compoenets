@@ -50,12 +50,12 @@ const GradientBarChartHybridTable = () => {
   ];
 
   return (
-    <div className="max-w-md space-y-5">
+    <div className="min-w-sm max-w-md space-y-5">
       <>
         {tableData.map((row, idx) => (
           <div
             key={row.id}
-            className="animate-slide-left"
+            className="bg-gray-800 p-4 rounded-xl animate-slide-left"
             style={{ animationDelay: `${idx * 0.1}s` }}
           >
             <div className="flex justify-between mb-2">
