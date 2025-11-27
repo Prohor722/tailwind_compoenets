@@ -1,8 +1,4 @@
-import { useState } from 'react';
-import {  Circle } from 'lucide-react';
-
 export default function MoreTableDesigns() {
-  const [selectedId, setSelectedId] = useState<number | null>(null);
   
   const tableData = [
     { id: 1, name: 'Acme Corp', revenue: 12.5, growth: 24.5, status: 'active', score: 92, change: '+2.1%' },
