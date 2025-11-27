@@ -68,6 +68,7 @@ import MinimalistBlocksTable from "./components/MinimalistBlocksTable";
 import TimelineViewTable from "./components/TimelineViewTable";
 import FloatingRowSelectionTable from "./components/FloatingRowSelectionTable";
 import GradientBarChartHybridTable from "./components/GradientBarChartHybridTable";
+import Isometric3DCardsTable from "./components/Isometric3DCardsTable";
 
 const table = () => {
   return (
@@ -299,6 +300,8 @@ const table = () => {
         <FloatingRowSelectionTable />
 
         <GradientBarChartHybridTable />
+
+        <Isometric3DCardsTable />
 
       </div>
     </div>
