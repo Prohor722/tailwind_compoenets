@@ -175,13 +175,6 @@ export default function MoreTableDesigns() {
       <div className="max-w-7xl mx-auto space-y-12">
 
 
-        {/* Table 2: Gradient Bar Chart Hybrid */}
-        <div className="animate-slide-up stagger-2">
-          <h2 className="text-2xl font-bold text-white mb-4">Gradient Bar Chart Hybrid</h2>
-          <div className="bg-slate-900/30 border border-slate-800 rounded-xl p-6">
-            
-          </div>
-        </div>
 
         {/* Table 3: Isometric 3D Cards */}
         <div className="animate-slide-up stagger-3">
