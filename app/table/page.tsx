@@ -67,6 +67,7 @@ import HolographicGridTable from "./components/HolographicGridTable";
 import MinimalistBlocksTable from "./components/MinimalistBlocksTable";
 import TimelineViewTable from "./components/TimelineViewTable";
 import FloatingRowSelectionTable from "./components/FloatingRowSelectionTable";
+import GradientBarChartHybridTable from "./components/GradientBarChartHybridTable";
 
 const table = () => {
   return (
@@ -296,6 +297,8 @@ const table = () => {
         <TimelineViewTable />
 
         <FloatingRowSelectionTable />
+
+        <GradientBarChartHybridTable />
 
       </div>
     </div>
