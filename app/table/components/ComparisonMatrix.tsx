@@ -106,9 +106,9 @@ const ComparisonMatrix = () => {
             <td className="px-6 py-4 text-center">
               <div className="flex items-center justify-center gap-2">
                 <div className="relative w-8 h-8">
-                  <div className="absolute inset-0 rounded-full border-2 border-slate-600"></div>
+                  <div className="inset-0 rounded-full border-2 border-slate-600"></div>
                   <div
-                    className="absolute inset-0 rounded-full border-2 border-transparent border-t-purple-400 border-r-purple-400"
+                    className="inset-0 rounded-full border-2 border-transparent border-t-purple-400 border-r-purple-400"
                     style={{
                       transform: `rotate(${item.engagement * 3.6}deg)`,
                     }}

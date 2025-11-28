@@ -11,7 +11,7 @@ const CellularMatrix = () => {
   ];
 
   return (
-    <table className="max-w-md bg-black border border-slate-700/50 shadow-lg">
+    <table className="max-w-md bg-black border border-slate-700/50 shadow-lg" title="Cellular Matrix">
       <thead>
         <tr className="bg-slate-800/80 border-b-2 border-blue-500/50">
           <th className="px-6 py-4 text-left text-xs font-bold text-blue-400 uppercase tracking-widest">
@@ -37,7 +37,7 @@ const CellularMatrix = () => {
           >
             <td className="px-6 py-4">
               <div className="relative">
-                <div className="w-3 h-3 rounded-full bg-cyan-400 animate-pulse-dot absolute -left-4"></div>
+                <div className="w-3 h-3 rounded-full bg-cyan-400 animate-pulse-dot -left-4"></div>
                 <span className="text-cyan-300 font-mono text-sm">
                   {row.name}
                 </span>

@@ -101,7 +101,7 @@ const AnimatedBadgeTable = () => {
             <td className="px-6 py-4">
               <div className="relative inline-block">
                 <div
-                  className={`absolute inset-0 bg-gradient-to-r ${getBadgeColor(
+                  className={`lute inset-0 bg-gradient-to-r ${getBadgeColor(
                     item.badge
                   )} rounded-full blur-lg opacity-50 animate-pulse`}
                 ></div>
