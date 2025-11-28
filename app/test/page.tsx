@@ -1,11 +1,12 @@
 import Isometric3DCardsTable from "../table/components/Isometric3DCardsTable";
+import MinimalDotsConnectionTable from "../table/components/MinimalDotsConnectionTable";
 
 const page = () => {
 
   return (
     <div>
       {/* <EcommerceCategorie /> */}
-      <Isometric3DCardsTable />
+      <MinimalDotsConnectionTable />
     </div>
   );
 };
