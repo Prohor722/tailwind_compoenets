@@ -1,5 +1,3 @@
-import React from "react";
-
 const MinimalDotsConnectionTable = () => {
       
   const tableData = [
@@ -9,7 +7,7 @@ const MinimalDotsConnectionTable = () => {
     { id: 4, name: 'Cloud Services', revenue: 15.2, growth: 32.1, status: 'active', score: 95, change: '+4.5%' },
     { id: 5, name: 'Data Analytics', revenue: 3.8, growth: 11.3, status: 'inactive', score: 71, change: '+1.8%' },
   ];
-  
+
   return (
     <div className="space-y-8">
       {tableData.map((row, idx) => (
