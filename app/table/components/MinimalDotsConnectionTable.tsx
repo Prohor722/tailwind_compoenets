@@ -76,7 +76,7 @@ const MinimalDotsConnectionTable = () => {
                     </linearGradient>
                   </defs>
                 </svg>
-                <div className="absolute inset-0 flex items-center justify-center">
+                <div className=" inset-0 flex items-center justify-center">
                   <span className="text-white font-bold text-sm">
                     {row.score}%
                   </span>

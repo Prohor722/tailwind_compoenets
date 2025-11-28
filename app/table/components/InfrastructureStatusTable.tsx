@@ -120,7 +120,7 @@ const InfrastructureStatusTable = () => {
                     {item.cpu}%
                   </span>
                   <div
-                    className="absolute inset-0 rounded-lg border-2 border-transparent"
+                    className="inset-0 rounded-lg border-2 border-transparent"
                     style={{
                       borderRightColor: "#06b6d4",
                       borderTopColor: "#06b6d4",

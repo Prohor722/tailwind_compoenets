@@ -107,7 +107,7 @@ const GridHoverOverlay = () => {
           </div>
 
           {hoveredId === item.id && (
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-xl flex items-end justify-between p-4 animate-in fade-in duration-200">
+            <div className="inset-0 bg-gradient-to-t from-black/80 to-transparent rounded-xl flex items-end justify-between p-4 animate-in fade-in duration-200">
               <div>
                 <p className="text-white text-xs font-semibold mb-1">
                   Quick Actions

@@ -124,7 +124,7 @@ const CRMDealPipeline = () => {
             <td className="px-6 py-4">
               <div className="relative inline-block">
                 <div
-                  className={`absolute inset-0 bg-gradient-to-r ${getStageColor(
+                  className={`inset-0 bg-gradient-to-r ${getStageColor(
                     item.stage
                   )} rounded-lg blur opacity-30`}
                 ></div>

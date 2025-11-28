@@ -146,7 +146,7 @@ const IconRichDataTable = () => {
                       strokeLinecap="round"
                     />
                   </svg>
-                  <span className="absolute inset-0 flex items-center justify-center text-xs font-bold text-slate-700">
+                  <span className="inset-0 flex items-center justify-center text-xs font-bold text-slate-700">
                     {Math.round((item.rating / 5) * 100)}%
                   </span>
                 </div>

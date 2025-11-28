@@ -25,7 +25,7 @@ const Isometric3DCardsTable = () => {
               transform: "rotateX(5deg) rotateY(-5deg) rotateZ(2deg)",
             }}
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-6 shadow-2xl group-hover:shadow-blue-500/50 transition-shadow duration-300">
+            <div className="inset-0 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-6 shadow-2xl group-hover:shadow-blue-500/50 transition-shadow duration-300">
               <div className="relative z-10">
                 <h3 className="text-white font-bold text-lg mb-4">
                   {row.name}
@@ -63,7 +63,7 @@ const Isometric3DCardsTable = () => {
               </div>
             </div>
 
-            <div className="absolute -bottom-4 -right-4 w-full h-full bg-black/30 rounded-xl z-0"></div>
+            <div className="-bottom-4 -right-4 w-full h-full bg-black/30 rounded-xl z-0"></div>
           </div>
         </div>
       ))}

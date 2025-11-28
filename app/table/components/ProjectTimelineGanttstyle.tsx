@@ -40,7 +40,7 @@ const ProjectTimelineGanttstyle = () => {
               <div className="w-full h-10 bg-slate-100 rounded-lg relative overflow-hidden">
                 <div
                   style={{ left: `${phase.start}%`, width: `${phase.width}%` }}
-                  className={`absolute h-full rounded-lg flex items-center justify-center text-white text-xs font-bold ${
+                  className={`h-full rounded-lg flex items-center justify-center text-white text-xs font-bold ${
                     phase.status === "completed"
                       ? "bg-gradient-to-r from-emerald-400 to-teal-500"
                       : phase.status === "in-progress"
