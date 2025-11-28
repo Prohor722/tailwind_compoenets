@@ -9,7 +9,7 @@ const MinimalDotsConnectionTable = () => {
   ];
 
   return (
-    <div className="max-w-md bg-gray-800 p-4 rouned-xl space-y-8">
+    <div className="max-w-md bg-gray-800 p-4 rounded-xl space-y-8">
       {tableData.map((row, idx) => (
         <div
           key={row.id}
