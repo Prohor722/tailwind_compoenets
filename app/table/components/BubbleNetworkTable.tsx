@@ -9,7 +9,7 @@ const BubbleNetworkTable = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="max-w-md grid grid-cols-1 md:grid-cols-2 gap-4">
       {tableData.map((row, idx) => (
         <div
           key={row.id}
@@ -26,16 +26,16 @@ const BubbleNetworkTable = () => {
 
             <div className="grid grid-cols-3 gap-2">
               <div className="bg-blue-500/20 border border-blue-500/30 rounded-lg p-2 text-center hover:bg-blue-500/30 transition-all duration-300">
-                <p className="text-blue-300 text-xs">Revenue</p>
-                <p className="text-white font-bold text-sm">${row.revenue}M</p>
+                <p className="text-blue-300 text-[10px]">Revenue</p>
+                <p className="text-white font-bold text-xs">${row.revenue}M</p>
               </div>
               <div className="bg-purple-500/20 border border-purple-500/30 rounded-lg p-2 text-center hover:bg-purple-500/30 transition-all duration-300">
-                <p className="text-purple-300 text-xs">Growth</p>
-                <p className="text-white font-bold text-sm">{row.growth}%</p>
+                <p className="text-purple-300 text-[10px]">Growth</p>
+                <p className="text-white font-bold text-xs">{row.growth}%</p>
               </div>
               <div className="bg-pink-500/20 border border-pink-500/30 rounded-lg p-2 text-center hover:bg-pink-500/30 transition-all duration-300">
-                <p className="text-pink-300 text-xs">Score</p>
-                <p className="text-white font-bold text-sm">{row.score}</p>
+                <p className="text-pink-300 text-[10px]">Score</p>
+                <p className="text-white font-bold text-xs">{row.score}</p>
               </div>
             </div>
 
