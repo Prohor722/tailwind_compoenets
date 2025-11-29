@@ -71,6 +71,7 @@ import GradientBarChartHybridTable from "./components/GradientBarChartHybridTabl
 import Isometric3DCardsTable from "./components/Isometric3DCardsTable";
 import MinimalDotsConnectionTable from "./components/MinimalDotsConnectionTable";
 import StackedRowsTable from "./components/StackedRowsTable";
+import BubbleNetworkTable from "./components/BubbleNetworkTable";
 
 const table = () => {
   return (
@@ -308,6 +309,8 @@ const table = () => {
         <MinimalDotsConnectionTable />
 
         <StackedRowsTable/>
+
+        <BubbleNetworkTable />
 
       </div>
     </div>
