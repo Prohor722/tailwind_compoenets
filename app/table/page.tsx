@@ -70,6 +70,7 @@ import FloatingRowSelectionTable from "./components/FloatingRowSelectionTable";
 import GradientBarChartHybridTable from "./components/GradientBarChartHybridTable";
 import Isometric3DCardsTable from "./components/Isometric3DCardsTable";
 import MinimalDotsConnectionTable from "./components/MinimalDotsConnectionTable";
+import StackedRowsTable from "./components/StackedRowsTable";
 
 const table = () => {
   return (
@@ -305,6 +306,8 @@ const table = () => {
         <Isometric3DCardsTable />
 
         <MinimalDotsConnectionTable />
+
+        <StackedRowsTable/>
 
       </div>
     </div>
