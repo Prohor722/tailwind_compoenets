@@ -13,7 +13,7 @@ const BubbleNetworkTable = () => {
       {tableData.map((row, idx) => (
         <div
           key={row.id}
-          className="relative h-40 bg-slate-900/30 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300 group animate-pop overflow-hidden"
+          className="relative h-40 bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300 group animate-pop overflow-hidden"
           style={{ animationDelay: `${idx * 0.1}s` }}
         >
           <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-2xl"></div>
