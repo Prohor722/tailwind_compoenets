@@ -171,12 +171,6 @@ export default function MoreTableDesigns() {
       <div className="max-w-7xl mx-auto space-y-12">
 
 
-        {/* Table 5: Stacked Rows */}
-        <div className="animate-slide-up stagger-5">
-          <h2 className="text-2xl font-bold text-white mb-4">Stacked Compact View</h2>
-          
-        </div>
-
         {/* Table 6: Bubble Network */}
         <div className="animate-slide-up stagger-1" style={{animationDelay: '0.6s'}}>
           <h2 className="text-2xl font-bold text-white mb-4">Bubble Network</h2>
