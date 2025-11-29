@@ -9,7 +9,7 @@ const StackedRowsTable = () => {
   ];
 
   return (
-    <div className="space-y-2">
+    <div className="max-w-md space-y-2">
       {tableData.map((row, idx) => (
         <div
           key={row.id}
