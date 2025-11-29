@@ -16,7 +16,7 @@ const StackedRowsTable = () => {
           className="group cursor-pointer animate-slide-right"
           style={{ animationDelay: `${idx * 0.08}s` }}
         >
-          <div className="bg-gradient-to-r from-slate-800/30 to-slate-900/30 hover:from-blue-600/20 hover:to-purple-600/20 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 rounded-lg p-4 relative overflow-hidden">
+          <div className="bg-gradient-to-r from-gray-600 to-gray-900 hover:from-blue-800 hover:to-purple-900 border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 rounded-lg p-4 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-transparent to-purple-500/0 group-hover:from-blue-500/5 group-hover:via-purple-500/5 group-hover:to-blue-500/5 transition-all duration-300"></div>
 
             <div className="relative z-10">
