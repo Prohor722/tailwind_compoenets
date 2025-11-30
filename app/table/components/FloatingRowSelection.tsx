@@ -13,7 +13,7 @@ const FloatingRowSelection = () => {
   ];
 
   return (
-    <div className="space-y-2 bg-slate-900/30 p-6 rounded-xl border border-slate-800">
+    <div className="max-w-md space-y-2 bg-slate-900/30 p-6 rounded-xl border border-slate-800">
       {tableData.map((row, idx) => (
         <div
           key={row.id}
