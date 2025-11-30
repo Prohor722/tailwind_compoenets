@@ -1,6 +1,8 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 
 const FloatingRowSelection = () => {
+  const [selectedId, setSelectedId] = useState(null);
       
   const tableData = [
     { id: 1, name: 'Acme Corp', revenue: 12.5, growth: 24.5, status: 'active', score: 92, change: '+2.1%' },
@@ -9,7 +11,7 @@ const FloatingRowSelection = () => {
     { id: 4, name: 'Cloud Services', revenue: 15.2, growth: 32.1, status: 'active', score: 95, change: '+4.5%' },
     { id: 5, name: 'Data Analytics', revenue: 3.8, growth: 11.3, status: 'inactive', score: 71, change: '+1.8%' },
   ];
-  
+
   return (
     <div className="space-y-2 bg-slate-900/30 p-6 rounded-xl border border-slate-800">
       {tableData.map((row, idx) => (

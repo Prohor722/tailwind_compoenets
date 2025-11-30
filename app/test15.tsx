@@ -3,7 +3,6 @@ import { TrendingUp, TrendingDown, Zap, ArrowRight, Circle } from 'lucide-react'
 
 export default function MoreTableDesigns() {
   const [hoveredId, setHoveredId] = useState(null);
-  const [selectedId, setSelectedId] = useState(null);
   const [expandedId, setExpandedId] = useState(null);
   
   const tableData = [
