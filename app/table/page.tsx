@@ -72,6 +72,7 @@ import Isometric3DCardsTable from "./components/Isometric3DCardsTable";
 import MinimalDotsConnectionTable from "./components/MinimalDotsConnectionTable";
 import StackedRowsTable from "./components/StackedRowsTable";
 import BubbleNetworkTable from "./components/BubbleNetworkTable";
+import FloatingRowSelection from "./components/FloatingRowSelection";
 
 const table = () => {
   return (
@@ -311,6 +312,8 @@ const table = () => {
         <StackedRowsTable/>
 
         <BubbleNetworkTable />
+
+        <FloatingRowSelection />
 
       </div>
     </div>
