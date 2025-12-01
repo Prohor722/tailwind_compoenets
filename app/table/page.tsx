@@ -73,6 +73,7 @@ import MinimalDotsConnectionTable from "./components/MinimalDotsConnectionTable"
 import StackedRowsTable from "./components/StackedRowsTable";
 import BubbleNetworkTable from "./components/BubbleNetworkTable";
 import FloatingRowSelection from "./components/FloatingRowSelection";
+import GradientBarChartHybrid from "./components/GradientBarChartHybrid";
 
 const table = () => {
   return (
@@ -314,6 +315,8 @@ const table = () => {
         <BubbleNetworkTable />
 
         <FloatingRowSelection />
+
+        <GradientBarChartHybrid />
 
       </div>
     </div>
