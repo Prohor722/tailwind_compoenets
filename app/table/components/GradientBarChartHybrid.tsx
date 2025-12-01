@@ -64,12 +64,14 @@ const GradientBarChartHybrid = () => {
             </span>
           </div>
           <div className="relative h-8 bg-gradient-to-r from-slate-800 to-slate-700 rounded-lg overflow-hidden border border-slate-700">
-            <div
+              <div
               className="h-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-lg bar-fill flex items-center justify-end pr-3"
-              style={{
-                "--bar-width": `${(row.revenue / 15.2) * 100}%`,
-                animationDelay: `${idx * 0.15}s`,
-              }}
+              style={
+                {
+                  ["--bar-width" as any]: `${(row.revenue / 15.2) * 100}%`,
+                  animationDelay: `${idx * 0.15}s`,
+                } as React.CSSProperties
+              }
             >
               <span className="text-white font-bold text-xs">{row.score}%</span>
             </div>
